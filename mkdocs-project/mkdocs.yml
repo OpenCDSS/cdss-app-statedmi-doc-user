@@ -1,0 +1,372 @@
+# This is the main configuration file for the MkDocs website.
+# Use hash-comments to comment out pages have not been written
+# Reference: http://www.mkdocs.org/user-guide/configuration/
+#
+site_name: CDSS / StateDMI
+pages:
+- Home: index.md
+# TODO smalers 2018-09-05 need to update for StateDMI documentation
+#- 1 - Introduction: introduction/introduction.md
+#- 2 - Getting Started: getting-started/getting-started.md
+#- 3 - Commands: commands/commands.md
+#- 4 - Tools: tools/tools.md
+#- 5 - Examples of Use: examples/examples.md
+#- 6 - Quality Control: quality-control/quality-control.md
+#- 7 - Spatial Data Integration: spatial/spatial.md
+#- 8 - Spreadsheet Integration: spreadsheet/spreadsheet.md
+#- 9 - Model Framework Integration: modeling/modeling.md
+#- 10 - Troubleshooting: troubleshooting/troubleshooting.md
+#- 11 - Best Practices:
+#  - Time Series Identifiers: best-practices/ts-identifiers.md
+#- 12 - Resources: resources.md
+#- Lessons:
+#  - Overview: lessons/overview.md
+- Reference - Commands:
+#  - Overview: command-ref/overview.md
+#  - Command Syntax: command-ref/command-syntax.md
+#  - '# Comment': command-ref/Comment/Comment.md
+#  - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
+#  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
+  - AggregateWellRights: command-ref/AggregateWellRights/AggregateWellRights.md
+  - AppendNetwork: command-ref/AppendNetwork/AppendNetwork.md
+  - CalculateDiversionDemandTSMonthly: command-ref/CalculateDiversionDemandTSMonthly/CalculateDiversionDemandTSMonthly.md
+  - CalculateDiversionDemandTSMonthlyAsMax: command-ref/CalculateDiversionDemandTSMonthlyAsMax/CalculateDiversionDemandTSMonthlyAsMax.md
+  - CalculateDiversionStationEfficiencies: command-ref/CalculateDiversionStationEfficiencies/CalculateDiversionStationEfficiencies.md
+  - CalculateStreamEstimateCoefficients: command-ref/CalculateStreamEstimateCoefficients/CalculateStreamEstimateCoefficients.md
+  - CalculateWellDemandTSMonthly: command-ref/CalculateWellDemandTSMonthly/CalculateWellDemandTSMonthly.md
+  - CalculateWellDemandTSMonthlyAsMax: command-ref/CalculateWellDemandTSMonthlyAsMax/CalculateWellDemandTSMonthlyAsMax.md
+  - CalculateWellStationEfficiencies: command-ref/CalculateWellStationEfficiencies/CalculateWellStationEfficiencies.md
+  - CheckBlaneyCriddle: command-ref/CheckBlaneyCriddle/CheckBlaneyCriddle.md
+  - CheckClimateStations: command-ref/CheckClimateStations/CheckClimateStations.md
+  - CheckCropCharacteristics: command-ref/CheckCropCharacteristics/CheckCropCharacteristics.md
+  - CheckCropPatternTS: command-ref/CheckCropPatternTS/CheckCropPatternTS.md
+  - CheckCULocations: command-ref/CheckCULocations/CheckCULocations.md
+  - CheckDiversionDemandTSMonthly: command-ref/CheckDiversionDemandTSMonthly/CheckDiversionDemandTSMonthly.md
+  - CheckDiversionHistoricalTSMonthly: command-ref/CheckDiversionHistoricalTSMonthly/CheckDiversionHistoricalTSMonthly.md
+  - CheckDiversionRights: command-ref/CheckDiversionRights/CheckDiversionRights.md
+  - CheckDiversionStations: command-ref/CheckDiversionStations/CheckDiversionStations.md
+  - CheckInstreamFlowDemandTSAverageMonthly: command-ref/CheckInstreamFlowDemandTSAverageMonthly/CheckInstreamFlowDemandTSAverageMonthly.md
+  - CheckInstreamFlowRights: command-ref/CheckInstreamFlowRights/CheckInstreamFlowRights.md
+  - CheckInstreamFlowStations: command-ref/CheckInstreamFlowStations/CheckInstreamFlowStations.md
+  - CheckIrrigationPracticeTS: command-ref/CheckIrrigationPracticeTS/CheckIrrigationPracticeTS.md
+  - CheckPenmanMonteith: command-ref/CheckPenmanMonteith/CheckPenmanMonteith.md
+  - CheckReservoirRights: command-ref/CheckReservoirRights/CheckReservoirRights.md
+  - CheckReservoirStations: command-ref/CheckReservoirStations/CheckReservoirStations.md
+  - CheckRiverNetwork: command-ref/CheckRiverNetwork/CheckRiverNetwork.md
+  - CheckStreamEstimateCoefficients: command-ref/CheckStreamEstimateCoefficients/CheckStreamEstimateCoefficients.md
+  - CheckStreamEstimateStations: command-ref/CheckStreamEstimateStations/CheckStreamEstimateStations.md
+  - CheckStreamGageStations: command-ref/CheckStreamGageStations/CheckStreamGageStations.md
+  - CheckTimeSeries: command-ref/CheckTimeSeries/CheckTimeSeries.md
+  - CheckWellDemandTSMonthly: command-ref/CheckWellDemandTSMonthly/CheckWellDemandTSMonthly.md
+  - CheckWellHistoricalPumpingTSMonthly: command-ref/CheckWellHistoricalPumpingTSMonthly/CheckWellHistoricalPumpingTSMonthly.md
+  - CheckWellRights: command-ref/CheckWellRights/CheckWellRights.md
+  - CheckWellStations: command-ref/CheckWellStations/CheckWellStations.md
+  - CompareFiles: command-ref/CompareFiles/CompareFiles.md
+  - CreateCropPatternTSForCULocations: command-ref/CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md
+  - CreateIrrigationPracticeTSForCULocations: command-ref/CreateIrrigationPracticeTSForCULocations/CreateIrrigationPracticeTSForCULocations.md
+  - CreateNetworkFromRiverNetwork: command-ref/CreateNetworkFromRiverNetwork/CreateNetworkFromRiverNetwork.md
+  - CreateRegressionTestCommandFile: command-ref/CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md
+  - CreateRiverNetworkFromNetwork: command-ref/CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md
+  - Exit: command-ref/Exit/Exit.md
+  - FillClimateStation: command-ref/FillClimateStation/FillClimateStation.md
+  - FillClimateStationsFromHydroBase: command-ref/FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md
+  - FillCropPatternTSConstant: command-ref/FillCropPatternTSConstant/FillCropPatternTSConstant.md
+  - FillCropPatternTSInterpolate: command-ref/FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md
+  - FillCropPatternTSRepeat: command-ref/FillCropPatternTSRepeat/FillCropPatternTSRepeat.md
+  - FillCropPatternTSUsingWellRights: command-ref/FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md
+  - FillCULocation: command-ref/FillCULocation/FillCULocation.md
+  - FillCULocationClimateStationWeights: command-ref/FillCULocationClimateStationWeights/FillCULocationClimateStationWeights.md
+  - FillCULocationsFromHydroBase: command-ref/FillCULocationsFromHydroBase/FillCULocationsFromHydroBase.md
+  - FillCULocationsFromList: command-ref/FillCULocationsFromList/FillCULocationsFromList.md
+  - FillDiversionDemandTSMonthlyAverage: command-ref/FillDiversionDemandTSMonthlyAverage/FillDiversionDemandTSMonthlyAverage.md
+  - FillDiversionDemandTSMonthlyConstant: command-ref/FillDiversionDemandTSMonthlyConstant/FillDiversionDemandTSMonthlyConstant.md
+  - FillDiversionDemandTSMonthlyPattern: command-ref/FillDiversionDemandTSMonthlyPattern/FillDiversionDemandTSMonthlyPattern.md
+  - FillDiversionHistoricalTSMonthlyAverage: command-ref/FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md
+  - FillDiversionHistoricalTSMonthlyConstant: command-ref/FillDiversionHistoricalTSMonthlyConstant/FillDiversionHistoricalTSMonthlyConstant.md
+  - FillDiversionHistoricalTSMonthlyPattern: command-ref/FillDiversionHistoricalTSMonthlyPattern/FillDiversionHistoricalTSMonthlyPattern.md
+  - FillDiversionRight: command-ref/FillDiversionRight/FillDiversionRight.md
+  - FillDiversionStation: command-ref/FillDiversionStation/FillDiversionStation.md
+  - FillDiversionStationsFromHydroBase: command-ref/FillDiversionStationsFromHydroBase/FillDiversionStationsFromHydroBase.md
+  - FillDiversionStationsFromNetwork: command-ref/FillDiversionStationsFromNetwork/FillDiversionStationsFromNetwork.md
+  - FillInstreamFlowRight: command-ref/FillInstreamFlowRight/FillInstreamFlowRight.md
+  - FillInstreamFlowStation: command-ref/FillInstreamFlowStation/FillInstreamFlowStation.md
+  - FillInstreamFlowStationsFromHydroBase: command-ref/FillInstreamFlowStationsFromHydroBase/FillInstreamFlowStationsFromHydroBase.md
+  - FillInstreamFlowStationsFromNetwork: command-ref/FillInstreamFlowStationsFromNetwork/FillInstreamFlowStationsFromNetwork.md
+  - FillIrrigationPracticeTSAcreageUsingWellRights: command-ref/FillIrrigationPracticeTSAcreageUsingWellRights/FillIrrigationPracticeTSAcreageUsingWellRights.md
+  - FillIrrigationPracticeTSInterpolate: command-ref/FillIrrigationPracticeTSInterpolate/FillIrrigationPracticeTSInterpolate.md
+  - FillIrrigationPracticeTSRepeat: command-ref/FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md
+  - FillNetworkFromHydroBase: command-ref/FillNetworkFromHydroBase/FillNetworkFromHydroBase.md
+  - FillReservoirRight: command-ref/FillReservoirRight/FillReservoirRight.md
+  - FillReservoirStation: command-ref/FillReservoirStation/FillReservoirStation.md
+  - FillReservoirStationsFromHydroBase: command-ref/FillReservoirStationsFromHydroBase/FillReservoirStationsFromHydroBase.md
+  - FillReservoirStationsFromNetwork: command-ref/FillReservoirStationsFromNetwork/FillReservoirStationsFromNetwork.md
+  - FillRiverNetworkFromHydroBase: command-ref/FillRiverNetworkFromHydroBase/FillRiverNetworkFromHydroBase.md
+  - FillRiverNetworkFromNetwork: command-ref/FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md
+  - FillRiverNetworkNode: command-ref/FillRiverNetworkNode/FillRiverNetworkNode.md
+  - FillStreamEstimateStation: command-ref/FillStreamEstimateStation/FillStreamEstimateStation.md
+  - FillStreamEstimateStationsFromHydroBase: command-ref/FillStreamEstimateStationsFromHydroBase/FillStreamEstimateStationsFromHydroBase.md
+  - FillStreamEstimateStationsFromNetwork: command-ref/FillStreamEstimateStationsFromNetwork/FillStreamEstimateStationsFromNetwork.md
+  - FillStreamGageStation: command-ref/FillStreamGageStation/FillStreamGageStation.md
+  - FillStreamGageStationsFromHydroBase: command-ref/FillStreamGageStationsFromHydroBase/FillStreamGageStationsFromHydroBase.md
+  - FillStreamGageStationsFromNetwork: command-ref/FillStreamGageStationsFromNetwork/FillStreamGageStationsFromNetwork.md
+  - FillWellDemandTSMonthlyAverage: command-ref/FillWellDemandTSMonthlyAverage/FillWellDemandTSMonthlyAverage.md
+  - FillWellDemandTSMonthlyConstant: command-ref/FillWellDemandTSMonthlyConstant/FillWellDemandTSMonthlyConstant.md
+  - FillWellDemandTSMonthlyPattern: command-ref/FillWellDemandTSMonthlyPattern/FillWellDemandTSMonthlyPattern.md
+  - FillWellHistoricalPumpingTSMonthlyAverage: command-ref/FillWellHistoricalPumpingTSMonthlyAverage/FillWellHistoricalPumpingTSMonthlyAverage.md
+  - FillWellHistoricalPumpingTSMonthlyConstant: command-ref/FillWellHistoricalPumpingTSMonthlyConstant/FillWellHistoricalPumpingTSMonthlyConstant.md
+  - FillWellHistoricalPumpingTSMonthlyPattern: command-ref/FillWellHistoricalPumpingTSMonthlyPattern/FillWellHistoricalPumpingTSMonthlyPattern.md
+  - FillWellRight: command-ref/FillWellRight/FillWellRight.md
+  - FillWellStation: command-ref/FillWellStation/FillWellStation.md
+  - FillWellStationsFromDiversionStations: command-ref/FillWellStationsFromDiversionStations/FillWellStationsFromDiversionStations.md
+  - FillWellStationsFromNetwork: command-ref/FillWellStationsFromNetwork/FillWellStationsFromNetwork.md
+  - LimitDiversionDemandTSMonthlyToRights: command-ref/LimitDiversionDemandTSMonthlyToRights/LimitDiversionDemandTSMonthlyToRights.md
+  - LimitDiversionHistoricalTSMonthlyToRights: command-ref/LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md
+  - LimitWellDemandTSMonthlyToRights: command-ref/LimitWellDemandTSMonthlyToRights/LimitWellDemandTSMonthlyToRights.md
+  - LimitWellHistoricalPumpingTSMonthlyToRights: command-ref/LimitWellHistoricalPumpingTSMonthlyToRights/LimitWellHistoricalPumpingTSMonthlyToRights.md
+  - MergeListFileColumns: command-ref/MergeListFileColumns/MergeListFileColumns.md
+  - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
+  - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
+  - PenmanMonteithToStateCU: command-ref/PenmanMonteithToStateCU/PenmanMonteithToStateCU.md
+  - PrintNetwork: command-ref/PrintNetwork/PrintNetwork.md
+  - ReadBlaneyCriddleFromHydroBase: command-ref/ReadBlaneyCriddleFromHydroBase/ReadBlaneyCriddleFromHydroBase.md
+  - ReadBlaneyCriddleFromStateCU: command-ref/ReadBlaneyCriddleFromStateCU/ReadBlaneyCriddleFromStateCU.md
+  - ReadClimateStationsFromList: command-ref/ReadClimateStationsFromList/ReadClimateStationsFromList.md
+  - ReadClimateStationsFromStateCU: command-ref/ReadClimateStationsFromStateCU/ReadClimateStationsFromStateCU.md
+  - ReadControlFromStateMod: command-ref/ReadControlFromStateMod/ReadControlFromStateMod.md
+  - ReadCropCharacteristicsFromHydroBase: command-ref/ReadCropCharacteristicsFromHydroBase/ReadCropCharacteristicsFromHydroBase.md
+  - ReadCropCharacteristicsFromStateCU: command-ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md
+  - ReadCropPatternTSFromHydroBase: command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md
+  - ReadCropPatternTSFromStateCU: command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md
+  - ReadCULocationsFromStateCU: command-ref/ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md
+  - ReadCULocationsFromStateMod: command-ref/ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md
+  - ReadDelayTablesDailyFromStateMod: command-ref/ReadDelayTablesDailyFromStateMod/ReadDelayTablesDailyFromStateMod.md
+  - ReadDelayTablesMonthlyFromStateMod: command-ref/ReadDelayTablesMonthlyFromStateMod/ReadDelayTablesMonthlyFromStateMod.md
+  - ReadDiversionDemandTSMonthlyFromStateMod: command-ref/ReadDiversionDemandTSMonthlyFromStateMod/ReadDiversionDemandTSMonthlyFromStateMod.md
+  - ReadDiversionHistoricalTSMonthlyFromHydroBase: command-ref/ReadDiversionHistoricalTSMonthlyFromHydroBase/ReadDiversionHistoricalTSMonthlyFromHydroBase.md
+  - ReadDiversionHistoricalTSMonthlyFromStateMod: command-ref/ReadDiversionHistoricalTSMonthlyFromStateMod/ReadDiversionHistoricalTSMonthlyFromStateMod.md
+  - ReadDiversionRightsFromHydroBase: command-ref/ReadDiversionRightsFromHydroBase/ReadDiversionRightsFromHydroBase.md
+  - ReadDiversionRightsFromStateMod: command-ref/ReadDiversionRightsFromStateMod/ReadDiversionRightsFromStateMod.md
+  - ReadDiversionStationsFromList: command-ref/ReadDiversionStationsFromList/ReadDiversionStationsFromList.md
+  - ReadDiversionStationsFromNetwork: command-ref/ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md
+  - ReadDiversionStationsFromStateMod: command-ref/ReadDiversionStationsFromStateMod/ReadDiversionStationsFromStateMod.md
+  - ReadInstreamFlowDemandTSAverageMonthlyFromStateMod: command-ref/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod.md
+  - ReadInstreamFlowRightsFromHydroBase: command-ref/ReadInstreamFlowRightsFromHydroBase/ReadInstreamFlowRightsFromHydroBase.md
+  - ReadInstreamFlowRightsFromStateMod: command-ref/ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md
+  - ReadInstreamFlowStationsFromList: command-ref/ReadInstreamFlowStationsFromList/ReadInstreamFlowStationsFromList.md
+  - ReadInstreamFlowStationsFromNetwork: command-ref/ReadInstreamFlowStationsFromNetwork/ReadInstreamFlowStationsFromNetwork.md
+  - ReadInstreamFlowStationsFromStateMod: command-ref/ReadInstreamFlowStationsFromStateMod/ReadInstreamFlowStationsFromStateMod.md
+  - ReadIrrigationPracticeTSFromHydroBase: command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md
+  - ReadIrrigationPracticeTSFromList: command-ref/ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md
+  - ReadIrrigationPracticeTSFromStateCU: command-ref/ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md
+  - ReadIrrigationWaterRequirementTSMonthlyFromStateCU: command-ref/ReadIrrigationWaterRequirementTSMonthlyFromStateCU/ReadIrrigationWaterRequirementTSMonthlyFromStateCU.md
+  - ReadNetworkFromStateMod: command-ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md
+  - ReadOperationalRightsFromStateMod: command-ref/ReadOperationalRightsFromStateMod/ReadOperationalRightsFromStateMod.md
+  - ReadPatternFile: command-ref/ReadPatternFile/ReadPatternFile.md
+  - ReadPenmanMonteithFromHydroBase: command-ref/ReadPenmanMonteithFromHydroBase/ReadPenmanMonteithFromHydroBase.md
+  - ReadPenmanMonteithFromStateCU: command-ref/ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU.md
+  - ReadPlanReturnFromStateMod: command-ref/ReadPlanReturnFromStateMod/ReadPlanReturnFromStateMod.md
+  - ReadPlanStationsFromStateMod: command-ref/ReadPlanStationsFromStateMod/ReadPlanStationsFromStateMod.md
+  - ReadPlanWellAugmentationFromStateMod: command-ref/ReadPlanWellAugmentationFromStateMod/ReadPlanWellAugmentationFromStateMod.md
+  - ReadReservoirReturnFromStateMod: command-ref/ReadReservoirReturnFromStateMod/ReadReservoirReturnFromStateMod.md
+  - ReadReservoirRightsFromHydroBase: command-ref/ReadReservoirRightsFromHydroBase/ReadReservoirRightsFromHydroBase.md
+  - ReadReservoirRightsFromStateMod: command-ref/ReadReservoirRightsFromStateMod/ReadReservoirRightsFromStateMod.md
+  - ReadReservoirStationsFromList: command-ref/ReadReservoirStationsFromList/ReadReservoirStationsFromList.md
+  - ReadReservoirStationsFromNetwork: command-ref/ReadReservoirStationsFromNetwork/ReadReservoirStationsFromNetwork.md
+  - ReadReservoirStationsFromStateMod: command-ref/ReadReservoirStationsFromStateMod/ReadReservoirStationsFromStateMod.md
+  - ReadResponseFromStateMod: command-ref/ReadResponseFromStateMod/ReadResponseFromStateMod.md
+  - ReadRiverNetworkFromStateMod: command-ref/ReadRiverNetworkFromStateMod/ReadRiverNetworkFromStateMod.md
+  - ReadStreamEstimateCoefficientsFromStateMod: command-ref/ReadStreamEstimateCoefficientsFromStateMod/ReadStreamEstimateCoefficientsFromStateMod.md
+  - ReadStreamEstimateStationsFromList: command-ref/ReadStreamEstimateStationsFromList/ReadStreamEstimateStationsFromList.md
+  - ReadStreamEstimateStationsFromNetwork: command-ref/ReadStreamEstimateStationsFromNetwork/ReadStreamEstimateStationsFromNetwork.md
+  - ReadStreamEstimateStationsFromStateMod: command-ref/ReadStreamEstimateStationsFromStateMod/ReadStreamEstimateStationsFromStateMod.md
+  - ReadStreamGageStationsFromList: command-ref/ReadStreamGageStationsFromList/ReadStreamGageStationsFromList.md
+  - ReadStreamGageStationsFromNetwork: command-ref/ReadStreamGageStationsFromNetwork/ReadStreamGageStationsFromNetwork.md
+  - ReadStreamGageStationsFromStateMod: command-ref/ReadStreamGageStationsFromStateMod/ReadStreamGageStationsFromStateMod.md
+  - ReadWellDemandTSMonthlyFromStateMod: command-ref/ReadWellDemandTSMonthlyFromStateMod/ReadWellDemandTSMonthlyFromStateMod.md
+  - ReadWellHistoricalPumpingTSMonthlyFromStateCU: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateCU/ReadWellHistoricalPumpingTSMonthlyFromStateCU.md
+  - ReadWellHistoricalPumpingTSMonthlyFromStateMod: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateMod/ReadWellHistoricalPumpingTSMonthlyFromStateMod.md
+  - ReadWellRightsFromStateMod: command-ref/ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md
+  - ReadWellStationsFromNetwork: command-ref/ReadWellStationsFromNetwork/ReadWellStationsFromNetwork.md
+  - ReadWellStationsFromStateMod: command-ref/ReadWellStationsFromStateMod/ReadWellStationsFromStateMod.md
+  - RemoveCropPatternTS: command-ref/RemoveCropPatternTS/RemoveCropPatternTS.md
+  - RemoveFile: command-ref/RemoveFile/RemoveFile.md
+  - RunCommands: command-ref/RunCommands/RunCommands.md
+  - RunProgram: command-ref/RunProgram/RunProgram.md
+  - RunPython: command-ref/RunPython/RunPython.md
+  - SetBlaneyCriddle: command-ref/SetBlaneyCriddle/SetBlaneyCriddle.md
+  - SetClimateStation: command-ref/SetClimateStation/SetClimateStation.md
+  - SetCropCharacteristics: command-ref/SetCropCharacteristics/SetCropCharacteristics.md
+  - SetCropPatternTS: command-ref/SetCropPatternTS/SetCropPatternTS.md
+  - SetCropPatternTSFromList: command-ref/SetCropPatternTSFromList/SetCropPatternTSFromList.md
+  - SetCULocation: command-ref/SetCULocation/SetCULocation.md
+  - SetCULocationClimateStationWeights: command-ref/SetCULocationClimateStationWeights/SetCULocationClimateStationWeights.md
+  - SetCULocationClimateStationWeightsFromHydroBase: command-ref/SetCULocationClimateStationWeightsFromHydroBase/SetCULocationClimateStationWeightsFromHydroBase.md
+  - SetCULocationClimateStationWeightsFromList: command-ref/SetCULocationClimateStationWeightsFromList/SetCULocationClimateStationWeightsFromList.md
+  - SetCULocationsFromList: command-ref/SetCULocationsFromList/SetCULocationsFromList.md
+  - SetDebugLevel: command-ref/SetDebugLevel/SetDebugLevel.md
+  - SetDiversionAggregate: command-ref/SetDiversionAggregate/SetDiversionAggregate.md
+  - SetDiversionAggregateFromList: command-ref/SetDiversionAggregateFromList/SetDiversionAggregateFromList.md
+  - SetDiversionDemandTSMonthly: command-ref/SetDiversionDemandTSMonthly/SetDiversionDemandTSMonthly.md
+  - SetDiversionDemandTSMonthlyConstant: command-ref/SetDiversionDemandTSMonthlyConstant/SetDiversionDemandTSMonthlyConstant.md
+  - SetDiversionHistoricalTSMonthly: command-ref/SetDiversionHistoricalTSMonthly/SetDiversionHistoricalTSMonthly.md
+  - SetDiversionHistoricalTSMonthlyConstant: command-ref/SetDiversionHistoricalTSMonthlyConstant/SetDiversionHistoricalTSMonthlyConstant.md
+  - SetDiversionMultiStruct: command-ref/SetDiversionMultiStruct/SetDiversionMultiStruct.md
+  - SetDiversionMultiStructFromList: command-ref/SetDiversionMultiStructFromList/SetDiversionMultiStructFromList.md
+  - SetDiversionRight: command-ref/SetDiversionRight/SetDiversionRight.md
+  - SetDiversionStation: command-ref/SetDiversionStation/SetDiversionStation.md
+  - SetDiversionStationCapacitiesFromTS: command-ref/SetDiversionStationCapacitiesFromTS/SetDiversionStationCapacitiesFromTS.md
+  - SetDiversionStationDelayTablesFromNetwork: command-ref/SetDiversionStationDelayTablesFromNetwork/SetDiversionStationDelayTablesFromNetwork.md
+  - SetDiversionStationDelayTablesFromRTN: command-ref/SetDiversionStationDelayTablesFromRTN/SetDiversionStationDelayTablesFromRTN.md
+  - SetDiversionStationsFromList: command-ref/SetDiversionStationsFromList/SetDiversionStationsFromList.md
+  - SetDiversionSystem: command-ref/SetDiversionSystem/SetDiversionSystem.md
+  - SetDiversionSystemFromList: command-ref/SetDiversionSystemFromList/SetDiversionSystemFromList.md
+  - SetInstreamFlowDemandTSAverageMonthlyConstant: command-ref/SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md
+  - SetInstreamFlowDemandTSAverageMonthlyFromRights: command-ref/SetInstreamFlowDemandTSAverageMonthlyFromRights/SetInstreamFlowDemandTSAverageMonthlyFromRights.md
+  - SetInstreamFlowRight: command-ref/SetInstreamFlowRight/SetInstreamFlowRight.md
+  - SetInstreamFlowStation: command-ref/SetInstreamFlowStation/SetInstreamFlowStation.md
+  - SetIrrigationPracticeTS: command-ref/SetIrrigationPracticeTS/SetIrrigationPracticeTS.md
+  - SetIrrigationPracticeTSFromHydroBase: command-ref/SetIrrigationPracticeTSFromHydroBase/SetIrrigationPracticeTSFromHydroBase.md
+  - SetIrrigationPracticeTSFromList: command-ref/SetIrrigationPracticeTSFromList/SetIrrigationPracticeTSFromList.md
+  - SetIrrigationPracticeTSFromStateCU: command-ref/SetIrrigationPracticeTSFromStateCU/SetIrrigationPracticeTSFromStateCU.md
+  - SetIrrigationPracticeTSMaxPumpingToRights: command-ref/SetIrrigationPracticeTSMaxPumpingToRights/SetIrrigationPracticeTSMaxPumpingToRights.md
+  - SetIrrigationPracticeTSPumpingMaxUsingWellRights: command-ref/SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md
+  - SetIrrigationPracticeTSSprinklerAcreageFromList: command-ref/SetIrrigationPracticeTSSprinklerAcreageFromList/SetIrrigationPracticeTSSprinklerAcreageFromList.md
+  - SetIrrigationPracticeTSSprinklerAreaFromList: command-ref/SetIrrigationPracticeTSSprinklerAreaFromList/SetIrrigationPracticeTSSprinklerAreaFromList.md
+  - SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage: command-ref/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md
+  - SetOperationalRight: command-ref/SetOperationalRight/SetOperationalRight.md
+  - SetOutputPeriod: command-ref/SetOutputPeriod/SetOutputPeriod.md
+  - SetOutputYearType: command-ref/SetOutputYearType/SetOutputYearType.md
+  - SetPenmanMonteith: command-ref/SetPenmanMonteith/SetPenmanMonteith.md
+  - SetPlanStation: command-ref/SetPlanStation/SetPlanStation.md
+  - SetReservoirAggregate: command-ref/SetReservoirAggregate/SetReservoirAggregate.md
+  - SetReservoirAggregateFromList: command-ref/SetReservoirAggregateFromList/SetReservoirAggregateFromList.md
+  - SetReservoirRight: command-ref/SetReservoirRight/SetReservoirRight.md
+  - SetReservoirStation: command-ref/SetReservoirStation/SetReservoirStation.md
+  - SetRiverNetworkNode: command-ref/SetRiverNetworkNode/SetRiverNetworkNode.md
+  - SetStreamEstimateCoefficients: command-ref/SetStreamEstimateCoefficients/SetStreamEstimateCoefficients.md
+  - SetStreamEstimateCoefficientsPFGage: command-ref/SetStreamEstimateCoefficientsPFGage/SetStreamEstimateCoefficientsPFGage.md
+  - SetStreamEstimateStation: command-ref/SetStreamEstimateStation/SetStreamEstimateStation.md
+  - SetStreamGageStation: command-ref/SetStreamGageStation/SetStreamGageStation.md
+  - SetWarningLevel: command-ref/SetWarningLevel/SetWarningLevel.md
+  - SetWellDemandTSMonthly: command-ref/SetWellDemandTSMonthly/SetWellDemandTSMonthly.md
+  - SetWellDemandTSMonthlyConstant: command-ref/SetWellDemandTSMonthlyConstant/SetWellDemandTSMonthlyConstant.md
+  - SetWellHistoricalPumpingTSMonthly: command-ref/SetWellHistoricalPumpingTSMonthly/SetWellHistoricalPumpingTSMonthly.md
+  - SetWellHistoricalPumpingTSMonthlyConstant: command-ref/SetWellHistoricalPumpingTSMonthlyConstant/SetWellHistoricalPumpingTSMonthlyConstant.md
+  - SetWellRight: command-ref/SetWellRight/SetWellRight.md
+  - SetWellStation: command-ref/SetWellStation/SetWellStation.md
+  - SetWellStationAreaToCropPatternTS: command-ref/SetWellStationAreaToCropPatternTS/SetWellStationAreaToCropPatternTS.md
+  - SetWellStationCapacitiesFromTS: command-ref/SetWellStationCapacitiesFromTS/SetWellStationCapacitiesFromTS.md
+  - SetWellStationCapacityToWellRights: command-ref/SetWellStationCapacityToWellRights/SetWellStationCapacityToWellRights.md
+  - SetWellStationDelayTablesFromNetwork: command-ref/SetWellStationDelayTablesFromNetwork/SetWellStationDelayTablesFromNetwork.md
+  - SetWellStationDelayTablesFromRTN: command-ref/SetWellStationDelayTablesFromRTN/SetWellStationDelayTablesFromRTN.md
+  - SetWellStationDepletionTablesFromRTN: command-ref/SetWellStationDepletionTablesFromRTN/SetWellStationDepletionTablesFromRTN.md
+  - SetWellStationsFromList: command-ref/SetWellStationsFromList/SetWellStationsFromList.md
+  - SetWorkingDir: command-ref/SetWorkingDir/SetWorkingDir.md
+  - SortBlaneyCriddle: command-ref/SortBlaneyCriddle/SortBlaneyCriddle.md
+  - SortClimateStations: command-ref/SortClimateStations/SortClimateStations.md
+  - SortCropCharacteristics: command-ref/SortCropCharacteristics/SortCropCharacteristics.md
+  - SortCropPatternTS: command-ref/SortCropPatternTS/SortCropPatternTS.md
+  - SortCULocations: command-ref/SortCULocations/SortCULocations.md
+  - SortDiversionDemandTSMonthly: command-ref/SortDiversionDemandTSMonthly/SortDiversionDemandTSMonthly.md
+  - SortDiversionHistoricalTSMonthly: command-ref/SortDiversionHistoricalTSMonthly/SortDiversionHistoricalTSMonthly.md
+  - SortDiversionRights: command-ref/SortDiversionRights/SortDiversionRights.md
+  - SortDiversionStations: command-ref/SortDiversionStations/SortDiversionStations.md
+  - SortInstreamFlowRights: command-ref/SortInstreamFlowRights/SortInstreamFlowRights.md
+  - SortInstreamFlowStations: command-ref/SortInstreamFlowStations/SortInstreamFlowStations.md
+  - SortIrrigationPracticeTS: command-ref/SortIrrigationPracticeTS/SortIrrigationPracticeTS.md
+  - SortPenmanMonteith: command-ref/SortPenmanMonteith/SortPenmanMonteith.md
+  - SortReservoirRights: command-ref/SortReservoirRights/SortReservoirRights.md
+  - SortReservoirStations: command-ref/SortReservoirStations/SortReservoirStations.md
+  - SortStreamEstimateStations: command-ref/SortStreamEstimateStations/SortStreamEstimateStations.md
+  - SortStreamGageStations: command-ref/SortStreamGageStations/SortStreamGageStations.md
+  - SortWellDemandTSMonthly: command-ref/SortWellDemandTSMonthly/SortWellDemandTSMonthly.md
+  - SortWellHistoricalPumpingTSMonthly: command-ref/SortWellHistoricalPumpingTSMonthly/SortWellHistoricalPumpingTSMonthly.md
+  - SortWellRights: command-ref/SortWellRights/SortWellRights.md
+  - SortWellStations: command-ref/SortWellStations/SortWellStations.md
+  - StartLog: command-ref/StartLog/StartLog.md
+  - StartRegressionTestResultsReport: command-ref/StartRegressionTestResultsReport/StartRegressionTestResultsReport.md
+  - TranslateBlaneyCriddle: command-ref/TranslateBlaneyCriddle/TranslateBlaneyCriddle.md
+  - TranslateCropCharacteristics: command-ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md
+  - TranslateCropPatternTS: command-ref/TranslateCropPatternTS/TranslateCropPatternTS.md
+  - TranslatePenmanMonteith: command-ref/TranslatePenmanMonteith/TranslatePenmanMonteith.md
+  - WriteBlaneyCriddleToList: command-ref/WriteBlaneyCriddleToList/WriteBlaneyCriddleToList.md
+  - WriteBlaneyCriddleToStateCU: command-ref/WriteBlaneyCriddleToStateCU/WriteBlaneyCriddleToStateCU.md
+  - WriteCheckFile: command-ref/WriteCheckFile/WriteCheckFile.md
+  - WriteClimateStationsToList: command-ref/WriteClimateStationsToList/WriteClimateStationsToList.md
+  - WriteClimateStationsToStateCU: command-ref/WriteClimateStationsToStateCU/WriteClimateStationsToStateCU.md
+  - WriteControlToStateMod: command-ref/WriteControlToStateMod/WriteControlToStateMod.md
+  - WriteCropCharacteristicsToList: command-ref/WriteCropCharacteristicsToList/WriteCropCharacteristicsToList.md
+  - WriteCropCharacteristicsToStateCU: command-ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md
+  - WriteCropPatternTSToDateValue: command-ref/WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md
+  - WriteCropPatternTSToStateCU: command-ref/WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md
+  - WriteCULocationsToStateCU: command-ref/WriteCULocationsToStateCU/WriteCULocationsToStateCU.md
+  - WriteDelayTablesDailyToList: command-ref/WriteDelayTablesDailyToList/WriteDelayTablesDailyToList.md
+  - WriteDelayTablesDailyToStateMod: command-ref/WriteDelayTablesDailyToStateMod/WriteDelayTablesDailyToStateMod.md
+  - WriteDelayTablesMonthlyToList: command-ref/WriteDelayTablesMonthlyToList/WriteDelayTablesMonthlyToList.md
+  - WriteDelayTablesMonthlyToStateMod: command-ref/WriteDelayTablesMonthlyToStateMod/WriteDelayTablesMonthlyToStateMod.md
+  - WriteDelayTablesToStateCU: command-ref/WriteDelayTablesToStateCU/WriteDelayTablesToStateCU.md
+  - WriteDiversionDemandTSMonthlyToStateMod: command-ref/WriteDiversionDemandTSMonthlyToStateMod/WriteDiversionDemandTSMonthlyToStateMod.md
+  - WriteDiversionHistoricalTSMonthlyToStateMod: command-ref/WriteDiversionHistoricalTSMonthlyToStateMod/WriteDiversionHistoricalTSMonthlyToStateMod.md
+  - WriteDiversionRightsToList: command-ref/WriteDiversionRightsToList/WriteDiversionRightsToList.md
+  - WriteDiversionRightsToStateMod: command-ref/WriteDiversionRightsToStateMod/WriteDiversionRightsToStateMod.md
+  - WriteDiversionStationsToList: command-ref/WriteDiversionStationsToList/WriteDiversionStationsToList.md
+  - WriteDiversionStationsToStateMod: command-ref/WriteDiversionStationsToStateMod/WriteDiversionStationsToStateMod.md
+  - WriteInstreamFlowDemandTSAverageMonthlyToStateMod: command-ref/WriteInstreamFlowDemandTSAverageMonthlyToStateMod/WriteInstreamFlowDemandTSAverageMonthlyToStateMod.md
+  - WriteInstreamFlowRightsToList: command-ref/WriteInstreamFlowRightsToList/WriteInstreamFlowRightsToList.md
+  - WriteInstreamFlowRightsToStateMod: command-ref/WriteInstreamFlowRightsToStateMod/WriteInstreamFlowRightsToStateMod.md
+  - WriteInstreamFlowStationsToList: command-ref/WriteInstreamFlowStationsToList/WriteInstreamFlowStationsToList.md
+  - WriteInstreamFlowStationsToStateMod: command-ref/WriteInstreamFlowStationsToStateMod/WriteInstreamFlowStationsToStateMod.md
+  - WriteIrrigationPracticeTSToDateValue: command-ref/WriteIrrigationPracticeTSToDateValue/WriteIrrigationPracticeTSToDateValue.md
+  - WriteIrrigationPracticeTSToStateCU: command-ref/WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md
+  - WriteNetworkToStateMod: command-ref/WriteNetworkToStateMod/WriteNetworkToStateMod.md
+  - WriteOperationalRightsToStateMod: command-ref/WriteOperationalRightsToStateMod/WriteOperationalRightsToStateMod.md
+  - WritePenmanMonteithToList: command-ref/WritePenmanMonteithToList/WritePenmanMonteithToList.md
+  - WritePenmanMonteithToStateCU: command-ref/WritePenmanMonteithToStateCU/WritePenmanMonteithToStateCU.md
+  - WritePlanReturnToStateMod: command-ref/WritePlanReturnToStateMod/WritePlanReturnToStateMod.md
+  - WritePlanStationsToStateMod: command-ref/WritePlanStationsToStateMod/WritePlanStationsToStateMod.md
+  - WritePlanWellAugmentationToStateMod: command-ref/WritePlanWellAugmentationToStateMod/WritePlanWellAugmentationToStateMod.md
+  - WriteReservoirReturnToStateMod: command-ref/WriteReservoirReturnToStateMod/WriteReservoirReturnToStateMod.md
+  - WriteReservoirRightsToList: command-ref/WriteReservoirRightsToList/WriteReservoirRightsToList.md
+  - WriteReservoirRightsToStateMod: command-ref/WriteReservoirRightsToStateMod/WriteReservoirRightsToStateMod.md
+  - WriteReservoirStationsToList: command-ref/WriteReservoirStationsToList/WriteReservoirStationsToList.md
+  - WriteReservoirStationsToStateMod: command-ref/WriteReservoirStationsToStateMod/WriteReservoirStationsToStateMod.md
+  - WriteResponseToStateMod: command-ref/WriteResponseToStateMod/WriteResponseToStateMod.md
+  - WriteRiverNetworkToList: command-ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md
+  - WriteRiverNetworkToStateMod: command-ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md
+  - WriteStreamEstimateCoefficientsToList: command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md
+  - WriteStreamEstimateCoefficientsToStateMod: command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md
+  - WriteStreamEstimateStationsToList: command-ref/WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md
+  - WriteStreamEstimateStationsToStateMod: command-ref/WriteStreamEstimateStationsToStateMod/WriteStreamEstimateStationsToStateMod.md
+  - WriteStreamGageStationsToList: command-ref/WriteStreamGageStationsToList/WriteStreamGageStationsToList.md
+  - WriteStreamGageStationsToStateMod: command-ref/WriteStreamGageStationsToStateMod/WriteStreamGageStationsToStateMod.md
+  - WriteWellDemandTSMonthlyToStateMod: command-ref/WriteWellDemandTSMonthlyToStateMod/WriteWellDemandTSMonthlyToStateMod.md
+  - WriteWellHistoricalPumpingTSMonthlyToStateMod: command-ref/WriteWellHistoricalPumpingTSMonthlyToStateMod/WriteWellHistoricalPumpingTSMonthlyToStateMod.md
+  - WriteWellRightsToList: command-ref/WriteWellRightsToList/WriteWellRightsToList.md
+  - WriteWellRightsToStateMod: command-ref/WriteWellRightsToStateMod/WriteWellRightsToStateMod.md
+  - WriteWellStationsToStateMod: command-ref/WriteWellStationsToStateMod/WriteWellStationsToStateMod.md
+#- Reference - Datastores:
+#  - Overview: datastore-ref/overview.md
+#  - Colorado HydroBase: datastore-ref/CO-HydroBase/CO-HydroBase.md
+#  - Colorado HydroBase REST Web Service: datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md
+#- 'Appendix - Install StateDMI': appendix-install/install.md
+#- 'Appendix - Release Notes':
+#  - Release Notes: appendix-release-notes/release-notes.md
+#  - Version 12: appendix-release-notes/release-notes-12.md
+#  - Version 11: appendix-release-notes/release-notes-11.md
+#- 'Appendix - TSView Time Series Viewing Tools': appendix-tsview/tsview.md
+#- 'Appendix - GeoView Mapping Tools': appendix-geoview/geoview.md
+# ------- configuration properties ---------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme: material
+# Don't enable the repo URL because irritating edit icons are shown when editing really isn't allowed
+#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statedmi-doc-user
+site_description:  CDSS StateDMI
+site_author:  OpenCDSS
+site_favicon:  'images/opencdss-favicon.ico'
+copyright:  Copyright State of Colorado
+# Use extra CSS to customize styles, based on theme
+extra_css:
+  - 'css/extra-material-theme.css'
+markdown_extensions:
+  - footnotes
