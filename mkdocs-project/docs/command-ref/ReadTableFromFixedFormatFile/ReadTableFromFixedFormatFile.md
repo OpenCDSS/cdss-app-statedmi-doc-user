@@ -93,7 +93,7 @@ The `ColumnNames` parameter is used to assign column names to the output table.
 953695_Dwn                      _OTH512069       953695_Dwn       -999
 ```
 
-The following table in TSTool illustrates the resulting output:
+The following table in StateDMI illustrates the resulting output:
 <a href="../ReadTableFromFixedFormatFile_Output.png">See also the full-size image.</a>
 
 ![ReadTableFromFixedFormatFile Output](ReadTableFromFixedFormatFile_Output.png)

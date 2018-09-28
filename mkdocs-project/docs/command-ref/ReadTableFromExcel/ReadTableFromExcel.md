@@ -24,7 +24,7 @@ in the first data row being read (NOT the column name row) – data types must b
 for all cells in a column, although blanks are allowed.
 Table column names are determined according to the `ExcelColumnNames` command parameter.
 
-TSTool uses the [Apache POI software](http://poi.apache.org) to read the Excel file
+StateDMI uses the [Apache POI software](http://poi.apache.org) to read the Excel file
 and consequently functionality is constrained by the features of that software package.
 The software reads and writes Excel files.
 POI does not fully implement Excel functionality and consequently some formula capabilities
@@ -47,10 +47,10 @@ Errors in processing cells may result in empty cell values in the output table.
 Excel Data Table Conversion to Table
 </p>**
 
-|**Excel Cell Format ("Number Category")**|**Conversion from Excel to TSTool Table**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|**Excel Cell Format ("Number Category")**|**Conversion from Excel to StateDMI Table**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|
-|Number:<br><ul><li>General</li><li>Number</li><li>Currency</li><li>Accounting</li><li>Percentage</li><li>Fraction</li><li>Scientific</li><li>Special</li><li>Custom</li><ul>|<ul><li>If Excel cell is internally a “numeric”, convert to a double-precision number, where the format “Decimal places” is used in the TSTool table for formatting.  The number of decimal places in Excel is fixed for some of the number categories shown on the left (e.g., Special=Zip Code). Excel internally stores integers as numbers with zero decimals.  **Need to figure out how to get the Excel cell formatting number of decimals to similarly set in the output table – but DO NOT assume zero decimals should convert to an integer.**</li><li>See the `ExcelIntegerColumns` parameter, which specifies the output table to use integers.</li><li>If Excel cell is internally a “Boolean”, convert to an integer having values 0 or 1.  **Need to evaluate having a parameter `ExcelBooleanColumns` to transfer to a Boolean column in the output table.  Excel seems to handle Booleans as text with values True or False.**</li></ul>|
-|Date:|<ul><li>Date</li><li>Time</li></ul>|TSTool will convert Number-formatted columns to date/time values when the `ExcelDateTimeColumns` parameter indicates which columns are date/times.|
+|Number:<br><ul><li>General</li><li>Number</li><li>Currency</li><li>Accounting</li><li>Percentage</li><li>Fraction</li><li>Scientific</li><li>Special</li><li>Custom</li><ul>|<ul><li>If Excel cell is internally a “numeric”, convert to a double-precision number, where the format “Decimal places” is used in the StateDMI table for formatting.  The number of decimal places in Excel is fixed for some of the number categories shown on the left (e.g., Special=Zip Code). Excel internally stores integers as numbers with zero decimals.  **Need to figure out how to get the Excel cell formatting number of decimals to similarly set in the output table – but DO NOT assume zero decimals should convert to an integer.**</li><li>See the `ExcelIntegerColumns` parameter, which specifies the output table to use integers.</li><li>If Excel cell is internally a “Boolean”, convert to an integer having values 0 or 1.  **Need to evaluate having a parameter `ExcelBooleanColumns` to transfer to a Boolean column in the output table.  Excel seems to handle Booleans as text with values True or False.**</li></ul>|
+|Date:|<ul><li>Date</li><li>Time</li></ul>|StateDMI will convert Number-formatted columns to date/time values when the `ExcelDateTimeColumns` parameter indicates which columns are date/times.|
 |Text|Converts to a string.|
 |Blank|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-blank cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li><ul>|
 |Error|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-error cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li><ul>|

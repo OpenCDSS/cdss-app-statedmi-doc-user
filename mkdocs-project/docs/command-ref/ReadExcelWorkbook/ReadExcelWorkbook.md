@@ -17,7 +17,7 @@ The workbook is retained in memory and can be manipulated using commands that wr
 1. Create an Excel workbook template with desired analysis, formatting, charts, etc.
 Leave placeholders for data sheets.  Refer to the data sheets using named ranges.
 2. Read the Excel workbook template using the `ReadExcelWorkbook` command.
-3. Manipulate the Excel workbook using TSTool commands that write to Excel, for example
+3. Manipulate the Excel workbook using StateDMI commands that write to Excel, for example
 [`WriteTableToExcel`](../WriteTableToExcel/WriteTableToExcel).
 If the `KeepOpen=False` parameter is used, the original file will not be re-written.
 Therefore, use `KeepOpen=True` in combination with the following.
@@ -25,7 +25,7 @@ Therefore, use `KeepOpen=True` in combination with the following.
 `WriteFile=True` to force writing the Excel workbook.
 The `NewOutputFile` parameter can also be specified to write a new output file, leaving the original Excel file intact.
 
-TSTool uses the [Apache POI software](http://poi.apache.org) to read and manipulate
+StateDMI uses the [Apache POI software](http://poi.apache.org) to read and manipulate
 Excel workbooks and consequently functionality is constrained by the features of that software package.
 
 

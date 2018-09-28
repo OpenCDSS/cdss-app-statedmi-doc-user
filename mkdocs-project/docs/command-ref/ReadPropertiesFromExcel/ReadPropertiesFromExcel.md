@@ -14,15 +14,15 @@
 The `ReadPropertiesFromExcel` command reads cells from a Microsoft Excel
 worksheet and sets processor properties.
 This is useful when Excel is used to configure an analysis.
-The properties can be used directly by TSTool for commands that
+The properties can be used directly by StateDMI for commands that
 support `${Property}` notation or can be used to expand a template command file.
 Property object types are determined from Excel cell type/format unless the type
 is specified with command parameters.
 If issues arise, check the Excel cell type and format.
 
-TSTool uses the [Apache POI software](http://poi.apache.org) to read/write the Excel file
+StateDMI uses the [Apache POI software](http://poi.apache.org) to read/write the Excel file
 and consequently functionality is constrained by the features of that software package.
-Check the TSTool ***Help / About*** menu for information on the POI version.
+Check the StateDMI ***Help / About*** menu for information on the POI version.
 
 ## Command Editor ##
 

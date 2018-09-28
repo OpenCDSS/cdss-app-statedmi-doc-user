@@ -21,7 +21,7 @@ If database datastore support is not specifically provided by StateDMI,
 a generic database datastore can be used.
 For example, use a generic database datastore to read data from a Microsoft Access database.
 This command is useful when the database can provide results with a simple query and
-tight integration with TSTool is not required or has not been implemented
+tight integration with StateDMI is not required or has not been implemented
 via an application programming interface (API).
 The query can be specified in the following ways:
 
@@ -41,7 +41,7 @@ The query can be specified in the following ways:
 	from the database may be more difficult to interpret.
 	+ Comments can be specified using [`/* */`](../CommentBlockStart/CommentBlockStart)
 	notation or - - (double dash) for end of line comments.
-	TSTool removes comments if using Microsoft Access because Access does not support comments in SQL.
+	StateDMI removes comments if using Microsoft Access because Access does not support comments in SQL.
 * Specify an SQL select statement in a file:
 	+ Similar to the above option; however, the SQL statement is read from a file
 	+ Useful if the SQL statement is also used by other tools
@@ -53,17 +53,17 @@ General constraints on the query are as follows:
 
 * the table, views, and procedures being queried must be readable
 	(some databases restrict direct access to data  and require using stored procedures)
-* the resulting table in TSTool will have columns with names that match the database query results
+* the resulting table in StateDMI will have columns with names that match the database query results
 * data types for columns will closely match the database results:
 	+ data will be treated as strings if unable to match the database column type
 	+ the precision of floating point numbers for displays is defaulted to 6 digits
 	+ null values in the database will transfer to null values in
-	the TSTool table and will display as blank table cells
-	+ date/time columns in the database will be represented as such in the TSTool table;
+	the StateDMI table and will display as blank table cells
+	+ date/time columns in the database will be represented as such in the StateDMI table;
 	however, it may not be possible to limit the precision of the date/time
 	(i.e., hours, minutes, and seconds may be shown with default zero values in output)
 
-Future enhancements will add additional features to intelligently map database results to TSTool tables.
+Future enhancements will add additional features to intelligently map database results to StateDMI tables.
 
 ## Command Editor ##
 
@@ -135,7 +135,7 @@ Command Parameters
 |SQL string|`Sql`|The SQL string that will be used to query the database, optionally using `${Property}` notation to insert processor property values.  If specified, do not specify `DataStoreTable` or `SqlFile`.|None.|
 |SQL file|`SqlFile`|The name of the file containing an SQL string to execute, optionally using `${Property}` notation in the SQL file contents to insert processor property values.  If specified, do not specify `DataStoreTable` or `Sql`.|None.|
 |Procedure|`DataStoreProcedure`|The name of the database procedure to run.  Currently, only procedures that do not require parameters can be run.|None.|
-|All|`TableID`<br>**required**|Identifier to assign to the output table in TSTool, which allows the table data to be used with other commands.  A new table will be created.  Can be specified with `${Property}`.|None – must be specified.|
+|All|`TableID`<br>**required**|Identifier to assign to the output table in StateDMI, which allows the table data to be used with other commands.  A new table will be created.  Can be specified with `${Property}`.|None – must be specified.|
 |All|`RowCountProperty`|The name of the processor property that will be set to the row count, optionally using `${Property}` notation to specify the name.|Property is not set.|
 
 ## Examples ##
