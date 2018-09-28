@@ -29,6 +29,7 @@ pages:
 #  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
   - AggregateWellRights: command-ref/AggregateWellRights/AggregateWellRights.md
   - AppendNetwork: command-ref/AppendNetwork/AppendNetwork.md
+  - AppendTable: command-ref/AppendTable/AppendTable.md
   - CalculateDiversionDemandTSMonthly: command-ref/CalculateDiversionDemandTSMonthly/CalculateDiversionDemandTSMonthly.md
   - CalculateDiversionDemandTSMonthlyAsMax: command-ref/CalculateDiversionDemandTSMonthlyAsMax/CalculateDiversionDemandTSMonthlyAsMax.md
   - CalculateDiversionStationEfficiencies: command-ref/CalculateDiversionStationEfficiencies/CalculateDiversionStationEfficiencies.md
@@ -61,12 +62,16 @@ pages:
   - CheckWellHistoricalPumpingTSMonthly: command-ref/CheckWellHistoricalPumpingTSMonthly/CheckWellHistoricalPumpingTSMonthly.md
   - CheckWellRights: command-ref/CheckWellRights/CheckWellRights.md
   - CheckWellStations: command-ref/CheckWellStations/CheckWellStations.md
+  - CloseExcelWorkbook: command-ref/CloseExcelWorkbook/CloseExcelWorkbook.md
   - CompareFiles: command-ref/CompareFiles/CompareFiles.md
+  - CopyTable: command-ref/CopyTable/CopyTable.md
   - CreateCropPatternTSForCULocations: command-ref/CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md
   - CreateIrrigationPracticeTSForCULocations: command-ref/CreateIrrigationPracticeTSForCULocations/CreateIrrigationPracticeTSForCULocations.md
   - CreateNetworkFromRiverNetwork: command-ref/CreateNetworkFromRiverNetwork/CreateNetworkFromRiverNetwork.md
   - CreateRegressionTestCommandFile: command-ref/CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md
   - CreateRiverNetworkFromNetwork: command-ref/CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md
+  - DeleteTableColumns: command-ref/DeleteTableColumns/DeleteTableColumns.md
+  - DeleteTableRows: command-ref/DeleteTableRows/DeleteTableRows.md
   - Exit: command-ref/Exit/Exit.md
   - FillClimateStation: command-ref/FillClimateStation/FillClimateStation.md
   - FillClimateStationsFromHydroBase: command-ref/FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md
@@ -119,10 +124,19 @@ pages:
   - FillWellStation: command-ref/FillWellStation/FillWellStation.md
   - FillWellStationsFromDiversionStations: command-ref/FillWellStationsFromDiversionStations/FillWellStationsFromDiversionStations.md
   - FillWellStationsFromNetwork: command-ref/FillWellStationsFromNetwork/FillWellStationsFromNetwork.md
+  - FormatTableDateTime: command-ref/FormatTableDateTime/FormatTableDateTime.md
+  - FormatTableString: command-ref/FormatTableString/FormatTableString.md
+  - FreeTable: command-ref/FreeTable/FreeTable.md
+  - InsertTableColumn: command-ref/InsertTableColumn/InsertTableColumn.md
+  - InsertTableRow: command-ref/InsertTableRow/InsertTableRow.md
+  - JoinTables: command-ref/JoinTables/JoinTables.md
   - LimitDiversionDemandTSMonthlyToRights: command-ref/LimitDiversionDemandTSMonthlyToRights/LimitDiversionDemandTSMonthlyToRights.md
   - LimitDiversionHistoricalTSMonthlyToRights: command-ref/LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md
   - LimitWellDemandTSMonthlyToRights: command-ref/LimitWellDemandTSMonthlyToRights/LimitWellDemandTSMonthlyToRights.md
   - LimitWellHistoricalPumpingTSMonthlyToRights: command-ref/LimitWellHistoricalPumpingTSMonthlyToRights/LimitWellHistoricalPumpingTSMonthlyToRights.md
+  - NewExcelWorkbook: command-ref/NewExcelWorkbook/NewExcelWorkbook.md
+  - NewTable: command-ref/NewTable/NewTable.md
+  - ManipulateTableString: command-ref/ManipulateTableString/ManipulateTableString.md
   - MergeListFileColumns: command-ref/MergeListFileColumns/MergeListFileColumns.md
   - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
   - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
@@ -149,6 +163,7 @@ pages:
   - ReadDiversionStationsFromList: command-ref/ReadDiversionStationsFromList/ReadDiversionStationsFromList.md
   - ReadDiversionStationsFromNetwork: command-ref/ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md
   - ReadDiversionStationsFromStateMod: command-ref/ReadDiversionStationsFromStateMod/ReadDiversionStationsFromStateMod.md
+  - ReadExcelWorkbook: command-ref/ReadExcelWorkbook/ReadExcelWorkbook.md
   - ReadInstreamFlowDemandTSAverageMonthlyFromStateMod: command-ref/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod.md
   - ReadInstreamFlowRightsFromHydroBase: command-ref/ReadInstreamFlowRightsFromHydroBase/ReadInstreamFlowRightsFromHydroBase.md
   - ReadInstreamFlowRightsFromStateMod: command-ref/ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md
@@ -167,6 +182,8 @@ pages:
   - ReadPlanReturnFromStateMod: command-ref/ReadPlanReturnFromStateMod/ReadPlanReturnFromStateMod.md
   - ReadPlanStationsFromStateMod: command-ref/ReadPlanStationsFromStateMod/ReadPlanStationsFromStateMod.md
   - ReadPlanWellAugmentationFromStateMod: command-ref/ReadPlanWellAugmentationFromStateMod/ReadPlanWellAugmentationFromStateMod.md
+  - ReadPropertiesFromExcel: command-ref/ReadPropertiesFromExcel/ReadPropertiesFromExcel.md
+  - ReadPropertiesFromFile: command-ref/ReadPropertiesFromFile/ReadPropertiesFromFile.md
   - ReadReservoirReturnFromStateMod: command-ref/ReadReservoirReturnFromStateMod/ReadReservoirReturnFromStateMod.md
   - ReadReservoirRightsFromHydroBase: command-ref/ReadReservoirRightsFromHydroBase/ReadReservoirRightsFromHydroBase.md
   - ReadReservoirRightsFromStateMod: command-ref/ReadReservoirRightsFromStateMod/ReadReservoirRightsFromStateMod.md
@@ -182,6 +199,12 @@ pages:
   - ReadStreamGageStationsFromList: command-ref/ReadStreamGageStationsFromList/ReadStreamGageStationsFromList.md
   - ReadStreamGageStationsFromNetwork: command-ref/ReadStreamGageStationsFromNetwork/ReadStreamGageStationsFromNetwork.md
   - ReadStreamGageStationsFromStateMod: command-ref/ReadStreamGageStationsFromStateMod/ReadStreamGageStationsFromStateMod.md
+  - ReadTableCellsFromExcel: command-ref/ReadTableCellsFromExcel/ReadTableCellsFromExcel.md
+  - ReadTableFromDataStore: command-ref/ReadTableFromDataStore/ReadTableFromDataStore.md
+  - ReadTableFromDBF: command-ref/ReadTableFromDBF/ReadTableFromDBF.md
+  - ReadTableFromDelimitedFile: command-ref/ReadTableFromDelimitedFile/ReadTableFromDelimitedFile.md
+  - ReadTableFromExcel: command-ref/ReadTableFromExcel/ReadTableFromExcel.md
+  - ReadTableFromFixedFormatFile: command-ref/ReadTableFromFixedFormatFile/ReadTableFromFixedFormatFile.md
   - ReadWellDemandTSMonthlyFromStateMod: command-ref/ReadWellDemandTSMonthlyFromStateMod/ReadWellDemandTSMonthlyFromStateMod.md
   - ReadWellHistoricalPumpingTSMonthlyFromStateCU: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateCU/ReadWellHistoricalPumpingTSMonthlyFromStateCU.md
   - ReadWellHistoricalPumpingTSMonthlyFromStateMod: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateMod/ReadWellHistoricalPumpingTSMonthlyFromStateMod.md
@@ -220,6 +243,8 @@ pages:
   - SetDiversionStationsFromList: command-ref/SetDiversionStationsFromList/SetDiversionStationsFromList.md
   - SetDiversionSystem: command-ref/SetDiversionSystem/SetDiversionSystem.md
   - SetDiversionSystemFromList: command-ref/SetDiversionSystemFromList/SetDiversionSystemFromList.md
+  - SetExcelCell: command-ref/SetExcelCell/SetExcelCell.md
+  - SetExcelWorksheetViewProperties: command-ref/SetExcelWorksheetViewProperties/SetExcelWorksheetViewProperties.md
   - SetInstreamFlowDemandTSAverageMonthlyConstant: command-ref/SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md
   - SetInstreamFlowDemandTSAverageMonthlyFromRights: command-ref/SetInstreamFlowDemandTSAverageMonthlyFromRights/SetInstreamFlowDemandTSAverageMonthlyFromRights.md
   - SetInstreamFlowRight: command-ref/SetInstreamFlowRight/SetInstreamFlowRight.md
@@ -238,6 +263,8 @@ pages:
   - SetOutputYearType: command-ref/SetOutputYearType/SetOutputYearType.md
   - SetPenmanMonteith: command-ref/SetPenmanMonteith/SetPenmanMonteith.md
   - SetPlanStation: command-ref/SetPlanStation/SetPlanStation.md
+  - SetProperty: command-ref/SetProperty/SetProperty.md
+  - SetPropertyFromTable: command-ref/SetPropertyFromTable/SetPropertyFromTable.md
   - SetReservoirAggregate: command-ref/SetReservoirAggregate/SetReservoirAggregate.md
   - SetReservoirAggregateFromList: command-ref/SetReservoirAggregateFromList/SetReservoirAggregateFromList.md
   - SetReservoirRight: command-ref/SetReservoirRight/SetReservoirRight.md
@@ -247,6 +274,7 @@ pages:
   - SetStreamEstimateCoefficientsPFGage: command-ref/SetStreamEstimateCoefficientsPFGage/SetStreamEstimateCoefficientsPFGage.md
   - SetStreamEstimateStation: command-ref/SetStreamEstimateStation/SetStreamEstimateStation.md
   - SetStreamGageStation: command-ref/SetStreamGageStation/SetStreamGageStation.md
+  - SetTableValues: command-ref/SetTableValues/SetTableValues.md
   - SetWarningLevel: command-ref/SetWarningLevel/SetWarningLevel.md
   - SetWellDemandTSMonthly: command-ref/SetWellDemandTSMonthly/SetWellDemandTSMonthly.md
   - SetWellDemandTSMonthlyConstant: command-ref/SetWellDemandTSMonthlyConstant/SetWellDemandTSMonthlyConstant.md
@@ -277,14 +305,18 @@ pages:
   - SortPenmanMonteith: command-ref/SortPenmanMonteith/SortPenmanMonteith.md
   - SortReservoirRights: command-ref/SortReservoirRights/SortReservoirRights.md
   - SortReservoirStations: command-ref/SortReservoirStations/SortReservoirStations.md
+  - SortTable: command-ref/SortTable/SortTable.md
   - SortStreamEstimateStations: command-ref/SortStreamEstimateStations/SortStreamEstimateStations.md
   - SortStreamGageStations: command-ref/SortStreamGageStations/SortStreamGageStations.md
   - SortWellDemandTSMonthly: command-ref/SortWellDemandTSMonthly/SortWellDemandTSMonthly.md
   - SortWellHistoricalPumpingTSMonthly: command-ref/SortWellHistoricalPumpingTSMonthly/SortWellHistoricalPumpingTSMonthly.md
   - SortWellRights: command-ref/SortWellRights/SortWellRights.md
   - SortWellStations: command-ref/SortWellStations/SortWellStations.md
+  - SplitTableColumn: command-ref/SplitTableColumn/SplitTableColumn.md
+  - SplitTableRow: command-ref/SplitTableRow/SplitTableRow.md
   - StartLog: command-ref/StartLog/StartLog.md
   - StartRegressionTestResultsReport: command-ref/StartRegressionTestResultsReport/StartRegressionTestResultsReport.md
+  - TableMath: command-ref/TableMath/TableMath.md
   - TranslateBlaneyCriddle: command-ref/TranslateBlaneyCriddle/TranslateBlaneyCriddle.md
   - TranslateCropCharacteristics: command-ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md
   - TranslateCropPatternTS: command-ref/TranslateCropPatternTS/TranslateCropPatternTS.md
@@ -325,6 +357,7 @@ pages:
   - WritePlanReturnToStateMod: command-ref/WritePlanReturnToStateMod/WritePlanReturnToStateMod.md
   - WritePlanStationsToStateMod: command-ref/WritePlanStationsToStateMod/WritePlanStationsToStateMod.md
   - WritePlanWellAugmentationToStateMod: command-ref/WritePlanWellAugmentationToStateMod/WritePlanWellAugmentationToStateMod.md
+  - WritePropertiesToFile: command-ref/WritePropertiesToFile/WritePropertiesToFile.md
   - WriteReservoirReturnToStateMod: command-ref/WriteReservoirReturnToStateMod/WriteReservoirReturnToStateMod.md
   - WriteReservoirRightsToList: command-ref/WriteReservoirRightsToList/WriteReservoirRightsToList.md
   - WriteReservoirRightsToStateMod: command-ref/WriteReservoirRightsToStateMod/WriteReservoirRightsToStateMod.md
@@ -333,6 +366,9 @@ pages:
   - WriteResponseToStateMod: command-ref/WriteResponseToStateMod/WriteResponseToStateMod.md
   - WriteRiverNetworkToList: command-ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md
   - WriteRiverNetworkToStateMod: command-ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md
+  - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
+  - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
+  - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
   - WriteStreamEstimateCoefficientsToList: command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md
   - WriteStreamEstimateCoefficientsToStateMod: command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md
   - WriteStreamEstimateStationsToList: command-ref/WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md
