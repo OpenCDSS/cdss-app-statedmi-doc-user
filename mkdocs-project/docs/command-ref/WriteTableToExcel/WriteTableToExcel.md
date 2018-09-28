@@ -19,7 +19,7 @@ A contiguous block of cells (rectangle) must be specified in one of the followin
 * Specify the name of an Excel named range.
 * Specify a table name (essentially a named range).
 
-TSTool uses the Apache POI software ([http://poi.apache.org](http://poi.apache.org))
+StateDMI uses the Apache POI software ([http://poi.apache.org](http://poi.apache.org))
 to read/write the Excel file and consequently functionality is constrained by the features of that software package.
 
 The following are limitations of this command:
@@ -103,9 +103,8 @@ Excel cell formatting consists of number formatting, cell colors, cell width, et
 The ***Excel Formatting*** tab allows several formatting parameters to be specified.
 However, a more general formatting capability based on styles is being phased in
 and is configured using the ***Style Formatting*** tab.
-Consider the following data table, where the goal is to write the TSTool table to Excel
+Consider the following data table, where the goal is to write the StateDMI table to Excel
 and format cells to indicate specific conditions of interest.
-This approach is implemented similarly in the [`WriteTimeSeriesToExcel`](../WriteTimeSeriesToExcel/WriteTimeSeriesToExcel) command.
 
 ![WriteTableToExcel DataTable](WriteTableToExcel_DataTable.png)
 
@@ -115,7 +114,7 @@ Data Table used with `WriteTableToExcel` Command
 
 To configure style-based formatting, a style table is defined listing properties for formatting a cell.
 This table can be defined as a CSV file,
-Excel worksheet or other format and read into TSTool using a suitable command.
+Excel worksheet or other format and read into StateDMI using a suitable command.
 The following figure illustrates a basic style table, which can be shared among commands.
 
 ![WriteTableToExcel StyleTable](WriteTableToExcel_StyleTable.png)
@@ -151,7 +150,7 @@ For the above style and format tables, the column names must be specified as sho
 The ***Condition*** column can contain the following specifiers:
 
 * `${tablecell:value}` – the cell value (raw value before any formatting)
-* `${tablecell:comment}` – the cell comment (currently not implemented in TSTool tables but is reserved for future implementation and Excel cell comments)
+* `${tablecell:comment}` – the cell comment (currently not implemented in StateDMI tables but is reserved for future implementation and Excel cell comments)
 
 Values on the left and right of the operator must be separated with a space to facilitate parsing the condition.
 The ***Condition*** column can contain the following operators.
