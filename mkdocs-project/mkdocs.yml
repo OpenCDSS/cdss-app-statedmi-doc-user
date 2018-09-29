@@ -400,7 +400,7 @@ theme: material
 site_description:  CDSS StateDMI
 site_author:  OpenCDSS
 site_favicon:  'images/opencdss-favicon.ico'
-copyright:  Copyright State of Colorado
+copyright:  Copyright State of Colorado Department of Natural Resources
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'
