@@ -366,6 +366,7 @@ pages:
   - WriteResponseToStateMod: command-ref/WriteResponseToStateMod/WriteResponseToStateMod.md
   - WriteRiverNetworkToList: command-ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md
   - WriteRiverNetworkToStateMod: command-ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md
+  - WriteTableCellsToExcel: command-ref/WriteTableCellsToExcel/WriteTableCellsToExcel.md
   - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
   - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
   - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
