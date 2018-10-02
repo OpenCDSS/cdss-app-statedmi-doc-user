@@ -124,6 +124,8 @@ pages:
   - FillWellStation: command-ref/FillWellStation/FillWellStation.md
   - FillWellStationsFromDiversionStations: command-ref/FillWellStationsFromDiversionStations/FillWellStationsFromDiversionStations.md
   - FillWellStationsFromNetwork: command-ref/FillWellStationsFromNetwork/FillWellStationsFromNetwork.md
+  - FormatDateTimeProperty: command-ref/FormatDateTimeProperty/FormatDateTimeProperty.md
+  - FormatStringProperty: command-ref/FormatStringProperty/FormatStringProperty.md
   - FormatTableDateTime: command-ref/FormatTableDateTime/FormatTableDateTime.md
   - FormatTableString: command-ref/FormatTableString/FormatTableString.md
   - FreeTable: command-ref/FreeTable/FreeTable.md
