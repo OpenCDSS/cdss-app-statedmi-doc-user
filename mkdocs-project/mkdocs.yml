@@ -124,9 +124,12 @@ pages:
   - FillWellStation: command-ref/FillWellStation/FillWellStation.md
   - FillWellStationsFromDiversionStations: command-ref/FillWellStationsFromDiversionStations/FillWellStationsFromDiversionStations.md
   - FillWellStationsFromNetwork: command-ref/FillWellStationsFromNetwork/FillWellStationsFromNetwork.md
+  - FormatDateTimeProperty: command-ref/FormatDateTimeProperty/FormatDateTimeProperty.md
+  - FormatStringProperty: command-ref/FormatStringProperty/FormatStringProperty.md
   - FormatTableDateTime: command-ref/FormatTableDateTime/FormatTableDateTime.md
   - FormatTableString: command-ref/FormatTableString/FormatTableString.md
   - FreeTable: command-ref/FreeTable/FreeTable.md
+  - FTPGet: command-ref/FTPGet/FTPGet.md
   - InsertTableColumn: command-ref/InsertTableColumn/InsertTableColumn.md
   - InsertTableRow: command-ref/InsertTableRow/InsertTableRow.md
   - JoinTables: command-ref/JoinTables/JoinTables.md
@@ -134,11 +137,13 @@ pages:
   - LimitDiversionHistoricalTSMonthlyToRights: command-ref/LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md
   - LimitWellDemandTSMonthlyToRights: command-ref/LimitWellDemandTSMonthlyToRights/LimitWellDemandTSMonthlyToRights.md
   - LimitWellHistoricalPumpingTSMonthlyToRights: command-ref/LimitWellHistoricalPumpingTSMonthlyToRights/LimitWellHistoricalPumpingTSMonthlyToRights.md
+  - ListFiles: command-ref/ListFiles/ListFiles.md
   - NewExcelWorkbook: command-ref/NewExcelWorkbook/NewExcelWorkbook.md
   - NewTable: command-ref/NewTable/NewTable.md
   - ManipulateTableString: command-ref/ManipulateTableString/ManipulateTableString.md
   - MergeListFileColumns: command-ref/MergeListFileColumns/MergeListFileColumns.md
   - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
+  - Message: command-ref/Message/Message.md
   - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
   - PenmanMonteithToStateCU: command-ref/PenmanMonteithToStateCU/PenmanMonteithToStateCU.md
   - PrintNetwork: command-ref/PrintNetwork/PrintNetwork.md
@@ -321,6 +326,8 @@ pages:
   - TranslateCropCharacteristics: command-ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md
   - TranslateCropPatternTS: command-ref/TranslateCropPatternTS/TranslateCropPatternTS.md
   - TranslatePenmanMonteith: command-ref/TranslatePenmanMonteith/TranslatePenmanMonteith.md
+  - UnzipFile: command-ref/UnzipFile/UnzipFile.md
+  - WebGet: command-ref/WebGet/WebGet.md
   - WriteBlaneyCriddleToList: command-ref/WriteBlaneyCriddleToList/WriteBlaneyCriddleToList.md
   - WriteBlaneyCriddleToStateCU: command-ref/WriteBlaneyCriddleToStateCU/WriteBlaneyCriddleToStateCU.md
   - WriteCheckFile: command-ref/WriteCheckFile/WriteCheckFile.md
@@ -369,7 +376,9 @@ pages:
   - WriteTableCellsToExcel: command-ref/WriteTableCellsToExcel/WriteTableCellsToExcel.md
   - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
   - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
+  - WriteTableToGeoJSON: command-ref/WriteTableToGeoJSON/WriteTableToGeoJSON.md
   - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
+  - WriteTableToShapefile: command-ref/WriteTableToShapefile/WriteTableToShapefile.md
   - WriteStreamEstimateCoefficientsToList: command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md
   - WriteStreamEstimateCoefficientsToStateMod: command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md
   - WriteStreamEstimateStationsToList: command-ref/WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md
