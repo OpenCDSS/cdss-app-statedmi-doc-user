@@ -143,6 +143,7 @@ pages:
   - ManipulateTableString: command-ref/ManipulateTableString/ManipulateTableString.md
   - MergeListFileColumns: command-ref/MergeListFileColumns/MergeListFileColumns.md
   - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
+  - Message: command-ref/Message/Message.md
   - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
   - PenmanMonteithToStateCU: command-ref/PenmanMonteithToStateCU/PenmanMonteithToStateCU.md
   - PrintNetwork: command-ref/PrintNetwork/PrintNetwork.md
@@ -375,7 +376,9 @@ pages:
   - WriteTableCellsToExcel: command-ref/WriteTableCellsToExcel/WriteTableCellsToExcel.md
   - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
   - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
+  - WriteTableToGeoJSON: command-ref/WriteTableToGeoJSON/WriteTableToGeoJSON.md
   - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
+  - WriteTableToShapefile: command-ref/WriteTableToShapefile/WriteTableToShapefile.md
   - WriteStreamEstimateCoefficientsToList: command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md
   - WriteStreamEstimateCoefficientsToStateMod: command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md
   - WriteStreamEstimateStationsToList: command-ref/WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md
