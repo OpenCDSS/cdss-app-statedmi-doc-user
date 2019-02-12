@@ -3,7 +3,7 @@
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
 site_name: CDSS / StateDMI
-pages:
+nav:
 - Home: index.md
 # TODO smalers 2018-09-05 need to update for StateDMI documentation
 #- 1 - Introduction: introduction/introduction.md
@@ -402,17 +402,30 @@ pages:
 #- 'Appendix - TSView Time Series Viewing Tools': appendix-tsview/tsview.md
 #- 'Appendix - GeoView Mapping Tools': appendix-geoview/geoview.md
 # ------- configuration properties ---------------
-# Use Material theme
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
-theme: material
-# Don't enable the repo URL because irritating edit icons are shown when editing really isn't allowed
-#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statedmi-doc-user
-site_description:  CDSS StateDMI
-site_author:  OpenCDSS
-site_favicon:  'images/opencdss-favicon.ico'
+# Alphabetize
+# ------------------------------------------------
 copyright:  Copyright State of Colorado Department of Natural Resources
+# ------------------------------------------------
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'
+# ------------------------------------------------
 markdown_extensions:
   - footnotes
+# ------------------------------------------------
+# Don't enable the repo URL because irritating edit icons are shown when editing really isn't allowed
+#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statedmi-doc-user
+# ------------------------------------------------
+site_author:  OpenCDSS
+site_description:  CDSS StateDMI
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: material
+  favicon:  'img/favicon.ico'
+# The following controls how URLs are created
+# - As of MkDocs 1.0 the default is true meaning URLs to a page ABC is ABC/ rather than something/ABC.html.
+# - see:  https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
+# use_directory_urls: true
+# ------------------------------------------------

@@ -13,7 +13,7 @@ in order to provide a better user experience.
 The general organization of the documentation is similar to the original Word version; however,
 some reorganization has occurred because linked documentation presents opportunities
 to remove duplicate information and leverage online features.
-Minimal conversion of documenation has occurred as of August 2018.
+Minimal conversion of documentation has occurred as of August 2018.
 Refer to the PDF version that is distributed with the software.
 Upcoming releases of the StateDMI software will refer to the online documentation.
 This documentation is currently being hosted on the Open Water Foundation website until an appropriate
@@ -33,8 +33,8 @@ location can be configured on the CDSS website.**
 
 The documentation is organized in order of information and tasks necessary to install and use the StateDMI software.
 Chapters (web pages) are provided for major topics related to software use and application.
-References are provided for StateDMI [commands](command-ref/overview) and [datastores](datastore-ref/overview).
-Training modules are also provided in the [Lessons](lessons/overview) section.
+References are provided for StateDMI [commands](command-ref/overview.md) and [datastores](datastore-ref/overview.md).
+Training modules are also provided in the [Lessons](lessons/overview.md) section.
 
 Use the navigation menu provided on the left side of the page to navigate the documentation sections within the full document.
 Use the navigation menu provided on the right side of the page to navigate the documentation sections with a page.
@@ -50,7 +50,7 @@ in coordination with the Division of Water Resources (DWR),
 as part of Colorado’s Decision Support Systems (CDSS).
 
 StateDMI software users are encouraged to provide feedback using the
-[GitHub Issues page](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/issues).
+[GitHub Issues page](https://github.com/OpenCDSS/cdss-app-statedmi-main/issues).
 
 Feedback specific to CDSS functionality
 can also be provided using the [CDSS email address](mailto:DNR_OpenCDSS@state.co.us).
@@ -88,7 +88,7 @@ See the [OpenCDSS Website](http://learn.openwaterfoundation.org/cdss-website-ope
 
 ## About the Open Water Foundation ##
 
-The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
+The [Open Water Foundation](http://openwaterfoundation.org) is a nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources,
 so that organizations can make better decisions about water.
 OWF also works to advance open data tools and implementation.
@@ -96,18 +96,20 @@ OWF staff have been the primary StateDMI developers on State of Colorado and oth
 
 ## License ##
 
-The StateDMI software open source license is being determined in the OpenCDSS project.
+This StateDMI documentation is licensed using the
+[Creative Commons Attribution International 4.0 (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
 
-The StateDMI documentation is also being determined but is expected to be a Creative Commons license of some type.
+The StateDMI software is licensed using the GPL 3 license (see the
+[StateDMI software repository](https://github.com/OpenCDSS/cdss-app-statedmi-main)).
 
 ## Source Repository on GitHub ##
 
 The source files for this documentation are maintained in a GitHub repository:
-[cdss-app-statedmi-doc-user](https://github.com/OpenWaterFoundation/cdss-app-statedmi-doc-user).
+[cdss-app-statedmi-doc-user](https://github.com/OpenCDSS/cdss-app-statedmi-doc-user).
 
 This user documentation is currently maintained in a repository that is separate from StateDMI code
 in order to avoid confusion with the legacy documentation and to facilitate updates.
 
 ## Release Notes ##
 
-See the [release notes](appendix-release-notes/release-notes) section of this documentation for information about StateDMI software changes.
+See the [release notes](appendix-release-notes/release-notes.md) section of this documentation for information about StateDMI software changes.
