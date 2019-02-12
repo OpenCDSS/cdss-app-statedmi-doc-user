@@ -1,11 +1,10 @@
 # cdss-app-statemod-doc-user #
 
 This repository contains the user documentation for
-[Colorado's Decision Support Systems (CDSS)](http://cdss.state.co.us/Pages/CDSSHome.aspx) StateDMI software.
+[Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss) StateDMI software.
 
 See the deployed [CDSS / StateDMI](http://learn.openwaterfoundation.org/cdss-app-statedmi-doc-user/) documentation.
-This documentation is currently hosted on Open Water Foundation website but is expected to
-be integrated into the CDSS website.
+This documentation is currently hosted on the Open Water Foundation website while the OpenCDSS server is being configured.
 
 * [StateDMI Software Overview](#statedmi-software-overview)
 * [Repository Contents](#repository-contents)
@@ -22,8 +21,8 @@ be integrated into the CDSS website.
 
 ## StateDMI Software Overview ##
 
-The StateDMI software is a Java application that automates time series processing
-to create model files for the CDSS StateCU and StateMod software,
+The StateDMI software is a Java application that automates data processing,
+primarily for the CDSS StateCU and StateMod software,
 using input from the State of Colorado's HydroBase database, HydroBase web services,
 and input files.  The software provides:
 
@@ -85,7 +84,7 @@ C:\Users\user\                              Windows:  User's files.
 
 The development environment for contributing to this documentation requires
 installation of Python, MkDocs, and Material MkDocs theme.
-Python 2 has been used for development.
+Python 3 and MkDocs 1.x has been used for development.
 See the [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
 documentation for information about installing these tools.
 
@@ -116,9 +115,7 @@ with the goal of keeping formatting simple in favor of focusing on useful conten
 	+ Where narrative content pages are sufficiently separated into folders,
 	image files exist in those folder with names that match the original StateDMI Word documentation.
 	This approach has been used for the most part.
-	+ If necessary, place images in a folder with the same name as the content file and include
-	`-images` at the end of the folder name at the same level (for example `x.md` and `x-images/`)
-	or include an `images` folder under the content folder.
+	+ If necessary, place images in a folder named`images` folder under the content folder.
 	+ When using images in the documents, consider providing a link to look at the full-sized
 	image, as follows (normal MkDocs approach does not seem to work?):
 
@@ -135,9 +132,8 @@ Use a simple list with links to sections on the page.
 
 ## License ##
 
-This documentation is currently licensed under the
-[Creative Commons Attribution 2.0 Generic License](https://creativecommons.org/licenses/by/2.0/),
-which is the recommendation for CDSS documentation that is currently under review.
+The license for this documentation is the
+[Creative Commons Attribution International 4.0 (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).  See the [LICENSE.md](LICENSE.md) file.
 
 ## Contributing ##
 
@@ -152,13 +148,10 @@ Fill out the template issue.
 
 This repository is maintained by the OpenCDSS team.
 
-## Contributors ##
-
-* Steve Malers, Open Water Foundation (@smalers)
-
 ## Release Notes ##
 
-The following release notes indicate the update history for documentation, with GitHub repository issue indicated,
-if applicable (links to issues via README.md are not cleanly supported by GitHub so use the repository issues page to find).
+The following release notes indicate the update major history for documentation.
+See the GitHub issues and repository history for detailed information.
 
+* 2019-01-11 - Update for OpenCDSS release.
 * 2018-09-05 - Initial content, patterned after TSTool, to allow new development to use Markdown.
