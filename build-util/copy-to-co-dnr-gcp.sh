@@ -5,6 +5,21 @@
 
 # Supporting functions, alphabetized...
 
+buildMkDocsSite() {
+	cd ${mkdocsProjectFolder}
+	if [ "$operatingSystem" = "cygwin" -o ${operatingSystem} = "linux" ]; then
+		# MkDocs is installed in a standard location
+		mkdocs build --clean
+	elif [ "$operatingSystem" = "mingw" ]; then
+		# Use the Windows Python
+		py -m mkdocs build --clean
+	else
+		echo ""
+		echo "Don't know how to run on operating system $operatingSystem"
+		exit 1
+	fi
+}
+
 # Make sure the MkDocs version is consistent with the documentation content
 # - require that at least version 1.0 is used because of use_directory_urls = True default
 # - must use "file.md" in internal links whereas previously "file" would work
@@ -70,6 +85,46 @@ checkSourceDocs() {
 	:
 }
 
+# Get the version modifier:
+# - for example, from "4.05.00dev", "4.00.00 dev", "4.00.00beta", or "4.00.00 beta"
+# - the first function argument is the full version, possibly including a space
+# - the modifier is echoed, so capture by assigning in the calling code
+getVersionModifier() {
+	local fullVersion
+	fullVersion="$1"
+	# grep will print each found character on a separate line so concatenate output
+	modifier=$(echo $fullVersion | grep -o -E '[[:alpha:]]' | tr -d '\n' | tr -d ' ')
+	echo $modifier
+}
+
+# Parse the command parameters
+parseCommandLine() {
+	local d h l opt
+	while getopts :dhl opt; do
+		#echo "Command line option is ${opt}"
+		case $opt in
+			d) # Indicate that this should be copied to the latest release and version
+				dryrun="-n"
+				;;
+			h) # Usage
+				printUsage
+				exit 0
+				;;
+			l) # Indicate that this should be copied to the latest release and version
+				copyToLatest="yes"
+				;;
+			\?)
+				echo "Invalid option:  -$OPTARG" >&2
+				exit 1
+				;;
+			:)
+				echo "Option -$OPTARG requires an argument" >&2
+				exit 1
+				;;
+		esac
+	done
+}
+
 # Print the usage
 printUsage() {
 	echo ""
@@ -82,6 +137,43 @@ printUsage() {
 	echo "-h print usage"
 	echo "-l copy to latest folder in addition to auto-detected version folder"
 	echo ""
+}
+
+# Sync the files to the cloud
+# - if copyToLatest="yes", also sync to latest folder
+syncFiles() {
+	local exitStat
+	exitStat=0
+	# Change back to script folder for remaining logic
+	cd ${scriptFolder}
+
+	# Now sync the local files up to Google Cloud
+	# - the -m option causes operations to run in parallel, which can be much faster
+	# - the -d option means delete extra files in destination
+	# - the -r option means recursive to sync the whole folder tree
+	# For now always upload to the versioned copy
+	echo ""
+	echo "Copying the documentation to the versioned folder..."
+	gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderVersion}
+	exitStat=$?
+	if [ $exitStat -ne 0 ]; then
+		return $exitStat
+	fi
+	if [ ${copyToLatest} = "yes" ]; then
+		# Also copy the latest
+		echo ""
+		echo 'Copying the documentation to the "latest" folder...'
+		gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderLatest}
+		exitStat=$?
+	else
+		if [ ! -z "${tstoolVersionModifier}" ]; then
+			# Updating to latest is only valid when there is not a version modifier
+			echo ""
+			echo 'Remember to run with -l option if you want to upload to the "latest" folder.'
+			echo ""
+		fi
+	fi
+	return $exitStatus
 }
 
 # Entry point for the script
@@ -107,6 +199,7 @@ srcMainFolder="${srcFolder}/DWR/DMI/StateDMI"
 statedmiFile="${srcMainFolder}/StateDMI.java"
 if [ -f "${statedmiFile}" ]; then
 	statedmiVersion=$(cat ${statedmiFile} | grep -m 1 'PROGRAM_VERSION' | cut -d '=' -f 2 | cut -d '(' -f 1 | tr -d " " | tr -d '"')
+	statedmiModifierVersion=$(getVersionModifier "$statedmiVersion")
 else
 	echo "Cannot determine StateDMI version because file not found:  ${statedmiFile}"
 	exit 1
@@ -127,72 +220,27 @@ echo "statedmiVersion=$statedmiVersion"
 
 # Set --dryrun to test before actually doing
 dryrun=""
-gsFolderLatest="gs://static-cdss-state-co-us/statedmi/latest/doc-user"
-gsFolderVersion="gs://static-cdss-state-co-us/statedmi/${statedmiVersion}/doc-user"
+gsFolderLatest="gs://opencdss.state.co.us/statedmi/latest/doc-user"
+gsFolderVersion="gs://opencdss.state.co.us/statedmi/${statedmiVersion}/doc-user"
 
 # Whether to copy to latest in addition to the specific version
 # - default to no because the script can be run on any version, and can't assume latest
 copyToLatest="no"
 
-# Parse the command parameters
-while getopts :dhl opt; do
-	#echo "Command line option is ${opt}"
-	case $opt in
-		d) # Indicate that this should be copied to the latest release and version
-			dryrun="-n"
-			;;
-		h) # Usage
-			printUsage
-			exit 0
-			;;
-		l) # Indicate that this should be copied to the latest release and version
-			copyToLatest="yes"
-			;;
-		\?)
-			echo "Invalid option:  -$OPTARG" >&2
-			exit 1
-			;;
-		:)
-			echo "Option -$OPTARG requires an argument" >&2
-			exit 1
-			;;
-	esac
-done
+# Parse the command line
+parseCommandLine $@
+
+if [ ! -z "${tstoolVersionModifier}" -a "$copyToLatest" = "yes" ]; then
+	# The version contains "dev" or "beta" so don't allow to be used for "latest"
+	echo "TSTool version $tstoolVersion contains modifier - not copying to latest."
+	copyToLatest="no"
+fi
 
 # First build the site so that the "site" folder contains current content.
 # - "mkdocs serve" does not do this
+buildMkDocsSite
 
-cd ${mkdocsProjectFolder}
-if [ "$operatingSystem" = "cygwin" -o ${operatingSystem} = "linux" ]; then
-	mkdocs build --clean
-elif [ "$operatingSystem" = "mingw" ]; then
-	py -m mkdocs build --clean
-else
-	echo ""
-	echo "Don't know how to run on operating system $operatingSystem"
-	exit 1
-fi
-
-# Change back to script folder for remaining logic
-cd ${scriptFolder}
-
-# Now sync the local files up to Google Cloud
-# - the -m option causes operations to run in parallel, which can be much faster
-# - the -d option means delete extra files in destination
-# - the -r option means recursive to sync the whole folder tree
-# For now always upload to the versioned copy
-echo ""
-echo "Copying the documentation to the versioned folder..."
-gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderVersion}
-if [ ${copyToLatest} = "yes" ]; then
-	# Also copy the latest
-	echo ""
-	echo 'Copying the documentation to the "latest" folder...'
-	gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderLatest}
-else
-	echo ""
-	echo 'Remember to run with -l option if you want to upload to the "latest" folder.'
-	echo ""
-fi
+# Sync the files to the cloud
+syncFiles
 
 exit $?
