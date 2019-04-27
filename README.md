@@ -3,8 +3,7 @@
 This repository contains the user documentation for
 [Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss) StateDMI software.
 
-See the deployed [CDSS / StateDMI](http://learn.openwaterfoundation.org/cdss-app-statedmi-doc-user/) documentation.
-This documentation is currently hosted on the Open Water Foundation website while the OpenCDSS server is being configured.
+See the deployed [CDSS / StateDMI](http://opencdss.state.co.us/statedmi/latest/doc-user/) documentation.
 
 * [StateDMI Software Overview](#statedmi-software-overview)
 * [Repository Contents](#repository-contents)
@@ -153,5 +152,6 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the update major history for documentation.
 See the GitHub issues and repository history for detailed information.
 
+* 2019-04-26 - Update for opencdss.state.co.us.
 * 2019-01-11 - Update for OpenCDSS release.
 * 2018-09-05 - Initial content, patterned after TSTool, to allow new development to use Markdown.
