@@ -30,7 +30,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 point data in separate columns.
 <a href="../WriteTableToGeoJSON.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON](WriteTableToGeoJSON.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Point Data Parameters
@@ -39,7 +41,9 @@ point data in separate columns.
 The following figure illustrates the command syntax for layers specified with a geometry data column.
 <a href="../WriteTableToGeoJSON_WKTGeometry.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_WKTGeometry](WriteTableToGeoJSON_WKTGeometry.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Geometry Data Parameter
@@ -48,7 +52,9 @@ The following figure illustrates the command syntax for layers specified with a 
 The following figure illustrates the command syntax for coordinate reference system parameter.
 <a href="../WriteTableToGeoJSON_crs.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_crs](WriteTableToGeoJSON_crs.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Coordinate Reference System Parameter
@@ -57,7 +63,9 @@ The following figure illustrates the command syntax for coordinate reference sys
 The following figure illustrates the command syntax for bounding box parameters.
 <a href="../WriteTableToGeoJSON_bbox.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_bbox](WriteTableToGeoJSON_bbox.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Bounding Box Parameters
@@ -66,7 +74,9 @@ The following figure illustrates the command syntax for bounding box parameters.
 The following figure illustrates the command syntax for specifying table columns to include as properties in the GeoJSON output.
 <a href="../WriteTableToGeoJSON_Properties.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_Properties](WriteTableToGeoJSON_Properties.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Property Parameters
@@ -75,7 +85,9 @@ The following figure illustrates the command syntax for specifying table columns
 The following figure illustrates the command syntax for specifying the JavaScript variable for the output object.
 <a href="../WriteTableToGeoJSON_JavaScript.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_JavaScript](WriteTableToGeoJSON_JavaScript.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for JavaScript Parameters
@@ -84,7 +96,9 @@ The following figure illustrates the command syntax for specifying the JavaScrip
 The following figure illustrates the command syntax for specifying inserts before and after the GeoJSON content.
 <a href="../WriteTableToGeoJSON_Inserts.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToGeoJSON_Inserts](WriteTableToGeoJSON_Inserts.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToGeoJSON` Command Editor for Text Insert Parameters
@@ -121,7 +135,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WriteTableToGeoJSON).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToGeoJSON).
 
 The following example illustrates a CSV table that specifies WKT for points (see `WKTGeometry` column):
 

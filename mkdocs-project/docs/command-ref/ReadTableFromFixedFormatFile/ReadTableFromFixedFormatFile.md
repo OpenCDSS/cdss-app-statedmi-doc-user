@@ -27,7 +27,9 @@ Columns are indicated by a column type and width.  Files have the following char
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../ReadTableFromFixedFormatFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromFixedFormatFile](ReadTableFromFixedFormatFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromFixedFormatFile` Command Editor
@@ -55,7 +57,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadTableFromFixedFormatFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromFixedFormatFile).
 
 The following example illustrates a fixed-format file.
 In this case the name includes a string name and a “node type” separated by an underscore.

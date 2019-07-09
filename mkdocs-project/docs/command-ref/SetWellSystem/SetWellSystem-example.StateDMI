@@ -1,0 +1,2 @@
+# Example command file for documentation
+SetWellSystem(ID="Well3",PartType=Well,PartIDs="0100501,0100502,P:1234567A")

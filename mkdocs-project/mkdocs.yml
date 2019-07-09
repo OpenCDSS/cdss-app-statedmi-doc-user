@@ -213,6 +213,7 @@ nav:
   - ReadWellDemandTSMonthlyFromStateMod: command-ref/ReadWellDemandTSMonthlyFromStateMod/ReadWellDemandTSMonthlyFromStateMod.md
   - ReadWellHistoricalPumpingTSMonthlyFromStateCU: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateCU/ReadWellHistoricalPumpingTSMonthlyFromStateCU.md
   - ReadWellHistoricalPumpingTSMonthlyFromStateMod: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateMod/ReadWellHistoricalPumpingTSMonthlyFromStateMod.md
+  - ReadWellRightsFromHydroBase: command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md
   - ReadWellRightsFromStateMod: command-ref/ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md
   - ReadWellStationsFromNetwork: command-ref/ReadWellStationsFromNetwork/ReadWellStationsFromNetwork.md
   - ReadWellStationsFromStateMod: command-ref/ReadWellStationsFromStateMod/ReadWellStationsFromStateMod.md
@@ -281,6 +282,8 @@ nav:
   - SetStreamGageStation: command-ref/SetStreamGageStation/SetStreamGageStation.md
   - SetTableValues: command-ref/SetTableValues/SetTableValues.md
   - SetWarningLevel: command-ref/SetWarningLevel/SetWarningLevel.md
+  - SetWellAggregate: command-ref/SetWellAggregate/SetWellAggregate.md
+  - SetWellAggregateFromList: command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md
   - SetWellDemandTSMonthly: command-ref/SetWellDemandTSMonthly/SetWellDemandTSMonthly.md
   - SetWellDemandTSMonthlyConstant: command-ref/SetWellDemandTSMonthlyConstant/SetWellDemandTSMonthlyConstant.md
   - SetWellHistoricalPumpingTSMonthly: command-ref/SetWellHistoricalPumpingTSMonthly/SetWellHistoricalPumpingTSMonthly.md
@@ -294,6 +297,8 @@ nav:
   - SetWellStationDelayTablesFromRTN: command-ref/SetWellStationDelayTablesFromRTN/SetWellStationDelayTablesFromRTN.md
   - SetWellStationDepletionTablesFromRTN: command-ref/SetWellStationDepletionTablesFromRTN/SetWellStationDepletionTablesFromRTN.md
   - SetWellStationsFromList: command-ref/SetWellStationsFromList/SetWellStationsFromList.md
+  - SetWellSystem: command-ref/SetWellSystem/SetWellSystem.md
+  - SetWellSystemFromList: command-ref/SetWellSystemFromList/SetWellSystemFromList.md
   - SetWorkingDir: command-ref/SetWorkingDir/SetWorkingDir.md
   - SortBlaneyCriddle: command-ref/SortBlaneyCriddle/SortBlaneyCriddle.md
   - SortClimateStations: command-ref/SortClimateStations/SortClimateStations.md

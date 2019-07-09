@@ -28,7 +28,9 @@ The output column can be the same as an existing table column.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../ManipulateTableString.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ManipulateTableString](ManipulateTableString.png)
+</p>**
 
 **<p style="text-align: center;">
 `ManipulateTableString` Command Editor
@@ -69,7 +71,7 @@ Operators and Parameter Requirements
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ManipulateTableString).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ManipulateTableString).
 
 ## Troubleshooting ##
 

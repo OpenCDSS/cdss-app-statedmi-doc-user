@@ -18,7 +18,9 @@ The `DeleteTableColumns` deletes specified columns from a table.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../DeleteTableColumns.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![DeleteTableColumns](DeleteTableColumns.png)
+</p>**
 
 **<p style="text-align: center;">
 `DeleteTableColumns` Command Editor
@@ -42,7 +44,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/DeleteTableColumns).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/DeleteTableColumns).
 
 A simple comma-separated-value data as follows can be read with [`ReadTableFromDelimitedFile`](../ReadTableFromDelimitedFile/ReadTableFromDelimitedFile):
 

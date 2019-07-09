@@ -21,7 +21,9 @@ can be split to produce the result in the second figure.  Several options for sp
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../SplitTableColumn.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SplitTableColumn](SplitTableColumn.png)
+</p>**
 
 **<p style="text-align: center;">
 `SplitTableColumn` Command Editor
@@ -50,7 +52,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SplitTableColumn).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SplitTableColumn).
 
 ![SplitTableColumn](SplitTableColumn_Table1a.png)
 

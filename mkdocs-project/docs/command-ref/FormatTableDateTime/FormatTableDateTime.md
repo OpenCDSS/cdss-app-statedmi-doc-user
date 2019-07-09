@@ -43,7 +43,9 @@ Missing values in input will result in blanks (nulls) in output.
 The following dialog is used to edit the command and illustrates the syntax of the command, showing input parameters.
 <a href="../FormatTableDateTime.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatTableDateTime` Command Editor Showing Input Parameters
@@ -52,7 +54,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command, showing time increment parameters.
 <a href="../FormatTableDateTime_Increment.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime_Increment.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatTableDateTime` Command Editor Showing Increment Parameters
@@ -61,7 +65,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command, showing format parameters.
 <a href="../FormatTableDateTime_Format.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime_Format.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatTableDateTime` Command Editor Showing Format Parameters
@@ -70,7 +76,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command, showing output parameters.
 <a href="../FormatTableDateTime_Output.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime_Output.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatTableDateTime` Command Editor Showing Output Parameters
@@ -128,7 +136,7 @@ Supported C (Strftime) Format Specifiers
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/FormatTableDateTime).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FormatTableDateTime).
 
 The following example illustrates how to convert an input date/time column into
 variations of the date/time, with the following input used to generate the
@@ -144,7 +152,9 @@ OuputType=DateTime
 ```
 Output is as shown below.  <a href="../FormatTableDateTime_Data.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime_Data.png)
+</p>**
 
 The following example illustrates how to convert increment data into a full date/time column string, with the following input (surrounding quotes will be added automatically by command editor):
 
@@ -158,7 +168,9 @@ OutputColumn=DateTime
 
 Output is as shown below.  <a href="../FormatTableDateTime_IncrementData.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableDateTime](FormatTableDateTime_IncrementData.png)
+</p>**
 
 ## Troubleshooting ##
 

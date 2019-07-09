@@ -44,7 +44,9 @@ the command detects the format for each property and creates an appropriate obje
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../ReadPropertiesFromFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadPropertiesFromFile](ReadPropertiesFromFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadPropertiesFromFile` Command Editor
@@ -69,7 +71,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadPropertiesFromFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPropertiesFromFile).
 
 ## Troubleshooting ##
 

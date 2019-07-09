@@ -24,7 +24,9 @@ In the future additional parameters may be added to control handling of numbers 
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../ReadTableFromDBF.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDBF](ReadTableFromDBF.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDBF` Command Editor
@@ -49,7 +51,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadTableFromDBF).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromDBF).
 
 ## Troubleshooting ##
 

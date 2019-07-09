@@ -1,0 +1,2 @@
+# Example command file for documentation
+SetDiversionMultiStructFromList(ListFile="rgTW_multistruct.csv",IDCol=1,PartIDsCol=2,PartsListedHow=InRow)

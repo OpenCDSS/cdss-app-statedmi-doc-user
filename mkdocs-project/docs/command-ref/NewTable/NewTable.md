@@ -26,7 +26,9 @@ decimal – additional formatting features may be available in write commands an
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../NewTable.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![NewTable](NewTable.png)
+</p>**
 
 **<p style="text-align: center;">
 `NewTable` Command Editor
@@ -50,7 +52,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/NewTable).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/NewTable).
 
 ## Troubleshooting ##
 

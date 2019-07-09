@@ -19,7 +19,9 @@ The `InsertTableColumn` command inserts a column into a table.  An initial value
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../InsertTableColumn.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![InsertTableColumn](InsertTableColumn.png)
+</p>**
 
 **<p style="text-align: center;">
 `InsertTableColumn` Command Editor
@@ -49,7 +51,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/InsertTableColumn).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/InsertTableColumn).
 
 ## Troubleshooting ##
 

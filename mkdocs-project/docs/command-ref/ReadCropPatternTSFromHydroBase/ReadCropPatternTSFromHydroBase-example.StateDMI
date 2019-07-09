@@ -1,0 +1,2 @@
+# Example command file for documentation
+ReadCropPatternTSFromHydroBase(ID="*")

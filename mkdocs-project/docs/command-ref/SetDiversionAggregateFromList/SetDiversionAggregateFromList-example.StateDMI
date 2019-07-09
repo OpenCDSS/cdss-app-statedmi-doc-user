@@ -1,0 +1,2 @@
+# Example command file for documentation
+SetDiversionAggregateFromList(ListFile="cm_agg.csv",IDCol=1,NameCol=2,PartIDsCol=3,PartsListedHow=InRow)

@@ -32,7 +32,9 @@ The following are limitations of this command:
 The following dialog is used to edit the command and illustrates the syntax for the command.
 <a href="../WriteTableToExcel.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToExcel](WriteTableToExcel.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Editor
@@ -41,7 +43,9 @@ The following dialog is used to edit the command and illustrates the syntax for 
 The following dialog is used to edit the command and illustrates Excel output parameters.
 <a href="../WriteTableToExcel_Excel.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToExcel Excel](WriteTableToExcel_Excel.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Editor for Excel Output Parameters
@@ -50,7 +54,9 @@ The following dialog is used to edit the command and illustrates Excel output pa
 The following dialog is used to edit the command and illustrates Excel formatting parameters.
 <a href="../WriteTableToExcel_ExcelFormat.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToExcel Excel Format](WriteTableToExcel_ExcelFormat.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Editor for Excel Formatting Parameters
@@ -59,7 +65,9 @@ The following dialog is used to edit the command and illustrates Excel formattin
 The following dialog is used to edit the command and illustrates style formatting parameters.
 <a href="../WriteTableToExcel_Style.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToExcel Style](WriteTableToExcel_Style.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Editor for Style Formatting Parameters
@@ -106,7 +114,9 @@ and is configured using the ***Style Formatting*** tab.
 Consider the following data table, where the goal is to write the StateDMI table to Excel
 and format cells to indicate specific conditions of interest.
 
+**<p style="text-align: center;">
 ![WriteTableToExcel DataTable](WriteTableToExcel_DataTable.png)
+</p>**
 
 **<p style="text-align: center;">
 Data Table used with `WriteTableToExcel` Command
@@ -117,7 +127,9 @@ This table can be defined as a CSV file,
 Excel worksheet or other format and read into StateDMI using a suitable command.
 The following figure illustrates a basic style table, which can be shared among commands.
 
+**<p style="text-align: center;">
 ![WriteTableToExcel StyleTable](WriteTableToExcel_StyleTable.png)
+</p>**
 
 **<p style="text-align: center;">
 Style Table used with `WriteTableToExcel` Command
@@ -140,7 +152,9 @@ The condition table indicates how table values should be evaluated to determine 
 The following example indicates that any columns with names starting with `ts`
 should be processed to evaluate for missing, negative, and zero values.
 
+**<p style="text-align: center;">
 ![WriteTableToExcel ConditionTable](WriteTableToExcel_ConditionTable.png)
+</p>**
 
 **<p style="text-align: center;">
 Condition Table used with `WriteTableToExcel` Command for Specific Checks and Formatting
@@ -178,7 +192,9 @@ If the ***Display*** column is not provided, the ***Condition*** column contents
 
 The following figure illustrates the output from the above example.
 
+**<p style="text-align: center;">
 ![WriteTableToExcel Output](WriteTableToExcel_Output.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Example Output for Specific Checks and Formatting
@@ -186,19 +202,25 @@ The following figure illustrates the output from the above example.
 
 The following example illustrates using multiple conditions to implement a color scale.
 
+**<p style="text-align: center;">
 ![WriteTableToExcel StyleTable2](WriteTableToExcel_StyleTable2.png)
+</p>**
 
 **<p style="text-align: center;">
 Style Table used with `WriteTableToExcel` Command for a Color Scale
 </p>**
 
+**<p style="text-align: center;">
 ![WriteTableToExcel ConditionTable2](WriteTableToExcel_ConditionTable2.png)
+</p>**
 
 **<p style="text-align: center;">
 Condition Table used with `WriteTableToExcel` Command for a Color Scale
 </p>**
 
+**<p style="text-align: center;">
 ![WriteTableToExcel Output2](WriteTableToExcel_Output2.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToExcel` Command Example Output for a Color Scale
@@ -206,7 +228,7 @@ Condition Table used with `WriteTableToExcel` Command for a Color Scale
 
 ## Examples ##
 
-* See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WriteTableToExcel).
+* See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToExcel).
 
 ## Troubleshooting ##
 

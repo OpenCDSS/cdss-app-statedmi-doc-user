@@ -1,0 +1,2 @@
+# Example command file for documentation
+SetReservoirAggregateFromList(ListFile="rg2007-aggres.csv",IDCol=1,PartIDsCol=2,PartsListedHow=InRow)

@@ -1,0 +1,2 @@
+# Example command file for documentation
+ReadDiversionRightsFromHydroBase(ID="*",OnOffDefault=1,AdminNumClasses="14854.00000,20427.18999,22729.21241,30895.21241,31258.00000,32023.28989,39095.38998,43621.42906,46674.00000,48966.00000,99999")

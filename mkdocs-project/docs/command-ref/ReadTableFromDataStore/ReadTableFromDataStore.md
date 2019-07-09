@@ -71,7 +71,9 @@ The following dialog is used to edit the command and illustrates the syntax for 
 in this case reading a small table from the State of Colorado’s HydroBase.
 <a href="../ReadTableFromDataStore_Table.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDataStore](ReadTableFromDataStore_Table.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDataStore` Command Editor when Querying a Single Table (or View)
@@ -80,7 +82,9 @@ in this case reading a small table from the State of Colorado’s HydroBase.
 The corresponding output table is as shown below:
 <a href="../ReadTableFromDataStore_Results.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDataStore Results](ReadTableFromDataStore_Results.png)
+</p>**
 
 **<p style="text-align: center;">
 Example `ReadTableFromDataStore` Command Output Table
@@ -90,7 +94,9 @@ The following example illustrates using an SQL query string,
 in this case to read diversion records for a specific structure in the State of Colorado’s HydroBase database:
 <a href="../ReadTableFromDataStore_SQL.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDataStore SQL](ReadTableFromDataStore_SQL.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDataStore` Command Editor when Specifying an SQL Query String
@@ -99,7 +105,9 @@ in this case to read diversion records for a specific structure in the State of 
 The following example illustrates using an SQL file:
 <a href="../ReadTableFromDataStore_SQLFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDataStore SQL File](ReadTableFromDataStore_SQLFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDataStore` Command Editor when Specifying an SQL File
@@ -108,7 +116,9 @@ The following example illustrates using an SQL file:
 The following example illustrates using a database procedure:
 <a href="../ReadTableFromDataStore_Procedure.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDataStore Procedure](ReadTableFromDataStore_Procedure.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDataStore` Command Editor when Specyfing a Procedure
@@ -140,7 +150,7 @@ Command Parameters
 
 ## Examples ##
 
-* See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadTableFromDataStore).
+* See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromDataStore).
 
 ## Troubleshooting ##
 

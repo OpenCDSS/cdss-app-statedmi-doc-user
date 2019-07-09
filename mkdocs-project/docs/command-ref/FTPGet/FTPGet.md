@@ -19,7 +19,9 @@ The `FTPGet` command retrieves one or more files from a remote system using file
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../FTPGet.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FTPGet](FTPGet.png)
+</p>**
 
 **<p style="text-align: center;">
 `FTPGet` Command Editor
@@ -50,7 +52,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/FTPGet).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FTPGet).
 
 ## Troubleshooting ##
 

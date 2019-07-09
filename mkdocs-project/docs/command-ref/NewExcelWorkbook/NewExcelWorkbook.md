@@ -23,7 +23,9 @@ and consequently functionality is constrained by the features of that software p
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../NewExcelWorkbook.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![NewExcelWorkbook](NewExcelWorkbook.png)
+</p>**
 
 **<p style="text-align: center;">
 `NewExcelWorkbook` Command Editor
@@ -48,7 +50,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/NewExcelWorkbook).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/NewExcelWorkbook).
 
 ## Troubleshooting ##
 

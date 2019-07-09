@@ -40,7 +40,9 @@ Subsequent writes of the table will re-introduce the repeated quote to indicate 
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../ReadTableFromDelimitedFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadTableFromDelimitedFile](ReadTableFromDelimitedFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadTableFromDelimitedFile` Command Editor
@@ -73,7 +75,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadTableFromDelimitedFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromDelimitedFile).
 
 The following example command file illustrates how to read a table from a delimited file:
 

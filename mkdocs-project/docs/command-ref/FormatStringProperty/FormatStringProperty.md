@@ -30,7 +30,9 @@ For example, properties that are floating-point numbers must use the format spec
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../FormatStringProperty.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatStringProperty](FormatStringProperty.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatStringProperty` Command Editor
@@ -56,7 +58,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/FormatStringProperty).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FormatStringProperty).
 
 ## Troubleshooting ##
 

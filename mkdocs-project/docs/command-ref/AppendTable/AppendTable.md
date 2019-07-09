@@ -24,7 +24,9 @@ For appended rows:
 The following dialog is used to edit the command and illustrates the syntax of the command
 <a href="../AppendTable.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![AppendTable](AppendTable.png)
+</p>**
 
 **<p style="text-align: center;">
 `AppendTable` Command Editor
@@ -51,7 +53,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/AppendTable).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/AppendTable).
 
 The following figures show the input tables and results (modified first table) corresponding to the parameters shown in the editor dialog figure above.
 Note that the column names for “Table2” have a “2”.

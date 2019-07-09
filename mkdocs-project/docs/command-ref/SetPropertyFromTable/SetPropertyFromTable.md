@@ -24,7 +24,9 @@ Filters are used to match one or more rows.  The first matched row is used to se
 The following dialog is used to edit the command and illustrates the command syntax for general parameters.
 <a href="../SetPropertyFromTable.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetPropertyFromTable](SetPropertyFromTable.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetPropertyFromTable` Command Editor for General Set Parameters
@@ -52,12 +54,14 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SetPropertyFromTable).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetPropertyFromTable).
 
 The command shown in the editor dialog, used with the following table, will set `StringProp=“Abba”`
 <a href="../SetPropertyFromTable_table.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetPropertyFromTable table](SetPropertyFromTable_table.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetPropertyFromTable` Input Example

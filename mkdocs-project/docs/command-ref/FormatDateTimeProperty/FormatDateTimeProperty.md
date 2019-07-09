@@ -23,7 +23,9 @@ Support for properties varies by command and command documentation should be con
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../FormatDateTimeProperty.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatDateTimeProperty](FormatDateTimeProperty.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatDateTimeProperty` Command Editor
@@ -74,7 +76,7 @@ Supported C (strftime) Formatting Specifiers
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/FormatDateTimeProperty).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FormatDateTimeProperty).
 
 A sample command file is as follows:
 

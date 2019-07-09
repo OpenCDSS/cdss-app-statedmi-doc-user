@@ -20,6 +20,7 @@ The table rows can be split using either “tuple” or “measure” approach a
 A “tuple” is a sequence of related values and contain 1 or more grouped values.
 For example, the following figure illustrates annual time series values listed horizontally in each row.
 
+**<p style="text-align: center;">
 ![SplitTableRow Tuple Input](SplitTableRow_TupleInput.png)
 
 This command can split the data into the following representation,
@@ -27,6 +28,7 @@ which is more conducive to time series processing (for example use the
 [`TableToTimeSeries`](../TableToTimeSeries/TableToTimeSeries) command to
 convert the results to time series that can be processed in TSTool).
 
+**<p style="text-align: center;">
 ![SplitTableRow Tuple Output](SplitTableRow_TupleOutput.png)
 
 ### Measure Split ###
@@ -38,16 +40,22 @@ for example “stream mile” segments as shown in the following example.
 The first table illustrates input and the second the table after modification (original rows are deleted).
 The start and end columns can be specified in any order but the output is always with the smaller value as the start.
 
+**<p style="text-align: center;">
 ![SplitTableRow Split Input](SplitTableRow_Input.png)
+</p>**
 
+**<p style="text-align: center;">
 ![SplitTableRow Split Output](SplitTableRow_Output.png)
+</p>**
 
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the syntax of the command for tuple split.
 <a href="../SplitTableRow_Tuple.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SplitTableRow Tuple](SplitTableRow_Tuple.png)
+</p>**
 
 **<p style="text-align: center;">
 `SplitTableRow` Command Editor for Tuple Split
@@ -56,7 +64,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for measure split.
 <a href="../SplitTableRow.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SplitTableRowTuple](SplitTableRow.png)
+</p>**
 
 **<p style="text-align: center;">
 `SplitTableRow` Command Editor for Measure Split
@@ -90,7 +100,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SplitTableRow).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SplitTableRow).
 
 ## Troubleshooting ##
 

@@ -30,7 +30,9 @@ from an existing shapefile or other standard spatial data format.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../WriteTableToShapefile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToShapefile](WriteTableToShapefile.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToShapefile` Command Editor
@@ -39,7 +41,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following figure illustrates the command syntax for layers specified with a geometry data column.
 <a href="../WriteTableToShapefile_WKT.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToShapefile_WKT](WriteTableToShapefile_WKT.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToShapefile` Command Editor for Geometry Data Parameters
@@ -48,7 +52,9 @@ The following figure illustrates the command syntax for layers specified with a 
 The following figure illustrates the command syntax for specifying columns to include as attributes.
 <a href="../WriteTableToShapefile_Attributes.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToShapefile_Attributes](WriteTableToShapefile_Attributes.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToShapefile` Command Editor for Attribute Parameters
@@ -78,7 +84,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WriteTableToShapefile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToShapefile).
 
 The following example illustrates a CSV table that specifies WKT for points (see WKTGeometry column):
 
