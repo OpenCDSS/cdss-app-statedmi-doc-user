@@ -21,7 +21,9 @@ from the ***Help*** menu.
 
 The following dialog is used to edit the command and illustrates the command syntax.
 
+**<p style="text-align: center;">
 ![CreateIrrigationPracticeTSForCULocations](CreateIrrigationPracticeTSForCULocations.png)
+</p>**
 
 **<p style="text-align: center;">
 `CreateIrrigationPracticeTSForCULocations` Command Editor (<a href="../CreateIrrigationPracticeTSForCULocations.png">see also the full-size image</a>)
@@ -44,7 +46,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/CreateIrrigationPracticeTSForCULocations).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CreateIrrigationPracticeTSForCULocations).
 
 ## Troubleshooting ##
 

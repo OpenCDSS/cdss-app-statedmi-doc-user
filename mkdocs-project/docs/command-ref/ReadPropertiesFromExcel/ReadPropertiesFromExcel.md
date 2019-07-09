@@ -29,7 +29,9 @@ Check the StateDMI ***Help / About*** menu for information on the POI version.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../ReadPropertiesFromExcel.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadPropertiesFromExcel](ReadPropertiesFromExcel.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadPropertiesFromExcel` Command Editor for Excel Parameters
@@ -38,7 +40,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel to properties map.
 <a href="../ReadPropertiesFromExcel_Map.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadPropertiesFromExcel Map](ReadPropertiesFromExcel_Map.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadPropertiesFromExcel` Command Editor for Excel to Properties Map Parameter
@@ -47,7 +51,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for properties parameters.
 <a href="../ReadPropertiesFromExcel_Properties.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ReadPropertiesFromExcel Properties](ReadPropertiesFromExcel_Properties.png)
+</p>**
 
 **<p style="text-align: center;">
 `ReadPropertiesFromExcel` Command Editor for Properties Parameters
@@ -76,7 +82,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ReadPropertiesFromExcel).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPropertiesFromExcel).
 
 ## Troubleshooting ##
 

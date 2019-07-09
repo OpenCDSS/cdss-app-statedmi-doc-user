@@ -21,7 +21,9 @@ processing.
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../Message.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![Message](Message.png)
+</p>**
 
 **<p style="text-align: center;">
 `Message` Command Editor Showing Conditions Test
@@ -45,7 +47,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/Message).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/Message).
 
 ## Troubleshooting ##
 

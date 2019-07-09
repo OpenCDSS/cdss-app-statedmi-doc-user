@@ -27,7 +27,9 @@ may include too many digits – this will be addressed in future updates.
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../WriteTableToDelimitedFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableToDelimitedFile](WriteTableToDelimitedFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableToDelimitedFile` Command Editor
@@ -57,7 +59,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WriteTableToDelimitedFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToDelimitedFile).
 
 ## Troubleshooting ##
 

@@ -1,0 +1,2 @@
+# Example command file to use for documentation
+SetDiversionAggregate(ID="51_ADC001",PartIDs="5100580,5100663,5100703,5100704,5100707,5100833,5100841,5100974,5101032,5101033,5101048")

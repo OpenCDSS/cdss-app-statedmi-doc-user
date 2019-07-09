@@ -21,7 +21,9 @@ from the ***Help*** menu.
 
 The following dialog is used to edit the command and illustrates the command syntax.
 
+**<p style="text-align: center;">
 ![WriteClimateStationsToList](WriteClimateStationsToList.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteClimateStationsToList` Command Editor (<a href="../WriteClimateStationsToList.png">see also the full-size image</a>)
@@ -44,7 +46,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WriteClimateStationsToList).
+See the [automated tests](https://github.com/OpenDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteClimateStationsToList).
 
 ## Troubleshooting ##
 

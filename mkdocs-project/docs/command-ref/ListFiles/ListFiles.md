@@ -24,7 +24,9 @@ The resulting table will include the following columns:
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../ListFiles.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![ListFiles](ListFiles.png)
+</p>**
 
 **<p style="text-align: center;">
 `ListFiles` Command Editor Showing Conditions Test
@@ -51,7 +53,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/ListFiles).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ListFiles).
 
 ## Troubleshooting ##
 

@@ -25,7 +25,9 @@ Excel file and consequently functionality is constrained by the features of that
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../WriteTableCellsToExcel.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WriteTableCellsToExcel](WriteTableCellsToExcel.png)
+</p>**
 
 **<p style="text-align: center;">
 `WriteTableCellsToExcel` Command Editor
@@ -53,7 +55,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-tstool-test/tree/master/test/regression/commands/general/WriteTableCellsToExcel).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-tstool-test/tree/master/test/regression/commands/general/WriteTableCellsToExcel).
 
 ## Troubleshooting ##
 

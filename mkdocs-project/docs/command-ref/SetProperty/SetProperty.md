@@ -28,7 +28,9 @@ It may be more appropriate, for example, to set a string property to an empty st
 The following dialog is used to edit the command and illustrates the command syntax for general parameters.
 <a href="../SetProperty.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetProperty](SetProperty.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetProperty` Command Editor for General Set Parameters
@@ -37,7 +39,9 @@ The following dialog is used to edit the command and illustrates the command syn
 The following dialog is used to edit the command and illustrates the command syntax for special value parameters.
 <a href="../SetProperty_Special.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetProperty](SetProperty_Special.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetProperty` Command Editor for Special Value Parameters
@@ -46,7 +50,9 @@ The following dialog is used to edit the command and illustrates the command syn
 The following dialog is used to edit the command and illustrates the command syntax for removing a property.
 <a href="../SetProperty_Remove.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetProperty](SetProperty_Remove.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetProperty` Command Editor for Removing a Property
@@ -59,7 +65,9 @@ This causes the old value to be retrieved and then the math operation is perform
 A common operation would be to increment a property’s value in a [`For`](../For/For) loop.
 <a href="../SetProperty_Math1.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetProperty](SetProperty_Math1.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetProperty` Command Editor for Performing Math showing Main Property Parameters
@@ -68,7 +76,9 @@ A common operation would be to increment a property’s value in a [`For`](../Fo
 The following illustrates the math input parameters.
 <a href="../SetProperty_Math2.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetProperty](SetProperty_Math2.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetProperty` Command Editor for Performing Math showing Math Input
@@ -101,7 +111,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SetProperty).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetProperty).
 
 ## Troubleshooting ##
 

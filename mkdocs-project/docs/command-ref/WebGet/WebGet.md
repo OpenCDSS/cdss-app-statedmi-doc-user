@@ -28,7 +28,9 @@ Additional command capabilities may be implemented to help handle these issues.
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../WebGet.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WebGet](WebGet.png)
+</p>**
 
 **<p style="text-align: center;">
 `WebGet` Command Editor
@@ -55,7 +57,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/WebGet).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WebGet).
 
 ## Troubleshooting ##
 

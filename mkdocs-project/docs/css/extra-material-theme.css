@@ -14,6 +14,15 @@ article ul ul ul {
 }
 
 /*
+ * Ordered list uses i, ii, etc., again but need A, etc.
+ * - want A, B, C, etc.
+ */
+
+article ol ol ol ol {
+	list-style-type:  upper-alpha !important;
+}
+
+/*
  * Align text to be centered.
  */
 .alignCenter {

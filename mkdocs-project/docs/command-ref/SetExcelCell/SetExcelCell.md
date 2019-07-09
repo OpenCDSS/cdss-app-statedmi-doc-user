@@ -26,7 +26,9 @@ this command is intended for finer resolution control of modifying an Excel work
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel file parameters.
 <a href="../SetExcelCell_File.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell File](SetExcelCell_File.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel File Parameters
@@ -35,7 +37,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel address parameters.
 <a href="../SetExcelCell_Address.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell Address](SetExcelCell_Address.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel Address Parameters
@@ -44,7 +48,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel address parameters.
 <a href="../SetExcelCell_ColumnRow.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell ColumnRow](SetExcelCell_ColumnRow.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel Column/Row Parameters
@@ -53,7 +59,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel data values parameters.
 <a href="../SetExcelCell_Value.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell Value](SetExcelCell_Value.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel Data Value Parameters
@@ -62,7 +70,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel comment parameters.
 <a href="../SetExcelCell_Comment.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell Comment](SetExcelCell_Comment.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel Comment Parameters
@@ -71,7 +81,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the syntax of the command for Excel formatting parameters.
 <a href="../SetExcelCell_Formatting.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![SetExcelCell Formatting](SetExcelCell_Formatting.png)
+</p>**
 
 **<p style="text-align: center;">
 `SetExcelCell` Command Editor for Excel Formatting Parameters
@@ -108,7 +120,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SetExcelCell).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetExcelCell).
 
 ## Troubleshooting ##
 

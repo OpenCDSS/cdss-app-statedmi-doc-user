@@ -29,7 +29,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 command (in this case illustrating how values in a column named `ts1` are added to the number `.1111.`
 <a href="../TableMath.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![TableMath](TableMath.png)
+</p>**
 
 **<p style="text-align: center;">
 `TableMath` Command Editor
@@ -57,7 +59,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/TableMath).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/TableMath).
 
 ## Troubleshooting ##
 

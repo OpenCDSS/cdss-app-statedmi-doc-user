@@ -40,7 +40,9 @@ Property File Formats
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../WritePropertiesToFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![WritePropertiesToFile](WritePropertiesToFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `WritePropertiesToFile` Command Editor
@@ -67,7 +69,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-tstool-test/tree/master/test/regression/commands/general/WritePropertiesToFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-tstool-test/tree/master/test/regression/commands/general/WritePropertiesToFile).
 
 ## Troubleshooting ##
 

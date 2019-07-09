@@ -28,7 +28,9 @@ The following dialog is used to edit the command and illustrates the syntax of t
 (in this case illustrating how values in a column named `LocationID` are copied to a new table).  
 <a href="../FormatTableString.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![FormatTableString](FormatTableString.png)
+</p>**
 
 **<p style="text-align: center;">
 `FormatTableString` Command Editor
@@ -55,7 +57,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/FormatTableString).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FormatTableString).
 
 ## Troubleshooting ##
 

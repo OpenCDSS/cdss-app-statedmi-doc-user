@@ -1,0 +1,2 @@
+# Example command file for documentation
+SetWellSystemFromList(ListFile="SP_GWAgg_04212016.csv",PartType=Well,IDCol=1,PartIDsCol=2,PartsListedHow=InColumn)

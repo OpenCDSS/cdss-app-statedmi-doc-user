@@ -23,7 +23,9 @@ Using this command is helpful when multiple commands are manipulating an Excel w
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../CloseExcelWorkbook.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![CloseExcelWorkbook](CloseExcelWorkbook.png)
+</p>**
 
 **<p style="text-align: center;">
 `CloseExcelWorkbook` Command Editor
@@ -49,7 +51,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/CloseExcelWorkbook).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CloseExcelWorkbook).
 
 ## Troubleshooting ##
 

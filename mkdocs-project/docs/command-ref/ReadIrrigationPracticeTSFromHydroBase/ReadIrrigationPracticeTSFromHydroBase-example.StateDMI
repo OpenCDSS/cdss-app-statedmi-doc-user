@@ -1,0 +1,2 @@
+# Example command file for documentation
+ReadIrrigationPracticeTSFromHydroBase(ID="*",Year="1993,2000",Div="5")

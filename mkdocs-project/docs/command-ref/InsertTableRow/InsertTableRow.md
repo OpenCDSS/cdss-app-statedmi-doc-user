@@ -21,7 +21,9 @@ for example to clear out named cells in an Excel workbook.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 <a href="../InsertTableRow.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![InsertTableRow](InsertTableRow.png)
+</p>**
 
 **<p style="text-align: center;">
 `InsertTableRow` Command Editor
@@ -47,7 +49,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/InsertTableRow).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/InsertTableRow).
 
 ## Troubleshooting ##
 

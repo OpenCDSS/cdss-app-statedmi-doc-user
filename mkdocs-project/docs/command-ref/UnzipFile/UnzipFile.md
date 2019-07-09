@@ -19,7 +19,9 @@ Existing files will be overwritten.
 The following dialog is used to edit the command and illustrates the command syntax.
 <a href="../UnzipFile.png">See also the full-size image.</a>
 
+**<p style="text-align: center;">
 ![UnzipFile](UnzipFile.png)
+</p>**
 
 **<p style="text-align: center;">
 `UnzipFile` Command Editor
@@ -46,7 +48,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/UnzipFile).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/UnzipFile).
 
 ## Troubleshooting ##
 
