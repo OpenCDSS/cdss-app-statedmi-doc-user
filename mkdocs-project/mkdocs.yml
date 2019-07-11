@@ -16,6 +16,7 @@ nav:
 #- 8 - Spreadsheet Integration: spreadsheet/spreadsheet.md
 #- 9 - Model Framework Integration: modeling/modeling.md
 #- 10 - Troubleshooting: troubleshooting/troubleshooting.md
+- Troubleshooting: troubleshooting/troubleshooting.md
 #- 11 - Best Practices:
 #  - Time Series Identifiers: best-practices/ts-identifiers.md
 #- 12 - Resources: resources.md
@@ -395,17 +396,14 @@ nav:
   - WriteWellRightsToList: command-ref/WriteWellRightsToList/WriteWellRightsToList.md
   - WriteWellRightsToStateMod: command-ref/WriteWellRightsToStateMod/WriteWellRightsToStateMod.md
   - WriteWellStationsToStateMod: command-ref/WriteWellStationsToStateMod/WriteWellStationsToStateMod.md
-#- Reference - Datastores:
-#  - Overview: datastore-ref/overview.md
+- Reference - Datastores:
+  - Overview: datastore-ref/overview.md
 #  - Colorado HydroBase: datastore-ref/CO-HydroBase/CO-HydroBase.md
 #  - Colorado HydroBase REST Web Service: datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md
 #- 'Appendix - Install StateDMI': appendix-install/install.md
-#- 'Appendix - Release Notes':
-#  - Release Notes: appendix-release-notes/release-notes.md
-#  - Version 12: appendix-release-notes/release-notes-12.md
-#  - Version 11: appendix-release-notes/release-notes-11.md
-#- 'Appendix - TSView Time Series Viewing Tools': appendix-tsview/tsview.md
-#- 'Appendix - GeoView Mapping Tools': appendix-geoview/geoview.md
+- 'Appendix - Release Notes':
+  - Release Notes: appendix-release-notes/release-notes.md
+  - Version 5: appendix-release-notes/release-notes-05.md
 # ------- configuration properties ---------------
 # Alphabetize
 # ------------------------------------------------
