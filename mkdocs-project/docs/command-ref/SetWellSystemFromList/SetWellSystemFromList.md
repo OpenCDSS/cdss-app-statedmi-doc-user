@@ -62,15 +62,16 @@ Command Parameters
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
 | `ListFile` | The name of the input file to read, surrounded by double quotes. | None – must be specified. |
+| `TableID`| The table identifier for table read from the list file, useful to confirm input. | |
 | `PartType` | Indicate the type of features being aggregated and specified by `PartIDs`, one of:<ul><li>`Ditch` – the `PartIDs` (ditch WDIDs) indicate ditch service areas supplemented by wells.</li><li>`Parcel` – the `PartIDs` (parcel numbers from GIS processing) indicate parcels irrigated by wells, with no surface water supply.</li><li>`Well` – the `PartIDs` indicate wells (WDIDs and permit receipt), with no surface water supply.</li></ul> | None – must be specified. |
 | `Year` | The year defining the parcels. | Required when `PartType` is `Parcel` because parcel identifiers from well matching are specific to the data year. |
 | `Div` | Water division for the parcels in the system. | Required when `PartType` is `Parcel` because parcels require the division. |
-| `IDCol` | The column number (1+) containing the well system identifiers. | None – must be specified. |
-| `NameCol` | The column number (1+) containing the well system name. | None – optional (name will remain as before). |
-| `PartIDsCol` | The column number (1+) for the first column having part identifiers. | None – must be specified. |
-| `PartIdTypeColumn` | The column number (1+) or name for the column having part ID type.  Recognized values in the column cells are `WDID` to indicate water district identifier and `Receipt` indicating a well permit receipt.  Values are not case-sensitive. | Required when specifying system using Well part type. |
+| `IDCol` | The column number (1+) or name containing the well system identifiers. | None – must be specified. |
+| `NameCol` | The column number (1+) or name containing the well system name. | None – optional (name will remain as before). |
+| `PartIDsCol` | The column number (1+) or name for the first column having part identifiers. | None – must be specified. |
+| `PartIdTypeColumn` | The column number (1+) or name or name for the column having part ID type.  Recognized values in the column cells are `WDID` to indicate water district identifier and `Receipt` indicating a well permit receipt.  Values are not case-sensitive. | Required when specifying system using Well part type. |
 | `PartsListedHow` | If `InRow`, it is expected that all parts defining a system are listed in the same row.  If `InColumn`, it is expected that the parts defining a system are listed one per row, with multiple rows defining the full system (`PartIDsColMax` is ignored in this case). | None – must be specified. |
-| `PartIDsColMax` | The column number (1+) for the last column having part identifiers.  Use if extra columns on the right need to be excluded from the list. | Use all available non-blank columns starting with `PartIDsCol`. |
+| `PartIDsColMax` | The column number (1+) or name for the last column having part identifiers.  Use if extra columns on the right need to be excluded from the list. | Use all available non-blank columns starting with `PartIDsCol`. |
 | `IfNotFound` | Used for error handling, one of the following:<ul><li>`Fail` – generate a failure message if the aggregate identifier is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the aggregate identifier is not matched</li><li>`Warn` – generate a warning message if the aggregate identifier is not matched</li></ul> | `Warn` |
 
 ## Examples ##
@@ -99,9 +100,24 @@ The following example illustrates a list file is used with `PartType=Ditch` and 
 01_ADP037,South Platte River below Kersey Co North 2,0100644
 01_ADP037,South Platte River below Kersey Co North 2,0100835
 01_ADP037,South Platte River below Kersey Co North 2,0104486
+```
 
-The following example illustrates a list file for PartType=Well and PartsListedHow=InColumn, with the part ID type specified in column 2, and part ID type in column 3:
+The following example illustrates a list file is used with `PartType=Ditch` and `PartsListedHow=InColumn`,
+with the name being provided in column 2,
+and column names specified as quoted strings so that column names (rather than numbers) can be specified for parameters.
 
+```
+"Aggregate_ID","Agg_Name","WDID"
+01_ADP037,South Platte River below Kersey Co North 2,0100643
+01_ADP037,South Platte River below Kersey Co North 2,0100644
+01_ADP037,South Platte River below Kersey Co North 2,0100835
+01_ADP037,South Platte River below Kersey Co North 2,0104486
+```
+
+The following example illustrates a list file for `PartType=Well` and `PartsListedHow=InColumn`,
+with the part ID type specified in column 2, and part ID type in column 3:
+
+```
 # List file created by intersecting the well coverages (that are included in the CDSS
 # irrigated acreage GDB) with the GW Aggregate Coverage,
 # removing duplicates, and limiting the list to only wells tied to a GW only irrigated
@@ -127,5 +143,6 @@ The following example illustrates a list file for PartType=Well and PartsListedH
 
 ## See Also ##
 
+* [`SetWellAggregate`](../SetWellAggregate/SetWellAggregate.md) command
 * [`SetWellAggregateFromList`](../SetWellAggregateFromList/SetWellAggregateFromList.md) command
 * [`SetWellSystem`](../SetWellSystem/SetWellSystem.md) command

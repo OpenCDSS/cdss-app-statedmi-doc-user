@@ -68,15 +68,16 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-| `ListFile` <br>**required** | The name of the input file to read, surrounded by double quotes. | None – must be specified. |
+| `ListFile` <br>**required** | The name of the input file to read. | None – must be specified. |
+| `TableID`| The table identifier for table read from the list file, useful to confirm input. | |
 | `PartType` <br>**required** | Indicate the type of features being aggregated and specified by PartIDs, one of:<ul><li>`Ditch` – the `PartIDs` (ditch WDIDs) indicate ditch service areas supplemented by wells.</li><li>`Parcel` – the `PartIDs` (parcel numbers from GIS processing) indicate parcels irrigated by wells, with no surface water supply.</li><li>`Well` – the `PartIDs` indicate wells (WDIDs), with no surface water supply. | None – must be specified. |
 | `Year` | The year defining the parcels. | Required when `PartType` is `Parcel` because parcel identifiers from well matching are specific to the data year. |
 | `Div` | Water division for the parcels in the aggregate. | Required when `PartType` is `Parcel` because parcels require the division. |
-| `IDCol`<br>**required** | The column number (1+) containing the aggregate well identifiers. | None – must be specified. |
-| `NameCol` | The column number (1+) containing the aggregate well name. | None – optional (name will remain as previously defined). |
-| `PartIDsCol`<br>**required** | The column number (1+) for the first column having part identifiers.  The identifiers are ditch WDIDs that will be found in HydroBase.  The part identifiers are by default of type Ditch. | None – must be specified. |
+| `IDCol`<br>**required** | The column number (1+) or name containing the aggregate well identifiers. | None – must be specified. |
+| `NameCol` | The column number (1+) or name containing the aggregate well name. | None – optional (name will remain as previously defined). |
+| `PartIDsCol`<br>**required** | The column number (1+) or name for the first column having part identifiers.  The identifiers are ditch WDIDs that will be found in HydroBase.  The part identifiers are by default of type Ditch. | None – must be specified. |
 | `PartsListedHow`| If `InRow`, it is expected that all parts defining an aggregate are listed in the same row (as shown in the example below).  If `InColumn`, it is expected that the parts defining an aggregate are listed one per row, with multiple rows defining the full aggregate (`PartIDsColMax` is ignored in this case). | None – must be specified. |
-| `PartIDsColMax`| The column number (1+) for the last column having part identifiers.  Use if extra columns on the right need to be excluded from the list. | Use all available non-blank columns starting with `PartIDsCol`. |
+| `PartIDsColMax`| The column number (1+) or name for the last column having part identifiers.  Use if extra columns on the right need to be excluded from the list. | Use all available non-blank columns starting with `PartIDsCol`. |
 | `IfNotFound`| Used for error handling, one of the following: <ul><li>`Fail` – generate a failure message if the aggregate identifier is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the aggregate identifier is not matched</li><li>`Warn` – generate a warning message if the aggregate identifier is not matched</li></ul> | `Warn` |
 
 ## Examples ##
@@ -101,6 +102,17 @@ The following example illustrates a list file is used with `PartType=Ditch` and 
 
 ```
 # Aggregate_ID/Agg_Name/WDID
+01_ADP037,South Platte River below Kersey Co North 2,0100643
+01_ADP037,South Platte River below Kersey Co North 2,0100644
+01_ADP037,South Platte River below Kersey Co North 2,0100835
+01_ADP037,South Platte River below Kersey Co North 2,0104486
+```
+
+The following example illustrates a list file is used with `PartType=Ditch` and `PartsListedHow=InColumn`, with the name being provided in column 2,
+and column names specified as quoted strings so that column names (rather than numbers) can be specified for parameters.
+
+```
+"Aggregate_ID","Agg_Name","WDID"
 01_ADP037,South Platte River below Kersey Co North 2,0100643
 01_ADP037,South Platte River below Kersey Co North 2,0100644
 01_ADP037,South Platte River below Kersey Co North 2,0100835

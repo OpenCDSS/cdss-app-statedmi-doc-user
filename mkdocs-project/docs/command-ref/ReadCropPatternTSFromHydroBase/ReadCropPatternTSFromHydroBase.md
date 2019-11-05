@@ -18,7 +18,8 @@ The crop pattern time series can then be manipulated and output with other comma
 * if the CU Location is a diversion (or collection of diversions),
 the crop pattern data are read from HydroBase tables that contain irrigated acres for the ditch service area (s)
 * if the CU Location is a well (or collection of wells) specified with WDID or well permit receipt,
-the crop pattern data are read from HydroBase tables that contain irrigated acres for the ditch service area (s)
+the crop pattern data are read from HydroBase tables that contain irrigated acres for the parcels associated with the well WDIDs and receipts,
+as specified in aggregate/system data
 ** - this approach is being phased in for CDSS**
 * if the CU Location is an aggregate of groundwater-only parcels, the area is determined from the parcel data - **this older
 approach is being phased out for CDSS and is only used for the Rio Grande basin**

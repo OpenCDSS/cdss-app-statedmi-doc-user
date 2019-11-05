@@ -123,6 +123,6 @@ WriteDiversionRightsToStateMod(OutputFile="cm2005.ddr")
 
 * [`SetDiversionAggregate`](../SetDiversionAggregate/SetDiversionAggregate.md) command
 * [`SetDiversionMultiStruct`](../SetDiversionMultiStruct/SetDiversionMultiStruct.md) command
-* [`SetDiversionMultiStructFromList`](../SetDiversionMultiStruct/SetDiversionMultiStructFromList.md) command
+* [`SetDiversionMultiStructFromList`](../SetDiversionMultiStructFromList/SetDiversionMultiStructFromList.md) command
 * [`SetDiversionSystem`](../SetDiversionSystem/SetDiversionSystem.md) command
 * [`SetDiversionSystemFromList`](../SetDiversionSystemFromList/SetDiversionSystemFromList.md) command

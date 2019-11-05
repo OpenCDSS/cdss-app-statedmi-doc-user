@@ -25,7 +25,7 @@ location can be configured on the CDSS website.**
 * [About the Open Water Foundation](#about-the-open-water-foundation)
 * [License](#license)
 * [Source Repository on GitHub](#source-repository-on-github)
-* [Release Notes](#release-notes)
+* [Release Notes](#release-notes) - **this documentation is for StateDMI version 5.00.00**
 
 ----------------
 
@@ -34,7 +34,6 @@ location can be configured on the CDSS website.**
 The documentation is organized in order of information and tasks necessary to install and use the StateDMI software.
 Chapters (web pages) are provided for major topics related to software use and application.
 References are provided for StateDMI [commands](command-ref/overview.md) and [datastores](datastore-ref/overview.md).
-Training modules are also provided in the [Lessons](lessons/overview.md) section.
 
 Use the navigation menu provided on the left side of the page to navigate the documentation sections within the full document.
 Use the navigation menu provided on the right side of the page to navigate the documentation sections with a page.

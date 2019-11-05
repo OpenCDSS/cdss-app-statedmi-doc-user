@@ -34,10 +34,10 @@ The internal part ID type will be set to WDID or Receipt, as appropriate.
 **This approach is being phased in and is preferred (except for Rio Grande).**
 
 To facilitate processing, it is often best to use list files to specific aggregates
-(see the [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md) command).
+(see the [`SetWellAggregateFromList`](../SetWellAggregateFromList/SetWellAggregateFromList.md) command).
 Aggregates by convention have their water rights grouped into classes.
 To represent all water rights at a location, use a system (see the similar
-[SetWellSystem](../command-ref/SetWellSystem/SetWellSystem.md) commands).
+[SetWellSystem](../SetWellSystem/SetWellSystem.md) commands).
 See also the StateDMI Introduction chapter, which provides additional information about aggregates and other modeling conventions.
 Aggregate information should be specified after well locations are defined
 and before their use in other processing, such as reading data from HydroBase.

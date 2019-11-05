@@ -28,7 +28,7 @@ This approach recognizes that the complexity of splitting right/permit data make
 Additionally, groundwater-only supply is typically limited by other data in model datasets.
 StateDMI 4.x also allows use of 11 digit parcel IDs in the StateMod well right file,
 consistent with recent irrigated lands assessment data layers, whereas the Legacy version cannot,
-particularly if the [`MergeWaterRights`](../MergeWaterRights/MergeWaterRights.md) command is used.
+particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command is used.
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">

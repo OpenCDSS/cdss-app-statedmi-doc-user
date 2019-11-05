@@ -1,6 +1,7 @@
 # StateDMI / Release Notes / Version 5 #
 
 * [Changes in Version 5.00.00](#changes-in-version-50000)
+* [Release notes for all versions](release-notes.md)
 
 ----------
 
@@ -29,13 +30,17 @@ modelers rather than parcel identifiers, thereby simplifying modeling input.
 Other commands such as [`ReadTableFromDBF`](../command-ref/ReadTableFromDBF/ReadTableFromDBF.md) can be used
 to read spatial data files and implement tests.
 Refer to documentation confirm understanding of the approach for each data file.
-	* [`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) - **under development**
-	* [`ReadIrrigationPracticeTSFromHydroBase`](../command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md) - **under development**
+	* [`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md)
+	* [`ReadIrrigationPracticeTSFromHydroBase`](../command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md)
 	* [`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md)
 	* [`SetWellAggregate`](../command-ref/SetWellAggregate/SetWellAggregate.md)
 	* [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md)
 	* [`SetWellSystem`](../command-ref/SetWellSystem/SetWellSystem.md)
 	* [`SetWellSystemFromList`](../command-ref/SetWellSystemFromList/SetWellSystemFromList.md)
+* ![new](new.png) [5.00.00] Lowercase file extension `statedmi` is supported and is now the default
+when saving a new command file.
+* ![new](new.png) [5.00.00] The ***View / Command File Diff*** menu has been added to compare the
+current command file contents with the previous saved version.
 * ![new](new.png) [5.00.00] Many general commands have been added to facilitate advanced
 workflows and automated testing.  The following commands have have been added and behave
 similar to TSTool software:
