@@ -121,25 +121,20 @@ These commands are used to insert comments into command files.
 
 These commands provide general file handling capabilities.
 
-* [`AppendFile`](AppendFile/AppendFile.md) - append a file to another file
-* [`CopyFile`](CopyFile/CopyFile.md) - copy a file to another name
 * [`ListFiles`](ListFiles/ListFiles.md) - list files in a folder
 * [`FTPGet`](FTPGet/FTPGet.md) - download a file from an FTP site
 * [`WebGet`](WebGet/WebGet.md) - download a file from a URL
 * [`RemoveFile`](RemoveFile/RemoveFile.md) - remove a file
 * [`UnzipFile`](UnzipFile/UnzipFile.md) - unzip the contents of a zip file
-* [`PrintTextFile`](PrintTextFile/PrintTextFile.md) - print a text file to printer
 
 ### General - Logging and Messaging ###
 
 These commands handle run-time configuration of logging and sending messages.
 
-* [`ConfigureLogging`](ConfigureLogging/ConfigureLogging.md) - configure logging
 * [`Message`](Message/Message.md) - output a message to the log file
 * [`SetDebugLevel`](SetDebugLevel/SetDebugLevel.md) - set the debug level for logging
 * [`SetWarningLevel`](SetWarningLevel/SetWarningLevel.md) - set the warning level for logging
 * [`StartLog`](StartLog/StartLog.md) - (re)start the log file
-* [`SendEmailMessage`](SendEmailMessage/SendEmailMessage.md) - send an email message
 
 ### General - Running and Properties ###
 
@@ -148,19 +143,15 @@ handling processor properties (used with `${Property}`).
 
 * [`ReadPropertiesFromFile`](ReadPropertiesFromFile/ReadPropertiesFromFile.md) - read processor properties from a file
 * [`SetProperty`](SetProperty/SetProperty.md) - set a processor property value
-* [`SetPropertyFromEnsemble`](SetPropertyFromEnsemble/SetPropertyFromEnsemble.md) - set a processor property from an ensemble
-* [`SetPropertyFromNwsrfsAppDefault`](SetPropertyFromNwsrfsAppDefault/SetPropertyFromNwsrfsAppDefault.md)
-* [`SetPropertyFromTimeSeries`](SetPropertyFromTimeSeries/SetPropertyFromTimeSeries.md) - set time series property from time series property
 * [`FormatDateTimeProperty`](FormatDateTimeProperty/FormatDateTimeProperty.md) - format a date/time processor property
 * [`FormatStringProperty`](FormatStringProperty/FormatStringProperty.md) - format a string processor property
 * [`WritePropertiesToFile`](WritePropertiesToFile/WritePropertiesToFile.md) - write processor properties to a file
 * [`RunCommands`](RunCommands/RunCommands.md) - run a TSTool command file
 * [`RunProgram`](RunProgram/RunProgram.md) - run a program
 * [`RunPython`](RunPython/RunPython.md) - run a Python a program
+* [`RunR`](RunR/RunR.md) - run an R script
 * [`Exit`](Exit/Exit.md) - stop processing commands
-* [`Wait`](Wait/Wait.md) - wait for a time before continuing
 * [`SetWorkingDir`](SetWorkingDir/SetWorkingDir.md) - set the working directory (folder) for following commands
-* [`ProfileCommands`](ProfileCommands/ProfileCommands.md) - create summary table with containing performance data
 * [`Empty`](Empty/Empty.md) - empty (blank) line
 * [`UnknownCommand`](UnknownCommand/UnknownCommand.md) - unknown command
 
@@ -200,8 +191,6 @@ These commands read tables from various sources.
 * [`ReadTableFromDelimitedFile`](ReadTableFromDelimitedFile/ReadTableFromDelimitedFile.md) - read a table from a delimited file
 * [`ReadTableFromExcel`](ReadTableFromExcel/ReadTableFromExcel.md) - read a table from an Excel workbook file
 * [`ReadTableFromFixedFormatFile`](ReadTableFromFixedFormatFile/ReadTableFromFixedFormatFile.md) - read a table from a fixed-format file
-* [`ReadTableFromJSON`](ReadTableFromJSON/ReadTableFromJSON.md) - read a table from a JSON file
-* [`ReadTableFromXml`](ReadTableFromXml/ReadTableFromXml.md) - read a table from an XML file
 
 ### Append, Join Tables ###
 
@@ -223,7 +212,6 @@ These commands manipulate tables.
 * [`SetTableValues`](SetTableValues/SetTableValues.md) - set values in a table
 * [`SplitTableColumn`](SplitTableColumn/SplitTableColumn.md) - split table column into multiple columns
 * [`TableMath`](TableMath/TableMath.md) - perform simple math on table columns
-* [`TableTimeSeriesMath`](TableTimeSeriesMath/TableTimeSeriesMath.md) - perform simple math on a table and time series
 * [`InsertTableRow`](InsertTableRow/InsertTableRow.md) - insert a row in a table
 * [`SortTable`](SortTable/SortTable.md) - sort table contents
 * [`SplitTableRow`](SplitTableRow/SplitTableRow.md) - split a table row into multiple rows
@@ -238,7 +226,6 @@ These commands analyze tables.
 
 These commands write tables to various formats.
 
-* [`WriteTableToDataStore`](WriteTableToDataStore/WriteTableToDataStore.md) - write a table to a datastore
 * [`WriteTableToDelimitedFile`](WriteTableToDelimitedFile/WriteTableToDelimitedFile.md) - write a table to a delimited file
 * [`WriteTableToExcel`](WriteTableToExcel/WriteTableToExcel.md) - write a table to an Excel workbook file
 * [`WriteTableToHTML`](WriteTableToHTML/WriteTableToHTML.md) - write a table to an HTML file
@@ -248,7 +235,6 @@ These commands write tables to various formats.
 These commands handle table properties, which are used to control run logic.
 
 * [`SetPropertyFromTable`](SetPropertyFromTable/SetPropertyFromTable.md) - set a processor property from a table
-* [`CopyPropertiesToTable`](CopyPropertiesToTable/CopyPropertiesToTable.md) - **command is under development**
 
 ## Command List ##
 
@@ -257,255 +243,379 @@ is useful to software users and developers.
 "Documentation Migrated" indicates whether the original Word version of documentation
 have been migrated to the new online version (this documentation).
 
-**This table needs to be completed for all commands.**
-
 |**Command**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Description**|**Doc. Status**|**Def. to Rel. Path**|
 |-------------------------------------------------------------------------------------------------------------|---------------------------------|:----------------------:|----|
-|[`#` comment](Comment/Comment.md)                                                                               |Single line comment.             |Migrated||
-|[`\*` comment block start](CommentBlockStart/CommentBlockStart.md)                                              |Start of multi-line comment block.|Migrated||
-|[`\*` comment block end](CommentBlockEnd/CommentBlockEnd.md)                                                    |End of multi-line comment block. |Migrated||
-|[`Add`](Add/Add.md)                                                                                             |Add time series to time series.|Migrated||
-|[`AddConstant`](AddConstant/AddConstant.md)                                                                     |Add a constant to time series values.|Migrated||
-|[`AdjustExtremes`](AdjustExtremes/AdjustExtremes.md)                                                            |Adjust extreme values in time series.|Migrated||
-|[`AnalyzeNetworkPointFlow`](AnalyzeNetworkPointFlow/AnalyzeNetworkPointFlow.md)                                 |Perform point flow analysis for a network.|Migrated||
-|[`AnalyzePattern`](AnalyzePattern/AnalyzePattern.md)                                                            |Analyze pattern of time series data.|Migrated||
-|[`AppendFile`](AppendFile/AppendFile.md)                                                                        |Append a file to another file.   |Migrated||
-|[`AppendTable`](AppendTable/AppendTable.md)                                                                     |Append a table to another table. |Migrated||
-|[`ARMA`](ARMA/ARMA.md)                                                                                          |                                 |Not yet migrated (placeholder)||
-|[`Blend`](Blend/Blend.md)                                                                                       |Blend one time series into another.|Migrated||
-|[`CalculateTimeSeriesStatistic`](CalculateTimeSeriesStatistic/CalculateTimeSeriesStatistic.md)                  |                                 |Not yet migrated (placeholder)||
-|[`ChangeInterval`](ChangeInterval/ChangeInterval.md)                                                            |                                 |Not yet migrated (placeholder)||
-|[`ChangePeriod`](ChangePeriod/ChangePeriod.md)                                                                  |Change time series data period.  |Migrated||
-|[`ChangeTimeZone`](ChangeTimeZone/ChangeTimeZone.md)                                                            |Change the time zone for time series.|Migrated||
-|[`CheckTimeSeries`](CheckTimeSeries/CheckTimeSeries.md)                                                         |Check time series values against criteria.|Migrated||
-|[`CheckTimeSeriesStatistic`](CheckTimeSeriesStatistic/CheckTimeSeriesStatistic.md)                              |Check time series statistic against criteria.|Migrated||
-|[`CloseDataStore`](CloseDataStore/CloseDataStore.md)                                                            |Close an open datastore.         |Migrated||
-|[`CloseExcelWorkbook`](CloseExcelWorkbook/CloseExcelWorkbook.md)                                                |Close Excel workbook that is open.|Migrated||
-|[`CompareFiles`](CompareFiles/CompareFiles.md)                                                                  |Compare files to detect whether they are the same or different.|Migrated||
-|[`CompareTables`](CompareTables/CompareTables.md)                                                               |Compare tables to detect whether they are the same or different.|Migrated||
-|[`CompareTimeSeries`](CompareTimeSeries/CompareTimeSeries.md)                                                   |Compare time series to detect whether they are the same or different.|Migrated||
-|[`ComputeErrorTimeSeries`](ComputeErrorTimeSeries/ComputeErrorTimeSeries.md)                                    |Compute the error between two time series.|Migrated||
-|[`ConfigureLogging`](ConfigureLogging/ConfigureLogging.md)                                                      |Configure logging.               |Migrated||
-|[`ConvertDataUnits`](ConvertDataUnits/ConvertDataUnits.md)                                                      |Convert time series data units.  |Migrated||
-|[`Copy`](Copy/Copy.md)                                                                                          |Copy a time series.              |Migrated||
-|[`CopyEnsemble`](CopyEnsemble/CopyEnsemble.md)                                                                  |Copy an ensemble to a new ensemble.|Migrated||
-|[`CopyFile`](CopyFile/CopyFile.md)                                                                              |Copy a file to another name.     |Migrated||
-|[`CopyPropertiesToTable`](CopyPropertiesToTable/CopyPropertiesToTable.md)                                       |Command is under development.    |Not yet migrated||
-|[`CopyTable`](CopyTable/CopyTable.md)                                                                           |Copy a table to a new table.     |Migrated||
-|[`CopyTimeSeriesPropertiesToTable`](CopyTimeSeriesPropertiesToTable/CopyTimeSeriesPropertiesToTable.md)         |Copy time series properties to a table.|Migrated||
-|[`CreateDataStoreDataDictionary`](CreateDataStoreDataDictionary/CreateDataStoreDataDictionary.md)               |Create a database data dictionary.|Migrated||
-|[`CreateEnsembleFromOneTimeSeries`](CreateEnsembleFromOneTimeSeries/CreateEnsembleFromOneTimeSeries.md)         |Create an ensemble from a time series.|Migrated||
-|[`CreateFromList`](CreateFromList/CreateFromList.md)                                                            |Create time series from a list in a file.|Migrated||
-|[`CreateNetworkFromTable`](CreateNetworkFromTable/CreateNetworkFromTable.md)                                    |Create a network from a table.|Migrated||
-|[`CreateRegressionTestCommandFile`](CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md)         |Create regression test suite command file.|Migrated||
-|[`CreateTimeSeriesEventTable`](CreateTimeSeriesEventTable/CreateTimeSeriesEventTable.md)                        |Create an event table associated with time series.|Migrated||
-|[`Cumulate`](Cumulate/Cumulate.md)                                                                              |Set time series values to cumulative values.|Migrated||
-|[`DeleteDataStoreTableRows`](DeleteDataStoreTableRows/DeleteDataStoreTableRows.md)                              |Delete datastore table rows.     |Migrated||
-|[`DeleteTableColumns`](DeleteTableColumns/DeleteTableColumns.md)                                                |Delete columns from a table.     |Migrated||
-|[`DeleteTableRows`](DeleteTableRows/DeleteTableRows.md)                                                         |Delete rows from a table.        |Migrated||
-|[`Delta`](Delta/Delta.md)                                                                                       |Create a new time series from delta between time series values.|Migrated||
-|[`DeselectTimeSeries`](DeselectTimeSeries/DeselectTimeSeries.md)                                                |Deselect output time series for processing.|Migrated||
-|[`Disaggregate`](Disaggregate/Disaggregate.md)                                                                  |Create a new time series by disaggregating a time series.|Migrated||
-|[`Divide`](Divide/Divide.md)                                                                                    |Divide one time series by another.|Migrated||
-|[`Empty`](Empty/Empty.md)                                                                                       |Empty (blank) commands line.     |Migrated||
-|[`EndFor`](EndFor/EndFor.md)                                                                                    |End of For loop.                 |Migrated||
-|[`EndIf`](EndIf/EndIf.md)                                                                                       |End of If loop.                  |Migrated||
-|[`Exit`](Exit/Exit.md)                                                                                          |Stop processing commands.        |Migrated||
-|[`ExpandTemplateFile`](ExpandTemplateFile/ExpandTemplateFile.md)                                                |Expand template file into full file.|Migrated||
-|`FillCarryForward`                                                                                              |Replaced by [`FillRepeat`](FillRepeat/FillRepeat.md).|NA||
-|[`FillConstant`](FillConstant/FillConstant.md)                                                                  |Fill missing time series values with a constant.|Migrated||
-|[`FillDayTSFrom2MonthTSAnd1DayTS`](FillDayTSFrom2MonthTSAnd1DayTS/FillDayTSFrom2MonthTSAnd1DayTS.md)            |Fill a daily time series by prorating monthly volumes using a daily pattern.|Migrated||
-|[`FillFromTS`](FillFromTS/FillFromTS.md)                                                                        |Fill missing time series values from another time series.|Migrated||
-|[`FillHistMonthAverage`](FillHistMonthAverage/FillHistMonthAverage.md)                                          |Fill missing time series values with historical monthly average. |Migrated||
-|[`FillHistYearAverage`](FillHistYearAverage/FillHistYearAverage.md)                                             |Fill missing time series values with historical yearly average.|Migrated||
-|[`FillInterpolate`](FillInterpolate/FillInterpolate.md)                                                         |Fill missing time series values using interpolation. |Migrated||
-|[`FillMixedStation`](FillMixedStation/FillMixedStation.md)                                                      |                                 |Not yet migrated (placeholder)||
-|[`FillMOVE1`](FillMOVE1/FillMOVE1.md)                                                                           |                                 |Not yet migrated (placeholder)||
-|[`FillMOVE2`](FillMOVE2/FillMOVE2.md)                                                                           |                                 |Not yet migrated (placeholder)||
-|[`FillPattern`](FillPattern/FillPattern.md)                                                                     |Fill missing time series values using historical pattern average.|Migrated||
-|[`FillPrincipalComponentAnalysis`](FillPrincipalComponentAnalysis/FillPrincipalComponentAnalysis.md)            |                                 |Not yet migrated (placeholder)||
-|[`FillProrate`](FillProrate/FillProrate.md)                                                                     |Fill missing time series values by prorating another time series.|Migrated||
-|[`FillRegression`](FillRegression/FillRegression.md)                                                            |                                 |Not yet migrated (placeholder)||
-|[`FillRepeat`](FillRepeat/FillRepeat.md)                                                                        |Fill missing time series values by repeating values.|Migrated||
-|[`FillUsingDiversionComments`](FillUsingDiversionComments/FillUsingDiversionComments.md)                        |Fill missing time series values using HydroBase diversion comments.|Migrated||
-|[`For`](For/For.md)                                                                                             |Iterate over items in a loop.    |Migrated||
-|[`FormatDateTimeProperty`](FormatDateTimeProperty/FormatDateTimeProperty.md)                                    |Format a date/time processor property.|Migrated||
-|[`FormatStringProperty`](FormatStringProperty/FormatStringProperty.md)                                          |Format string processor property.|Migrated||
-|[`FormatTableDateTime`](FormatTableDateTime/FormatTableDateTime.md)                                             |Format a date/time in a table.   |Migrated||
-|[`FormatTableString`](FormatTableString/FormatTableString.md)                                                   |Format a string in a table.      |Migrated||
-|[`Free`](Free/Free.md)                                                                                          |Free memory used by time series. |Migrated||
-|[`FreeTable`](FreeTable/FreeTable.md)                                                                           |Free memory resources for a table.|Migrated||
-|[`FTPGet`](FTPGet/FTPGet.md)                                                                                    |Download a file from an FTP site.|Migrated||
-|[`If`](If/If.md)                                                                                                |Test a condition to control logic flow.|Migrated||
-|[`InsertTableColumn`](InsertTableColumn/InsertTableColumn.md)                                                   |Insert a column in a table.      |Migrated||
-|[`InsertTableRow`](InsertTableRow/InsertTableRow.md)                                                            |Insert a row in a table.         |Migrated||
-|[`InsertTimeSeriesIntoEnsemble`](InsertTimeSeriesIntoEnsemble/InsertTimeSeriesIntoEnsemble.md)                  |Insert a time series into an ensemble.|Migrated||
-|[`JoinTables`](JoinTables/JoinTables.md)                                                                        |Join two tables.                 |Migrated||
-|[`LagK`](LagK/LagK.md)                                                                                          |Lag and attenuate flows.         |Migrated||
-|[`ListFiles`](ListFiles/ListFiles.md)                                                                           |List files in a folder.          |Migrated||
-|[`LookupTimeSeriesFromTable`](LookupTimeSeriesFromTable/LookupTimeSeriesFromTable.md)                           |Create a time series by looking up data values from a table.|Migrated||
-|[`ManipulateTableString`](ManipulateTableString/ManipulateTableString.md)                                       |Manipulate a string in a table.  |Migrated||
-|[`Message`](Message/Message.md)                                                                                 |Output a message to the log file.|Migrated||
-|[`Multiply`](Multiply/Multiply.md)                                                                              |Multiply one time series by another.|Migrated||
-|[`NewDayTSFromMonthAndDayTS`](NewDayTSFromMonthAndDayTS/NewDayTSFromMonthAndDayTS.md)                           |Create a new daily time series by distributing a monthly time series using a daily pattern.|Migrated||
-|[`NewDerbyDatabase`](NewDerbyDatabase/NewDerbyDatabase.md)                                                      |                                 |**Command is under development**||
-|[`NewEndOfMonthTSFromDayTS`](NewEndOfMonthTSFromDayTS/NewEndOfMonthTSFromDayTS.md)                              |Create a new end of month time series from daily time series.|Migrated||
-|[`NewEnsemble`](NewEnsemble/NewEnsemble.md)                                                                     |Create a new time series ensemble.|Migrated||
-|[`NewExcelWorkbook`](NewExcelWorkbook/NewExcelWorkbook.md)                                                      |Create a new Excel workbook file.|Migrated||
-|[`NewPatternTimeSeries`](NewPatternTimeSeries/NewPatternTimeSeries.md)                                          |Create a new time series with repeating pattern for data values.|Migrated||
-|[`NewStatisticMonthTimeSeries`](NewStatisticMonthTimeSeries/NewStatisticMonthTimeSeries.md)                     |Create a new time series with monthly statistics.|Migrated||
-|[`NewStatisticEnsemble`](NewStatisticEnsemble/NewStatisticEnsemble.md)                                          |Create an ensemble of static time series.|Migrated||
-|[`NewStatisticTimeSeries`](NewStatisticTimeSeries/NewStatisticTimeSeries.md)                                    |Create a new time series having statistic repeated each year.|Migrated||
-|[`NewStatisticTimeSeriesFromEnsemble`](NewStatisticTimeSeriesFromEnsemble/NewStatisticTimeSeriesFromEnsemble.md)|                                 |Not yet migrated (placeholder)||
-|[`NewStatisticYearTS`](NewStatisticYearTS/NewStatisticYearTS.md)                                                |Create a new time series of annual statistics.|Migrated||
-|[`NewTable`](NewTable/NewTable.md)                                                                              |Create a new table.              |Migrated||
-|[`NewTimeSeries`](NewTimeSeries/NewTimeSeries.md)                                                               |Create a new time series.        |Migrated||
-|[`NewTreeView`](NewTreeView/NewTreeView.md)                                                                     |Create a tree view in the user interface.|Migrated||
-|[`Normalize`](Normalize/Normalize.md)                                                                           |Create new time series by normalizing a time series.|Migrated||
-|[`OpenCheckFile`](OpenCheckFile/OpenCheckFile.md)                                                               |                                 |Not yet migrated (placeholder)||
-|[`OpenHydroBase`](OpenHydroBase/OpenHydroBase.md)                                                               |Open a HydroBase database connection.|Migrated||
-|[`PrintTextFile`](PrintTextFile/PrintTextFile.md)                                                               |Print text file to a printer.    |Migrated||
-|[`ProcessRasterGraph`](ProcessRasterGraph/ProcessRasterGraph.md)                                                |Process (create) time series raster graph.|Migrated||
-|[`ProcessTSProduct`](ProcessTSProduct/ProcessTSProduct.md)                                                      |Process (create) time series data product.|Migrated||
-|[`ProfileCommands`](ProfileCommands/ProfileCommands.md)                                                         |Create summary table with containing performance data|Migrated||
-|[`ReadColoradoHydroBaseRest`](ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest.md)                           |Read time series from [State of Colorado HydroBase REST web services](../datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md)|Migrated||
-|[`ReadDateValue`](ReadDateValue/ReadDateValue.md)                                                               |Read time series from a [DateValue file](../datastore-ref/DateValue/DateValue.md).|Migrated||
-|[`ReadDelftFewsPiXml`](ReadDelftFewsPiXml/ReadDelftFewsPiXml.md)                                                |Read time series from [Delft FEWS PI XML file](../datastore-ref/Delft-FEWS-PI-XML/Delft-FEWS-PI-XML.md).|Migrated||
-|[`ReadDelimitedFile`](ReadDelimitedFile/ReadDelimitedFile.md)                                                   |Read time series from delimited file.|Migrated||
-|[`ReadExcelWorkbook`](ReadExcelWorkbook/ReadExcelWorkbook.md)                                                   |Read Excel workbook file.        |Migrated||
-|[`ReadHecDss`](ReadHecDss/ReadHecDss.md)                                                                        |Read time series from [HEC-DSS file](../datastore-ref/HEC-DSS/HEC-DSS.md)|Migrated||
-|[`ReadHydroBase`](ReadHydroBase/ReadHydroBase.md)                                                               |Read time series from [State of Colorado HydroBase database](../datastore-ref/CO-HydroBase/CO-HydroBase.md)|Migrated||
-|[`ReadMODSIM`](ReadMODSIM/ReadMODSIM.md)                                                                        |Read time series from [MODSIM model file](../datastore-ref/MODSIM/MODSIM.md).|Migrated||
-|[`ReadNrcsAwdb`](ReadNrcsAwdb/ReadNrcsAwdb.md)                                                                  |Read time series from [NRCS AWDB web services](../datastore-ref/NRCS-AWDB/NRCS-AWDB.md)|Migrated||
-|[`ReadNwsCard`](ReadNwsCard/ReadNwsCard.md)                                                                     |                                 |Not yet migrated (placeholder)||
-|[`ReadNwsrfsEspTraceEnsemble`](ReadNwsrfsEspTraceEnsemble/ReadNwsrfsEspTraceEnsemble.md)                        |                                 |Not yet migrated (placeholder)||
-|[`ReadNwsrfsFS5Files`](ReadNwsrfsFS5Files/ReadNwsrfsFS5Files.md)                                                |                                 |Not yet migrated (placeholder)||
-|[`ReadPatternFile`](ReadPatternFile/ReadPatternFile.md)                                                         |Read time series used by [`ReadPatternFile`](ReadPatternFile/ReadPatternFile.md)|Migrated||
-|[`ReadPropertiesFromExcel`](ReadPropertiesFromExcel/ReadPropertiesFromExcel.md)                                 |Read processor properties from Excel.|Migrated||
-|[`ReadPropertiesFromFile`](ReadPropertiesFromFile/ReadPropertiesFromFile.md)                                    |Read processor properties from a file.|Migrated||
-|[`ReadRccAcis`](ReadRccAcis/ReadRccAcis.md)                                                                     |Read time series from [RCC ACIS web service](../datastore-ref/RCC-ACIS/RCC-ACIS.md).|Migrated||
-|[`ReadReclamationHDB`](ReadReclamationHDB/ReadReclamationHDB.md)                                                |Read time series from [Reclamation HDB database](../datastore-ref/ReclamationHDB/ReclamationHDB.md)|Migrated||
-|[`ReadReclamationPisces`](ReadReclamationPisces/ReadReclamationPisces.md)                                       |Read time series from [Reclamation Pisces database](../datastore-ref/ReclamationPisces/ReclamationPisces.md)|Migrated||
-|[`ReadRiversideDB`](ReadRiversideDB/ReadRiversideDB.md)                                                         |                                 |Not yet migrated (placeholder)||
-|[`ReadRiverWare`](ReadRiverWare/ReadRiverWare.md)                                                               |Read time series from [RiverWare file](../datastore-ref/RiverWare/RiverWare.md)|Migrated||
-|[`ReadStateCU`](ReadStateCU/ReadStateCU.md)                                                                     |Read time series from a [StateCU file](../datastore-ref/StateCU/StateCU.md).|Migrated||
-|[`ReadStateCUB`](ReadStateCUB/ReadStateCUB.md)                                                                  |Read time series from a [StateCU binary file](../datastore-ref/StateCUB/StateCUB.md).|Migrated||
-|[`ReadStateMod`](ReadStateMod/ReadStateMod.md)                                                                  |Read time series from a [StateMod file](../datastore-ref/StateMod/StateMod.md).|Migrated|yes|
-|[`ReadStateModB`](ReadStateModB/ReadStateModB.md)                                                               |Read time series from a [StateMod binary file](../datastore-ref/StateModB/StateModB.md).|Migrated||
-|[`ReadTableCellsFromExcel`](ReadTableCellsFromExcel/ReadTableCellsFromExcel.md)                                 |Read table cells from Excel worksheet.|Migrated||
-|[`ReadTableFromDataStore`](ReadTableFromDataStore/ReadTableFromDataStore.md)                                    |Read a table from a datastore.   |Migrated||
-|[`ReadTableFromDBF`](ReadTableFromDBF/ReadTableFromDBF.md)                                                      |Read a table from a DBF file.    |Migrated||
-|[`ReadTableFromDelimitedFile`](ReadTableFromDelimitedFile/ReadTableFromDelimitedFile.md)                        |Read a table from a delimited file.|Migrated||
-|[`ReadTableFromExcel`](ReadTableFromExcel/ReadTableFromExcel.md)                                                |Read a table from an Excel workbook file.|Migrated||
-|[`ReadTableFromFixedFormatFile`](ReadTableFromFixedFormatFile/ReadTableFromFixedFormatFile.md)                  |Read a table from a fixed-format file.|Migrated||
-|[`ReadTableFromJSON`](ReadTableFromJSON/ReadTableFromJSON.md)                                                   |Read a table from a JSON file.   |Migrated||
-|[`ReadTableFromXml`](ReadTableFromXml/ReadTableFromXml.md)                                                      |Read a table from an XML file.   |Migrated||
-|[`ReadTimeSeries`](ReadTimeSeries/ReadTimeSeries.md)                                                            |Read a single time series using TSID to determine data source.|Migrated||
-|[`ReadTimeSeriesFromDataStore`](ReadTimeSeriesFromDataStore/ReadTimeSeriesFromDataStore.md)                     |Read time series from a datastore.|Migrated||
-|[`ReadTimeSeriesList`](ReadTimeSeriesList/ReadTimeSeriesList.md)                                                |Read time series from a list in a table.|Migrated||
-|[`ReadUsgsNwisDaily`](ReadUsgsNwisDaily/ReadUsgsNwisDaily.md)                                                   |Read daily value time series from [USGS NWIS Daily web services](../datastore-ref/USGS-NWIS-Daily/USGS-NWIS-Daily.md)|Migrated||
-|[`ReadUsgsNwisGroundwater`](ReadUsgsNwisGroundwater/ReadUsgsNwisGroundwater.md)                                 |Read groundwater time series from [USGS NWIS Groundwater web services](../datastore-ref/USGS-NWIS-Groundwater/USGS-NWIS-Groundwater.md)|Migrated||
-|[`ReadUsgsNwisInstantaneous`](ReadUsgsNwisInstantaneous/ReadUsgsNwisInstantaneous.md)                           |Read instantaneous value time series from [USGS NWIS Instantaneous web services](../datastore-ref/USGS-NWIS-Instantaneous/USGS-NWIS-Instantaneous.md)|Migrated||
-|[`ReadWaterML`](ReadWaterML/ReadWaterML.md)                                                                     |                                 |Not yet migrated (placeholder)||
-|[`ReadWaterML2`](ReadWaterML2/ReadWaterML2.md)                                                                  |                                 |Not yet migrated (placeholder)||
-|[`ReadWaterOneFlow`](ReadWaterOneFlow/ReadWaterOneFlow.md)                                                      |                                 |Not yet migrated (placeholder)||
-|[`ReadUsgsNwisRdb`](ReadUsgsNwisRdb/ReadUsgsNwisRdb.md)                                                         |Read time series from a [USGS NWS RDB file](../datastore-ref/USGS-NWIS-RDB/USGS-NWIS-RDB.md)|Migrated||
-|[`RelativeDiff`](RelativeDiff/RelativeDiff.md)                                                                  |Create a new time series as relative difference of two time series.|Migrated||
-|[`RemoveFile`](RemoveFile/RemoveFile.md)                                                                        |Remove a file.                   |Migrated||
-|[`ReplaceValue`](ReplaceValue/ReplaceValue.md)                                                                  |Replace values in time series data.|Migrated||
-|[`ResequenceTimeSeriesData`](ResequenceTimeSeriesData/ResequenceTimeSeriesData.md)                              |Resequence time series data values by year.|Migrated||
-|[`RunCommands`](RunCommands/RunCommands.md)                                                                     |Run a TSTool command file.       |Migrated||
-|[`RunDSSUTL`](RunDSSUTL/RunDSSUTL.md)                                                                           |Run HEC-DSS DSSUTL program.      |Migrated||
-|`RunningAverage`                                                                                                |Replaced by [`RunningStatisticTimeSeries`](RunningStatisticTimeSeries/RunningStatisticTimeSeries.md)|NA||
-|[`RunningStatisticTimeSeries`](RunningStatisticTimeSeries/RunningStatisticTimeSeries.md)                        |Create time series containing statistic from moving "running" sample.|Not yet migrated (placeholder)||
-|[`RunProgram`](RunProgram/RunProgram.md)                                                                        |Run a program.                   |Migrated||
-|[`RunPython`](RunPython/RunPython.md)                                                                           |Run a python program.            |Migrated||
-|[`RunSql`](RunSql/RunSql.md)                                                                                    |Run an SQL statement on a datastore.|Migrated||
-|[`Scale`](Scale/Scale.md)                                                                                       |Scale time series values.        |Migrated||
-|[`SelectTimeSeries`](SelectTimeSeries/SelectTimeSeries.md)                                                      |Select output time series for processing.|Migrated||
-|[`SendEmailMessage`](SendEmailMessage/SendEmailMessage.md)                                                      |Send an email message.           |Migrated||
-|[`SetAutoExtendPeriod`](SetAutoExtendPeriod/SetAutoExtendPeriod.md)                                             |Set global property to auto-extend time series to output period.|Migrated||
-|[`SetAveragePeriod`](SetAveragePeriod/SetAveragePeriod.md)                                                      |Set the global period used to compute historical averages.|Migrated||
-|[`SetConstant`](SetConstant/SetConstant.md)                                                                     |Set time series data values to a constant.|Migrated||
-|`SetConstantBefore`                                                                                             |Replaced by [`SetConstant`](SetConstant/SetConstant.md)|NA||
-|[`SetDataValue`](SetDataValue/SetDataValue.md)                                                                  |Set data values in time series.  |Migrated||
-|[`SetDebugLevel`](SetDebugLevel/SetDebugLevel.md)                                                               |Set the debug level for logging. |Migrated||
-|[`SetEnsembleProperty`](SetEnsembleProperty/SetEnsembleProperty.md)                                             |Set an ensemble property.        |Migrated||
-|[`SetExcelCell`](SetExcelCell/SetExcelCell.md)                                                                  |Set data in an Excel cell.       |Migrated||
-|[`SetExcelWorksheetViewProperties`](SetExcelWorksheetViewProperties/SetExcelWorksheetViewProperties.md)         |Set Excel worksheet view properties.|Migrated||
-|[`SetFromTS`](SetFromTS/SetFromTS.md)                                                                           |Set time series data values from another time series.|Migrated||
-|[`SetIgnoreLEZero`](SetIgnoreLEZero/SetIgnoreLEZero.md)                                                         |Set global property to ignore time series values <=0 in averages.|Migrated||
-|[`SetIncludeMissingTS`](SetIncludeMissingTS/SetIncludeMissingTS.md)                                             |Set the global property to include missing time series in output.|Migrated||
-|[`SetInputPeriod`](SetInputPeriod/SetInputPeriod.md)                                                            |Set the global processor input period.|Migrated||
-|[`SetOutputPeriod`](SetOutputPeriod/SetOutputPeriod.md)                                                         |Set the global processor output period.|Migrated||
-|[`SetOutputYearType`](SetOutputYearType/SetOutputYearType.md)                                                   |Set the global processor output year type. |Migrated||
-|`SetPatternFile`                                                                                                |Replaced by [`ReadPatternFile`](ReadPatternFile/ReadPatternFile.md) command|NA||
-|[`SetProperty`](SetProperty/SetProperty.md)                                                                     |Set processor property value.    |Migrated||
-|[`SetPropertyFromNwsrfsAppDefault`](SetPropertyFromNwsrfsAppDefault/SetPropertyFromNwsrfsAppDefault.md)         |                                 |Not yet migrated (placeholder)||
-|[`SetPropertyFromEnsemble`](SetPropertyFromEnsemble/SetPropertyFromEnsemble.md)                                 |Set processor property from ensemble.|Migrated||
-|[`SetPropertyFromTable`](SetPropertyFromTable/SetPropertyFromTable.md)                                          |Set processor property from a table.|Migrated||
-|[`SetPropertyFromTimeSeries`](SetPropertyFromTimeSeries/SetPropertyFromTimeSeries.md)                           |Set processor property from time series property.|Migrated||
-|[`SetTableValues`](SetTableValues/SetTableValues.md)                                                            |Set values in a table.           |Migrated||
-|[`SetTimeSeriesPropertiesFromTable`](SetTimeSeriesPropertiesFromTable/SetTimeSeriesPropertiesFromTable.md)      |Set time series properties from table values.|Migrated||
-|[`SetTimeSeriesProperty`](SetTimeSeriesProperty/SetTimeSeriesProperty.md)                                       |Set a time series property.      |Migrated||
-|[`SetTimeSeriesValuesFromLookupTable`](SetTimeSeriesValuesFromLookupTable/SetTimeSeriesValuesFromLookupTable.md)|Set time series values from a lookup table.|Migrated||
-|[`SetTimeSeriesValuesFromTable`](SetTimeSeriesValuesFromTable/SetTimeSeriesValuesFromTable.md)                  |Set time series values from a table.|Migrated||
-|[`SetToMax`](SetToMax/SetToMax.md)                                                                              |Set time series values to maximum of 1+ time series.|Migrated||
-|[`SetToMin`](SetToMin/SetToMin.md)                                                                              |Set time series values to minimum of 1+ time series.|Migrated||
-|[`SetWarningLevel`](SetWarningLevel/SetWarningLevel.md)                                                         |Set the warning level for logging.|Migrated||
-|[`SetWorkingDir`](SetWorkingDir/SetWorkingDir.md)                                                               |Set the working directory (folder) for following commands.|Migrated||
-|[`ShiftTimeByInterval`](ShiftTimeByInterval/ShiftTimeByInterval.md)                                             |Shift time series data values by a time interval.|Migrated||
-|[`SortTable`](SortTable/SortTable.md)                                                                           |Sort table contents.             |Migrated||
-|[`SortTimeSeries`](SortTimeSeries/SortTimeSeries.md)                                                            |Sort the output time series.     |Migrated||
-|[`SplitTableColumn`](SplitTableColumn/SplitTableColumn.md)                                                      |Split a table column into multiple columns.|Migrated||
-|[`SplitTableRow`](SplitTableRow/SplitTableRow.md)                                                               |Split a table row into multiple rows. |Migrated||
-|[`StartLog`](StartLog/StartLog.md)                                                                              |(Re)start the log file.          |Migrated||
-|[`StartRegressionTestResultsReport`](StartRegressionTestResultsReport/StartRegressionTestResultsReport.md)      |Start the regression test results report file to record output of tests.|Migrated ||
-|[`StateModMax`](StateModMax/StateModMax.md)                                                                     |Create time series that are maximum of two [StateMod files](../datastore-ref/StateMod/StateMod.md).|Migrated||
-|[`Subtract`](Subtract/Subtract.md)                                                                              |Subtract time series from time series.|Migrated||
-|[`TableMath`](TableMath/TableMath.md)                                                                           |Perform simple math on table columns.|Migrated||
-|[`TableTimeSeriesMath`](TableTimeSeriesMath/TableTimeSeriesMath.md)                                             |Perform simple math on a table and time series.|Migrated||
-|[`TableToTimeSeries`](TableToTimeSeries/TableToTimeSeries.md)                                                   |Create time series from a table. |Migrated||
-|[`TimeSeriesToTable`](TimeSeriesToTable/TimeSeriesToTable.md)                                                   |Copy time series to a table.     |Migrated||
-|[`TSID`](TSID/TSID.md)                                                                                          |Time series identifier (TSID), causes time series to be read. |Migrated||
-|[`UnknownCommand`](UnknownCommand/UnknownCommand.md)                                                            |Unknown command.                 |Migrated||
-|[`UnzipFile`](UnzipFile/UnzipFile.md)                                                                           |Unzip the contents of a zip file.|Migrated||
-|[`VariableLagK`](VariableLagK/VariableLagK.md)                                                                  |Lag and attenuate flows.         |Migrated||
-|[`Wait`](Wait/Wait.md)                                                                                          |Wait for at time before continuing.|Migrated||
-|[`WebGet`](WebGet/WebGet.md)                                                                                    |Download a file from a URL.      |Migrated||
-|[`WeightTraces`](WeightTraces/WeightTraces.md)                                                                  |Create time series as weighted sum of ensemble traces.|Migrated||
-|[`WriteCheckFile`](WriteCheckFile/WriteCheckFile.md)                                                            |Write command log to file.       |Migrated||
-|[`WriteCommandSummaryToFile`](WriteCommandSummaryToFile/WriteCommandSummaryToFile.md)                           |Write summary of command log to a file. | Migrated ||
-|[`WriteDateValue`](WriteDateValue/WriteDateValue.md)                                                            |Write time series to [DateValue format file](../datastore-ref/DateValue/DateValue.md).|Migrated||
-|[`WriteDelftFewsPiXml`](WriteDelftFewsPiXml/WriteDelftFewsPiXml.md)                                             |Write time series to a [Delft FEWS PI XML file](../datastore-ref/Delft-FEWS-PI-XML/Delft-FEWS-PI-XML.md).|Migrated||
-|[`WriteDelimitedFile`](WriteDelimitedFile/WriteDelimitedFile.md)                                                |Write time series from delimited file.|Migrated||
-|[`WriteHecDss`](WriteHecDss/WriteHecDss.md)                                                                     |Write time series to a [HEC-DSS file](../datastore-ref/HEC-DSS/HEC-DSS.md).|Migrated||
-|[`WriteNwsCard`](WriteNwsCard/WriteNwsCard.md)                                                                  |                                 |Not yet migrated (placeholder)||
-|[`WriteNWSRFSESPTraceEnsemble`](WriteNWSRFSESPTraceEnsemble/WriteNWSRFSESPTraceEnsemble.md)                     |                                 |Not yet migrated (placeholder)||
-|[`WritePropertiesToFile`](WritePropertiesToFile/WritePropertiesToFile.md)                                       |Write processor properties to a file.|Migrated||
-|[`WriteReclamationHDB`](WriteReclamationHDB/WriteReclamationHDB.md)                                             |Write time series to [Reclamation HDB database](../datastore-ref/ReclamationHDB/ReclamationHDB.md)|Migrated||
-|[`WriteRiversideDB`](WriteRiversideDB/WriteRiversideDB.md)                                                      |                                 |Not yet migrated (placeholder)||
-|[`WriteRiverWare`](WriteRiverWare/WriteRiverWare.md)                                                            |Write time series to a [RiverWare file](../datastore-ref/RiverWare/RiverWare.md).|Migrated||
-|[`WriteSHEF`](WriteSHEF/WriteSHEF.md)                                                                           |Write time series to [SHEF file](../datastore-ref/SHEF/SHEF.md).|Migrated||
-|[`WriteStateCU`](WriteStateCU/WriteStateCU.md)                                                                  |Write time series to a [StateCU file](../datastore-ref/StateCU/StateCU.md).|Migrated||
-|[`WriteStateMod`](WriteStateMod/WriteStateMod.md)                                                               |Write time series to a [StateMod file](../datastore-ref/StateMod/StateMod.md).|Migrated||
-|[`WriteSummary`](WriteSummary/WriteSummary.md)                                                                  |Write time series to a summary report file.|Migrated||
-|[`WriteTableCellsToExcel`](WriteTableCellsToExcel/WriteTableCellsToExcel.md)                                    |Write table row cells to an Excel worksheet.|Migrated||
-|[`WriteTableToDataStore`](WriteTableToDataStore/WriteTableToDataStore.md)                                       |Write a table to a datastore.    |Migrated||
-|[`WriteTableToDelimitedFile`](WriteTableToDelimitedFile/WriteTableToDelimitedFile.md)                           |Write a table to delimited file. |Migrated||
-|[`WriteTableToExcel`](WriteTableToExcel/WriteTableToExcel.md)                                                   |Write a table to an Excel workbook file.|Migrated||
-|[`WriteTableToGeoJSON`](WriteTableToGeoJSON/WriteTableToGeoJSON.md)                                             |Write a table to a GeoJSON file.|Migrated||
-|[`WriteTableToHTML`](WriteTableToHTML/WriteTableToHTML.md)                                                      |Write a table to an HTML file.   |Migrated||
-|[`WriteTableToKml`](WriteTableToKml/WriteTableToKml.md)                                                         |Write a table to a KML file.|Migrated||
-|[`WriteTableToShapefile`](WriteTableToShapefile/WriteTableToShapefile.md)                                       |Write a table to a shapefile.|Migrated||
-|[`WriteTimeSeriesPropertiesToFile`](WriteTimeSeriesPropertiesToFile/WriteTimeSeriesPropertiesToFile.md)         |Write time series properties to a file.|Migrated||
-|[`WriteTimeSeriesToDataStore`](WriteTimeSeriesToDataStore/WriteTimeSeriesToDataStore.md)                        |Write time series to a datastore.|Migrated||
-|[`WriteTimeSeriesToDataStream`](WriteTimeSeriesToDataStream/WriteTimeSeriesToDataStream.md)                     |Write time series to a stream of data lines.|Migrated||
-|[`WriteTimeSeriesToExcel`](WriteTimeSeriesToExcel/WriteTimeSeriesToExcel.md)                                    |Write time series to an Excel workbook.|Migrated||
-|[`WriteTimeSeriesToExcelBlock`](WriteTimeSeriesToExcelBlock/WriteTimeSeriesToExcelBlock.md)                     |Write time series to an Excel workbook using block format.|Migrated||
-|[`WriteTimeSeriesToGeoJSON`](WriteTimeSeriesToGeoJSON/WriteTimeSeriesToGeoJSON.md)                              |Write time series to a GeoJSON file.|Migrated||
-|[`WriteTimeSeriesToHydroJSON`](WriteTimeSeriesToHydroJSON/WriteTimeSeriesToHydroJSON.md)                        |Write time series to a [HydroJSON file](../datastore-ref/HydroJSON/HydroJSON.md).|Migrated||
-|[`WriteTimeSeriesToJson`](WriteTimeSeriesToJson/WriteTimeSeriesToJson.md)                                       |Write time series to a JSON file.|Migrated||
-|[`WriteTimeSeriesToKml`](WriteTimeSeriesToKml/WriteTimeSeriesToKml.md)                                          |Write time esries to a KML file. |Migrated||
-|[`WriteWaterML`](WriteWaterML/WriteWaterML.md)                                                                  |                                 |Not yet migrated (placeholder)||
-|[`WriteWaterML2`](WriteWaterML2/WriteWaterML2.md)                                                               |                                 |Not yet migrated (placeholder)||
+|[`#` comment](Comment/Comment.md)                                                                               | Single line comment.             |Migrated?||
+|[`\*` comment block start](CommentBlockStart/CommentBlockStart.md)                                              | Start of multi-line comment block.|Migrated?||
+|[`\*` comment block end](CommentBlockEnd/CommentBlockEnd.md)                                                    | End of multi-line comment block. |Migrated?||
+|[`AggregateWellRights`](AggregateWellRights/AggregateWellRights.md)                                             | AggregateWellRights ||
+|[`AppendNetwork`](AppendNetwork/AppendNetwork.md)                                                               | AppendNetwork ||
+|[`AppendTable`](AppendTable/AppendTable.md)                                                                     | Append a table to another table. |Migrated?||
+|[`CalculateDiversionDemandTSMonthly`](CalculateDiversionDemandTSMonthly/CalculateDiversionDemandTSMonthly.md)   | CalculateDiversionDemandTSMonthly ||
+|[`CalculateDiversionDemandTSMonthlyAsMax`](CalculateDiversionDemandTSMonthlyAsMax/CalculateDiversionDemandTSMonthlyAsMax.md) | CalculateDiversionDemandTSMonthlyAsMax ||
+|[`CalculateDiversionStationEfficiencies`](CalculateDiversionStationEfficiencies/CalculateDiversionStationEfficiencies.md)    | CalculateDiversionStationEfficiencies ||
+|[`CalculateStreamEstimateCoefficients`](CalculateStreamEstimateCoefficients/CalculateStreamEstimateCoefficients.md)          | CalculateStreamEstimateCoefficients ||
+|[`CalculateWellDemandTSMonthly`](CalculateWellDemandTSMonthly/CalculateWellDemandTSMonthly.md)                  | CalculateWellDemandTSMonthly ||
+|[`CalculateWellDemandTSMonthlyAsMax`](CalculateWellDemandTSMonthlyAsMax/CalculateWellDemandTSMonthlyAsMax.md)   | CalculateWellDemandTSMonthlyAsMax ||
+|[`CalculateWellStationEfficiencies`](CalculateWellStationEfficiencies/CalculateWellStationEfficiencies.md)      | CalculateWellStationEfficiencies ||
+|[`CheckBlaneyCriddle`](CheckBlaneyCriddle/CheckBlaneyCriddle.md)                                                | CheckBlaneyCriddle ||
+|[`CheckClimateStations`](CheckClimateStations/CheckClimateStations.md)                                          | CheckClimateStations ||
+|[`CheckCropCharacteristics`](CheckCropCharacteristics/CheckCropCharacteristics.md)                              | CheckCropCharacteristics ||
+|[`CheckCropPatternTS`](CheckCropPatternTS/CheckCropPatternTS.md)                                                | CheckCropPatternTS ||
+|[`CheckCULocations`](CheckCULocations/CheckCULocations.md)                                                      | CheckCULocations ||
+|[`CheckDiversionDemandTSMonthly`](CheckDiversionDemandTSMonthly/CheckDiversionDemandTSMonthly.md)               | CheckDiversionDemandTSMonthly ||
+|[`CheckDiversionHistoricalTSMonthly`](CheckDiversionHistoricalTSMonthly/CheckDiversionHistoricalTSMonthly.md)   | CheckDiversionHistoricalTSMonthly ||
+|[`CheckDiversionRights`](CheckDiversionRights/CheckDiversionRights.md)                                          | CheckDiversionRights ||
+|[`CheckDiversionStations`](CheckDiversionStations/CheckDiversionStations.md)                                    | CheckDiversionStations ||
+|[`CheckInstreamFlowDemandTSAverageMonthly`](CheckInstreamFlowDemandTSAverageMonthly/CheckInstreamFlowDemandTSAverageMonthly.md)    | CheckInstreamFlowDemandTSAverageMonthly ||
+|[`CheckInstreamFlowRights`](CheckInstreamFlowRights/CheckInstreamFlowRights.md)                                 | CheckInstreamFlowRights ||
+|[`CheckInstreamFlowStations`](CheckInstreamFlowStations/CheckInstreamFlowStations.md)                           | CheckInstreamFlowStations ||
+|[`CheckIrrigationPracticeTS`](CheckIrrigationPracticeTS/CheckIrrigationPracticeTS.md)                           | CheckIrrigationPracticeTS ||
+|[`CheckPenmanMonteith`](CheckPenmanMonteith/CheckPenmanMonteith.md)                                             | CheckPenmanMonteith ||
+|[`CheckReservoirRights`](CheckReservoirRights/CheckReservoirRights.md)                                          | CheckReservoirRights ||
+|[`CheckReservoirStations`](CheckReservoirStations/CheckReservoirStations.md)                                    | CheckReservoirStations ||
+|[`CheckRiverNetwork`](CheckRiverNetwork/CheckRiverNetwork.md)                                                   | CheckRiverNetwork ||
+|[`CheckStreamEstimateCoefficients`](CheckStreamEstimateCoefficients/CheckStreamEstimateCoefficients.md)         | CheckStreamEstimateCoefficients ||
+|[`CheckStreamEstimateStations`](CheckStreamEstimateStations/CheckStreamEstimateStations.md)                     | CheckStreamEstimateStations ||
+|[`CheckStreamGageStations`](CheckStreamGageStations/CheckStreamGageStations.md)                                 | CheckStreamGageStations ||
+|[`CheckWellDemandTSMonthly`](CheckWellDemandTSMonthly/CheckWellDemandTSMonthly.md)                              | CheckWellDemandTSMonthly ||
+|[`CheckWellHistoricalPumpingTSMonthly`](CheckWellHistoricalPumpingTSMonthly/CheckWellHistoricalPumpingTSMonthly.md)    | CheckWellHistoricalPumpingTSMonthly ||
+|[`CheckWellRights`](CheckWellRights/CheckWellRights.md)                                                         | CheckWellRights ||
+|[`CheckWellStations`](CheckWellStations/CheckWellStations.md)                                                   | CheckWellStations ||
+|[`CloseExcelWorkbook`](CloseExcelWorkbook/CloseExcelWorkbook.md)                                                | Close Excel workbook that is open.|Migrated?||
+|[`CompareFiles`](CompareFiles/CompareFiles.md)                                                                  | Compare files to detect whether they are the same or different.|Migrated?||
+|[`CompareTables`](CompareTables/CompareTables.md)                                                               | Compare tables to detect whether they are the same or different.|Migrated?||
+|[`CopyTable`](CopyTable/CopyTable.md)                                                                           | Copy a table to a new table.     |Migrated?||
+|[`CreateCropPatternTSForCULocations`](CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md)   | CreateCropPatternTSForCULocations ||
+|[`CreateIrrigationPracticeTSForCULocations`](CreateIrrigationPracticeTSForCULocations/CreateIrrigationPracticeTSForCULocations.md)    | CreateIrrigationPracticeTSForCULocations ||
+|[`CreateNetworkFromRiverNetwork`](CreateNetworkFromRiverNetwork/CreateNetworkFromRiverNetwork.md)               | CreateNetworkFromRiverNetwork ||
+|[`CreateRegressionTestCommandFile`](CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md)         | CreateRegressionTestCommandFile ||
+|[`CreateRiverNetworkFromNetwork`](CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md)               | CreateRiverNetworkFromNetwork ||
+|[`DeleteTableColumns`](DeleteTableColumns/DeleteTableColumns.md)                                                | Delete columns from a table.     |Migrated?||
+|[`DeleteTableRows`](DeleteTableRows/DeleteTableRows.md)                                                         | Delete rows from a table.        |Migrated?||
+|[`Empty`](Empty/Empty.md)                                                                                       | Empty (blank) commands line.     |Migrated?||
+|[`Exit`](Exit/Exit.md)                                                                                          | Stop processing commands.        |Migrated?||
+|[`FillClimateStation`](FillClimateStation/FillClimateStation.md)                                                | FillClimateStation ||
+|[`FillClimateStationsFromHydroBase`](FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md)      | FillClimateStationsFromHydroBase ||
+|[`FillCropPatternTSConstant`](FillCropPatternTSConstant/FillCropPatternTSConstant.md)                           | FillCropPatternTSConstant ||
+|[`FillCropPatternTSInterpolate`](FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md)                  | FillCropPatternTSInterpolate ||
+|[`FillCropPatternTSRepeat`](FillCropPatternTSRepeat/FillCropPatternTSRepeat.md)                                 | FillCropPatternTSRepeat ||
+|[`FillCropPatternTSUsingWellRights`](FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md)      | FillCropPatternTSUsingWellRights ||
+|[`FillCULocation`](FillCULocation/FillCULocation.md)                                                            | FillCULocation ||
+|[`FillCULocationClimateStationWeights`](FillCULocationClimateStationWeights/FillCULocationClimateStationWeights.md)    | FillCULocationClimateStationWeights ||
+|[`FillCULocationsFromHydroBase`](FillCULocationsFromHydroBase/FillCULocationsFromHydroBase.md)                  | FillCULocationsFromHydroBase ||
+|[`FillCULocationsFromList`](FillCULocationsFromList/FillCULocationsFromList.md)                                 | FillCULocationsFromList ||
+|[`FillDiversionDemandTSMonthlyAverage`](FillDiversionDemandTSMonthlyAverage/FillDiversionDemandTSMonthlyAverage.md)                | FillDiversionDemandTSMonthlyAverage ||
+|[`FillDiversionDemandTSMonthlyConstant`](FillDiversionDemandTSMonthlyConstant/FillDiversionDemandTSMonthlyConstant.md)             | FillDiversionDemandTSMonthlyConstant ||
+|[`FillDiversionDemandTSMonthlyPattern`](FillDiversionDemandTSMonthlyPattern/FillDiversionDemandTSMonthlyPattern.md)                | FillDiversionDemandTSMonthlyPattern ||
+|[`FillDiversionHistoricalTSMonthlyAverage`](FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md)    | FillDiversionHistoricalTSMonthlyAverage ||
+|[`FillDiversionHistoricalTSMonthlyConstant`](FillDiversionHistoricalTSMonthlyConstant/FillDiversionHistoricalTSMonthlyConstant.md) | FillDiversionHistoricalTSMonthlyConstant ||
+|[`FillDiversionHistoricalTSMonthlyPattern`](FillDiversionHistoricalTSMonthlyPattern/FillDiversionHistoricalTSMonthlyPattern.md)    | FillDiversionHistoricalTSMonthlyPattern ||
+|[`FillDiversionRight`](FillDiversionRight/FillDiversionRight.md)                                                | FillDiversionRight ||
+|[`FillDiversionStation`](FillDiversionStation/FillDiversionStation.md)                                          | FillDiversionStation ||
+|[`FillDiversionStationsFromHydroBase`](FillDiversionStationsFromHydroBase/FillDiversionStationsFromHydroBase.md)| FillDiversionStationsFromHydroBase ||
+|[`FillDiversionStationsFromNetwork`](FillDiversionStationsFromNetwork/FillDiversionStationsFromNetwork.md)      | FillDiversionStationsFromNetwork ||
+|[`FillInstreamFlowRight`](FillInstreamFlowRight/FillInstreamFlowRight.md)                                       | FillInstreamFlowRight ||
+|[`FillInstreamFlowStation`](FillInstreamFlowStation/FillInstreamFlowStation.md)                                 | FillInstreamFlowStation ||
+|[`FillInstreamFlowStationsFromHydroBase`](FillInstreamFlowStationsFromHydroBase/FillInstreamFlowStationsFromHydroBase.md)    | FillInstreamFlowStationsFromHydroBase ||
+|[`FillInstreamFlowStationsFromNetwork`](FillInstreamFlowStationsFromNetwork/FillInstreamFlowStationsFromNetwork.md)          | FillInstreamFlowStationsFromNetwork ||
+|[`FillIrrigationPracticeTSAcreageUsingWellRights`](FillIrrigationPracticeTSAcreageUsingWellRights/FillIrrigationPracticeTSAcreageUsingWellRights.md)    | FillIrrigationPracticeTSAcreageUsingWellRights ||
+|[`FillIrrigationPracticeTSInterpolate`](FillIrrigationPracticeTSInterpolate/FillIrrigationPracticeTSInterpolate.md)          | FillIrrigationPracticeTSInterpolate ||
+|[`FillIrrigationPracticeTSRepeat`](FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md)            | FillIrrigationPracticeTSRepeat ||
+|[`FillNetworkFromHydroBase`](FillNetworkFromHydroBase/FillNetworkFromHydroBase.md)                              | FillNetworkFromHydroBase ||
+|[`FillReservoirRight`](FillReservoirRight/FillReservoirRight.md)                                                | FillReservoirRight ||
+|[`FillReservoirStation`](FillReservoirStation/FillReservoirStation.md)                                          | FillReservoirStation ||
+|[`FillReservoirStationsFromHydroBase`](FillReservoirStationsFromHydroBase/FillReservoirStationsFromHydroBase.md)| FillReservoirStationsFromHydroBase ||
+|[`FillReservoirStationsFromNetwork`](FillReservoirStationsFromNetwork/FillReservoirStationsFromNetwork.md)      | FillReservoirStationsFromNetwork ||
+|[`FillRiverNetworkFromHydroBase`](FillRiverNetworkFromHydroBase/FillRiverNetworkFromHydroBase.md)               | FillRiverNetworkFromHydroBase ||
+|[`FillRiverNetworkFromNetwork`](FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md)                     | FillRiverNetworkFromNetwork ||
+|[`FillRiverNetworkNode`](FillRiverNetworkNode/FillRiverNetworkNode.md)                                          | FillRiverNetworkNode ||
+|[`FillStreamEstimateStation`](FillStreamEstimateStation/FillStreamEstimateStation.md)                           | FillStreamEstimateStation ||
+|[`FillStreamEstimateStationsFromHydroBase`](FillStreamEstimateStationsFromHydroBase/FillStreamEstimateStationsFromHydroBase.md)  | FillStreamEstimateStationsFromHydroBase ||
+|[`FillStreamEstimateStationsFromNetwork`](FillStreamEstimateStationsFromNetwork/FillStreamEstimateStationsFromNetwork.md)        | FillStreamEstimateStationsFromNetwork ||
+|[`FillStreamGageStation`](FillStreamGageStation/FillStreamGageStation.md)                                       | FillStreamGageStation ||
+|[`FillStreamGageStationsFromHydroBase`](FillStreamGageStationsFromHydroBase/FillStreamGageStationsFromHydroBase.md)    | FillStreamGageStationsFromHydroBase ||
+|[`FillStreamGageStationsFromNetwork`](FillStreamGageStationsFromNetwork/FillStreamGageStationsFromNetwork.md)   | FillStreamGageStationsFromNetwork ||
+|[`FillWellDemandTSMonthlyAverage`](FillWellDemandTSMonthlyAverage/FillWellDemandTSMonthlyAverage.md)            | FillWellDemandTSMonthlyAverage ||
+|[`FillWellDemandTSMonthlyConstant`](FillWellDemandTSMonthlyConstant/FillWellDemandTSMonthlyConstant.md)         | FillWellDemandTSMonthlyConstant ||
+|[`FillWellDemandTSMonthlyPattern`](FillWellDemandTSMonthlyPattern/FillWellDemandTSMonthlyPattern.md)            | FillWellDemandTSMonthlyPattern ||
+|[`FillWellHistoricalPumpingTSMonthlyAverage`](FillWellHistoricalPumpingTSMonthlyAverage/FillWellHistoricalPumpingTSMonthlyAverage.md)    | FillWellHistoricalPumpingTSMonthlyAverage ||
+|[`FillWellHistoricalPumpingTSMonthlyConstant`](FillWellHistoricalPumpingTSMonthlyConstant/FillWellHistoricalPumpingTSMonthlyConstant.md) | FillWellHistoricalPumpingTSMonthlyConstant ||
+|[`FillWellHistoricalPumpingTSMonthlyPattern`](FillWellHistoricalPumpingTSMonthlyPattern/FillWellHistoricalPumpingTSMonthlyPattern.md)    | FillWellHistoricalPumpingTSMonthlyPattern ||
+|[`FillWellRight`](FillWellRight/FillWellRight.md)                                                               | FillWellRight ||
+|[`FillWellStation`](FillWellStation/FillWellStation.md)                                                         | FillWellStation ||
+|[`FillWellStationsFromDiversionStations`](FillWellStationsFromDiversionStations/FillWellStationsFromDiversionStations.md)    | FillWellStationsFromDiversionStations ||
+|[`FillWellStationsFromNetwork`](FillWellStationsFromNetwork/FillWellStationsFromNetwork.md)                     | FillWellStationsFromNetwork ||
+|[`FormatDateTimeProperty`](FormatDateTimeProperty/FormatDateTimeProperty.md)                                    | Format a date/time processor property.|Migrated?||
+|[`FormatStringProperty`](FormatStringProperty/FormatStringProperty.md)                                          | Format string processor property.|Migrated?||
+|[`FormatTableDateTime`](FormatTableDateTime/FormatTableDateTime.md)                                             | Format a date/time in a table.   |Migrated?||
+|[`FormatTableString`](FormatTableString/FormatTableString.md)                                                   | Format a string in a table.      |Migrated?||
+|[`FreeTable`](FreeTable/FreeTable.md)                                                                           | Free memory resources for a table.|Migrated?||
+|[`FTPGet`](FTPGet/FTPGet.md)                                                                                    | Download a file from an FTP site.|Migrated?||
+|[`InsertTableColumn`](InsertTableColumn/InsertTableColumn.md)                                                   | Insert a column in a table.      |Migrated?||
+|[`InsertTableRow`](InsertTableRow/InsertTableRow.md)                                                            | Insert a row in a table.         |Migrated?||
+|[`JoinTables`](JoinTables/JoinTables.md)                                                                        | Join two tables.                 |Migrated?||
+|[`LimitDiversionDemandTSMonthlyToRights`](LimitDiversionDemandTSMonthlyToRights/LimitDiversionDemandTSMonthlyToRights.md)    | LimitDiversionDemandTSMonthlyToRights ||
+|[`LimitDiversionHistoricalTSMonthlyToRights`](LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md)    | LimitDiversionHistoricalTSMonthlyToRights ||
+|[`LimitWellDemandTSMonthlyToRights`](LimitWellDemandTSMonthlyToRights/LimitWellDemandTSMonthlyToRights.md)      | LimitWellDemandTSMonthlyToRights ||
+|[`LimitWellHistoricalPumpingTSMonthlyToRights`](LimitWellHistoricalPumpingTSMonthlyToRights/LimitWellHistoricalPumpingTSMonthlyToRights.md)    | LimitWellHistoricalPumpingTSMonthlyToRights ||
+|[`ListFiles`](ListFiles/ListFiles.md)                                                                           | List files in a folder.          |Migrated?||
+|[`ManipulateTableString`](ManipulateTableString/ManipulateTableString.md)                                       | Manipulate a string in a table.  |Migrated?||
+|[`MergeListFileColumns`](MergeListFileColumns/MergeListFileColumns.md)                                          | MergeListFileColumns ||
+|[`MergeWellRights`](MergeWellRights/MergeWellRights.md)                                                         | MergeWellRights ||
+|[`Message`](Message/Message.md)                                                                                 | Output a message to the log file.|Migrated?||
+|[`NewExcelWorkbook`](NewExcelWorkbook/NewExcelWorkbook.md)                                                      | Create a new Excel workbook file.|Migrated?||
+|[`NewTable`](NewTable/NewTable.md)                                                                              | Create a new table.              |Migrated?||
+|[`OpenHydroBase`](OpenHydroBase/OpenHydroBase.md)                                                               | OpenHydroBase ||
+|[`PrintNetwork`](PrintNetwork/PrintNetwork.md)                                                                  | PrintNetwork ||
+|[`ReadBlaneyCriddleFromHydroBase`](ReadBlaneyCriddleFromHydroBase/ReadBlaneyCriddleFromHydroBase.md)            | ReadBlaneyCriddleFromHydroBase ||
+|[`ReadBlaneyCriddleFromStateCU`](ReadBlaneyCriddleFromStateCU/ReadBlaneyCriddleFromStateCU.md)                  | ReadBlaneyCriddleFromStateCU ||
+|[`ReadClimateStationsFromList`](ReadClimateStationsFromList/ReadClimateStationsFromList.md)                     | ReadClimateStationsFromList ||
+|[`ReadClimateStationsFromStateCU`](ReadClimateStationsFromStateCU/ReadClimateStationsFromStateCU.md)            | ReadClimateStationsFromStateCU ||
+|[`ReadControlFromStateMod`](ReadControlFromStateMod/ReadControlFromStateMod.md)                                 | ReadControlFromStateMod ||
+|[`ReadCropCharacteristicsFromHydroBase`](ReadCropCharacteristicsFromHydroBase/ReadCropCharacteristicsFromHydroBase.md)    | ReadCropCharacteristicsFromHydroBase ||
+|[`ReadCropCharacteristicsFromStateCU`](ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md)| ReadCropCharacteristicsFromStateCU ||
+|[`ReadCropPatternTSFromHydroBase`](ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md)            | ReadCropPatternTSFromHydroBase ||
+|[`ReadCropPatternTSFromStateCU`](ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md)                  | ReadCropPatternTSFromStateCU ||
+|[`ReadCULocationsFromStateCU`](ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md)                        | ReadCULocationsFromStateCU ||
+|[`ReadCULocationsFromStateMod`](ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md)                     | ReadCULocationsFromStateMod ||
+|[`ReadDelayTablesDailyFromStateMod`](ReadDelayTablesDailyFromStateMod/ReadDelayTablesDailyFromStateMod.md)      | ReadDelayTablesDailyFromStateMod ||
+|[`ReadDelayTablesMonthlyFromStateMod`](ReadDelayTablesMonthlyFromStateMod/ReadDelayTablesMonthlyFromStateMod.md)| ReadDelayTablesMonthlyFromStateMod ||
+|[`ReadDiversionDemandTSMonthlyFromStateMod`](ReadDiversionDemandTSMonthlyFromStateMod/ReadDiversionDemandTSMonthlyFromStateMod.md)                   | ReadDiversionDemandTSMonthlyFromStateMod ||
+|[`ReadDiversionHistoricalTSMonthlyFromHydroBase`](ReadDiversionHistoricalTSMonthlyFromHydroBase/ReadDiversionHistoricalTSMonthlyFromHydroBase.md)    | ReadDiversionHistoricalTSMonthlyFromHydroBase ||
+|[`ReadDiversionHistoricalTSMonthlyFromStateMod`](ReadDiversionHistoricalTSMonthlyFromStateMod/ReadDiversionHistoricalTSMonthlyFromStateMod.md)       | ReadDiversionHistoricalTSMonthlyFromStateMod ||
+|[`ReadDiversionRightsFromHydroBase`](ReadDiversionRightsFromHydroBase/ReadDiversionRightsFromHydroBase.md)      | ReadDiversionRightsFromHydroBase ||
+|[`ReadDiversionRightsFromStateMod`](ReadDiversionRightsFromStateMod/ReadDiversionRightsFromStateMod.md)         | ReadDiversionRightsFromStateMod ||
+|[`ReadDiversionStationsFromList`](ReadDiversionStationsFromList/ReadDiversionStationsFromList.md)               | ReadDiversionStationsFromList ||
+|[`ReadDiversionStationsFromNetwork`](ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md)      | ReadDiversionStationsFromNetwork ||
+|[`ReadDiversionStationsFromStateMod`](ReadDiversionStationsFromStateMod/ReadDiversionStationsFromStateMod.md)   | ReadDiversionStationsFromStateMod ||
+|[`ReadExcelWorkbook`](ReadExcelWorkbook/ReadExcelWorkbook.md)                                                   | ReadExcelWorkbook ||
+|[`ReadInstreamFlowDemandTSAverageMonthlyFromStateMod`](ReadInstreamFlowDemandTSAverageMonthlyFromStateMod/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod.md)    | ReadInstreamFlowDemandTSAverageMonthlyFromStateMod ||
+|[`ReadInstreamFlowRightsFromHydroBase`](ReadInstreamFlowRightsFromHydroBase/ReadInstreamFlowRightsFromHydroBase.md)        | ReadInstreamFlowRightsFromHydroBase ||
+|[`ReadInstreamFlowRightsFromStateMod`](ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md)| ReadInstreamFlowRightsFromStateMod ||
+|[`ReadInstreamFlowStationsFromList`](ReadInstreamFlowStationsFromList/ReadInstreamFlowStationsFromList.md)      | ReadInstreamFlowStationsFromList ||
+|[`ReadInstreamFlowStationsFromNetwork`](ReadInstreamFlowStationsFromNetwork/ReadInstreamFlowStationsFromNetwork.md)        | ReadInstreamFlowStationsFromNetwork ||
+|[`ReadInstreamFlowStationsFromStateMod`](ReadInstreamFlowStationsFromStateMod/ReadInstreamFlowStationsFromStateMod.md)     | ReadInstreamFlowStationsFromStateMod ||
+|[`ReadIrrigationPracticeTSFromHydroBase`](ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md)  | ReadIrrigationPracticeTSFromHydroBase ||
+|[`ReadIrrigationPracticeTSFromList`](ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md)      | ReadIrrigationPracticeTSFromList ||
+|[`ReadIrrigationPracticeTSFromStateCU`](ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md)        | ReadIrrigationPracticeTSFromStateCU ||
+|[`ReadIrrigationWaterRequirementTSMonthlyFromStateCU`](ReadIrrigationWaterRequirementTSMonthlyFromStateCU/ReadIrrigationWaterRequirementTSMonthlyFromStateCU.md)  | ReadIrrigationWaterRequirementTSMonthlyFromStateCU ||
+|[`ReadNetworkFromStateMod`](ReadNetworkFromStateMod/ReadNetworkFromStateMod.md)                                 | ReadNetworkFromStateMod ||
+|[`ReadOperationalRightsFromStateMod`](ReadOperationalRightsFromStateMod/ReadOperationalRightsFromStateMod.md)   | ReadOperationalRightsFromStateMod ||
+|[`ReadPatternFile`](ReadPatternFile/ReadPatternFile.md)                                                         | ReadPatternFile ||
+|[`ReadPenmanMonteithFromHydroBase`](ReadPenmanMonteithFromHydroBase/ReadPenmanMonteithFromHydroBase.md)         | ReadPenmanMonteithFromHydroBase ||
+|[`ReadPenmanMonteithFromStateCU`](ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU.md)               | ReadPenmanMonteithFromStateCU ||
+|[`ReadPlanReturnFromStateMod`](ReadPlanReturnFromStateMod/ReadPlanReturnFromStateMod.md)                        | ReadPlanReturnFromStateMod ||
+|[`ReadPlanStationsFromStateMod`](ReadPlanStationsFromStateMod/ReadPlanStationsFromStateMod.md)                  | ReadPlanStationsFromStateMod ||
+|[`ReadPlanWellAugmentationFromStateMod`](ReadPlanWellAugmentationFromStateMod/ReadPlanWellAugmentationFromStateMod.md)    | ReadPlanWellAugmentationFromStateMod ||
+|[`ReadPropertiesFromExcel`](ReadPropertiesFromExcel/ReadPropertiesFromExcel.md)                                 | ReadPropertiesFromExcel ||
+|[`ReadPropertiesFromFile`](ReadPropertiesFromFile/ReadPropertiesFromFile.md)                                    | ReadPropertiesFromFile ||
+|[`ReadReservoirReturnFromStateMod`](ReadReservoirReturnFromStateMod/ReadReservoirReturnFromStateMod.md)         | ReadReservoirReturnFromStateMod ||
+|[`ReadReservoirRightsFromHydroBase`](ReadReservoirRightsFromHydroBase/ReadReservoirRightsFromHydroBase.md)      | ReadReservoirRightsFromHydroBase ||
+|[`ReadReservoirRightsFromStateMod`](ReadReservoirRightsFromStateMod/ReadReservoirRightsFromStateMod.md)         | ReadReservoirRightsFromStateMod ||
+|[`ReadReservoirStationsFromList`](ReadReservoirStationsFromList/ReadReservoirStationsFromList.md)               | ReadReservoirStationsFromList ||
+|[`ReadReservoirStationsFromNetwork`](ReadReservoirStationsFromNetwork/ReadReservoirStationsFromNetwork.md)      | ReadReservoirStationsFromNetwork ||
+|[`ReadReservoirStationsFromStateMod`](ReadReservoirStationsFromStateMod/ReadReservoirStationsFromStateMod.md)   | ReadReservoirStationsFromStateMod ||
+|[`ReadResponseFromStateMod`](ReadResponseFromStateMod/ReadResponseFromStateMod.md)                              | ReadResponseFromStateMod ||
+|[`ReadRiverNetworkFromStateMod`](ReadRiverNetworkFromStateMod/ReadRiverNetworkFromStateMod.md)                  | ReadRiverNetworkFromStateMod ||
+|[`ReadStreamEstimateCoefficientsFromStateMod`](ReadStreamEstimateCoefficientsFromStateMod/ReadStreamEstimateCoefficientsFromStateMod.md)    | ReadStreamEstimateCoefficientsFromStateMod ||
+|[`ReadStreamEstimateStationsFromList`](ReadStreamEstimateStationsFromList/ReadStreamEstimateStationsFromList.md)| ReadStreamEstimateStationsFromList ||
+|[`ReadStreamEstimateStationsFromNetwork`](ReadStreamEstimateStationsFromNetwork/ReadStreamEstimateStationsFromNetwork.md)       | ReadStreamEstimateStationsFromNetwork ||
+|[`ReadStreamEstimateStationsFromStateMod`](ReadStreamEstimateStationsFromStateMod/ReadStreamEstimateStationsFromStateMod.md)    | ReadStreamEstimateStationsFromStateMod ||
+|[`ReadStreamGageStationsFromList`](ReadStreamGageStationsFromList/ReadStreamGageStationsFromList.md)            | ReadStreamGageStationsFromList ||
+|[`ReadStreamGageStationsFromNetwork`](ReadStreamGageStationsFromNetwork/ReadStreamGageStationsFromNetwork.md)   | ReadStreamGageStationsFromNetwork ||
+|[`ReadStreamGageStationsFromStateMod`](ReadStreamGageStationsFromStateMod/ReadStreamGageStationsFromStateMod.md)| ReadStreamGageStationsFromStateMod ||
+|[`ReadTableCellsFromExcel`](ReadTableCellsFromExcel/ReadTableCellsFromExcel.md)                                 | Read table cells from Excel worksheet.|Migrated?||
+|[`ReadTableFromDataStore`](ReadTableFromDataStore/ReadTableFromDataStore.md)                                    | Read a table from a datastore.   |Migrated?||
+|[`ReadTableFromDBF`](ReadTableFromDBF/ReadTableFromDBF.md)                                                      | Read a table from a DBF file.    |Migrated?||
+|[`ReadTableFromDelimitedFile`](ReadTableFromDelimitedFile/ReadTableFromDelimitedFile.md)                        | Read a table from a delimited file.|Migrated?||
+|[`ReadTableFromExcel`](ReadTableFromExcel/ReadTableFromExcel.md)                                                | Read a table from an Excel workbook file.|Migrated?||
+|[`ReadTableFromFixedFormatFile`](ReadTableFromFixedFormatFile/ReadTableFromFixedFormatFile.md)                  | Read a table from a fixed-format file.|Migrated?||
+|[`ReadWellDemandTSMonthlyFromStateMod`](ReadWellDemandTSMonthlyFromStateMod/ReadWellDemandTSMonthlyFromStateMod.md)                                  | ReadWellDemandTSMonthlyFromStateMod ||
+|[`ReadWellHistoricalPumpingTSMonthlyFromStateCU`](ReadWellHistoricalPumpingTSMonthlyFromStateCU/ReadWellHistoricalPumpingTSMonthlyFromStateCU.md)    | ReadWellHistoricalPumpingTSMonthlyFromStateCU ||
+|[`ReadWellHistoricalPumpingTSMonthlyFromStateMod`](ReadWellHistoricalPumpingTSMonthlyFromStateMod/ReadWellHistoricalPumpingTSMonthlyFromStateMod.md) | ReadWellHistoricalPumpingTSMonthlyFromStateMod ||
+|[`ReadWellRightsFromHydroBase`](ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md)                     | ReadWellRightsFromHydroBase ||
+|[`ReadWellRightsFromStateMod`](ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md)                        | ReadWellRightsFromStateMod ||
+|[`ReadWellStationsFromNetwork`](ReadWellStationsFromNetwork/ReadWellStationsFromNetwork.md)                     | ReadWellStationsFromNetwork ||
+|[`ReadWellStationsFromStateMod`](ReadWellStationsFromStateMod/ReadWellStationsFromStateMod.md)                  | ReadWellStationsFromStateMod ||
+|[`RemoveCropPatternTS`](RemoveCropPatternTS/RemoveCropPatternTS.md)                                             | RemoveCropPatternTS ||
+|[`RemoveFile`](RemoveFile/RemoveFile.md)                                                                        | Remove a file.                   |Migrated?||
+|[`RunCommands`](RunCommands/RunCommands.md)                                                                     | Run a TSTool command file.       |Migrated?||
+|[`RunProgram`](RunProgram/RunProgram.md)                                                                        | Run a program.                   |Migrated?||
+|[`RunPython`](RunPython/RunPython.md)                                                                           | Run a python program.            |Migrated?||
+|[`RunR`](RunR/RunR.md)                                                                                          | Run an R script.                 |Migrated?||
+|[`SetBlaneyCriddle`](SetBlaneyCriddle/SetBlaneyCriddle.md)                                                      | SetBlaneyCriddle ||
+|[`SetClimateStation`](SetClimateStation/SetClimateStation.md)                                                   | SetClimateStation ||
+|[`SetCropCharacteristics`](SetCropCharacteristics/SetCropCharacteristics.md)                                    | SetCropCharacteristics ||
+|[`SetCropPatternTS`](SetCropPatternTS/SetCropPatternTS.md)                                                      | SetCropPatternTS ||
+|[`SetCropPatternTSFromList`](SetCropPatternTSFromList/SetCropPatternTSFromList.md)                              | SetCropPatternTSFromList ||
+|[`SetCULocation`](SetCULocation/SetCULocation.md)                                                               | SetCULocation ||
+|[`SetCULocationClimateStationWeights`](SetCULocationClimateStationWeights/SetCULocationClimateStationWeights.md)| SetCULocationClimateStationWeights ||
+|[`SetCULocationClimateStationWeightsFromHydroBase`](SetCULocationClimateStationWeightsFromHydroBase/SetCULocationClimateStationWeightsFromHydroBase.md)  | SetCULocationClimateStationWeightsFromHydroBase ||
+|[`SetCULocationClimateStationWeightsFromList`](SetCULocationClimateStationWeightsFromList/SetCULocationClimateStationWeightsFromList.md)                 | SetCULocationClimateStationWeightsFromList ||
+|[`SetCULocationsFromList`](SetCULocationsFromList/SetCULocationsFromList.md)                                    | SetCULocationsFromList ||
+|[`SetDebugLevel`](SetDebugLevel/SetDebugLevel.md)                                                               | Set the debug level for logging. |Migrated?||
+|[`SetDiversionAggregate`](SetDiversionAggregate/SetDiversionAggregate.md)                                       | SetDiversionAggregate ||
+|[`SetDiversionAggregateFromList`](SetDiversionAggregateFromList/SetDiversionAggregateFromList.md)               | SetDiversionAggregateFromList ||
+|[`SetDiversionDemandTSMonthly`](SetDiversionDemandTSMonthly/SetDiversionDemandTSMonthly.md)                     | SetDiversionDemandTSMonthly ||
+|[`SetDiversionDemandTSMonthlyConstant`](SetDiversionDemandTSMonthlyConstant/SetDiversionDemandTSMonthlyConstant.md)    | SetDiversionDemandTSMonthlyConstant ||
+|[`SetDiversionHistoricalTSMonthly`](SetDiversionHistoricalTSMonthly/SetDiversionHistoricalTSMonthly.md)         | SetDiversionHistoricalTSMonthly ||
+|[`SetDiversionHistoricalTSMonthlyConstant`](SetDiversionHistoricalTSMonthlyConstant/SetDiversionHistoricalTSMonthlyConstant.md)    | SetDiversionHistoricalTSMonthlyConstant ||
+|[`SetDiversionMultiStruct`](SetDiversionMultiStruct/SetDiversionMultiStruct.md)                                 | SetDiversionMultiStruct ||
+|[`SetDiversionMultiStructFromList`](SetDiversionMultiStructFromList/SetDiversionMultiStructFromList.md)         | SetDiversionMultiStructFromList ||
+|[`SetDiversionRight`](SetDiversionRight/SetDiversionRight.md)                                                   | SetDiversionRight ||
+|[`SetDiversionStation`](SetDiversionStation/SetDiversionStation.md)                                             | SetDiversionStation ||
+|[`SetDiversionStationCapacitiesFromTS`](SetDiversionStationCapacitiesFromTS/SetDiversionStationCapacitiesFromTS.md)                      | SetDiversionStationCapacitiesFromTS ||
+|[`SetDiversionStationDelayTablesFromNetwork`](SetDiversionStationDelayTablesFromNetwork/SetDiversionStationDelayTablesFromNetwork.md)    | SetDiversionStationDelayTablesFromNetwork ||
+|[`SetDiversionStationDelayTablesFromRTN`](SetDiversionStationDelayTablesFromRTN/SetDiversionStationDelayTablesFromRTN.md)                | SetDiversionStationDelayTablesFromRTN ||
+|[`SetDiversionStationsFromList`](SetDiversionStationsFromList/SetDiversionStationsFromList.md)                  | SetDiversionStationsFromList ||
+|[`SetDiversionSystem`](SetDiversionSystem/SetDiversionSystem.md)                                                | SetDiversionSystem ||
+|[`SetDiversionSystemFromList`](SetDiversionSystemFromList/SetDiversionSystemFromList.md)                        | SetDiversionSystemFromList ||
+|[`SetExcelCell`](SetExcelCell/SetExcelCell.md)                                                                  | Set data in an Excel cell.       |Migrated?||
+|[`SetExcelWorksheetViewProperties`](SetExcelWorksheetViewProperties/SetExcelWorksheetViewProperties.md)         | Set Excel worksheet view properties.|Migrated?||
+|[`SetInstreamFlowDemandTSAverageMonthlyConstant`](SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md)        | SetInstreamFlowDemandTSAverageMonthlyConstant ||
+|[`SetInstreamFlowDemandTSAverageMonthlyFromRights`](SetInstreamFlowDemandTSAverageMonthlyFromRights/SetInstreamFlowDemandTSAverageMonthlyFromRights.md)  | SetInstreamFlowDemandTSAverageMonthlyFromRights ||
+|[`SetInstreamFlowRight`](SetInstreamFlowRight/SetInstreamFlowRight.md)                                          | SetInstreamFlowRight ||
+|[`SetInstreamFlowStation`](SetInstreamFlowStation/SetInstreamFlowStation.md)                                    | SetInstreamFlowStation ||
+|[`SetIrrigationPracticeTS`](SetIrrigationPracticeTS/SetIrrigationPracticeTS.md)                                 | SetIrrigationPracticeTS ||
+|[`SetIrrigationPracticeTSFromHydroBase`](SetIrrigationPracticeTSFromHydroBase/SetIrrigationPracticeTSFromHydroBase.md)    | SetIrrigationPracticeTSFromHydroBase ||
+|[`SetIrrigationPracticeTSFromList`](SetIrrigationPracticeTSFromList/SetIrrigationPracticeTSFromList.md)         | SetIrrigationPracticeTSFromList ||
+|[`SetIrrigationPracticeTSFromStateCU`](SetIrrigationPracticeTSFromStateCU/SetIrrigationPracticeTSFromStateCU.md)| SetIrrigationPracticeTSFromStateCU ||
+|[`SetIrrigationPracticeTSMaxPumpingToRights`](SetIrrigationPracticeTSMaxPumpingToRights/SetIrrigationPracticeTSMaxPumpingToRights.md)                      | SetIrrigationPracticeTSMaxPumpingToRights ||
+|[`SetIrrigationPracticeTSPumpingMaxUsingWellRights`](SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md) | SetIrrigationPracticeTSPumpingMaxUsingWellRights ||
+|[`SetIrrigationPracticeTSSprinklerAcreageFromList`](SetIrrigationPracticeTSSprinklerAcreageFromList/SetIrrigationPracticeTSSprinklerAcreageFromList.md)    | SetIrrigationPracticeTSSprinklerAcreageFromList ||
+|[`SetIrrigationPracticeTSSprinklerAreaFromList`](SetIrrigationPracticeTSSprinklerAreaFromList/SetIrrigationPracticeTSSprinklerAreaFromList.md)             | SetIrrigationPracticeTSSprinklerAreaFromList ||
+|[`SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage`](SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md)    | SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage ||
+|[`SetOperationalRight`](SetOperationalRight/SetOperationalRight.md)                                             | SetOperationalRight ||
+|[`SetOutputPeriod`](SetOutputPeriod/SetOutputPeriod.md)                                                         | Set the global processor output period.|Migrated?||
+|[`SetOutputYearType`](SetOutputYearType/SetOutputYearType.md)                                                   | Set the global processor output year type. |Migrated?||
+|[`SetPenmanMonteith`](SetPenmanMonteith/SetPenmanMonteith.md)                                                   | SetPenmanMonteith ||
+|[`SetPlanStation`](SetPlanStation/SetPlanStation.md)                                                            | SetPlanStation ||
+|[`SetProperty`](SetProperty/SetProperty.md)                                                                     | Set processor property value.    |Migrated?||
+|[`SetPropertyFromTable`](SetPropertyFromTable/SetPropertyFromTable.md)                                          | Set processor property from a table.|Migrated?||
+|[`SetReservoirAggregate`](SetReservoirAggregate/SetReservoirAggregate.md)                                       | SetReservoirAggregate ||
+|[`SetReservoirAggregateFromList`](SetReservoirAggregateFromList/SetReservoirAggregateFromList.md)               | SetReservoirAggregateFromList ||
+|[`SetReservoirRight`](SetReservoirRight/SetReservoirRight.md)                                                   | SetReservoirRight ||
+|[`SetReservoirStation`](SetReservoirStation/SetReservoirStation.md)                                             | SetReservoirStation ||
+|[`SetRiverNetworkNode`](SetRiverNetworkNode/SetRiverNetworkNode.md)                                             | SetRiverNetworkNode ||
+|[`SetStreamEstimateCoefficients`](SetStreamEstimateCoefficients/SetStreamEstimateCoefficients.md)               | SetStreamEstimateCoefficients ||
+|[`SetStreamEstimateCoefficientsPFGage`](SetStreamEstimateCoefficientsPFGage/SetStreamEstimateCoefficientsPFGage.md)    | SetStreamEstimateCoefficientsPFGage ||
+|[`SetStreamEstimateStation`](SetStreamEstimateStation/SetStreamEstimateStation.md)                              | SetStreamEstimateStation ||
+|[`SetStreamGageStation`](SetStreamGageStation/SetStreamGageStation.md)                                          | SetStreamGageStation ||
+|[`SetTableValues`](SetTableValues/SetTableValues.md)                                                            | Set values in a table.           |Migrated?||
+|[`SetWarningLevel`](SetWarningLevel/SetWarningLevel.md)                                                         | Set the warning level for logging.|Migrated?||
+|[`SetWellAggregate`](SetWellAggregate/SetWellAggregate.md)                                                      | SetWellAggregate ||
+|[`SetWellAggregateFromList`](SetWellAggregateFromList/SetWellAggregateFromList.md)                              | SetWellAggregateFromList ||
+|[`SetWellDemandTSMonthly`](SetWellDemandTSMonthly/SetWellDemandTSMonthly.md)                                    | SetWellDemandTSMonthly ||
+|[`SetWellDemandTSMonthlyConstant`](SetWellDemandTSMonthlyConstant/SetWellDemandTSMonthlyConstant.md)            | SetWellDemandTSMonthlyConstant ||
+|[`SetWellHistoricalPumpingTSMonthly`](SetWellHistoricalPumpingTSMonthly/SetWellHistoricalPumpingTSMonthly.md)   | SetWellHistoricalPumpingTSMonthly ||
+|[`SetWellHistoricalPumpingTSMonthlyConstant`](SetWellHistoricalPumpingTSMonthlyConstant/SetWellHistoricalPumpingTSMonthlyConstant.md)    | SetWellHistoricalPumpingTSMonthlyConstant ||
+|[`SetWellRight`](SetWellRight/SetWellRight.md)                                                                  | SetWellRight ||
+|[`SetWellStation`](SetWellStation/SetWellStation.md)                                                            | SetWellStation ||
+|[`SetWellStationAreaToCropPatternTS`](SetWellStationAreaToCropPatternTS/SetWellStationAreaToCropPatternTS.md)   | SetWellStationAreaToCropPatternTS ||
+|[`SetWellStationCapacitiesFromTS`](SetWellStationCapacitiesFromTS/SetWellStationCapacitiesFromTS.md)            | SetWellStationCapacitiesFromTS ||
+|[`SetWellStationCapacityToWellRights`](SetWellStationCapacityToWellRights/SetWellStationCapacityToWellRights.md)| SetWellStationCapacityToWellRights ||
+|[`SetWellStationDelayTablesFromNetwork`](SetWellStationDelayTablesFromNetwork/SetWellStationDelayTablesFromNetwork.md)    | SetWellStationDelayTablesFromNetwork ||
+|[`SetWellStationDelayTablesFromRTN`](SetWellStationDelayTablesFromRTN/SetWellStationDelayTablesFromRTN.md)      | SetWellStationDelayTablesFromRTN ||
+|[`SetWellStationDepletionTablesFromRTN`](SetWellStationDepletionTablesFromRTN/SetWellStationDepletionTablesFromRTN.md)    | SetWellStationDepletionTablesFromRTN ||
+|[`SetWellStationsFromList`](SetWellStationsFromList/SetWellStationsFromList.md)                                 | SetWellStationsFromList ||
+|[`SetWellSystem`](SetWellSystem/SetWellSystem.md)                                                               | SetWellSystem ||
+|[`SetWellSystemFromList`](SetWellSystemFromList/SetWellSystemFromList.md)                                       | SetWellSystemFromList ||
+|[`SetWorkingDir`](SetWorkingDir/SetWorkingDir.md)                                                               | Set the working directory (folder) for following commands.|Migrated?||
+|[`SortBlaneyCriddle`](SortBlaneyCriddle/SortBlaneyCriddle.md)                                                   | SortBlaneyCriddle ||
+|[`SortClimateStations`](SortClimateStations/SortClimateStations.md)                                             | SortClimateStations ||
+|[`SortCropCharacteristics`](SortCropCharacteristics/SortCropCharacteristics.md)                                 | SortCropCharacteristics ||
+|[`SortCropPatternTS`](SortCropPatternTS/SortCropPatternTS.md)                                                   | SortCropPatternTS ||
+|[`SortCULocations`](SortCULocations/SortCULocations.md)                                                         | SortCULocations ||
+|[`SortDiversionDemandTSMonthly`](SortDiversionDemandTSMonthly/SortDiversionDemandTSMonthly.md)                  | SortDiversionDemandTSMonthly ||
+|[`SortDiversionHistoricalTSMonthly`](SortDiversionHistoricalTSMonthly/SortDiversionHistoricalTSMonthly.md)      | SortDiversionHistoricalTSMonthly ||
+|[`SortDiversionRights`](SortDiversionRights/SortDiversionRights.md)                                             | SortDiversionRights ||
+|[`SortDiversionStations`](SortDiversionStations/SortDiversionStations.md)                                       | SortDiversionStations ||
+|[`SortInstreamFlowRights`](SortInstreamFlowRights/SortInstreamFlowRights.md)                                    | SortInstreamFlowRights ||
+|[`SortInstreamFlowStations`](SortInstreamFlowStations/SortInstreamFlowStations.md)                              | SortInstreamFlowStations ||
+|[`SortIrrigationPracticeTS`](SortIrrigationPracticeTS/SortIrrigationPracticeTS.md)                              | SortIrrigationPracticeTS ||
+|[`SortPenmanMonteith`](SortPenmanMonteith/SortPenmanMonteith.md)                                                | SortPenmanMonteith ||
+|[`SortReservoirRights`](SortReservoirRights/SortReservoirRights.md)                                             | SortReservoirRights ||
+|[`SortReservoirStations`](SortReservoirStations/SortReservoirStations.md)                                       | SortReservoirStations ||
+|[`SortStreamEstimateStations`](SortStreamEstimateStations/SortStreamEstimateStations.md)                        | SortStreamEstimateStations ||
+|[`SortStreamGageStations`](SortStreamGageStations/SortStreamGageStations.md)                                    | SortStreamGageStations ||
+|[`SortTable`](SortTable/SortTable.md)                                                                           | Sort table contents.             |Migrated?||
+|[`SortWellDemandTSMonthly`](SortWellDemandTSMonthly/SortWellDemandTSMonthly.md)                                 | SortWellDemandTSMonthly ||
+|[`SortWellHistoricalPumpingTSMonthly`](SortWellHistoricalPumpingTSMonthly/SortWellHistoricalPumpingTSMonthly.md)| SortWellHistoricalPumpingTSMonthly ||
+|[`SortWellRights`](SortWellRights/SortWellRights.md)                                                            | SortWellRights ||
+|[`SortWellStations`](SortWellStations/SortWellStations.md)                                                      | SortWellStations ||
+|[`SplitTableColumn`](SplitTableColumn/SplitTableColumn.md)                                                      | Split a table column into multiple columns.|Migrated?||
+|[`SplitTableRow`](SplitTableRow/SplitTableRow.md)                                                               | Split a table row into multiple rows. |Migrated?||
+|[`StartLog`](StartLog/StartLog.md)                                                                              | (Re)start the log file.          |Migrated?||
+|[`StartRegressionTestResultsReport`](StartRegressionTestResultsReport/StartRegressionTestResultsReport.md)      | Start the regression test results report file to record output of tests.|Migrated? ||
+|[`TableMath`](TableMath/TableMath.md)                                                                           | Perform simple math on table columns.|Migrated?||
+|[`TranslateBlaneyCriddle`](TranslateBlaneyCriddle/TranslateBlaneyCriddle.md)                                    | TranslateBlaneyCriddle ||
+|[`TranslateCropCharacteristics`](TranslateCropCharacteristics/TranslateCropCharacteristics.md)                  | TranslateCropCharacteristics ||
+|[`TranslateCropPatternTS`](TranslateCropPatternTS/TranslateCropPatternTS.md)                                    | TranslateCropPatternTS ||
+|[`TranslatePenmanMonteith`](TranslatePenmanMonteith/TranslatePenmanMonteith.md)                                 | TranslatePenmanMonteith ||
+|[`UnknownCommand`](UnknownCommand/UnknownCommand.md)                                                            | Unknown command.                 |Migrated?||
+|[`UnzipFile`](UnzipFile/UnzipFile.md)                                                                           | Unzip the contents of a zip file.|Migrated?||
+|[`WebGet`](WebGet/WebGet.md)                                                                                    | Download a file from a URL.      |Migrated?||
+|[`WriteBlaneyCriddleToList`](WriteBlaneyCriddleToList/WriteBlaneyCriddleToList.md)                              | WriteBlaneyCriddleToList ||
+|[`WriteBlaneyCriddleToStateCU`](WriteBlaneyCriddleToStateCU/WriteBlaneyCriddleToStateCU.md)                     | WriteBlaneyCriddleToStateCU ||
+|[`WriteCheckFile`](WriteCheckFile/WriteCheckFile.md)                                                            | Write command log to file.       |Migrated?||
+|[`WriteClimateStationsToList`](WriteClimateStationsToList/WriteClimateStationsToList.md)                        | WriteClimateStationsToList ||
+|[`WriteClimateStationsToStateCU`](WriteClimateStationsToStateCU/WriteClimateStationsToStateCU.md)               | WriteClimateStationsToStateCU ||
+|[`WriteControlToStateMod`](WriteControlToStateMod/WriteControlToStateMod.md)                                    | WriteControlToStateMod ||
+|[`WriteCropCharacteristicsToList`](WriteCropCharacteristicsToList/WriteCropCharacteristicsToList.md)            | WriteCropCharacteristicsToList ||
+|[`WriteCropCharacteristicsToStateCU`](WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md)   | WriteCropCharacteristicsToStateCU ||
+|[`WriteCropPatternTSToDateValue`](WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md)               | WriteCropPatternTSToDateValue ||
+|[`WriteCropPatternTSToStateCU`](WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md)                     | WriteCropPatternTSToStateCU ||
+|[`WriteCULocationsToStateCU`](WriteCULocationsToStateCU/WriteCULocationsToStateCU.md)                           | WriteCULocationsToStateCU ||
+|[`WriteDelayTablesDailyToList`](WriteDelayTablesDailyToList/WriteDelayTablesDailyToList.md)                     | WriteDelayTablesDailyToList ||
+|[`WriteDelayTablesDailyToStateMod`](WriteDelayTablesDailyToStateMod/WriteDelayTablesDailyToStateMod.md)         | WriteDelayTablesDailyToStateMod ||
+|[`WriteDelayTablesMonthlyToList`](WriteDelayTablesMonthlyToList/WriteDelayTablesMonthlyToList.md)               | WriteDelayTablesMonthlyToList ||
+|[`WriteDelayTablesMonthlyToStateMod`](WriteDelayTablesMonthlyToStateMod/WriteDelayTablesMonthlyToStateMod.md)   | WriteDelayTablesMonthlyToStateMod ||
+|[`WriteDelayTablesToStateCU`](WriteDelayTablesToStateCU/WriteDelayTablesToStateCU.md)                           | WriteDelayTablesToStateCU ||
+|[`WriteDiversionDemandTSMonthlyToStateMod`](WriteDiversionDemandTSMonthlyToStateMod/WriteDiversionDemandTSMonthlyToStateMod.md)                | WriteDiversionDemandTSMonthlyToStateMod ||
+|[`WriteDiversionHistoricalTSMonthlyToStateMod`](WriteDiversionHistoricalTSMonthlyToStateMod/WriteDiversionHistoricalTSMonthlyToStateMod.md)    | WriteDiversionHistoricalTSMonthlyToStateMod ||
+|[`WriteDiversionRightsToList`](WriteDiversionRightsToList/WriteDiversionRightsToList.md)                        | WriteDiversionRightsToList ||
+|[`WriteDiversionRightsToStateMod`](WriteDiversionRightsToStateMod/WriteDiversionRightsToStateMod.md)            | WriteDiversionRightsToStateMod ||
+|[`WriteDiversionStationsToList`](WriteDiversionStationsToList/WriteDiversionStationsToList.md)                  | WriteDiversionStationsToList ||
+|[`WriteDiversionStationsToStateMod`](WriteDiversionStationsToStateMod/WriteDiversionStationsToStateMod.md)      | WriteDiversionStationsToStateMod ||
+|[`WriteInstreamFlowDemandTSAverageMonthlyToStateMod`](WriteInstreamFlowDemandTSAverageMonthlyToStateMod/WriteInstreamFlowDemandTSAverageMonthlyToStateMod.md)    | WriteInstreamFlowDemandTSAverageMonthlyToStateMod ||
+|[`WriteInstreamFlowRightsToList`](WriteInstreamFlowRightsToList/WriteInstreamFlowRightsToList.md)               | WriteInstreamFlowRightsToList ||
+|[`WriteInstreamFlowRightsToStateMod`](WriteInstreamFlowRightsToStateMod/WriteInstreamFlowRightsToStateMod.md)   | WriteInstreamFlowRightsToStateMod ||
+|[`WriteInstreamFlowStationsToList`](WriteInstreamFlowStationsToList/WriteInstreamFlowStationsToList.md)         | WriteInstreamFlowStationsToList ||
+|[`WriteInstreamFlowStationsToStateMod`](WriteInstreamFlowStationsToStateMod/WriteInstreamFlowStationsToStateMod.md)       | WriteInstreamFlowStationsToStateMod ||
+|[`WriteIrrigationPracticeTSToDateValue`](WriteIrrigationPracticeTSToDateValue/WriteIrrigationPracticeTSToDateValue.md)    | WriteIrrigationPracticeTSToDateValue ||
+|[`WriteIrrigationPracticeTSToStateCU`](WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md)| WriteIrrigationPracticeTSToStateCU ||
+|[`WriteNetworkToStateMod`](WriteNetworkToStateMod/WriteNetworkToStateMod.md)                                    | WriteNetworkToStateMod ||
+|[`WriteOperationalRightsToStateMod`](WriteOperationalRightsToStateMod/WriteOperationalRightsToStateMod.md)      | WriteOperationalRightsToStateMod ||
+|[`WritePenmanMonteithToList`](WritePenmanMonteithToList/WritePenmanMonteithToList.md)                           | WritePenmanMonteithToList ||
+|[`WritePenmanMonteithToStateCU`](WritePenmanMonteithToStateCU/WritePenmanMonteithToStateCU.md)                  | WritePenmanMonteithToStateCU ||
+|[`WritePlanReturnToStateMod`](WritePlanReturnToStateMod/WritePlanReturnToStateMod.md)                           | WritePlanReturnToStateMod ||
+|[`WritePlanStationsToStateMod`](WritePlanStationsToStateMod/WritePlanStationsToStateMod.md)                     | WritePlanStationsToStateMod ||
+|[`WritePlanWellAugmentationToStateMod`](WritePlanWellAugmentationToStateMod/WritePlanWellAugmentationToStateMod.md)    | WritePlanWellAugmentationToStateMod ||
+|[`WritePropertiesToFile`](WritePropertiesToFile/WritePropertiesToFile.md)                                       | Write processor properties to a file.|Migrated?||
+|[`WriteReservoirReturnToStateMod`](WriteReservoirReturnToStateMod/WriteReservoirReturnToStateMod.md)            | WriteReservoirReturnToStateMod ||
+|[`WriteReservoirRightsToList`](WriteReservoirRightsToList/WriteReservoirRightsToList.md)                        | WriteReservoirRightsToList ||
+|[`WriteReservoirRightsToStateMod`](WriteReservoirRightsToStateMod/WriteReservoirRightsToStateMod.md)            | WriteReservoirRightsToStateMod ||
+|[`WriteReservoirStationsToList`](WriteReservoirStationsToList/WriteReservoirStationsToList.md)                  | WriteReservoirStationsToList ||
+|[`WriteReservoirStationsToStateMod`](WriteReservoirStationsToStateMod/WriteReservoirStationsToStateMod.md)      | WriteReservoirStationsToStateMod ||
+|[`WriteResponseToStateMod`](WriteResponseToStateMod/WriteResponseToStateMod.md)                                 | WriteResponseToStateMod ||
+|[`WriteRiverNetworkToList`](WriteRiverNetworkToList/WriteRiverNetworkToList.md)                                 | WriteRiverNetworkToList ||
+|[`WriteRiverNetworkToStateMod`](WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md)                     | WriteRiverNetworkToStateMod ||
+|[`WriteStreamEstimateCoefficientsToList`](WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md)              | WriteStreamEstimateCoefficientsToList ||
+|[`WriteStreamEstimateCoefficientsToStateMod`](WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md)  | WriteStreamEstimateCoefficientsToStateMod ||
+|[`WriteStreamEstimateStationsToList`](WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md)   | WriteStreamEstimateStationsToList ||
+|[`WriteStreamEstimateStationsToStateMod`](WriteStreamEstimateStationsToStateMod/WriteStreamEstimateStationsToStateMod.md)    | WriteStreamEstimateStationsToStateMod ||
+|[`WriteStreamGageStationsToList`](WriteStreamGageStationsToList/WriteStreamGageStationsToList.md)               | WriteStreamGageStationsToList ||
+|[`WriteStreamGageStationsToStateMod`](WriteStreamGageStationsToStateMod/WriteStreamGageStationsToStateMod.md)   | WriteStreamGageStationsToStateMod ||
+|[`WriteTableCellsToExcel`](WriteTableCellsToExcel/WriteTableCellsToExcel.md)                                    | Write table row cells to an Excel worksheet.|Migrated?||
+|[`WriteTableToDelimitedFile`](WriteTableToDelimitedFile/WriteTableToDelimitedFile.md)                           | Write a table to delimited file. |Migrated?||
+|[`WriteTableToExcel`](WriteTableToExcel/WriteTableToExcel.md)                                                   | Write a table to an Excel workbook file.|Migrated?||
+|[`WriteTableToGeoJSON`](WriteTableToGeoJSON/WriteTableToGeoJSON.md)                                             | Write a table to a GeoJSON file.|Migrated?||
+|[`WriteTableToHTML`](WriteTableToHTML/WriteTableToHTML.md)                                                      | Write a table to an HTML file.   |Migrated?||
+|[`WriteTableToShapefile`](WriteTableToShapefile/WriteTableToShapefile.md)                                       | Write a table to a shapefile.|Migrated?||
+|[`WriteTableToShapefile`](WriteTableToShapefile/WriteTableToShapefile.md)                                       | WriteTableToShapefile ||
+|[`WriteWellDemandTSMonthlyToStateMod`](WriteWellDemandTSMonthlyToStateMod/WriteWellDemandTSMonthlyToStateMod.md)| WriteWellDemandTSMonthlyToStateMod ||
+|[`WriteWellHistoricalPumpingTSMonthlyToStateMod`](WriteWellHistoricalPumpingTSMonthlyToStateMod/WriteWellHistoricalPumpingTSMonthlyToStateMod.md)    | WriteWellHistoricalPumpingTSMonthlyToStateMod ||
+|[`WriteWellRightsToList`](WriteWellRightsToList/WriteWellRightsToList.md)                                       | WriteWellRightsToList ||
+|[`WriteWellRightsToStateMod`](WriteWellRightsToStateMod/WriteWellRightsToStateMod.md)                           | WriteWellRightsToStateMod ||
+|[`WriteWellStationsToStateMod`](WriteWellStationsToStateMod/WriteWellStationsToStateMod.md)                     | WriteWellStationsToStateMod ||

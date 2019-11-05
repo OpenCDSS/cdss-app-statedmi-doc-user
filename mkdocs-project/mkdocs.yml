@@ -28,6 +28,7 @@ nav:
 #  - '# Comment': command-ref/Comment/Comment.md
 #  - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
 #  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
+  - Overview: command-ref/overview.md
   - AggregateWellRights: command-ref/AggregateWellRights/AggregateWellRights.md
   - AppendNetwork: command-ref/AppendNetwork/AppendNetwork.md
   - AppendTable: command-ref/AppendTable/AppendTable.md
@@ -58,12 +59,14 @@ nav:
   - CheckStreamEstimateCoefficients: command-ref/CheckStreamEstimateCoefficients/CheckStreamEstimateCoefficients.md
   - CheckStreamEstimateStations: command-ref/CheckStreamEstimateStations/CheckStreamEstimateStations.md
   - CheckStreamGageStations: command-ref/CheckStreamGageStations/CheckStreamGageStations.md
-  - CheckTimeSeries: command-ref/CheckTimeSeries/CheckTimeSeries.md
   - CheckWellDemandTSMonthly: command-ref/CheckWellDemandTSMonthly/CheckWellDemandTSMonthly.md
   - CheckWellHistoricalPumpingTSMonthly: command-ref/CheckWellHistoricalPumpingTSMonthly/CheckWellHistoricalPumpingTSMonthly.md
   - CheckWellRights: command-ref/CheckWellRights/CheckWellRights.md
   - CheckWellStations: command-ref/CheckWellStations/CheckWellStations.md
   - CloseExcelWorkbook: command-ref/CloseExcelWorkbook/CloseExcelWorkbook.md
+  - Comment: command-ref/Comment/Comment.md
+  - CommentBlockStart: command-ref/CommentBlockStart/CommentBlockStart.md
+  - CommentBlockEnd: command-ref/CommentBlockEnd/CommentBlockEnd.md
   - CompareFiles: command-ref/CompareFiles/CompareFiles.md
   - CopyTable: command-ref/CopyTable/CopyTable.md
   - CreateCropPatternTSForCULocations: command-ref/CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md
@@ -73,6 +76,7 @@ nav:
   - CreateRiverNetworkFromNetwork: command-ref/CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md
   - DeleteTableColumns: command-ref/DeleteTableColumns/DeleteTableColumns.md
   - DeleteTableRows: command-ref/DeleteTableRows/DeleteTableRows.md
+  - Empty: command-ref/Empty/Empty.md
   - Exit: command-ref/Exit/Exit.md
   - FillClimateStation: command-ref/FillClimateStation/FillClimateStation.md
   - FillClimateStationsFromHydroBase: command-ref/FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md
@@ -146,7 +150,6 @@ nav:
   - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
   - Message: command-ref/Message/Message.md
   - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
-  - PenmanMonteithToStateCU: command-ref/PenmanMonteithToStateCU/PenmanMonteithToStateCU.md
   - PrintNetwork: command-ref/PrintNetwork/PrintNetwork.md
   - ReadBlaneyCriddleFromHydroBase: command-ref/ReadBlaneyCriddleFromHydroBase/ReadBlaneyCriddleFromHydroBase.md
   - ReadBlaneyCriddleFromStateCU: command-ref/ReadBlaneyCriddleFromStateCU/ReadBlaneyCriddleFromStateCU.md
@@ -223,6 +226,7 @@ nav:
   - RunCommands: command-ref/RunCommands/RunCommands.md
   - RunProgram: command-ref/RunProgram/RunProgram.md
   - RunPython: command-ref/RunPython/RunPython.md
+  - RunR: command-ref/RunR/RunR.md
   - SetBlaneyCriddle: command-ref/SetBlaneyCriddle/SetBlaneyCriddle.md
   - SetClimateStation: command-ref/SetClimateStation/SetClimateStation.md
   - SetCropCharacteristics: command-ref/SetCropCharacteristics/SetCropCharacteristics.md
@@ -332,6 +336,7 @@ nav:
   - TranslateCropCharacteristics: command-ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md
   - TranslateCropPatternTS: command-ref/TranslateCropPatternTS/TranslateCropPatternTS.md
   - TranslatePenmanMonteith: command-ref/TranslatePenmanMonteith/TranslatePenmanMonteith.md
+  - UnknownCommand: command-ref/UnknownCommand/UnknownCommand.md
   - UnzipFile: command-ref/UnzipFile/UnzipFile.md
   - WebGet: command-ref/WebGet/WebGet.md
   - WriteBlaneyCriddleToList: command-ref/WriteBlaneyCriddleToList/WriteBlaneyCriddleToList.md
@@ -432,7 +437,7 @@ site_description:  CDSS StateDMI
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
-  favicon:  'img/favicon.ico'
+  favicon:  'images/NewCOLogo32x32.gif'
 # The following controls how URLs are created
 # - As of MkDocs 1.0 the default is true meaning URLs to a page ABC is ABC/ rather than something/ABC.html.
 # - see:  https://www.mkdocs.org/user-guide/configuration/#use_directory_urls

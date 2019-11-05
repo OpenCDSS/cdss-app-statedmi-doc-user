@@ -34,11 +34,11 @@ each represented with different hatching) provide surface water supply to the in
 In some cases, only one ditch provides supply.
 Between the ditches, both supply water to shared parcels.
 Wells can supplement surface water supply (parcels above the river)
-or can be the sole supplier of water (lower right) and wells do not need to be
-physically located on a parcel to provide supply to the parcel.
+or can be the sole supplier of water (lower right).
+Wells do not need to be physically located on a parcel to provide supply to the parcel.
 For StateCU, well-only lands are identified by CU locations that are defined by:
 
-* a collection (aggregate/system) of parcels - **this approach is being phased is throughout CDSS**
+* a collection (aggregate/system) of parcels - **this approach is being phased in throughout CDSS**
 * a collection (aggregate/system) of wells specified by WDIDs or well permit receipts - **this older approach
 is currrently only used in the Rio Grande**
 
@@ -55,13 +55,16 @@ ground that has physical characteristics, water rights, and/or well permits.
 Loop through each CU location that matches the ID pattern and perform the following:
 For each year being processed (specified by the Year parameter or by default all available data in HydroBase), perform the following:
 
-1. Initialize all irrigation practice acreage time series to zero.
+1. Initialize all irrigation practice acreage time series to missing values.
 Consequently, if no data are found in a year,
-an “observation” of zero acreage will occur.  Any previous data are reset.
+an “observation” of missing acreage will occur.  Any previous data are reset.
 2. Get the list of parcels associated with the location
 (note that in a given year there may be zero or more parcels associated with a location):
 	1. If the location is a groundwater only location,
 	get the list of parcels from the aggregate/system definitions.
+	The HydroBase well and parcel relationships are read,
+	in which case well WDID or receipt is used.
+	This uses the HydroBase `vw_CDSS_WellsWellToParcel` view.
 	2. If the location is a ditch that is supplemented by groundwater
 	(assumed as possible because the StateCU CU Location data does not indicate whether
 	a location has groundwater supply and all may – one purpose of the IPY file is to indicate groundwater supply over time):
@@ -71,18 +74,20 @@ an “observation” of zero acreage will occur.  Any previous data are reset.
 		each part of the aggregate/system and form one list of parcels.
 3. Read the parcel data using the parcel identifiers.
 	1. Query HydroBase to get the parcel data, using the year, division, and parcel identifier.
-	2. Acreage not in HydroBase is appended to the parcel list.i
+	This uses the HydroBase `vw_CDSS_ParcelUseTS` view.
+	2. Acreage not in HydroBase is appended to the parcel list.
 	This acreage is supplied by [`SetIrrigationPracticeTS`](../SetIrrigationPracticeTS/SetIrrigationPracticeTS.md) and
 	[`SetIrrigationPracticeTSFromList`](../SetIrrigationPracticeTSFromList/SetIrrigationPracticeTSFromList.md)
-	commands with the ProcessWhen=WithParcels parameter.
+	commands with the `ProcessWhen=WithParcels` parameter.
 	These commands must be specified before the
 	[`ReadIrrigationPracticeTSFromHydroBase`](../ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md) command.
 	For the sake of processing, user-supplied acreage is treated as one parcel for the specified year.
 4.	Process the parcels for the location:
 	1. If the parcel was associated with a ditch,
-	the parcel area is multiplied by the ditch service area percent
-	irrigated value (actually a fraction in HydroBase),
+	the parcel area is multiplied by the ditch service area fraction
+	irrigated value (actually called `percent_irrig` in HydroBase even though 0.0 to 1.0),
 	reflecting the fact that only a portion of the parcel area is associated with the location.
+	If well-only irrigation, the fraction irrigated is set to 1.0.
 	2. The appropriate irrigation practice acreage time series are incremented.
 	Total acreage is always incremented.  For IPY acreage purposes,
 	SPRINKLER and DRIP irrigation methods are treated as SPRINKLER (high efficiency)
