@@ -5,30 +5,18 @@
 site_name: CDSS / StateDMI
 nav:
 - Home: index.md
-# TODO smalers 2018-09-05 need to update for StateDMI documentation
-#- 1 - Introduction: introduction/introduction.md
-#- 2 - Getting Started: getting-started/getting-started.md
-#- 3 - Commands: commands/commands.md
-#- 4 - Tools: tools/tools.md
-#- 5 - Examples of Use: examples/examples.md
-#- 6 - Quality Control: quality-control/quality-control.md
-#- 7 - Spatial Data Integration: spatial/spatial.md
-#- 8 - Spreadsheet Integration: spreadsheet/spreadsheet.md
-#- 9 - Model Framework Integration: modeling/modeling.md
-#- 10 - Troubleshooting: troubleshooting/troubleshooting.md
-- Troubleshooting: troubleshooting/troubleshooting.md
-#- 11 - Best Practices:
-#  - Time Series Identifiers: best-practices/ts-identifiers.md
-#- 12 - Resources: resources.md
-#- Lessons:
-#  - Overview: lessons/overview.md
-- Reference - Commands:
-#  - Overview: command-ref/overview.md
+- '1 - Introduction': introduction/introduction.md
+- '2 - Getting Started': getting-started/getting-started.md
+- '3 - Creating StateCU Dataset Files': statecu/statecu.md
+- '4 - Creating StateMod Dataset Files': statemod/statemod.md
+- '5 - Troubleshooting': troubleshooting/troubleshooting.md
+- '6 - Quality Control': quality-control/quality-control.md
+- 'Reference - Commands':
+  - Overview: command-ref/overview.md
 #  - Command Syntax: command-ref/command-syntax.md
 #  - '# Comment': command-ref/Comment/Comment.md
 #  - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
 #  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
-  - Overview: command-ref/overview.md
   - AggregateWellRights: command-ref/AggregateWellRights/AggregateWellRights.md
   - AppendNetwork: command-ref/AppendNetwork/AppendNetwork.md
   - AppendTable: command-ref/AppendTable/AppendTable.md

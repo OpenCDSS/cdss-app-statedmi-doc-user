@@ -2,7 +2,8 @@
 
 This documentation provides resources to learn how to use
 [Colorado's Decision Support Systems (CDSS)](http://cdss.state.co.us/Pages/CDSSHome.aspx) StateDMI software,
-which automates processing data to prepare StateCU and StateMod datasets.
+which automates processing data for StateCU and StateMod datasets.
+StateDMI can also be used to implement general workflows that process State of Colorado HydroBase and other data.
 This documentation is generally referred to as the **"User Documentation"** in contrast to
 **"Developer Documentation"**, which is relevant to software developers.
 
