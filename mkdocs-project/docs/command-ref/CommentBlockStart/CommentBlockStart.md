@@ -1,4 +1,4 @@
-# TSTool / Command / Comment Block Start `/*` #
+# StateDMI / Command / Comment Block Start `/*` #
 
 * [Overview](#overview)
 * [Command Editor](#command-editor)
@@ -44,7 +44,7 @@ The commands between `/*` and `*/` lines will be recognized as commands but will
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenCDSS/cdss-app-tstool-test/tree/master/test/regression/commands/general/CommentBlock).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/general/CommentBlock).
 
 ## Troubleshooting ##
 

@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `CheckWellDemandTSMonthly` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `CheckWellDemandTSMonthly` command (for StateMod)
+checks well demand monthly time series for problems.  The command should usually be used with a
+[`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command at the end of a command file.
 
 ## Command Editor ##
 
@@ -42,14 +40,28 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | The identifier for the location(s) to check.  Use `*` to match a pattern. | None – must be specified. |
+| `IfNotFound` | One of the following:<ul><li>`Fail` – generate a failure message if the location identifier is not matched</li><li>`Ignore` – ignore (don’t generate a message) if the location identifier is not matched</li><li>`Warn` – generate a warning message if the location identifier is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-est/tree/master/test/regression/commands/CheckWellDemandTSMonthly).
 
+The following excerpt from a command file illustrates how well demand time series can be checked and written to a StateMod file:
+
+```
+#
+#  Create well demand file
+#
+WriteWellDemandTSMonthlyToStateMod(OutputFile="..\STATEMOD\rg2007.wem")
+#
+# Check the results
+CheckWellDemandTSMonthly(ID="*")
+WriteCheckFile(OutputFile="wem.commands.StateDMI.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command
