@@ -11,11 +11,11 @@
 
 ## Overview ##
 
-The `CheckBlaneyCriddle` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `CheckBlaneyCriddle` command (for StateCU)
+checks the Blaney-Criddle crop coefficient data for problems.
+The command should usually be used with a
+[`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md)
+command at the end of a command file.
 
 ## Command Editor ##
 
@@ -42,14 +42,46 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | The name of the crop(s) to check.  Use `*` to match a pattern. | None – must be specified. |
+| `IfNotFound` | One of the following:<ul><li>`Fail` – generate a failure message if the `ID` is not matched</li><li>`Ignore` – ignore (don’t generate a message) if the `ID` is not matched</li><li>`Warn` – generate a warning message if the `ID` is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CheckBlaneyCriddle).
 
+The following example command file illustrates how Blaney-Criddle
+coefficients can be defined, checked, and written to a StateCU file:
+
+```
+StartLog(LogFile="Crops_KBC.StateDMI.log")
+#
+# StateDMI commands to create the Rio Grande Blaney-Criddle coefficients File
+#
+# History:
+#
+# 2004-03-16 Steven A. Malers, RTi  Initial version using StateDMI.
+# 2007-04-23 SAM, RTi               Update for Rio Grande Phase 5.
+#
+# Step 1 - read data from HydroBase
+#
+# Read the general Blaney-Criddle coefficients first and then override with Rio Grande
+# data.
+ReadBlaneyCriddleFromHydroBase(BlaneyCriddleMethod="BLANEY-CRIDDLE_TR-21")
+ReadBlaneyCriddleFromHydroBase(BlaneyCriddleMethod="BLANEY-CRIDDLE_RIO_GRANDE")
+#
+# Step 3 - write the file
+#
+SortBlaneyCriddle(Order=Ascending)
+WriteBlaneyCriddleToStateCU(OutputFile="rg2007.kbc")
+#
+# Check the results
+#
+CheckBlaneyCriddle(ID="*")
+WriteCheckFile(OutputFile="rg2007.kbc.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command

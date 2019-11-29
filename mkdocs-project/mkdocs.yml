@@ -14,9 +14,9 @@ nav:
 - 'Reference - Commands':
   - Overview: command-ref/overview.md
 #  - Command Syntax: command-ref/command-syntax.md
-#  - '# Comment': command-ref/Comment/Comment.md
-#  - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
-#  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
+  - '# Comment': command-ref/Comment/Comment.md
+  - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
+  - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md
   - AggregateWellRights: command-ref/AggregateWellRights/AggregateWellRights.md
   - AppendNetwork: command-ref/AppendNetwork/AppendNetwork.md
   - AppendTable: command-ref/AppendTable/AppendTable.md
