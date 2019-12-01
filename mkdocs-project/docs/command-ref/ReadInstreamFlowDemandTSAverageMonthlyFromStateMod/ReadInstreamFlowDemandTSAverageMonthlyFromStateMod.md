@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `ReadInstreamFlowDemandTSAverageMonthlyFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadInstreamFlowDemandTSAverageMonthlyFromStateMod` command (for StateMod)
+reads instream flow demand time series (average monthly)
+from a StateMod instream flow demand time series (average monthly) file.
+The instream flow demand time series can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod instream flow demand time series (average monthly) file to be read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +51,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteInstreamFlowDemandTSAverageMonthlyToStateMod`](../WriteInstreamFlowDemandTSAverageMonthlyToStateMod/WriteInstreamFlowDemandTSAverageMonthlyToStateMod.md) command

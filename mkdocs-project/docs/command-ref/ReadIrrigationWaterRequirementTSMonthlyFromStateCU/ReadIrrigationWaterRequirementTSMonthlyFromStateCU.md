@@ -11,11 +11,13 @@
 
 ## Overview ##
 
-The `ReadIrrigationWaterRequirementTSMonthlyFromStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadIrrigationWaterRequirementTSMonthlyFromStateCU` command (for StateMod)
+reads irrigation water requirement time series data from a StateCU
+irrigation water requirement time series file and defines the data in memory.
+Currently this command is meant to read the IWR time series for use in
+estimating average efficiencies and demands for StateMod – it is not
+supported in StateCU commands (e.g., to read and modify the time series file).
+All time series are read, whether or not they match the list of diversion stations.
 
 ## Command Editor ##
 
@@ -42,7 +44,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateCU irrigation water requirement file (StateMod time series format) to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -51,5 +53,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

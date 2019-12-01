@@ -11,11 +11,17 @@
 
 ## Overview ##
 
-The `ReadWellStationsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadWellStationsFromStateMod` command (for StateCU and StateMod)
+reads a list of well stations from a StateMod well stations file and defines well stations in memory.
+The well stations can then be manipulated and output with other commands.
+The StateMod well stations file contains stations for which only groundwater supply
+is available and stations for which groundwater supply supplements surface water supply
+of a diversion station (in this case the well station data includes the diversion station identifier).
+For some data (e.g., demands), StateMod accepts data from multiple files.
+For example, diversion and diversion+well stations may read total demands from the
+diversion demands file and well (groundwater only) stations may read demands from the well demands file.
+Parameters are available in this command to read all well stations or only a subset,
+to allow flexibility in data processing.  Other commands may also process a subset, regardless of what is read.
 
 ## Command Editor ##
 
@@ -42,7 +48,9 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod well stations file to be read. | None – must be specified. |
+| `IgnoreDWs` | Indicate whether the D&W well nodes should be ignored.  These are locations where well supply supplements surface water (diversion) supply. | `False` |
+| `IgnoreWells` | Indicate whether the well nodes should be ignored.  These are locations where only well supply is used. | `False` |
 
 ## Examples ##
 
@@ -52,4 +60,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadWellStationsFromNetwork`](../ReadWellStationsFromNetwork/ReadWellStationsFromNetwork.md) command
+* [`ReadWellStationsFromStateMod`](../ReadWellStationsFromStateMod/ReadWellStationsFromStateMod.md) command
+* [`WriteWellStationsToStateMod`](../WriteWellStationsToStateMod/WriteWellStationsToStateMod.md) command

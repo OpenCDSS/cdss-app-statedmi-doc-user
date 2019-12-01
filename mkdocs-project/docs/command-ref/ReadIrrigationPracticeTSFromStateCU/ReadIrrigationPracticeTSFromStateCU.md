@@ -11,11 +11,12 @@
 
 ## Overview ##
 
-The `ReadIrrigationPracticeTSFromStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadIrrigationPracticeTSFromStateCU` command (for StateCU)
+reads irrigation practice time series data from a StateCU irrigation
+practice time series file and defines the data in memory.
+The irrigation practice time series can then be manipulated and output with other commands.
+This command can be used to adjust an existing irrigation practice file.
+See also the TSTool software, which can be used to read, manipulate, and view irrigation practice time series.
 
 ## Command Editor ##
 
@@ -42,7 +43,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the file to read, surrounded by double quotes. | None – must be specified. |
+| `Version` | The StateCU version number, to allow backward compatibility with file formats from an earlier StateCU version. | Use the most current known format. |
 
 ## Examples ##
 
@@ -52,4 +54,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadIrrigationPracticeTSFromHydroBase`](../ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md) command
+* [`ReadIrrigationPracticeTSFromList`](../ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md) command
+* [`WriteIrrigationPracticeTSToStateCU`](../WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md) command

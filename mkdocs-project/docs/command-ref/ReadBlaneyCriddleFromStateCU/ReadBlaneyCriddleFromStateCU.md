@@ -11,11 +11,11 @@
 
 ## Overview ##
 
-The `ReadBlaneyCriddleFromStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadBlaneyCriddleFromStateCU` command (for StateCU)
+reads Blaney-Criddle crop coefficients from a StateCU Blaney-Criddle
+crop coefficients file and defines crop coefficients in memory.
+The crop coefficients can then be manipulated and output with other commands.
+This command can be used to adjust an existing crop coefficients file.
 
 ## Command Editor ##
 
@@ -42,7 +42,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required**| The name of the input file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +52,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadBlaneyCriddleFromHydroBase`](../ReadBlaneyCriddleFromHydroBase/ReadBlaneyCriddleFromHydroBase.md) command
+* [`WriteBlaneyCriddleToStateCU`](../WriteBlaneyCriddleToStateCU/WriteBlaneyCriddleToStateCU.md) command

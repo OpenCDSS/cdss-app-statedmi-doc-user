@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `ReadStreamGageStationsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadStreamGageStationsFromStateMod` command (from StateMod)
+reads a list of stream gage stations from a StateMod stream gage
+stations file and defines stream gage stations in memory.
+The stream gage stations can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod stream gage stations file to be read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +51,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadStreamGageStationsFromList`](../ReadStreamGageStationsFromList/ReadStreamGageStationsFromList.md) command
+* [`ReadStreamGageStationsFromNetwork`](../ReadStreamGageStationsFromNetwork/ReadStreamGageStationsFromNetwork.md) command
+* [`WriteStreamGageStationsToStateMod`](../WriteStreamGageStationsToStateMod/WriteStreamGageStationsToStateMod.md) command

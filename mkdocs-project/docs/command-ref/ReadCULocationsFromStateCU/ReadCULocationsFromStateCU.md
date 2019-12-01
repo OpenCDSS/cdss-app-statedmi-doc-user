@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `ReadCULocationsFromStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadCULocationsFromStateCU` command (for StateCU)
+command reads a list of CU Locations from a StateCU structure file and defines CU Locations in memory.
+The CU Locations can then be manipulated and output with other commands.
+This command can be used to adjust an existing CU Locations file.
 
 ## Command Editor ##
 
@@ -42,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile` | The name of the input file to read, surrounded by double quotes. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +51,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadCULocationsFromList`](../ReadCULocationsFromList/ReadCULocationsFromList.md) command
+* [`ReadCULocationsFromStateMod`](../ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md) command
+* [`WriteCULocationsToStateCU`](../WriteCULocationsToStateCU/WriteCULocationsToStateCU.md) command

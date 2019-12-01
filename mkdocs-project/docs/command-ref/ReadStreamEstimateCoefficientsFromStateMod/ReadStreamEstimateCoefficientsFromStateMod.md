@@ -11,11 +11,11 @@
 
 ## Overview ##
 
-The `ReadStreamEstimateCoefficientsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadStreamEstimateCoefficientsFromStateMod` command (for StateMod)
+reads stream estimate coefficients from a StateMod stream estimate coefficients file.
+This information is associated with stream estimate stations using the station identifier as the lookup.
+Stream estimate coefficients define how streamflow is estimated at ungaged locations (stream estimate stations).
+The stream estimate coefficients that are read can be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +42,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod stream estimate coefficients file to be read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +52,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteStreamEstimateCoefficientsToStateMod`](../WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md) command

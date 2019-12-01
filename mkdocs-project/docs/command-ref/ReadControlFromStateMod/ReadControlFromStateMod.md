@@ -11,11 +11,13 @@
 
 ## Overview ##
 
-The `ReadControlFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadControlFromStateMod` command (for StateMod)
+reads a StateMod control file, which contains global parameters for the data set.
+The primary purpose of this command currently is to facilitate software
+testing of reading and writing the control file;
+however, in the future the functionality may be enhanced.
+The response file can be written using the
+[`WriteControlToStateMod`](../WriteControlToStateMod/WriteControlToStateMod.md) command.
 
 ## Command Editor ##
 
@@ -42,7 +44,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod control file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +54,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteControlToStateMod`](../WriteControlToStateMod/WriteControlToStateMod.md) command

@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadDelayTablesMonthlyFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadDelayTablesMonthlyFromStateMod` command (for StateCU and StateMod)
+reads delay tables (monthly) from a StateMod delay tables file.
+For example, this command may be used to convert a delay table file between fraction and percent.
 
 ## Command Editor ##
 
@@ -42,7 +40,9 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the input file to read, surrounded by double quotes. | None – must be specified. |
+| `Scale` | If the StateMod delay table values are specified as fractions rather than percent, a scale of 100 can be used to convert the StateMod delay tables to percent. | If not specified, no scale is applied to the delay values. |
+
 
 ## Examples ##
 
@@ -52,4 +52,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadDelayTablesDailyFromStateMod`](../ReadDelayTablesDailyFromStateMod/ReadDelayTablesDailyFromStateMod.md) command
+* [`WriteDelayTablesMonthlyToStateMod`](../WriteDelayTablesMonthlyToStateMod/WriteDelayTablesMonthlyToStateMod.md) command

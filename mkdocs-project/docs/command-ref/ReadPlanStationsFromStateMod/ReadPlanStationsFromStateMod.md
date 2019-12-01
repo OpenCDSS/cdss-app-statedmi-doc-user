@@ -11,11 +11,12 @@
 
 ## Overview ##
 
-The `ReadPlanStationsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadPlanStationsFromStateMod` command (for StateMod)
+reads a list of plan stations from a StateMod plan stations file and defines plan stations in memory.
+The plan stations can then be manipulated and output with other commands.
+Comments immediately prior to a plan’s data records are associated with the
+plan and will be output when the plan stations are written with a
+[`WritePlanStationsToStateMod`](../WritePlanStationsToStateMod/WritePlanStationsToStateMod.md) command.
 
 ## Command Editor ##
 
@@ -42,7 +43,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod plan stations file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +53,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WritePlanStationsToStateMod`](../WritePlanStationsToStateMod/WritePlanStationsToStateMod.md) command

@@ -11,11 +11,11 @@
 
 ## Overview ##
 
-The `ReadDiversionRightsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadDiversionRightsFromStateMod` command (for StateMod)
+reads diversion historical time series (monthly).
+This command is used when estimating average efficiencies and calculating demand time series.
+All time series are read, whether or not they match the list of diversion stations.
+Copies of the time series are NOT made for use as original data with the `Limit*ToRights` commands.
 
 ## Command Editor ##
 
@@ -42,7 +42,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+|` InputFile` | The name of the StateMod diversion historical time series (monthly) file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +52,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadDiversionRightsFromHydroBase`](../ReadDiversionRightsFromHydroBase/ReadDiversionRightsFromHydroBase.md) command
+* [`WriteDiversionRightsToStateMod`](../WriteDiversionRightsToStateMod/WriteDiversionRightsToStateMod.md) command
