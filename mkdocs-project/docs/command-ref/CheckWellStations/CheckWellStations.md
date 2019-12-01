@@ -64,4 +64,4 @@ WriteCheckFile(OutputFile="wes.commands.StateDMI.check.html")
 
 ## See Also ##
 
-* [WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command
+* [`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command

@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `FillNetworkFromHydroBase` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `FillNetworkFromHydroBase` command (from StateMod)
+fills missing location data in the generalized network, using HydroBase for data.
+This is used, for example, when a generalized network has been created from a StateMod river network.
 
 ## Command Editor ##
 
@@ -42,14 +40,40 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `LocationEstimate` | Indicates how to estimate missing coordinates, currently only:<ul><li>`Interpolate` – linearly interpolate between known node locations.</li></ul> | `Interpolate` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillNetworkFromHydroBase).
 
+The following example command file illustrates how the command might be used:
+
+```
+# Create a generalized XML network from individual StateMod files
+# Read the network, which contains upstream to downstream connectivity but does
+# not indicate node types
+ReadRiverNetworkFromStateMod(InputFile=cm2005.rin)
+# Read the stations, which imply the node types
+ReadRiverStreamGageStationsFromStateMod(InputFile=cm2005.ris)
+ReadRiverDiversionStationsFromStateMod(InputFile=cm2005.dds)
+ReadRiverReservoirStationsFromStateMod(InputFile=cm2005.res)
+ReadRiverInstreamFlowStationsFromStateMod(InputFile=cm2005.ifs)
+ReadRiverWellStationsFromStateMod(InputFile=cm2005.wes)
+# To be developed...
+#ReadRiverPlanStationsFromStateMod()
+ReadRiverStreamEstimateStationsFromStateMod(InputFile=cm2005.ris)
+# Now create the generalized network, using the connectivity and node types
+CreateNetworkFromRiverNetwork()
+# Fill in node names and locations from HydroBase, if any is still missing
+FillNetworkFromHydroBase()
+# Write the generalized network
+WriteNetworkToStateMod(OutputFile="cm2005.net")
+# Check for errors (the following is not yet implemented)
+#CheckNetwork()
+WriteCheckFile(OutputFile="cm2005.net.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
