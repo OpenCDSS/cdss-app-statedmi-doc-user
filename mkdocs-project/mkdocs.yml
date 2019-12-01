@@ -131,12 +131,12 @@ nav:
   - LimitWellDemandTSMonthlyToRights: command-ref/LimitWellDemandTSMonthlyToRights/LimitWellDemandTSMonthlyToRights.md
   - LimitWellHistoricalPumpingTSMonthlyToRights: command-ref/LimitWellHistoricalPumpingTSMonthlyToRights/LimitWellHistoricalPumpingTSMonthlyToRights.md
   - ListFiles: command-ref/ListFiles/ListFiles.md
-  - NewExcelWorkbook: command-ref/NewExcelWorkbook/NewExcelWorkbook.md
-  - NewTable: command-ref/NewTable/NewTable.md
   - ManipulateTableString: command-ref/ManipulateTableString/ManipulateTableString.md
   - MergeListFileColumns: command-ref/MergeListFileColumns/MergeListFileColumns.md
   - MergeWellRights: command-ref/MergeWellRights/MergeWellRights.md
   - Message: command-ref/Message/Message.md
+  - NewExcelWorkbook: command-ref/NewExcelWorkbook/NewExcelWorkbook.md
+  - NewTable: command-ref/NewTable/NewTable.md
   - OpenHydroBase: command-ref/OpenHydroBase/OpenHydroBase.md
   - PrintNetwork: command-ref/PrintNetwork/PrintNetwork.md
   - ReadBlaneyCriddleFromHydroBase: command-ref/ReadBlaneyCriddleFromHydroBase/ReadBlaneyCriddleFromHydroBase.md

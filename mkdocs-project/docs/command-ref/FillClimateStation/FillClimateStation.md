@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `FillClimateStation` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `FillClimateStation` command (for StateCU)
+fills missing data in existing climate stations.
 
 ## Command Editor ##
 
@@ -40,9 +37,17 @@ FillClimateStation(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | A single climate station identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `Latitude` | The climate station latitude to be assigned for all matching climate stations with missing latitude. | If not specified, the original value will remain. |
+| `Elevation` | The climate station elevation to be assigned for all matching climate stations with missing elevation. | If not specified, the original value will remain. |
+| `Region1` | The climate station Region1 (typically county) to be assigned for all matching climate stations with missing `Region1`. | If not specified, the original value will remain. |
+| `Region2` | The climate station Region2 (traditionally HUC but can be blank) to be assigned for all matching climate stations with missing `Region2`. | If not specified, the original value will remain. |
+| `Name` | The climate station name to be assigned for all matching climate stations with missing name. | If not specified, the original value will remain.
+| `HeightHumidityMeas` | The height of humidity and temperature measurements (feet), only used with daily analysis. | If not specified, the original value will remain. |
+| `HeightWindMeas` | The height of wind measurements (feet), only used with daily analysis. | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Fail` – generate a failure message if the ID pattern is not matched</li><li>`Ignore` – ignore (don’t generate a message) if the ID pattern is not matched</li><li>`Warn` – generate a warning message if the ID pattern is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -52,4 +57,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillClimateStationsFromHydroBase`](../FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md) command
+* [`SetClimateStation`](../SetClimateStation/SetClimateStation.md) command

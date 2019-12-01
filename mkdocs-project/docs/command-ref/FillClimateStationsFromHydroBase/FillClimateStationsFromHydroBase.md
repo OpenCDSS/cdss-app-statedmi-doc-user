@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `FillClimateStationsFromHydroBase` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `FillClimateStationsFromHydroBase` command (for StateCU)
+fills missing data in existing climate stations, using HydroBase for data.
 
 ## Command Editor ##
 
@@ -42,14 +39,28 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | A single climate station identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Fail` – generate a failure message if the climate station is not found</li><li>`Ignore` – ignore (don’t generate a message) if the climate station is not found</li><li>`Warn` – generate a warning message if the climate station is not found</li></ul> | `Warn` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillClimateStationsFromHydroBase).
 
+The following example command file illustrates how climate stations can be defined, filled from HydroBase, and written to a StateCU file:
+
+```
+ReadClimateStationsFromList(ListFile="climsta.lst",IDCol=1)
+FillClimateStationsFromHydroBase(ID="*")
+SetClimateStation(ID="3016",Region2="14080106",IfNotFound=Warn)
+SetClimateStation(ID="1018",Region2="14040106",IfNotFound=Warn)
+SetClimateStation(ID="1928",Elevation=6440,IfNotFound=Warn)
+SetClimateStation(ID="0484",Region1="MOFFAT",IfNotFound=Add)
+WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillClimateStation`](../FillClimateStation/FillClimateStation.md) command
+* [`SetClimateStation`](../SetClimateStation/SetClimateStation.md) command
