@@ -148,6 +148,7 @@ nav:
   - ReadCropCharacteristicsFromStateCU: command-ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md
   - ReadCropPatternTSFromHydroBase: command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md
   - ReadCropPatternTSFromStateCU: command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md
+  - ReadCULocationsFromList: command-ref/ReadCULocationsFromList/ReadCULocationsFromList.md
   - ReadCULocationsFromStateCU: command-ref/ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md
   - ReadCULocationsFromStateMod: command-ref/ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md
   - ReadDelayTablesDailyFromStateMod: command-ref/ReadDelayTablesDailyFromStateMod/ReadDelayTablesDailyFromStateMod.md
@@ -207,6 +208,7 @@ nav:
   - ReadWellHistoricalPumpingTSMonthlyFromStateMod: command-ref/ReadWellHistoricalPumpingTSMonthlyFromStateMod/ReadWellHistoricalPumpingTSMonthlyFromStateMod.md
   - ReadWellRightsFromHydroBase: command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md
   - ReadWellRightsFromStateMod: command-ref/ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md
+  - ReadWellStationsFromList: command-ref/ReadWellStationsFromList/ReadWellStationsFromList.md
   - ReadWellStationsFromNetwork: command-ref/ReadWellStationsFromNetwork/ReadWellStationsFromNetwork.md
   - ReadWellStationsFromStateMod: command-ref/ReadWellStationsFromStateMod/ReadWellStationsFromStateMod.md
   - RemoveCropPatternTS: command-ref/RemoveCropPatternTS/RemoveCropPatternTS.md

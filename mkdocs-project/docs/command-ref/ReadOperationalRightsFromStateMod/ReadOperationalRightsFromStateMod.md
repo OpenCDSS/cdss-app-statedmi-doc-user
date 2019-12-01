@@ -11,11 +11,13 @@
 
 ## Overview ##
 
-The `ReadOperationalRightsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadOperationalRightsFromStateMod` command (for StateMod)
+reads a list of operational rights from a StateMod operational
+rights file and defines operational rights in memory.
+The rights can then be manipulated and output with other commands.
+Comments immediately prior to a right’s data records are associated with the
+right and will be output when the rights are written with a
+[`WriteOperationalRightsToStateMod`](../WriteOperationalRightsToStateMod/WriteOperationalRightsToStateMod.md) command.
 
 ## Command Editor ##
 
@@ -42,7 +44,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod operational rights file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +54,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteOperationalRightsToStateMod`](../WriteOperationalRightsToStateMod/WriteOperationalRightsToStateMod.md) command

@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `ReadStreamEstimateStationsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadStreamEstimateStationsFromStateMod` command (for StateMod)
+reads a list of stream estimate stations from a StateMod stream estimate
+stations file and defines stream estimate stations in memory.
+The stream estimate stations can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod stream estimate stations file to be read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +51,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadStreamEstimateStationsFromList`](../ReadStreamEstimateStationsFromList/ReadStreamEstimateStationsFromList.md) command
+* [`ReadStreamEstimateStationsFromNetwork`](../ReadStreamEstimateStationsFromNetwork/ReadStreamEstimateStationsFromNetwork.md) command
+* [`WriteStreamEstimateStationsToStateMod`](../WriteStreamEstimateStationsToStateMod/WriteStreamEstimateStationsToStateMod.md) command

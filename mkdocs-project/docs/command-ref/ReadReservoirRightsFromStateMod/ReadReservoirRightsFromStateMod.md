@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadReservoirRightsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadReservoirRightsFromStateMod` command (for StateMod)
+reads reservoir rights from a StateMod reservoir rights file.
+The reservoir rights can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +40,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod reservoir rights file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +50,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadReservoirRightsFromHydroBase`](../ReadReservoirRightsFromHydroBase/ReadReservoirRightsFromHydroBase.md) command
+* [`WriteReservoirRightsToStateMod`](../WriteReservoirRightsToStateMod/WriteReservoirRightsToStateMod.md) command

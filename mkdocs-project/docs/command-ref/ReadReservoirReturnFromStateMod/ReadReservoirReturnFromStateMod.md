@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadReservoirReturnFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadReservoirReturnFromStateMod` command (from StateMod)
+reads a list of reservoir return flow data from a StateMod reservoir return flow data file.
+The data can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +40,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod reservoir return flow file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +50,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteReservoirReturnFlowToStateMod`](../WriteReservoirReturnFlowToStateMod/WriteReservoirReturnFlowToStateMod.md) command

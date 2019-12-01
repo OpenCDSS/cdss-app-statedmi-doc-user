@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadDiversionStationsFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadDiversionStationsFromStateMod` command (for StateCU and StateMod)
+reads a list of diversion stations from a StateMod diversion stations file and defines diversion stations in memory.
+The diversion stations can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +40,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod diversion stations file to be read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +50,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadDiversionStationsFromList`](../ReadDiversionStationsFromList/ReadDiversionStationsFromList.md) command
+* [`ReadDiversionStationsFromNetwork`](../ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md) command
+* [`WriteDiversionStationsToStateMod`](../WriteDiversionStationsToStateMod/WriteDiversionStationsToStateMod.md) command

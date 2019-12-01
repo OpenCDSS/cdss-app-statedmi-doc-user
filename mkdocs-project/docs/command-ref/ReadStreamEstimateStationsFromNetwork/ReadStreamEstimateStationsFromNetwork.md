@@ -11,11 +11,12 @@
 
 ## Overview ##
 
-The `ReadStreamEstimateStationsFromNetwork` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadStreamEstimateStationsFromNetwork` command (for StateMod)
+reads a list of stream estimate stations from a StateMod network file (XML or Makenet) and defines stream estimate stations in memory.
+Stream estimate stations are stations not of type `FLOW` but which are indicated as natural flow nodes in the network.
+The default output order is that of the stream network, upstream to downstream.
+The StateMod model requires that the stream gage station file be in the same order as the river network file.
+The stream estimate stations that are read can be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +43,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the network file to be read. | Use the network that has previously been read with other commands. |
 
 ## Examples ##
 
@@ -52,4 +53,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadStreamEstimateStationsFromList`](../ReadStreamEstimateStationsFromList/ReadStreamEstimateStationsFromList.md) command
+* [`ReadStreamEstimateStationsFromStateMod`](../ReadStreamEstimateStationsFromStateMod/ReadStreamEstimateStationsFromStateMod.md) command
+* [`WriteStreamEstimateStationsToStateMod`](../WriteStreamEstimateStationsToStateMod/WriteStreamEstimateStationsToStateMod.md) command

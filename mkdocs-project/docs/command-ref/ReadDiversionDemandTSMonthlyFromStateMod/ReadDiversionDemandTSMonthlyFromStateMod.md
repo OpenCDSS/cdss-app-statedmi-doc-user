@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadDiversionDemandTSMonthlyFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadDiversionDemandTSMonthlyFromStateMod` command (for StateMod)
+reads diversion demand time series (monthly).
+All time series are read, whether or not they match the list of diversion stations.
 
 ## Command Editor ##
 
@@ -42,7 +40,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod diversion demand time series (monthly) file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +50,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteDiversionDemandTSToStateMod`](../WriteDiversionDemandTSMonthlyToStateMod/WriteDiversionDemandTSMonthlyToStateMod.md) command

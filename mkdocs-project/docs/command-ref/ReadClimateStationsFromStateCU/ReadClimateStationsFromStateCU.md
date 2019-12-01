@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `ReadClimateStationsFromStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadClimateStationsFromStateCU` command (for StateCU)
+reads a list of climate stations from a StateCU climate stations file and defines climate stations in memory.
+The climate stations can then be manipulated and output with other commands.
+This command can be used to adjust an existing climate stations file.
 
 ## Command Editor ##
 
@@ -42,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the input file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +51,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadClimateStationsFromList`](../ReadClimateStationsFromList/ReadClimateStationsFromList) command
+* [`WriteClimateStationsToStateCU`](../WriteClimateStationsToStateCU/WriteClimateStationsToStateCU) command

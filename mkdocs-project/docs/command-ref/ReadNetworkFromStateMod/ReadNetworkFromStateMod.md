@@ -11,11 +11,16 @@
 
 ## Overview ##
 
-The `ReadNetworkFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadNetworkFromStateMod` command (for StateMod)
+reads the generalized network from a StateMod XML network file.
+The network can then be manipulated and utilized by other commands.
+Normally the generalized network is edited interactively in StateDMI
+(or StateMod GUI) and is used to generate lists of stations, for further processing.
+However, this command can be used to read the network and allow
+manipulation based on river upstream/downstream connectivity.
+See also commands like
+[`ReadDiversionStationsFromNetwork`](../ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md),
+which read a subset of the network, to facilitate creation of specific model data files.
 
 ## Command Editor ##
 
@@ -42,7 +47,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod XML network file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +57,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadDiversionStationsFromNetwork`](../ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md) command
+* [`WriteNetworkToStateMod`](../WriteNetworkToStateMod/WriteNetworkToStateMod.md) command

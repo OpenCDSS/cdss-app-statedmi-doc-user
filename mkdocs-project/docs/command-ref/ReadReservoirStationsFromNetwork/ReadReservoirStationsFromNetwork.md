@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadReservoirStationsFromNetwork` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadReservoirStationsFromNetwork` command (for StateMod)
+reads a list of reservoir stations from a StateMod network file (XML or older Makenet network file) and defines reservoir stations in memory.
+The reservoir stations can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,7 +40,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the network file to be read. | None – must be specified. |
+
 
 ## Examples ##
 
@@ -52,4 +51,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadReservoirStationsFromList`](../ReadReservoirStationsFromList/ReadReservoirStationsFromList.md) command
+* [`ReadReservoirStationsFromStateMod`](../ReadReservoirStationsFromStateMod/ReadReservoirStationsFromStateMod.md) command
+* [`WriteReservoirStationsToStateMod`](../WriteReservoirStationsToStateMod/WriteReservoirStationsToStateMod.md) command

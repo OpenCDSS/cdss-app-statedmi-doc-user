@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadPenmanMonteithFromHydroBase` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadPenmanMonteithFromHydroBase` command (for StateCU)
+command reads a list of Penman-Monteith crop coefficients from the HydroBase database.
+The crop coefficients can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -40,16 +38,47 @@ ReadPenmanMonteithFromHydroBase(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+|`PenmanMonteithMethod`<br>**required** | The Penman-Monteith method that is defined in HydroBase for the crop type and its coefficients. | None – must be specified. |
+
+The crop type (e.g., `ALFALFA`) is used as the unique identifier.
+Any previous crop coefficients objects will be added to (or replaced if identifiers match).
+
+The PenmanMonteithMethod parameter corresponds to a value in HydroBase and allows variations on crop characteristics to be defined.
+In general the ASCE standardized coefficients are used.
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPenmanMonteithFromHydroBase).
 
+The following example command file illustrates how to read Penman-Monteith coefficients from HydroBase,
+sort the data, create a StateCU file, and check the results:
+
+```
+StartLog(LogFile="Crops_KPM.StateDMI.log")
+#
+# StateDMI commands to create the Penman-Monteith crop coefficients file
+#
+# Step 1 - read data from HydroBase
+#
+# Read the general ASCE standardized coefficients
+ReadPenmanMonteithFromHydroBase(PenmanMonteithMethod="PENMAN-MONTEITH_ALFALFA")
+#
+# Step 3 - write the file
+#
+SortPenmanMonteith(Order=Ascending)
+WritePenmanMonteithToStateCU(OutputFile="rg2007.kpm")
+#
+# Check the results
+#
+CheckPenmanMonteith(ID="*")
+WriteCheckFile(OutputFile="Crops_KPM.StateDMI.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadPenmanMonteithFromStateCU`](../ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU) command
+* [`WritePenmanMonteithToStateCU`](../WritePenmanMonteithToStateCU/WritePenmanMonteithToStateCU) command

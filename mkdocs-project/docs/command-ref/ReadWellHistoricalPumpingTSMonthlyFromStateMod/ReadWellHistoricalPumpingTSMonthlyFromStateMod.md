@@ -11,11 +11,14 @@
 
 ## Overview ##
 
-The `ReadWellHistoricalPumpingTSMonthlyFromStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadWellHistoricalPumpingTSMonthlyFromStateMod` command (for StateMod)
+reads well historical pumping time series (monthly) and defines the data in memory.
+This command is used when estimating average efficiencies and calculating demand time series.
+All time series are read, whether or not they match the list of well stations.
+This command is equivalent to the
+[`ReadWellHistoricalPumpingTSMonthlyFromStateCU`](../ReadWellHistoricalPumpingTSMonthlyFromStateCU/ReadWellHistoricalPumpingTSMonthlyFromStateCU.md) command – use
+the commands as appropriate depending on which data set file is
+being read (the file format is the StateMod time series file format).
 
 ## Command Editor ##
 
@@ -42,7 +45,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the StateMod well historical pumping time series (monthly) file to read. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +55,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteWellHistoricalPumpingTSMonthlyToStateMod`](../WriteWellHistoricalPumpingTSMonthlyToStateMod/WriteWellHistoricalPumpingTSMonthlyToStateMod.md) command

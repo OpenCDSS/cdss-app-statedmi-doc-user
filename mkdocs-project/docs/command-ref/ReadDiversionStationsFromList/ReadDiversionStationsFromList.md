@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `ReadDiversionStationsFromList` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `ReadDiversionStationsFromList` command (for StateCU and StateMod)
+reads a list of diversion stations from a delimited list file and defines diversion stations in memory.
+The diversion stations can then be manipulated and output with other commands.
 
 ## Command Editor ##
 
@@ -42,14 +40,36 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ListFile` | The name of the list file to be read. | None – must be specified. |
+| `IDCol` | The column number (1+) containing the diversion station identifiers. | None – must be specified. |
+| `NameCol` | The column number (1+) containing the diversion station names. | None – optional (name will be initialized to blank). |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadDiversionStationsFromList).
 
+At a minimum, the list file must contain a column with diversion station identifiers.
+Lines starting with the # character are treated as comments.
+If the first line’s values are surrounded by double quotes, the line is assumed to indicate column headings.
+
+A sample list file is shown below:
+
+```
+# Diversions as list file
+#
+#
+"ID","Latitude","County","HUC","Name"
+200505,37.5,ALAMOSA,13010002,ALAMOSA D
+200511,37.68,RIO GRANDE,13010001,ANACONDA D
+200512,37.61,RIO GRANDE,13010002,ANDERSON D
+200513,37.68,RIO GRANDE,13010002,ANNA RABER D
+...
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadDiversionStationsFromNetwork`](../ReadDiversionStationsFromNetwork/ReadDiversionStationsFromNetwork.md) command
+* [`ReadDiversionStationsFromStateMod`](../ReadDiversionStationsFromStateMod/ReadDiversionStationsFromStateMod.md) command
+* [`WriteDiversionStationsToStateMod`](../WriteDiversionStationsToStateMod/WriteDiversionStationsToStateMod.md) command
