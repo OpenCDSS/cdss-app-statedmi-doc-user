@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SortWellRights` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SortWellRights` command (for StateMod)
+sorts the well rights.  This is useful to enforce consistency between files and simplify file comparison.
 
 ## Command Editor ##
 
@@ -42,7 +39,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `Order` | Indicate the primary sort order, one of:<ul><li>`IDAscending`</li><li>`LocationIDAscending` (typically specified)</li><li>`IDAscending`</li></ul> |
+| `Order2` | Indicate the secondary sort order, one of:<ul><li>`IDAscending` (typically specified)</li><li>`LocationIDAscending`</li></ul> | None – must be specified.  Typically `IDAscending` is specified. |
 
 ## Examples ##
 
@@ -51,5 +49,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
