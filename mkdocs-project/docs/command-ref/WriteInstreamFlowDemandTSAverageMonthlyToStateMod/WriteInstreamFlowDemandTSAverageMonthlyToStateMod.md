@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `WriteInstreamFlowDemandTSAverageMonthlyToStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteInstreamFlowDemandTSAverageMonthlyToStateMod` command (for StateMod)
+command writes instream flow demand time series (average monthly) that have been
+defined to a StateMod instream flow demand time series (average monthly) file.
 
 ## Command Editor ##
 
@@ -40,9 +38,13 @@ WriteInstreamFlowDemandTSAverageMonthlyToStateMod(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `OutputYearType` | The output year type for the StateMod file. | `Calendar` |
+| `Precision` | The number of digits after the decimal point for output values. | `0` |
+| `MissingValue` | The value to use in output for missing data. | `-999` |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
@@ -52,4 +54,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadInstreamFlowDemandTSAverageMonthlyFromStateMod`](../ReadInstreamFlowDemandTSAverageMonthlyFromStateMod/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod.md) command

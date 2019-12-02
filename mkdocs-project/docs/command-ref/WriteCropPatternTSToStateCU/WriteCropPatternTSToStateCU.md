@@ -11,11 +11,9 @@
 
 ## Overview ##
 
-The `WriteCropPatternTSToStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteCropPatternTSToStateCU` command (for StateCU)
+writes crop pattern time series to the StateCU crop pattern file.
+A number of parameters are available to control the format and content of output.
 
 ## Command Editor ##
 
@@ -40,9 +38,15 @@ WriteCropPatternTSToStateCU(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `OutputStart` | The starting year for output. | Write the full period. |
+| `OutputEnd` | The ending year for output. | Write the full period. |
+| `WriteCropArea` | If specified as `True`, the crop area for each crop will be written in addition to the percentage of the total area.  This is being phased in as a feature of StateCU and this parameter may be removed in the future. | `True` |
+| `WriteOnlyTotal` | If specified as `True`, only the total for the location will be written.  This is useful if it is desired to generate an annual total time series file. | `False` |
+| `Version` | Indicate the StateCU version file format.  An older version format may need to be written when modifying older data sets or comparing current and previous data sets. | Write the must current StateCU version’s format. |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
@@ -52,4 +56,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadCropPatternTSFromHydroBase`](../ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) command
+* [`ReadCropPatternTSFromStateCU`](../ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) command
+* [`WriteCropPatternTSToDateValue`](../WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md) command

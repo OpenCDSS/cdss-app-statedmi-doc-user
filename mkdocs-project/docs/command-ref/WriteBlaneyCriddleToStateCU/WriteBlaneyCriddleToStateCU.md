@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `WriteBlaneyCriddleToStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteBlaneyCriddleToStateCU` command (for StateCU)
+writes Blaney-Criddle crop coefficients that have been defined to a StateCU Blaney-Criddle crop coefficients file.
 
 ## Command Editor ##
 
@@ -42,14 +39,48 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `Version` | The StateCU version, indicating the version of the file format to write. | Write the most current version format. |
+| `Precision` | The number of digits after the decimal for curve values, used for backward compatibility with older file versions. | `3` |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-tree/tree/master/test/regression/commands/WriteBlaneyCriddleToStateCU).
 
+The following example command file illustrates how to read Blaney-Criddle coefficients from HydroBase, sort the data, create a StateCU file, and check the results:
+
+```
+StartLog(LogFile="Crops_KBC.StateDMI.log")
+#
+# StateDMI commands to create the Rio Grande Blaney-Criddle coefficients File
+#
+# History:
+#
+# 2004-03-16 Steven A. Malers, RTi  Initial version using StateDMI.
+# 2007-04-23 SAM, RTi               Update for Rio Grande Phase 5.
+#
+# Step 1 - read data from HydroBase
+#
+# Read the general Blaney-Criddle coefficients first and then override with Rio Grande
+# data.
+ReadBlaneyCriddleFromHydroBase(BlaneyCriddleMethod="BLANEY-CRIDDLE_TR-21")
+ReadBlaneyCriddleFromHydroBase(BlaneyCriddleMethod="BLANEY-CRIDDLE_RIO_GRANDE")
+#
+# Step 3 - write the file
+#
+SortBlaneyCriddle(Order=Ascending)
+WriteBlaneyCriddleToStateCU(OutputFile="rg2007.kbc")
+#
+# Check the results
+#
+CheckBlaneyCriddle(ID="*")
+WriteCheckFile(OutputFile="rg2007.kbc.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadBlaneyCriddleFromList`](../ReadBlaneyCriddleFromList/ReadBlaneyCriddleFromList.md) command
+* [`WriteBlaneyCriddleToStateCU`](../WriteBlaneyCriddleToStateCU/WriteBlaneyCriddleToStateCU.md) command
