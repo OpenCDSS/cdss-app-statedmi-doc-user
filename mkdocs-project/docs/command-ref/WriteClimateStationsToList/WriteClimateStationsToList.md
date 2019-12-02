@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `WriteClimateStationsToList` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteClimateStationsToList` command (for StateCU)
+writes climate stations data to a delimited file.
 
 ## Command Editor ##
 
@@ -40,16 +37,28 @@ WriteClimateStationsToList(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
+| `Delimiter` | The delimiter character to use between columns. | `,` (comma) |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteClimateStationsToList).
 
+The following example illustrates how to process climate data from HydroBase, starting with a list of station identifiers, and creating a full list of climate station data:
+
+```
+ReadClimateStationsFromList(ListFile="idonly.csv",IDCol="2")
+FillClimateStationsFromHydroBase(ID="*")
+WriteClimateStationsToList(OutputFile="COclim2006.csv")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadClimateStationsFromList`](../ReadClimateStationsFromList/ReadClimateStationsFromList.md) command
+* [`ReadClimateStationsFromStateCU`](../ReadClimateStationsFromStateCU/ReadClimateStationsFromStateCU.md) command
+* [`WriteClimateStationsToStateCU`](../WriteClimateStationsToStateCU/WriteClimateStationsToStateCU.md) command

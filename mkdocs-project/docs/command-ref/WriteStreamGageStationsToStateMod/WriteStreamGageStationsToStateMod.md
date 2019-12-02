@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `WriteStreamGageStationsToStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteStreamGageStationsToStateMod` command (for StateMod)
+writes stream gage stations that have been defined to a StateMod stream gage stations file.
 
 ## Command Editor ##
 
@@ -40,16 +37,51 @@ WriteStreamGageStationsToStateMod(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteStreamGageStationsToStateMod).
 
+The following example command file illustrates the commands used to read stream gage stations from the network and create a StateMod file:
+
+```
+StartLog(LogFile="ris.commands.StateDMI.log")
+# ris.commands.StateDMI
+#
+# StateDMI command file to create streamflow station file for the Colorado River
+#
+#  Step 1 - read streamgages and baseflows ids from the network file
+#
+ReadStreamGageStationsFromNetwork(InputFile="..\Network\cm2005.net",IncludeStreamEstimateStations="True")
+#
+#  Step 2 - read baseflow nodes names from HydroBase,
+#           fill in missing names from the network file
+#
+FillStreamGageStationsFromHydroBase(ID="*",NameFormat=StationName,CheckStructures=True)
+FillStreamGageStationsFromNetwork(ID="*",NameFormat="StationName")
+#
+#  Step 3 - set streamgage station to use to disaggregate monthly baseflows to daily
+#
+#  add set daily pattern gages for WD 36
+SetStreamGageStation(ID="36*",DailyID="09047500",IfNotFound=Warn)
+...many similar commands omitted...
+#
+#  Step 4 - create streamflow station file
+#
+WriteStreamGageStationsToStateMod(OutputFile="..\StateMod\cm2005.ris")
+#
+# Check the results
+CheckStreamGageStations(ID="*")
+WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadStreamGageStationsFromStateMoc`](../ReadStreamGageStationsFromStateMod/ReadStreamGageStationsFromStateMod.md) command
+* [`WriteStreamGageStationsToList`](../WriteStreamGageStationsToList/WriteStreamGageStationsToList.md) command

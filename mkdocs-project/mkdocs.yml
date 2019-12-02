@@ -339,6 +339,7 @@ nav:
   - WriteCropCharacteristicsToStateCU: command-ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md
   - WriteCropPatternTSToDateValue: command-ref/WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md
   - WriteCropPatternTSToStateCU: command-ref/WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md
+  - WriteCULocationsToList: command-ref/WriteCULocationsToList/WriteCULocationsToList.md
   - WriteCULocationsToStateCU: command-ref/WriteCULocationsToStateCU/WriteCULocationsToStateCU.md
   - WriteDelayTablesDailyToList: command-ref/WriteDelayTablesDailyToList/WriteDelayTablesDailyToList.md
   - WriteDelayTablesDailyToStateMod: command-ref/WriteDelayTablesDailyToStateMod/WriteDelayTablesDailyToStateMod.md
@@ -374,22 +375,23 @@ nav:
   - WriteResponseToStateMod: command-ref/WriteResponseToStateMod/WriteResponseToStateMod.md
   - WriteRiverNetworkToList: command-ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md
   - WriteRiverNetworkToStateMod: command-ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md
-  - WriteTableCellsToExcel: command-ref/WriteTableCellsToExcel/WriteTableCellsToExcel.md
-  - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
-  - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
-  - WriteTableToGeoJSON: command-ref/WriteTableToGeoJSON/WriteTableToGeoJSON.md
-  - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
-  - WriteTableToShapefile: command-ref/WriteTableToShapefile/WriteTableToShapefile.md
   - WriteStreamEstimateCoefficientsToList: command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md
   - WriteStreamEstimateCoefficientsToStateMod: command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md
   - WriteStreamEstimateStationsToList: command-ref/WriteStreamEstimateStationsToList/WriteStreamEstimateStationsToList.md
   - WriteStreamEstimateStationsToStateMod: command-ref/WriteStreamEstimateStationsToStateMod/WriteStreamEstimateStationsToStateMod.md
   - WriteStreamGageStationsToList: command-ref/WriteStreamGageStationsToList/WriteStreamGageStationsToList.md
   - WriteStreamGageStationsToStateMod: command-ref/WriteStreamGageStationsToStateMod/WriteStreamGageStationsToStateMod.md
+  - WriteTableCellsToExcel: command-ref/WriteTableCellsToExcel/WriteTableCellsToExcel.md
+  - WriteTableToDelimitedFile: command-ref/WriteTableToDelimitedFile/WriteTableToDelimitedFile.md
+  - WriteTableToExcel: command-ref/WriteTableToExcel/WriteTableToExcel.md
+  - WriteTableToGeoJSON: command-ref/WriteTableToGeoJSON/WriteTableToGeoJSON.md
+  - WriteTableToHTML: command-ref/WriteTableToHTML/WriteTableToHTML.md
+  - WriteTableToShapefile: command-ref/WriteTableToShapefile/WriteTableToShapefile.md
   - WriteWellDemandTSMonthlyToStateMod: command-ref/WriteWellDemandTSMonthlyToStateMod/WriteWellDemandTSMonthlyToStateMod.md
   - WriteWellHistoricalPumpingTSMonthlyToStateMod: command-ref/WriteWellHistoricalPumpingTSMonthlyToStateMod/WriteWellHistoricalPumpingTSMonthlyToStateMod.md
   - WriteWellRightsToList: command-ref/WriteWellRightsToList/WriteWellRightsToList.md
   - WriteWellRightsToStateMod: command-ref/WriteWellRightsToStateMod/WriteWellRightsToStateMod.md
+  - WriteWellStationsToList: command-ref/WriteWellStationsToList/WriteWellStationsToList.md
   - WriteWellStationsToStateMod: command-ref/WriteWellStationsToStateMod/WriteWellStationsToStateMod.md
 - Reference - Datastores:
   - Overview: datastore-ref/overview.md

@@ -11,11 +11,11 @@
 
 ## Overview ##
 
-The `WriteRiverNetworkToList` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteRiverNetworkToList` command (for StateMod)
+writes river network data to a delimited file.
+It is often more useful to write lists of individual station types.
+Consequently, see commands like
+[`WriteDiversionStationsToList`](../WriteDiversionStationsToList/WriteDiversionStationsToList.md).
 
 ## Command Editor ##
 
@@ -40,16 +40,28 @@ WriteRiverNetworkToList(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
+| `Delimiter` | The delimiter character to use between columns. | `,` (comma) |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteRiverNetworkToList).
 
+The following example illustrates how to create a list of river network nodes from a network file:
+
+```
+ReadNetworkFromStateMod(InputFile="cm2005.net")
+CreateRiverNetworkFromNetwork()
+WriteRiverNetworkToList(OutputFile="cm2005.rin.csv")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadRiverNetworkFromStateMod`](../ReadRiverNetworkFromStateMod/ReadRiverNetworkFromStateMod.md) command
+* [`WriteDiversionStationsToList`](../WriteDiversionStationsToList/WriteDiversionStationsToList.md) command
+* [`WriteRiverNetworkToStateMod`](../WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md) command

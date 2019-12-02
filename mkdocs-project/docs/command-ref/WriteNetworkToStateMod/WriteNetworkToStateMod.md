@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `WriteNetworkToStateMod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteNetworkToStateMod` command (for StateMod)
+writes the generalized network to a StateMod XML network file.
 
 ## Command Editor ##
 
@@ -40,16 +37,45 @@ WriteNetworkToStateMod(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile` | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteNetworkToStateMod).
 
+The following example command file illustrates how the command might be used:
+
+```
+# Create a generalized XML network from individual StateMod files
+# Read the network, which contains upstream to downstream connectivity but does
+# not indicate node types
+ReadRiverNetworkFromStateMod(InputFile=cm2005.rin)
+# Read the stations, which imply the node types
+ReadRiverStreamGageStationsFromStateMod(InputFile=cm2005.ris)
+ReadRiverDiversionStationsFromStateMod(InputFile=cm2005.dds)
+ReadRiverReservoirStationsFromStateMod(InputFile=cm2005.res)
+ReadRiverInstreamFlowStationsFromStateMod(InputFile=cm2005.ifs)
+ReadRiverWellStationsFromStateMod(InputFile=cm2005.wes)
+# To be developed...
+#ReadRiverPlanStationsFromStateMod()
+ReadRiverStreamEstimateStationsFromStateMod(InputFile=cm2005.ris)
+# Now create the generalized network, using the connectivity and node types
+CreateNetworkFromRiverNetwork()
+# Fill in node names and locations from HydroBase, if any is still missing
+FillNetworkFromHydroBase()
+# Write the generalized network
+WriteNetworkToStateMod(OutputFile="cm2005.net")
+# Check for errors (the following is not yet implemented)
+#CheckNetwork()
+WriteCheckFile(OutputFile="cm2005.net.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadIrrigationPracticeTSFromStateCU`](../ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md) command
+* [`WriteIrrigationPracticeTSToDateValue`](../WriteIrrigationPracticeTSToDateValue/WriteIrrigationPracticeTSToDateValue.md) command

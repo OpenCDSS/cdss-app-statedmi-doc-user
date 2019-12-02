@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `WriteIrrigationPracticeTSToStateCU` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `WriteIrrigationPracticeTSToStateCU` command (for StateCU)
+writes irrigation practice time series to a StateCU crop pattern file.
 
 ## Command Editor ##
 
@@ -40,9 +37,16 @@ WriteIrrigationPracticeTSToStateCU(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `OutputStart` | Starting year for output. | Write all years. |
+| `OutputEnd` | Ending year for output. | Write all years. |
+| `PrecisionForArea` | The number of digits after the decimal point for area values. | `1` |
+| `Version` | Indicate the StateCU version, to control the file format.  It is sometimes necessary to write an older version to compare data sets or update an old data set. | Write the most current format. |
+| `OneLocationPerFile` | Useful for troubleshooting and verification.  If True, then each location is written to a separate file. | `False` |
+| `CheckData` | Check the data for integrity (do values add up).  Set to False if processing preliminary data. | `True` |
+| `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
 
@@ -52,4 +56,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadIrrigationPracticeTSFromStateCU`](../ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md) command
+* [`WriteIrrigationPracticeTSToDateValue`](../WriteIrrigationPracticeTSToDateValue/WriteIrrigationPracticeTSToDateValue.md) command
