@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SortClimateStations` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SortClimateStations` command (for StateCU)
+sorts the climate stations using the station identifiers.
 
 ## Command Editor ##
 
@@ -42,14 +39,26 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `Order` | Indicate the sort order.  Currently only` Ascending` is supported. | `Ascending` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SortClimateStations).
 
+The following example command file illustrates how climate stations can be defined, sorted, and written to a StateCU file:
+
+```
+ReadClimateStationsFromList(ListFile="climsta.lst",IDCol=1)
+FillClimateStationsFromHydroBase(ID="*")
+SetClimateStation(ID="3016",Region2="14080106",IfNotFound=Warn)
+SetClimateStation(ID="1018",Region2="14040106",IfNotFound=Warn)
+SetClimateStation(ID="1928",Elevation=6440,IfNotFound=Warn)
+SetClimateStation(ID="0484",Region1="MOFFAT",IfNotFound=Add)
+SortClimateStations()
+WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SortCropPatternTS` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SortCropPatternTS` command (for StateCU)
+sorts the crop pattern time series using the location identifier, and is typically used before writing output.
 
 ## Command Editor ##
 
@@ -42,7 +39,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `Orde` | 	Indicate the order for the sort.  Currently only `Ascending` is supported.  The older `Alphabetical will automatically be converted to `Ascending`. | `Ascending` |
+
 
 ## Examples ##
 
@@ -51,5 +49,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

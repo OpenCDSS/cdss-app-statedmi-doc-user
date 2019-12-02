@@ -11,11 +11,16 @@
 
 ## Overview ##
 
-The `TranslatePenmanMonteith` does something...
+The `TranslatePenmanMonteith` command (for StateCU)
+command translates Pennman-Monteith data.  In particular, it converts one crop type to another.  Primary uses of the command are:
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+1. A data source may use one variant of the crop type (e.g., `ORCHARD W/O COVER`
+but the rest of a StateCU data set uses another type (e.g., `ORCHARD_WO_COVER`).
+In this case the command is used simply to change the spelling of a crop type.
+2. The raw crop data may need to be adjusted to reflect differences in crops, for modeling purposes.
+For example, the original data may identify pasture (e.g., `GRASS_PASTURE`) but for modeling the crop
+type is set to a different value (e.g., `GRASS_PASTURE.ASCE`) for ASCE standardized coefficients.
+The following example illustrates a command of this type.
 
 ## Command Editor ##
 
@@ -42,14 +47,20 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OldCropType` | A single crop type identifier to match.  This crop type will be replaced with the value for `NewCropType`. | None – must be specified. |
+| `NewCropType` | The new crop type to use. | None – must be specified. |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/TranslatePenmanMonteith).
 
+The following simple example illustrates how to translate a crop type:
+
+```
+ReadPenmanMonteithFromHydroBase(PenmanMonteithMethod="PENMAN-MONTEITH_ALFALFA")
+TranslatePenmanMonteith(OldCropType="ALFALFA",NewCropType=”ALFALFA.ASCE")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
