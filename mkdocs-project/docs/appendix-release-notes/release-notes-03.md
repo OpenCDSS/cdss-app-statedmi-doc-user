@@ -4,7 +4,7 @@
 * [Changes in Versions 3.12.00 – 3.12.01](#changes-in-versions-31200-31201)
 * [Changes in Versions 3.11.00 – 3.11.01](#changes-in-versions-31100-31101)
 * [Changes in Version 3.10.00](#changes-in-version-31000)
-* [Changes in Versions 3.09.00 – 03.09.02](#changes-in-versions-30900-30902)
+* [Changes in Versions 3.09.00 – 3.09.02](#changes-in-versions-30900-30902)
 * [Changes in Versions 3.04.00 – 3.08.02](#changes-in-versions-30400-30802)
 * [Changes in Versions 3.00.00 - 3.03.00](#changes-in-versions-30000-30300)
 * [Release notes for all versions](release-notes.md)
