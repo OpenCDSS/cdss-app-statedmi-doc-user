@@ -9,7 +9,10 @@ A summary table is provided below, and links to details for major versions.
 * [Known Limitations](#known-limitations)
 * [StateDMI Version Details](#statedmi-version-details) - the following are separate documentation pages
 	+ [Version 5 Details](release-notes-05.md)
-	+ **Release notes for additional versions will be added when documentation is converted to online format.**
+	+ [Version 4 Details](release-notes-04.md)
+	+ [Version 3 Details](release-notes-03.md)
+	+ [Version 2 Details](release-notes-02.md)
+	+ [Version 1 Details](release-notes-01.md)
 
 ---------------
 
@@ -72,5 +75,5 @@ StateDMI Version History Summary (most current at top)
 
 ## Known Limitations ##
 
-* Version 5.00.00 is currently under development.
-A final release will be made when new features are tested.
+* Releases with `dev` in the version indicate active development.
+A final release is made when new features are tested.

@@ -65,7 +65,7 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`FillDiversionDemandTSMonthlyAverage`](../FillDiversionDemandTSMonthlyPattern/FillDiversionDemandTSMonthlyAverage.md) command
+* [`FillDiversionDemandTSMonthlyAverage`](../FillDiversionDemandTSMonthlyAverage/FillDiversionDemandTSMonthlyAverage.md) command
 * [`FillDiversionDemandTSMonthlyConstant`](../FillDiversionDemandTSMonthlyConstant/FillDiversionDemandTSMonthlyConstant.md) command
 * [`ReadPatternFile`](../ReadPatternFile/ReadPatternFile.md) command
 * [`SetDiversionDemandTSMonthly`](../SetDiversionDemandTSMonthly/SetDiversionDemandTSMonthly.md) command

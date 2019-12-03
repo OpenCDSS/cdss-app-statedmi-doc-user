@@ -55,5 +55,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`ReadDiversionDemandTSMonthlyToStateMod`](../ReadDiversionDemandTSMonthlyToStateMod/ReadDiversionDemandTSMonthlyToStateMod.md) command
+* [`ReadDiversionDemandTSMonthlyFromStateMod`](../ReadDiversionDemandTSMonthlyFromStateMod/ReadDiversionDemandTSMonthlyFromStateMod.md) command
 * [`SetOutputYearType`](../SetOutputYearType/SetOutputYearType.md) command

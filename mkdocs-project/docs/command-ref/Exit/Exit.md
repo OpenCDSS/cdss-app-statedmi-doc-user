@@ -11,11 +11,14 @@
 
 ## Overview ##
 
-The `Exit` does something...
+The `Exit` command
+can be inserted anywhere in a command file and causes the processing of commands to stop at that line.
+This is useful for temporarily processing a subset of a long list of commands.
+Multi-line comments (`/*   */`) can also be used to temporarily disable one or more commands.
+It may also useful to add an `Exit` command at the end of the file so that it is easy to insert
+commands above this command when the end line is selected (rather than having to deselect all commands when editing).
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+In the future the command may be enhanced to have parameters that more explicitly control processing shut-down.
 
 ## Command Editor ##
 
@@ -42,7 +45,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| | There are currently no command parameters. | |
 
 ## Examples ##
 
@@ -52,4 +55,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

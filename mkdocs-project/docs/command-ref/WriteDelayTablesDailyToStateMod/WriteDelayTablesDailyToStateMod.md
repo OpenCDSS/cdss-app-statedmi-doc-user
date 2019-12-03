@@ -51,5 +51,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`ReadDelayTablesDailyFromList`](../ReadDelayTablesDailyFromList/ReadDelayTablesDailyFromList.md) command
+* [`ReadDelayTablesDailyFromStateMod`](../ReadDelayTablesDailyFromStateMod/ReadDelayTablesDailyFromStateMod.md) command
 * [`WriteDelayTablesDailyToStateMod`](../WriteDelayTablesDailyToStateMod/WriteDelayTablesDailyToStateMod.md) command

@@ -1207,8 +1207,6 @@ Right-clicking on the canvas (not near a node), displays the following menu:
 Network Editor Popup Menu (<a href="../NetworkEditor_Popup.png">see also the full-size image</a>)
 </p>**
 
-NetworkEditor_Popup
-
 The actions for the menu items are described in the following table.
 
 **<p style="text-align: center;">
@@ -1674,7 +1672,7 @@ in the main log file (bottom of the window) or go to the command in the main win
 
 The log file is useful for reviewing the detailed sequential steps of processing.
 However, the status information and check file output created by the
-[`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckfile.md)
+[`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckFile.md)
 command are generally easier to use when troubleshooting workflow processing.
 
 ## Help Menu ##

@@ -113,11 +113,10 @@ Climate Stations Data Commands
 
 | **Command**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
-| [`ReadClimateStationsFromList`](../command-ref/ReadClimateStationsFromLis/ReadClimaeStationsFromList.md) | Read from a delimited list file the list of climate stations to be included in the dataset. |
+| [`ReadClimateStationsFromList`](../command-ref/ReadClimateStationsFromList/ReadClimateStationsFromList.md) | Read from a delimited list file the list of climate stations to be included in the dataset. |
 | [`ReadClimateStationsFromStateCU`](../command-ref/ReadClimateStationsFromStateCU/ReadClimateStationsFromStateCU.md) | Read from a StateCU climate stations file the list of climate stations to be included in the dataset. |
-| [`ReadClimateStationsFromHydroBase`](../command-ref/ReadClimateStationsFromHydroBase/ReadClimateStationsFromHydroBase.md) | Currently disabled.  Read from HydroBase a list of climate stations to be included in the dataset.  It is envisioned that a county name or some other region would be supplied to help select climate stations.  Instead, use the [`FillClimateStationsFromHydroBase`](../command-ref/FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md) command. |
 | [`SetClimateStation`](../command-ref/SetClimateStation/SetClimateStation.md) | Set the data for, and optionally add, climate stations. |
-| [`FillClimateStationsFromHydroBase`](../command-ref/FillClimateStationsFromHydroBase/FillClimateStatiosnFromHydroBase.md) | Fill missing data for defined climate stations, using data from HydroBase. |
+| [`FillClimateStationsFromHydroBase`](../command-ref/FillClimateStationsFromHydroBase/FillClimateStationsFromHydroBase.md) | Fill missing data for defined climate stations, using data from HydroBase. |
 | [`FillClimateStation`](../command-ref/FillClimateStation/FillClimateStation.md) | Fill missing data for defined climate stations, user user-supplied values. |
 | [`SortClimateStations`](../command-ref/SortClimateStations/SortClimateStations.md) | Sort the climate stations by station identifier. |
 | [`WriteClimateStationsToList`](../command-ref/WriteClimateStationsToList/WriteClimateStationsToList.md) | Write defined climate stations to a delimited list file. |
@@ -373,15 +372,15 @@ Crop Characteristics Commands
 
 | **Command**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
-| [`ReadCropCharacteristicsFromStateCU`](../command/ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md) | Read from a StateCU file the crop characteristics to include in the dataset. |
-| [`ReadCropCharacteristicsFromHydroBase`](../command/ref/ReadCropCharacteristicsFromHydroBase/ReadCropCharacteristicsFromHydroBase.md) | Read from HydroBase the crop characteristics to include in the dataset. |
-| [`SetCropCharacteristics`](../command/ref/SetCropCharacteristics/SetCropCharacteristics.md) | Set the data for, and optionally add, crop characteristics data. |
-| [`TranslateCropCharacteristics`](../command/ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md) | Translate crop characteristics name for specific modeling conventions, such as locally calibrated coefficients. |
-| [`SortCropCharacteristics`](../command/ref/SortCropCharacteristics/SortCropCharacteristics.md) | Sort the crop characteristics by crop name. |
-| [`WriteCropCharacteristicsToList`](../command/ref/WriteCropCharacteristicsToList/WriteCropCharacterisicsToList.md) | Write defined crop characteristics to a delimited list file. |
-| [`WriteCropCharacteristicsToStateCU`](../command/ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md) | Write defined crop characteristics to a StateCU file. |
-| [`CheckCropCharacteristics`](../command/ref/CheckCropCharacteristics/CheckCropCharacteristics.md) | Check crop characteristics data for problems. |
-| [`WriteCheckFile`](../command/ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
+| [`ReadCropCharacteristicsFromStateCU`](../command-ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md) | Read from a StateCU file the crop characteristics to include in the dataset. |
+| [`ReadCropCharacteristicsFromHydroBase`](../command-ref/ReadCropCharacteristicsFromHydroBase/ReadCropCharacteristicsFromHydroBase.md) | Read from HydroBase the crop characteristics to include in the dataset. |
+| [`SetCropCharacteristics`](../command-ref/SetCropCharacteristics/SetCropCharacteristics.md) | Set the data for, and optionally add, crop characteristics data. |
+| [`TranslateCropCharacteristics`](../command-ref/TranslateCropCharacteristics/TranslateCropCharacteristics.md) | Translate crop characteristics name for specific modeling conventions, such as locally calibrated coefficients. |
+| [`SortCropCharacteristics`](../command-ref/SortCropCharacteristics/SortCropCharacteristics.md) | Sort the crop characteristics by crop name. |
+| [`WriteCropCharacteristicsToList`](../command-ref/WriteCropCharacteristicsToList/WriteCropCharacteristicsToList.md) | Write defined crop characteristics to a delimited list file. |
+| [`WriteCropCharacteristicsToStateCU`](../command-ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md) | Write defined crop characteristics to a StateCU file. |
+| [`CheckCropCharacteristics`](../command-ref/CheckCropCharacteristics/CheckCropCharacteristics.md) | Check crop characteristics data for problems. |
+| [`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
 
 An example command file is shown below (adapted from the Rio Grande dataset).
 
@@ -499,10 +498,10 @@ Penman-Monteith Crop Coefficient Commands
 | [`ReadPenmanMonteithFromStateCU`](../command-ref/ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU.md) | Read from a StateCU file the Penman-Monteith coefficient data to include in the dataset. |
 | [`ReadPenmanMonteithFromHydroBase`](../command-ref/ReadPenmanMonteithFromHydroBase/ReadPenmanMonteithFromHydroBase.md) | Read from HydroBase the Penman-Monteith coefficient data to include in the dataset. |
 | [`SetPenmanMonteith`](../command-ref/SetPenmanMonteith/SetPenmanMonteith.md) | Set the data for, and optionally add, Penman-Monteith coefficient data. |
-| [`TranslatePenmanMonteith`](../command-ref/TranslatePenmanMonteith/SetPenmanMonteith.md) | Translate crop name in Penman-Monteith data, for specific modeling conventions, such as locally calibrated coefficients. |
+| [`TranslatePenmanMonteith`](../command-ref/TranslatePenmanMonteith/TranslatePenmanMonteith.md) | Translate crop name in Penman-Monteith data, for specific modeling conventions, such as locally calibrated coefficients. |
 | [`SortPenmanMonteith`](../command-ref/SortPenmanMonteith/SortPenmanMonteith.md) | Sort the Penman-Monteith data by crop name. |
 | [`WritePenmanMonteithToList`](../command-ref/WritePenmanMonteithToList/WritePenmanMonteithToList.md) | Write defined Penman-Monteith data to a delimited list file. |
-| [`WritePenmanMonteithToStateCU`](../command-ref/WritePenMainMonteithToStateCU/WritePenmanMonteithToStateCU.md) | Write defined Penman-Monteith data to a StateCU file. |
+| [`WritePenmanMonteithToStateCU`](../command-ref/WritePenmanMonteithToStateCU/WritePenmanMonteithToStateCU.md) | Write defined Penman-Monteith data to a StateCU file. |
 | [`CheckPenmanMonteith`](../command-ref/CheckPenmanMonteith/CheckPenmanMonteith.md) | Check Penman-Monteith data for problems. |
 | [`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
 
@@ -665,21 +664,21 @@ CU Location Commands
 | [`SetCULocation`](../command-ref/SetCULocation/SetCULocation.md) | Set data for an existing CU Location or optionally add a new CU Location. |
 | [`SetCULocationsFromList`](../command-ref/SetCULocationsFromList/SetCULocationsFromList.md) | Read and set CU Location data from a delimited list file. |
 | [`SetDiversionAggregate`](../command-ref/SetDiversionAggregate/SetDiversionAggregate.md) | For a diversion CU Location, indicate the parts that comprise an aggregate diversion. |
-| [`SetDiversionAggregatesFromList`](../command-ref/SetDiversionAggregatesFromList/SetDiversionAggregatesFromList.md) | For diversion CU Locations, indicate the parts that comprise aggregate diversions, using data in a delimited list file. |
+| [`SetDiversionAggregateFromList`](../command-ref/SetDiversionAggregateFromList/SetDiversionAggregateFromList.md) | For diversion CU Locations, indicate the parts that comprise aggregate diversions, using data in a delimited list file. |
 | [`SetDiversionSystem`](../command-ref/SetDiversionSystem/SetDiversionSystem.md) | For a diversion CU Location, indicate the parts that comprise a diversion system. |
-| [`SetDiversionSystemsFromList`](../command-ref/SetDiversionSystemsFromList/SetDiversionSystemsFromList.md) | For diversion CU Locations, indicate the parts that comprise diversion systems, using data in a delimited list file. |
+| [`SetDiversionSystemFromList`](../command-ref/SetDiversionSystemFromList/SetDiversionSystemFromList.md) | For diversion CU Locations, indicate the parts that comprise diversion systems, using data in a delimited list file. |
 | [`SetWellAggregate`](../command-ref/SetWellAggregate/SetWellAggregate.md) | For a well CU Location, indicate the parts that comprise an aggregate well. |
-| [`SetWellAggregatesFromList`](../command-ref/SetWellAggregatesFromList/SetWellAggregatesFromList.md) | For well CU Locations, indicate the parts that comprise aggregate wells, using data in a delimited list file. |
+| [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md) | For well CU Locations, indicate the parts that comprise aggregate wells, using data in a delimited list file. |
 | [`SetWellSystem`](../command-ref/SetWellSystem/SetWellSystem.md) | For a well CU Location, indicate the parts that comprise a well system. |
-| [`SetWellSystemsFromList`](../command-ref/SetWellSystemsFromList/SetWellSystemsFromList.md) | For well CU Locations, indicate the parts that comprise well systems, using data in a delimited list file. |
+| [`SetWellSystemFromList`](../command-ref/SetWellSystemFromList/SetWellSystemFromList.md) | For well CU Locations, indicate the parts that comprise well systems, using data in a delimited list file. |
 | [`SortCULocation`](../command-ref/SetCULocation/SetCULocation.md) | Sort the CU Locations.  This is useful to force consistency between files. |
 | [`FillCULocationsFromList`](../command-ref/FillCULocationsFromList/FillCULocationsFromList.md) | Fill missing CU Location data, using data in a delimited list file. |
 | [`FillCULocationsFromHydroBase`](../command-ref/FillCULocationsFromHydroBase/FillCULocationsFromHydroBase.md) | Fill missing CU Location data, using data in HydroBase. |
 | [`FillCULocation`](../command-ref/FillCULocation/FillCULocation.md) | Fill missing CU Location data, using user-supplied data. |
 | [`SetCULocationClimateStationWeights`](../command-ref/SetCULocationClimateStationWeights/SetCULocationClimateStationWeights.md) | Set climate station weight data for a CU Location, using user-supplied data. |
 | [`SetCULocationClimateStationWeightsFromList`](../command-ref/SetCULocationClimateStationWeightsFromList/SetCULocationClimateStationWeightsFromList.md) | Set climate station weight data for a CU Location, using data in a delimited list file. |
-| [`SetCULocationClimateStationWeightsFromHydroBase`](../command-ref/SetCUClimateStationWeightsFromHydroBase/SetCUClimateStationWeightsFromHydroBase.md) | Set climate station weight data for a CU Location, using data in HydroBase.  Legacy command – not currently used. |
-| [`FillCULocationClimateStationWeights`](../command-ref/FillCULcoationClimateStationWeights/FillCULocationCLimateStationWeights.md) | Fill climate station weight data for a CU location, using user-supplied data. |
+| [`SetCULocationClimateStationWeightsFromHydroBase`](../command-ref/SetCULocationClimateStationWeightsFromHydroBase/SetCULocationClimateStationWeightsFromHydroBase.md) | Set climate station weight data for a CU Location, using data in HydroBase.  Legacy command – not currently used. |
+| [`FillCULocationClimateStationWeights`](../command-ref/FillCULocationClimateStationWeights/FillCULocationClimateStationWeights.md) | Fill climate station weight data for a CU location, using user-supplied data. |
 | [`WriteCULocationsToList`](../command-ref/WriteCULocationsToList/WriteCULocationsToList.md) | Write defined CU Locations data to a delimited list file. |
 | [`WriteCULocationsToStateCU`](../command-ref/WriteCULocationsToStateCU/WriteCULocationsToStateCU.md) | Write defined CU Locations data to a StateCU file. |
 | [`CheckCULocations`](../command-ref/CheckCULocations/CheckCULocations.md) | Check CU Location data for problems. |
@@ -825,15 +824,15 @@ Crop Pattern Time Series Commands
 | [`ReadCULocationsFromList`](../command-ref/ReadCULocationsFromList/ReadCULocationsFromList.md) | Read CU Locations from a list file.  Identifiers should be specified and other columns may be needed for data filling.
 | [`ReadCULocationsFromStateCU`](../command-ref/ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md) | Read from a StateCU file the CU Locations to include in the dataset.
 | [`SetDiversionAggregate`](../command-ref/SetDiversionAggregate/SetDiversionAggregate.md) | For a diversion CU Location, indicate the parts that comprise an aggregate diversion.
-| [`SetDiversionAggregatesFromList`](../command-ref/SetDiversionAggregatesFromList/SetDiversionAggregatesFromList.md) | For diversion CU Locations, indicate the parts that comprise aggregate diversions, using data in a delimited list file.
+| [`SetDiversionAggregateFromList`](../command-ref/SetDiversionAggregateFromList/SetDiversionAggregateFromList.md) | For diversion CU Locations, indicate the parts that comprise aggregate diversions, using data in a delimited list file.
 | [`SetDiversionSystem`](../command-ref/SetDiversionSystem/SetDiversionSystem.md) | For a diversion CU Location, indicate the parts that comprise a diversion system.
-| [`SetDiversionSystemsFromList`](../command-ref/SetDiversionSystemsFromList/SetDiversionSystemsFromList.md) | For diversion CU Locations, indicate the parts that comprise diversion systems, using data in a delimited list file.
+| [`SetDiversionSystemFromList`](../command-ref/SetDiversionSystemFromList/SetDiversionSystemFromList.md) | For diversion CU Locations, indicate the parts that comprise diversion systems, using data in a delimited list file.
 | [`SetWellAggregate`](../command-ref/SetWellAggregate/SetWellAggregate.md) | For a well CU Location, indicate the parts that comprise an aggregate well.
-| [`SetWellAggregatesFromList`](../command-ref/SetWellAggregatesFromList/SetWellAggregatesFromList.md) | For well CU Locations, indicate the parts that comprise aggregate wells, using data in a delimited list file.
+| [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md) | For well CU Locations, indicate the parts that comprise aggregate wells, using data in a delimited list file.
 | [`SetWellSystem`](../command-ref/SetWellSystem/SetWellSystem.md) | For a well CU Location, indicate the parts that comprise a well system.
-| [`SetWellSystemsFromList`](../command-ref/SetWellSystemsFromList/SetWellSystemsFromList.md) | For well CU Locations, indicate the parts that comprise well systems, using data in a delimited list file.
+| [`SetWellSystemFromList`](../command-ref/SetWellSystemFromList/SetWellSystemFromList.md) | For well CU Locations, indicate the parts that comprise well systems, using data in a delimited list file.
 | [`CreateCropPatternTSForCULocations`](../command-ref/CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md) | Create empty crop pattern time series data for each CU Location.  The resulting data can be updated with other commands.
-| [`ReadCropPatternTSFromStateCU`](../command-ref/ReacCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) | Read crop pattern data from a StateCU file and update the StateDMI information.
+| [`ReadCropPatternTSFromStateCU`](../command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) | Read crop pattern data from a StateCU file and update the StateDMI information.
 | [`SetCropPatternTSFromList`](../command-ref/SetCropPatternTSFromList/SetCropPatternTSFromList.md) | Set crop pattern data from a list file, in order to supplement data that are not in HydroBase.  A list file should be specified for each year of irrigated lands data.  The data can be processed with HydroBase data as if they were parcels.
 | [`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) | Read crop pattern data from HydroBase.
 | [`SetCropPatternTS`](../command-ref/SetCropPatternTS/SetCropPatternTS.md) | Set crop pattern data using user-supplied values.
@@ -842,7 +841,7 @@ Crop Pattern Time Series Commands
 | [`FillCropPatternTSConstant`](../command-ref/FillCropPatternTSConstant/FillCropPatternTSConstant.md) | Fill missing crop pattern data with a constant value.
 | [`FillCropPatternTSInterpolate`](../command-ref/FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md) | Fill missing crop pattern data using interpolation.
 | [`FillCropPatternTSRepeat`](../command-ref/FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) | Fill missing crop pattern data by repeating values.
-| [`FillCropPatternTSUsingWellRights`](../command-ref/FillCropPatternTSUsingWellRights/RillCropPatternTSUsingWellRights.md) | Fill crop pattern time series using well rights.  This is used to turn off groundwater only parcels back in time during the early data period.  This legacy command is typically no longer used.
+| [`FillCropPatternTSUsingWellRights`](../command-ref/FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md) | Fill crop pattern time series using well rights.  This is used to turn off groundwater only parcels back in time during the early data period.  This legacy command is typically no longer used.
 | [`SortCropPatternTS`](../command-ref/SetCropPatternTS/SetCropPatternTS.md) | Sort crop pattern time series by location identifier.
 | [`WriteCropPatternTSToStateCU`](../command-ref/WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md) | Write defined crop pattern data to a StateCU file.
 | [`WriteCropPatternTSToDateValue`](../command-ref/WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md) | Write defined crop pattern data to a DateValue file.
@@ -857,7 +856,7 @@ There are several ways to define crop pattern data in StateDMI:
 [`ReadCropPatternTSFromHydrobase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md).
 This is typically used if irrigated lands data have been populated in HydroBase and is the standard approach.
 2. Read crop patterns from an existing crop patterns time series file using the
-[`ReadCUCropPatternsFromStateCU`](../command-ref/ReadCropPaternTSFromStateCU/ReadCropPatternTSFromStateCU.md) command.
+[`ReadCUCropPatternsFromStateCU`](../command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) command.
 This is typically only used if an existing file needs to be adjusted (e.g., by extending the period with fill options).
 3. Utilize data that are not in HydroBase by using the
 [`SetCropPatternTSFromList`](../command-ref/SetCropPatternTSFromList/SetCropPatternTSFromList.md) command.
@@ -874,7 +873,7 @@ and the supplied value will be included in the aggregate when the irrigated land
 Because determining crop patterns is a data- and labor-intensive effort,
 data are not typically available for each year in a modeling period.
 Therefore, crop patterns known for specific years are often extended or interpolated for other years using the
-[`FillCropPatternTSRepeat`](../command-ref/FillCropPaternTSRepeat/FillCropPatternTSRepeat.md) and
+[`FillCropPatternTSRepeat`](../command-ref/FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) and
 [`FillCropPatternTSInterpolate`](../command-ref/FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md) commands.
 An attempt was made in the Rio Grande to relate crop patterns to agricultural statistics (crop planting and harvest data);
 however, this approach proved to be inaccurate and the more straightforward methods are typically used.
@@ -1051,12 +1050,12 @@ Data are typically read from HydroBase and then estimated with interpolation or 
 * Maximum monthly pumping (ACFT), determined from summing the well yields/decrees for the
 wells associated with the location, using the permit and right dates to turn on wells.
 The data are usually processed with the
-[`SetIrrigationPracticeTSPumpingMaxToWellRights`](../command-ref/SetIrrigationPracticeTSPumpingMaxToWellRights/SetIrrigationPracticeTSPumpingMaxToWellRights.md) command.
+[`SetIrrigationPracticeTSPumpingMaxUsingWellRights`](../command-ref/SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md) command.
 * Groundwater use mode, typically changed from defaults using the
-[`SetIrrigationPraticeTS`](../command-ref/SetIrrigationPraticeTS/SetIrrigationPraticeTS.md) command.
+[`SetIrrigationPracticeTS`](../command-ref/SetIrrigationPracticeTS/SetIrrigationPracticeTS.md) command.
 * Total acres for location.  These numbers should be an exact duplicate of the total acreage from the crop pattern time series.
 See the
-[`SetIrrigationPracticeTSTotalAcreageFromCropPatternTSTotalAcreage`](../command-ref/SetIrrigationPracticeTSTotalAcreageFromCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageFromCropPatternTSTotalAcreage.md) command.
+[`SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage`](../command-ref/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md) command.
 
 The definition of CU Locations as well/diversion system/aggregate is important
 because the logic to process each type of location is different.
@@ -1148,8 +1147,8 @@ Irrigation Practice Time Series Commands
 |[`SetIrrigationPracticeTSSprinklerAcreageFromList`](../command-ref/SetIrrigationPracticeTSSprinklerAcreageFromList/SetIrrigationPracticeTSSprinklerAcreageFromList.md) | Set the irrigation practice sprinkler acreage time series from a list file. |
 |[`SetIrrigationPracticeTS`](../command-ref/SetIrrigationPracticeTS/SetIrrigationPracticeTS.md) | Set irrigation practice data using user-supplied values. |
 |[`SetIrrigationPracticeTSFromList`](../command-ref/SetIrrigationPracticeTSFromList/SetIrrigationPracticeTSFromList.md) | Set irrigation practice data from a delimited list file. |
-|[`ReadWellRightsFromStateMod`](../command-ref/ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md) | Read a StateMod well rights file, for use with [`SetIrrigationPracticeTSPumpingMaxUsingWellRights`](../command-ref/SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md) and [`FillIrrigationPracticeTS`](../command-ref/FillIrrigationPracticeTS/FillIrrigationPracticeTS.md). |
-|[`FillIrrigationPracticeTSUsingWellRights`](../command-ref/FillIrrigationPracticeTSUsingWellRights/FillIrrigationPracticeTSUsingWellRights.md) | Fill the irrigation practice acreage time series using well rights.  This is only applied to lands with groundwater supply and is used in the early data period. |
+|[`ReadWellRightsFromStateMod`](../command-ref/ReadWellRightsFromStateMod/ReadWellRightsFromStateMod.md) | Read a StateMod well rights file, for use with [`SetIrrigationPracticeTSPumpingMaxUsingWellRights`](../command-ref/SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md) and `FillIrrigationPracticeTS*`. |
+|[`FillIrrigationPracticeTSAcreageUsingWellRights`](../command-ref/FillIrrigationPracticeTSAcreageUsingWellRights/FillIrrigationPracticeTSAcreageUsingWellRights.md) | Fill the irrigation practice acreage time series using well rights.  This is only applied to lands with groundwater supply and is used in the early data period. |
 |[`FillIrrigationPracticeTSInterpolate`](../command-ref/FillIrrigationPracticeTSInterpolate/FillIrrigationPracticeTSInterpolate.md) | Fill missing irrigation practice data using interpolation. |
 |[`FillIrrigationPracticeTSRepeat`](../command-ref/FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md) | Fill missing irrigation practice data by repeating values. |
 |[`SortIrrigationPracticeTS`](../command-ref/SortIrrigationPracticeTS/SortIrrigationPracticeTS.md) | Sort irrigation practice time series by location identifier. |

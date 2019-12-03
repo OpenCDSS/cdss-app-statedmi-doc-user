@@ -50,5 +50,5 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`ReadInstreamFlowRightsFromHydroBaes`](../ReadInstreamFlowRightsFromHydroBaes/ReadInstreamFlowRightsFromHydroBaes.md) command
+* [`ReadInstreamFlowRightsFromHydroBase`](../ReadInstreamFlowRightsFromHydroBase/ReadInstreamFlowRightsFromHydroBase.md) command
 * [`WriteInstreamFlowRightsToStateMod`](../WriteInstreamFlowRightsToStateMod/WriteInstreamFlowRightsToStateMod.md) command

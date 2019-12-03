@@ -60,7 +60,7 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 * [`CheckCULocations`](../CheckCULocations/CheckCULocations.md) command
 * [`CheckDiversionDemandTSMonthly`](../CheckDiversionDemandTSMonthly/CheckDiversionDemandTSMonthly.md) command
 * [`CheckDiversionHistoricalTSMonthly`](../CheckDiversionHistoricalTSMonthly/CheckDiversionHistoricalTSMonthly.md) command
-* [`CheckDiversionRighs`](../CheckDiversionRighs/CheckDiversionRighs.md) command
+* [`CheckDiversionRights`](../CheckDiversionRights/CheckDiversionRights.md) command
 * [`CheckDiversionStations`](../CheckDiversionStations/CheckDiversionStations.md) command
 * [`CheckInstreamFlowDemandTSAverageMonthly`](../CheckInstreamFlowDemandTSAverageMonthly/CheckInstreamFlowDemandTSAverageMonthly.md) command
 * [`CheckInstreamFlowRights`](../CheckInstreamFlowRights/CheckInstreamFlowRights.md) command
@@ -70,8 +70,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 * [`CheckReservoirRights`](../CheckReservoirRights/CheckReservoirRights.md) command
 * [`CheckReservoirStations`](../CheckReservoirStations/CheckReservoirStations.md) command
 * [`CheckRiverNetwork`](../CheckRiverNetwork/CheckRiverNetwork.md) command
-* [`CheckStreamEstimateStationCoefficients`](../CheckStreamEstimateStationCoefficients/CheckStreamEstimateStationCoefficients.md) command
-* [`CheckSteramGageStations`](../CheckStreamGageStations/CheckStreamGageStations.md) command
+* [`CheckStreamEstimateCoefficients`](../CheckStreamEstimateCoefficients/CheckStreamEstimateCoefficients.md) command
+* [`CheckStreamGageStations`](../CheckStreamGageStations/CheckStreamGageStations.md) command
 * [`CheckWellDemandTSMonthly`](../CheckWellDemandTSMonthly/CheckWellDemandTSMonthly.md) command
 * [`CheckWellHistoricalPumpingTSMonthly`](../CheckWellHistoricalPumpingTSMonthly/CheckWellHistoricalPumpingTSMonthly.md) command
 * [`CheckWellRights`](../CheckWellRights/CheckWellRights.md) command

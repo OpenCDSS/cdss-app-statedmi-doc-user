@@ -258,7 +258,7 @@ WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
 
 StateDMI does not process stream historical time series.
 Instead, use TSTool, a spreadsheet, or other software to create the monthly and daily historical streamflow time series files.
-For simple models, use TSTool’s [`CreateFromList`](../command-ref/CreateFromList/CreateFromList.md) command to
+For simple models, use TSTool’s `CreateFromList` command to
 specify a list of station identifiers and create time series identifiers for HydroBase time series.
 The following TSTool command file excerpt illustrates how to create a
 historical monthly streamflow time series (from the Colorado `cm2005` dataset):
@@ -2618,7 +2618,7 @@ Instream Flow Demands (Average Monthly) Commands
 | **Command**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
 | [`SetOutputYearType`](../command-ref/SetOutputYearType/SetOutputYearType.md) | Set the output year type for time series.  This should correspond to the model dataset year type and ensures that time series data are in the proper order.  Omitting this information may result in missing data in the output. |
-| [`ReadInstreamFlowDemandTSAverageMonthylyFromStateMod`](../command-ref/ReadInstreamFlowDemandTSAverageMonthylyFromStateMod/ReadInstreamFlowDemandTSAverageMonthylyFromStateMod.md) | Read the instream flow demand average monthly time series from a StateMod file (if reading and manipulating). |
+| [`ReadInstreamFlowDemandTSAverageMonthlyFromStateMod`](../command-ref/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod/ReadInstreamFlowDemandTSAverageMonthlyFromStateMod.md) | Read the instream flow demand average monthly time series from a StateMod file (if reading and manipulating). |
 | [`ReadInstreamFlowRightsFromStateMod`](../command-ref/ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md) | Read instream flow rights from a StateMod instream flow rights file. |
 | [`SetInstreamFlowDemandTSAverageMonthlyFromRights`](../command-ref/SetInstreamFlowDemandTSAverageMonthlyFromRights/SetInstreamFlowDemandTSAverageMonthlyFromRights.md) | For the specified instream flow water right(s), create a demand time series (average monthly). |
 | [`SetInstreamFlowDemandTSAverageMonthlyConstant`](../command-ref/SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md) | For the specified instream flow location, create a demand time series (average monthly) that is a constant value monthly pattern (twelve values). |
@@ -3281,7 +3281,7 @@ Stream Estimate Station Commands
 | [`ReadStreamEstimateStationsFromList`](../command-ref/ReadStreamEstimateStationsFromList/ReadStreamEstimateStationsFromList.md) | Read from a delimited list file the list of stream estimate stations to be included in the dataset. |
 | [`ReadStreamEstimateStationsFromNetwork`](../command-ref/ReadStreamEstimateStationsFromNetwork/ReadStreamEstimateStationsFromNetwork.md) | Read from a StateMod network file a list of stream estimate stations to be included in the dataset. |
 | [`ReadStreamEstimateStationsFromStateMod`](../command-ref/ReadStreamEstimateStationsFromStateMod/ReadStreamEstimateStationsFromStateMod.md) | Read from a StateMod stream estimate stations file the list of stream estimate stations to be included in the dataset. |
-| [`SetStreamEstimateeStation`](../command-ref/SetStreamEstimateeStation/SetStreamEstimateeStation.md) | Set the data for, and optionally add, stream estimate stations. |
+| [`SetStreamEstimateStation`](../command-ref/SetStreamEstimateStation/SetStreamEstimateStation.md) | Set the data for, and optionally add, stream estimate stations. |
 | [`SortStreamEstimateStations`](../command-ref/SortStreamEstimateStations/SortStreamEstimateStations.md) | Sort the stream estimate stations.  This is useful to force consistency between files. |
 | [`FillStreamEstimateStationsFromHydroBase`](../command-ref/FillStreamEstimateStationsFromHydroBase/FillStreamEstimateStationsFromHydroBase.md) | Fill missing data for defined stream estimate stations, using data from HydroBase.  For example, retrieve the station names. |
 | [`ReadNetworkFromStateMod`](../command-ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md) | Read the network file, providing data for the [`FillStreamEstimateStationsFromNetwork`](../command-ref/FillStreamEstimateStationsFromNetwork/FillStreamEstimateStationsFromNetwork.md) command. |
@@ -3503,8 +3503,8 @@ Stream Estimate Coefficients Commands
 | [`SetStreamEstimateCoefficientsPFGage`](../command-ref/SetStreamEstimateCoefficientsPFGage/SetStreamEstimateCoefficientsPFGage.md) | Specify that the proration factor for a stream estimate station should be calculated using only the `area*precipitation` data for a specific gage, rather than the downstream node.  The station is then treated as if were a stream gage node for other base flow calculations. |
 | [`CalculateStreamEstimateCoefficients`](../command-ref/CalculateStreamEstimateCoefficients/CalculateStreamEstimateCoefficients.md) | Calculate stream estimate coefficients from the network relationships and the `area*precipitation` data stored in the network for stream estimate stations. |
 | [`SetStreamEstimateCoefficients`](../command-ref/SetStreamEstimateCoefficients/SetStreamEstimateCoefficients.md) | Set stream estimate coefficients, for example, if the values that were calculated need to be adjusted. |
-| [`WriteStreamEstimateCoefficientssToList`](../command-ref/WriteStreamEstimateCoefficientssToList/WriteStreamEstimateCoefficientssToList.md) | Write defined stream estimate coefficients to a delimited file. |
-| [`WriteStreamEstimateCoefficientssToStateMod`](../command-ref/WriteStreamEstimateCoefficientssToStateMod/WriteStreamEstimateCoefficientssToStateMod.md) | Write defined stream estimate coefficients to a StateMod file. |
+| [`WriteStreamEstimateCoefficientsToList`](../command-ref/WriteStreamEstimateCoefficientsToList/WriteStreamEstimateCoefficientsToList.md) | Write defined stream estimate coefficients to a delimited file. |
+| [`WriteStreamEstimateCoefficientsToStateMod`](../command-ref/WriteStreamEstimateCoefficientsToStateMod/WriteStreamEstimateCoefficientsToStateMod.md) | Write defined stream estimate coefficients to a StateMod file. |
 | [`CheckStreamEstimateCoefficients`](../command-ref/CheckStreamEstimateCoefficients/CheckStreamEstimateCoefficients.md) | Check stream estimate coefficients data for problems. |
 | [`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
 
@@ -3747,15 +3747,15 @@ River Network Commands
 
 | **Command**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
-| [`ReadNetworkFromStateMod`](../command_ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md) | Read the generalized network from a StateMod XML (or old Makenet) network file. |
-| [`CreateRiverNetworkFromNetwork`](../command_ref/CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md) | Create the StateMod river network from the generalized network data.  Node names are not, by default taken from the network because they may have been adjusted from database names to facilitate labeling or presentation. |
-| [`FillRiverNetworkFromHydroBase`](../command_ref/FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md) | Fill river network data (e.g., station names) from HydroBase.  This allows “official” names to be used in the river network file, rather than those used in the generalized network file. |
-| [`FillRiverNetworkFromNetwork`](../command_ref/FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md) | Fill river network data (e.g., station names) from the generalized network.  This allows names that are not in HydroBase (e.g., from aggregate nodes) to be taken from the network file. |
-| [`FillRiverNetworkNode`](../command_ref/FillRiverNetworkNode/FillRiverNetworkNode.md) | Fill river network data (e.g., station names) from user supplied values. |
-| [`WriteRiverNetworkToList`](../command_ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md) | Write the river network to a delimited file. |
-| [`WriteRiverNetworkToStateMod`](../command_ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md) | Write the river network to a StateMod river network file. |
-| [`CheckRiverNetwork`](../command_ref/CheckRiverNetwork/CheckRiverNetwork.md) | Check river network data for problems. |
-| [`WriteCheckFile`](../command_ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
+| [`ReadNetworkFromStateMod`](../command-ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md) | Read the generalized network from a StateMod XML (or old Makenet) network file. |
+| [`CreateRiverNetworkFromNetwork`](../command-ref/CreateRiverNetworkFromNetwork/CreateRiverNetworkFromNetwork.md) | Create the StateMod river network from the generalized network data.  Node names are not, by default taken from the network because they may have been adjusted from database names to facilitate labeling or presentation. |
+| [`FillRiverNetworkFromHydroBase`](../command-ref/FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md) | Fill river network data (e.g., station names) from HydroBase.  This allows “official” names to be used in the river network file, rather than those used in the generalized network file. |
+| [`FillRiverNetworkFromNetwork`](../command-ref/FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md) | Fill river network data (e.g., station names) from the generalized network.  This allows names that are not in HydroBase (e.g., from aggregate nodes) to be taken from the network file. |
+| [`FillRiverNetworkNode`](../command-ref/FillRiverNetworkNode/FillRiverNetworkNode.md) | Fill river network data (e.g., station names) from user supplied values. |
+| [`WriteRiverNetworkToList`](../command-ref/WriteRiverNetworkToList/WriteRiverNetworkToList.md) | Write the river network to a delimited file. |
+| [`WriteRiverNetworkToStateMod`](../command-ref/WriteRiverNetworkToStateMod/WriteRiverNetworkToStateMod.md) | Write the river network to a StateMod river network file. |
+| [`CheckRiverNetwork`](../command-ref/CheckRiverNetwork/CheckRiverNetwork.md) | Check river network data for problems. |
+| [`WriteCheckFile`](../command-ref/WriteCheckFile/WriteCheckFile.md) | Write the results of data checks to a file. |
 
 An example command file to create the StateMod river network file is shown below (from the Colorado `cm2005` dataset):
 

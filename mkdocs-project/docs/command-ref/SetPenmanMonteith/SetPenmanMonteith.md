@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetPenmanMonteith` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetPenmanMonteith` command (for StateCU)
+sets data in existing Penman-Monteith crop coefficients or adds a new crop type with crop coefficients.
 
 ## Command Editor ##
 
@@ -42,7 +39,9 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `CropType` | A crop type to match or a pattern using wildcards (e.g., `ALFALFA*`). | None – must be specified. |
+| `Coefficients` | A list of coefficients, surrounded by double quotes. | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the crop if not found using the provided information</li><li>`Fail` – generate a failure message if the crop is not found</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the crop is not found</li><li>`Warn` – generate a warning message if the crop is not found</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -52,4 +51,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

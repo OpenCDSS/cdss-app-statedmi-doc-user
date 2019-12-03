@@ -89,7 +89,7 @@ If `UseCIU=True` is specified for this command, the following logic will be used
 	they do not occur in the active life of the structure.
 	4. Missing data within the data period remain missing,
 	and can be filled with other commands such as
-	[`FillHistMonthAverage`](../FillHistMonthAverage/FillHistMonthAverage.md).
+	[`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md).
 	5. Missing data prior to the first diversion values or comments remain missing,
 	and can be filled with other commands as appropriate, perhaps specific to each location.
 2. If in HydroBase `CIU=N`:
@@ -323,10 +323,10 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 
 ## See Also ##
 
-* [`FillHistMonthAverage`](../FillHistMonthAverage/FillHistMonthAverage.md) command
+* [`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md) command
 * [`LimitDiversionHistoricalTSMonthlyToRights`](../LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md) command
 * [`ReadPatternFile`](../ReadPatternFile/ReadPatternFile.md) command
-* [`ReadDiversionHistoricalTSMonthlyFromStateMod`](../DiversionHistoricalTSMonthlyFromStateMod/DiversionHistoricalTSMonthlyFromStateMod.md) command
+* [`ReadDiversionHistoricalTSMonthlyFromStateMod`](../ReadDiversionHistoricalTSMonthlyFromStateMod/ReadDiversionHistoricalTSMonthlyFromStateMod.md) command
 * [`SetOutputPeriod`](../SetOutputPeriod/SetOutputPeriod.md) command
 * [`SortDiversionHistoricalTSMonthly`](../SortDiversionHistoricalTSMonthly/SortDiversionHistoricalTSMonthly.md) command
-* [`WriteDiversionTSMonthlyToStateMod`](../WriteDiversionTSMonthlyToStateMod/WriteDiversionTSMonthlyToStateMod.md) command
+* [`WriteDiversionHistoricalTSMonthlyToStateMod`](../WriteDiversionHistoricalTSMonthlyToStateMod/WriteDiversionHistoricalTSMonthlyToStateMod.md) command

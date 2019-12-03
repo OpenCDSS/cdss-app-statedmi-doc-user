@@ -12,10 +12,13 @@
 ## Overview ##
 
 The `SetOutputPeriod` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+sets the output period for time series.
+Specifying the output period is necessary when creating model files or filling
+an extended period (time series will not automatically be extended by fill commands).
+The following dialog is used to edit this command and illustrates the syntax of the command.
+Note that the output period should always use calendar month and year,
+even if other than calendar year are used for output (see
+[`SetOutputYearType`](../SetOutputYearType/SetOutputYearType.md).
 
 ## Command Editor ##
 
@@ -42,7 +45,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputStart` | The output period start, in a standard date/time format.  The precision of this value should match that of data because it is used to iterate through the data.  For example, if monthly data are being processed, specify the `OutputStart` using year and month. | None – must be specified. |
+| `OutputEnd` | The output period end, in a standard date/time format.  The precision of this value should match that of data because it is used to iterate through the data.  For example, if monthly data are being processed, specify the `OutputStart` using year and month. | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +56,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`SetOutputYearType`](../SetOutputYearType/SetOutputYearType.md) command

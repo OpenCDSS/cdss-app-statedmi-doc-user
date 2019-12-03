@@ -214,7 +214,7 @@ The log file can facilitate troubleshooting and serve as a useful artifact if a 
 * **Quality Control**.  The complexity of modeling and the decisions that are made
 based on the results require that quality control measures are implemented.
 Data checks can be performed using the `Check` commands such as [`CheckDiversionStations`](../command-ref/CheckDiversionStations/CheckDiversionStations.md).
-See also the [Quality Control](../quality-control.md) chapter of this documentation.
+See also the [Quality Control](../quality-control/quality-control.md) chapter of this documentation.
 Performing quality control activities throughout modeling will help to minimize
 uncertainty about the validity of the model results.
 * **Comments**.  Hand-edited data files and command files should include comments of the top indicating the source and date for data.

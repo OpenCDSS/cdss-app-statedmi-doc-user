@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetRiverNetworkNode` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetRiverNetworkNode` command (for StateMod)
+sets data in existing river network nodes or adds a new river network node.
 
 ## Command Editor ##
 
@@ -40,9 +37,14 @@ SetRiverNetworkNode(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | A single river network node identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `Name` | The name to be assigned for all matching river network nodes. | If not specified, the original value will remain. |
+| `DownstreamRiverNodeID` | The downstream river node identifier to be assigned for all matching river network nodes. | If not specified, the original value will remain. |
+| `Comment` | The comment to be assigned for all matching river network nodes. | If not specified, the original value will remain. |
+| `MaxRechargeLimit` | The maximum recharge limit, CFS, for groundwater modeling, assigned for all matching river network nodes. | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the river network node if the ID is not matched and is not a wildcard (note that nodes that are upstream and downstream of the addition are NOT automatically changed)</li><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -52,4 +54,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillRiverNetworkNode`](../FillRiverNetworkNode/FillRiverNetworkNode.md) command
+* [`FillRiverNetworkFromHydroBase`](../FillRiverNetworkFromHydroBase/FillRiverNetworkFromHydroBase.md) command
+* [`FillRiverNetworkFromNetwork`](../FillRiverNetworkFromNetwork/FillRiverNetworkFromNetwork.md) command

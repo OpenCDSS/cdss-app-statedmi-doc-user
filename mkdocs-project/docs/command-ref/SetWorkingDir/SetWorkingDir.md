@@ -11,11 +11,22 @@
 
 ## Overview ##
 
-The `SetWorkingDir` does something...
+The `SetWorkingDir` command
+is used to define the working directory for a set of commands.
+The working directory, when set properly, can greatly simplify commands files
+because relative file paths can be used for input and output.
+The working directory is normally set in one of the following ways,
+with the current setting being defined by the most recent item that has occurred:
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+1. The startup directory for the StateDMI program,
+2. The directory where a commands file was opened,
+3. The directory where a commands file was saved,
+4. The directory specified by a `SetWorkingDir` command,
+5. The directory specified by ***File / Set Working Directory***.
+
+In most cases, a `SetWorkingDir` command is not needed.
+However, for complicated command files, it may be necessary to change the working directory from one directory to another.
+Setting the working directory to an absolute path causes all relative paths for input and output files to be appended to the working directory
 
 ## Command Editor ##
 
@@ -42,7 +53,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `WorkingDir`<br>**required** | Working directory for the software, with which relative paths are converted into absolute paths. | None – must be specified. |
 
 ## Examples ##
 

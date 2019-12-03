@@ -11,11 +11,10 @@
 
 ## Overview ##
 
-The `CreateRiverNetworkFromNetwork` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `CreateRiverNetworkFromNetwork` command (for StateMod)
+creates a StateMod river network from a generalized network.
+This is used, for example, when a change has been made to the generalized network
+(e.g., by editing interactively in StateDMI) and a consistent StateMod river network file must be created.
 
 ## Command Editor ##
 
@@ -42,14 +41,44 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| | There are no parameters for this command. | |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CreateRiverNetworkFromNetwork).
 
+The following command file illustrates how a StateMod river network file can be created from the generalized network file:
+
+```
+StartLog(LogFile="rin.commands.StateDMI.log")
+# rin.commands.StateDMI
+#
+# creates the river network file for the Colorado River monthly/daily models
+#
+#  Step 1 - read river nodes from the network file and create file framework
+#
+ReadNetworkFromStateMod(InputFile="cm2005.net")
+CreateRiverNetworkFromNetwork()
+#
+#  Step 2 - get node (diversion, stream stations, reservoirs, instream flows)
+#           names from HydroBase
+#
+FillRiverNetworkFromHydroBase(ID="*",NameFormat=StationName_NodeType)
+#
+#  Step 3 - read missing node names from network file
+#
+FillRiverNetworkFromNetwork(ID="*",NameFormat="StationName_NodeType",CommentFormat="StationID")
+#
+#  Step 4 - create StateMod river network file
+#
+WriteRiverNetworkToStateMod(OutputFile="..\StateMod\cm2005.rin")
+#
+# Check the results
+CheckRiverNetwork(ID="*")
+WriteCheckFile(OutputFile="rin.commands.StateDMI.check.html")
+```
+
 ## Troubleshooting ##
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
