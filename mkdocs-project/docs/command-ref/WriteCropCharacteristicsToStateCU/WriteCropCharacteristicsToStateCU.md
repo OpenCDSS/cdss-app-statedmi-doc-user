@@ -85,5 +85,5 @@ WriteCheckFile(OutputFile="rg2007.cch.check.html")
 
 ## See Also ##
 
-* [`ReadCropCharactersiticsFromStateCU`](../ReadCropCharactersiticsFromStateCU/ReadCropCharactersiticsFromStateCU.md) command
+* [`ReadCropCharactersiticsFromStateCU`](../ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md) command
 * [`WriteCropCharacteristicsToList`](../WriteCropCharacteristicsToList/WriteCropCharacteristicsToList.md) command

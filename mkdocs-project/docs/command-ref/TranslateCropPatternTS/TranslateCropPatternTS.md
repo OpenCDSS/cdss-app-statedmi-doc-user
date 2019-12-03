@@ -101,4 +101,4 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 ## Troubleshooting ##
 
 ## See Also ##
-
+[`RemoveCropPatternTS`](../RemoveCropPatternTS/RemoveCropPatternTS.md) command

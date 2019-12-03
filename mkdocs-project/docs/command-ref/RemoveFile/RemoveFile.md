@@ -11,11 +11,13 @@
 
 ## Overview ##
 
-The `RemoveFile` does something...
+The `RemoveFile` command
+removes a file from the file system.  This command is used in testing software to remove results files before attempting to regenerate the results.
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+A failure will be generated if the file exists and cannot be removed (e.g., due to file permissions or being locked by another process).
+
+Even read-only files may be removed by this command, depending on how the operating system and computer environment handle access permissions.
+
 
 ## Command Editor ##
 
@@ -42,7 +44,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile`<br>**required** | The name of the file to delete. | None – must be specified. |
+| `IfNotFound` | Indicate action if the file is not found, one of:<ul><li>`Ignore` – ignore the missing file (do not warn).</li><li>`Warn` – generate a warning (use this if the file truly is expected and a missing file is a cause for concern).</li><li>`Fail` – generate a failure (use this if the file truly is expected and a missing file is a cause for concern).</li></ul> | `Ignore` |
 
 ## Examples ##
 
@@ -52,4 +55,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

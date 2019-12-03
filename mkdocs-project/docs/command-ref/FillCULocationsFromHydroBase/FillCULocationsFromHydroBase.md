@@ -56,5 +56,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 * [`FillCULocation`](../FillCULocation/FillCULocation.md) command
 * [`FillCULocationsFromList`](../FillCULocationsFromList/FillCULocationsFromList.md) command
 * [`SetCULocation`](../SetCULocation/SetCULocation.md) command
-* [`SetCULocationsFromHydroBase`](../SetCULocationsFromHydroBase/SetCULocationsFromHydroBase.md) command
-* [`SetCULocationsFromList`](../SetCULocationsFroMList/SetCULocationsFromList.md) command
+* [`SetCULocationsFromList`](../SetCULocationsFromList/SetCULocationsFromList.md) command

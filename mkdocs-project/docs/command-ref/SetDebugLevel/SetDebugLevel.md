@@ -11,11 +11,15 @@
 
 ## Overview ##
 
-The `SetDebugLevel` does something...
+The `SetDebugLevel` command
+is used to set debug levels for the screen and log file.
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+Debug messages are useful during troubleshooting.
+A general guideline is that a debug level of `1` prints basic messages,
+`30` prints detailed information about processing,
+and `100` prints very low-level messages about input/output.  Intermediate values will result in more or less output.
+
+This command is useful for troubleshooting and can be specified multiple times to increase debug output for a specific command, if necessary.
 
 ## Command Editor ##
 
@@ -42,7 +46,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+|`ScreenLevel`| Level for screen (user interface) messages.| Only important messages will be shown.|
+|`LogFileLevel`| Level for log file messages. | Only important messages will be printed to the log file.|
 
 ## Examples ##
 
@@ -52,4 +57,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`SetWarningLevel`](../SetWarningLevel/SetWarningLevel.md) command

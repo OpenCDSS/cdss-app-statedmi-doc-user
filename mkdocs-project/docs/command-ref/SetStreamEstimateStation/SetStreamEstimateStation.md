@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetStreamEstimateStation` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetStreamEstimateStation` command (for StateMod)
+sets data in existing stream estimate stations or adds a new stream estimate station.
 
 ## Command Editor ##
 
@@ -42,7 +39,11 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID`<br>**required** | A single stream estimate station identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `Name` | The name to be assigned for all matching stream estimate stations. | If not specified, the original value will remain. |
+| `RiverNodeID` | The river node identifier to be assigned for all matching stream estimate stations. | If not specified, the original value will remain. |
+| `DailyID` | The daily identifier to be assigned for all matching stream estimate stations. | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the stream estimate station if the ID is not matched and is not a wildcard</li><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -52,4 +53,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillStreamEstimateStation`](../FillStreamEstimateStation/FillStreamEstimateStation.md) command
+* [`FillStreamEstimateStationsFromHydroBase`](../FillStreamEstimateStationsFromHydroBase/FillStreamEstimateStationsFromHydroBase.md) command
+* [`FillStreamEstimateStationsFromNetwork`](../FillStreamEstimateStationsFromNetwork/FillStreamEstimateStationsFromNetwork.md) command

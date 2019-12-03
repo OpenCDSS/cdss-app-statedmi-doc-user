@@ -7,6 +7,7 @@
 
 ## Changes in Version 5.00.00 ##
 
+* ![change](change.png) [5.00.00] Convert all documentation to online format.
 * ![change](change.png) [5.00.00] StateDMI on Windows is now distributed with
 64-bit Java Runtime Environment (JRE).
 The limit on memory used by StateDMI will only be constrained by the memory

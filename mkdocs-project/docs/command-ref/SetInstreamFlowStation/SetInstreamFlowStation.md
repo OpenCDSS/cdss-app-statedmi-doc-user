@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetInstreamFlowStation` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetInstreamFlowStation` command (for StateMod)
+sets data in existing instream flow stations or adds a new instream flow station.
 
 ## Command Editor ##
 
@@ -40,9 +37,16 @@ SetInstreamFlowStation(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID`<br>**required** | A single instream flow station identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `Name` | The name to be assigned for all matching instream flow stations. | If not specified, the original value will remain. |
+| `UpstreamRiverNodeID` | The upstream river node identifier to be assigned for all matching instream flow stations. | If not specified, the original value will remain. |
+| `DownstreamRiverNodeID` | The downstream river node identifier to be assigned for all matching instream flow stations. | If not specified, the original value will remain. |
+| `OnOff` | The on/off switch value to be assigned for all matching instream flow stations, either 1 for on or 0 for off. | If not specified, the original value will remain. |
+| `DailyID` | The daily identifier to be assigned for all matching instream flow stations. | If not specified, the original value will remain. |
+| `DemandType` | The demand type to be assigned for all matching instream flow stations, one of:<ul><li>`1` – Average monthly demand,</li><li>`2` – Monthly demand.`</li></ul> | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>Add – add the instream flow station if the ID is not matched and is not a wildcard</li><li>Fail – generate a failure message if the ID is not matched</li><li>Ignore – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>Warn – generate a warning message if the ID is not matched</li></ul> | Warn |
 
 ## Examples ##
 
@@ -52,4 +56,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillInstreamFlowStation`](../FillInstreamFlowStation/FillInstreamFlowStation.md) command
+* [`FillInstreamFlowStationsFromHydroBase`](../FillInstreamFlowStationsFromHydroBase/FillInstreamFlowStationsFromHydroBase.md) command
+* [`FillInstreamFlowStationsFromNetwork`](../FillInstreamFlowStationsFromNetwork/FillInstreamFlowStationsFromNetwork.md) command

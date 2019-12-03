@@ -81,5 +81,4 @@ An example list file is shown below, which provides elevations for key locations
 * [`FillCULocation`](../FillCULocation/FillCULocation.md) command
 * [`FillCULocationsFromHydroBase`](../FillCULocationsFromHydroBase/FillCULocationsFromHydroBase.md) command
 * [`SetCULocation`](../SetCULocation/SetCULocation.md) command
-* [`SetCULocationsFromHydroBase`](../SetCULocationsFromHydroBase/SetCULocationsFromHydroBase.md) command
-* [`SetCULocationsFromList`](../SetCULocationsFroMList/SetCULocationsFromList.md) command
+* [`SetCULocationsFromList`](../SetCULocationsFromList/SetCULocationsFromList.md) command

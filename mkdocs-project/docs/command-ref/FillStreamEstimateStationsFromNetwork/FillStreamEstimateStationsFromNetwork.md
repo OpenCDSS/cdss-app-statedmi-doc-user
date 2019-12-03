@@ -58,6 +58,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 * [`FillStreamEstimateStation`](../FillStreamEstimateStation/FillStreamEstimateStation.md) command
 * [`FillStreamEstimateStationsFromHydroBase`](../FillStreamEstimateStationsFromHydroBase/FillStreamEstimateStationsFromHydroBase.md) command
-* [`SetStreamEstimateCoefficients`](../SetStreamEstimateCoefficients/SetStreamCoefficients.md) command
-* [`SetStreamEstimateCoefficientsPFGage`](../SetStreamEstimateCoefficientsPFGage/SetStreamCoefficientsPFGage.md) command
+* [`SetStreamEstimateCoefficients`](../SetStreamEstimateCoefficients/SetStreamEstimateCoefficients.md) command
+* [`SetStreamEstimateCoefficientsPFGage`](../SetStreamEstimateCoefficientsPFGage/SetStreamEstimateCoefficientsPFGage.md) command
 * [`SetStreamEstimateStation`](../SetStreamEstimateStation/SetStreamEstimateStation.md) command

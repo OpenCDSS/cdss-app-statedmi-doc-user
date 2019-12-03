@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetCULocationClimateStationWeightsFromHydroBase` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetCULocationClimateStationWeightsFromHydroBase` command (for StateCU)
+sets climate station weights data in existing CU Locations, using HydroBase for data.
 
 ## Command Editor ##
 
@@ -42,7 +39,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID`<br>**required** | A single CU Location identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
 
 ## Examples ##
 
@@ -52,4 +49,11 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`FillCULocation`](../FillCULocation/FillCULocation.md) command
+* [`FillCULocationClimateStationWeights`](../FillCULocationClimateStationWeights/FillCULocationClimateStationWeights.md) command
+* [`FillCULocationsFromHydroBase`](../FillCULocationsFromHydroBase/FillCULocationsFromHydroBase.md) command
+* [`FillCULocationsFromList`](../FillCULocationsFromList/FillCULocationsFromList.md) command
+* [`SetCULocation`](../SetCULocation/SetCULocation.md) command
+* [`SetCULocationClimateStationWeights`](../SetCULocationClimateStationWeights/SetCULocationClimateStationWeights.md) command
+* [`SetCULocationClimateStationWeightsFromList`](../SetCULocationClimateStationWeightsFromList/SetCULocationClimateStationWeightsFromList.md) command
+* [`SetCULocationsFromList`](../SetCULocationsFromList/SetCULocationsFromList.md) command

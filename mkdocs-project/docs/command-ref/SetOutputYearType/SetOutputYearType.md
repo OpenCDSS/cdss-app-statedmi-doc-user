@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetOutputYearType` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetOutputYearType` command
+sets the output year type for time series and other time-dependent data (e.g., the order of monthly efficiencies in the StateMod diversion stations file depends on the year type).  The output period used with SetOutputPeriod() should always use calendar month and year, even if other than calendar year are used for the output year type.  
 
 ## Command Editor ##
 
@@ -42,7 +39,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `Parameter` | Description | Default |
+| `OutputYearType` | The output year type, one of:<ul><li>`Calendar` – each year is Jan – Dec.</li><li>`NovToOct` – each year is Nov of the previous year to Oct of the current year</li><li>`Water` – each water year is Oct of the previous year to Sep of the current year.</li></ul> | None – must be specified. |
 
 ## Examples ##
 

@@ -56,6 +56,7 @@ nav:
   - CommentBlockStart: command-ref/CommentBlockStart/CommentBlockStart.md
   - CommentBlockEnd: command-ref/CommentBlockEnd/CommentBlockEnd.md
   - CompareFiles: command-ref/CompareFiles/CompareFiles.md
+  - CompareTables: command-ref/CompareTables/CompareTables.md
   - CopyTable: command-ref/CopyTable/CopyTable.md
   - CreateCropPatternTSForCULocations: command-ref/CreateCropPatternTSForCULocations/CreateCropPatternTSForCULocations.md
   - CreateIrrigationPracticeTSForCULocations: command-ref/CreateIrrigationPracticeTSForCULocations/CreateIrrigationPracticeTSForCULocations.md
@@ -397,10 +398,14 @@ nav:
   - Overview: datastore-ref/overview.md
 #  - Colorado HydroBase: datastore-ref/CO-HydroBase/CO-HydroBase.md
 #  - Colorado HydroBase REST Web Service: datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md
-#- 'Appendix - Install StateDMI': appendix-install/install.md
+- 'Appendix - Install StateDMI': appendix-install/install.md
 - 'Appendix - Release Notes':
   - Release Notes: appendix-release-notes/release-notes.md
   - Version 5: appendix-release-notes/release-notes-05.md
+  - Version 4: appendix-release-notes/release-notes-04.md
+  - Version 3: appendix-release-notes/release-notes-03.md
+  - Version 2: appendix-release-notes/release-notes-02.md
+  - Version 1: appendix-release-notes/release-notes-01.md
 # ------- configuration properties ---------------
 # Alphabetize
 # ------------------------------------------------

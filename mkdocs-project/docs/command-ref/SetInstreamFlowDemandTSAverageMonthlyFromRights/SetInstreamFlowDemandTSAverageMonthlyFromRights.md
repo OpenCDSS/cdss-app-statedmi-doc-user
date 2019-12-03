@@ -11,11 +11,19 @@
 
 ## Overview ##
 
-The `SetInstreamFlowDemandTSAverageMonthlyFromRights` does something...
+The `SetInstreamFlowDemandTSAverageMonthlyFromRights` command (for StateMod)
+sets instream flow demand time series (average monthly) data using instream flow water
+rights data that have been previously read (e.g., from a
+[`ReadInstreamFlowRightsFromStateMod`](../ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md) command).
+The resulting time series at each instream flow station represents the total water rights for the specified station.
+The output year type is set to that defined by the most recent
+[`SetOutputYearType`](../SetOutputYearType/SetOutputYearType.md) command.
+For average time series, it is only important that a sequence of months be specified in the time series.
+If water year is used, then the data span two calendar years in memory.
+Incorrectly specifying the year type may result in missing data in the output.
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+If necessary, the constant values determined from water rights can be reset using the
+[`SetInstreamFlowDemandTSAverageMonthlyConstant`](../SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md) command.
 
 ## Command Editor ##
 
@@ -42,7 +50,8 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `ID` | A single instream flow station identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
+| `IfNotFound` | Used for error handling, one of the following: <ul><li>`Add` – add the instream flow demand time series if the ID is not matched and is not a wildcard</li><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -52,4 +61,6 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`ReadInstreamFlowRightsFromStateMod`](../ReadInstreamFlowRightsFromStateMod/ReadInstreamFlowRightsFromStateMod.md) command)
+* [`SetInstreamFlowDemandTSAverageMonthlyConstant`](../SetInstreamFlowDemandTSAverageMonthlyConstant/SetInstreamFlowDemandTSAverageMonthlyConstant.md) command)
+* [`SetOutputYearType`](../SetOutputYearType/SetOutputYearType.md) command

@@ -50,4 +50,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`WriteReservoirReturnFlowToStateMod`](../WriteReservoirReturnFlowToStateMod/WriteReservoirReturnFlowToStateMod.md) command
+* [`WriteReservoirReturnToStateMod`](../WriteReservoirReturnToStateMod/WriteReservoirReturnToStateMod.md) command

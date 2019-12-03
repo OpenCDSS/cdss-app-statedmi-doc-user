@@ -11,11 +11,8 @@
 
 ## Overview ##
 
-The `SetCropCharacteristics` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `SetCropCharacteristics` command (for StateCU)
+sets data in existing crop characteristics or adds a new crop type with crop characteristics.
 
 ## Command Editor ##
 
@@ -40,9 +37,24 @@ SetCropCharacteristics(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `CropType`<br>**required** | A crop type to match or a pattern using wildcards (e.g., `ALFALFA*`). | None – must be specified. |
+| `PlantingMonth` | The planting month for the crop, as an integer (`1`=January). | If not specified, the original value will remain. |
+| `PlantingDay` | The planting day of month for the crop, for the planning month. | If not specified, the original value will remain. |
+| `HarvestMonth` | The harvest month for the crop, as an integer (`1`=January). | If not specified, the original value will remain. |
+| `HarvestDay` | The harvest day of month for the crop, for the planning month. | If not specified, the original value will remain. |
+| `DaysToFullCover` | Days to full cover. | If not specified, the original value will remain. |
+| `LengthOfSeason` | Length of growing season, days. | If not specified, the original value will remain. |
+| `EarliestMoistureUseTemp` | Earliest moisture use temperature, F. | If not specified, the original value will remain. |
+| `LatestMoistureUseTemp` | Latest moisture use temperature, F. | If not specified, the original value will remain. |
+| `MaxRootZoneDepth` | Maximum root zone depth. | If not specified, the original value will remain. |
+| `MaxAppDepth` | Maximum application depth. | If not specified, the original value will remain. |
+| `SpringFrostFlag` | Spring frost flag. | `0` (mean) |
+| `FallFrostFlag` | Fall frost flag. | `0` (mean) |
+| `DaysTo2ndCut` | Days between first and second cuts (alfalfa). | If not specified, the original value will remain. |
+| `DaysTo3rdCut` | Days between second and third cuts (alfalfa). | If not specified, the original value will remain. |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the climate station if not found using the provided information</li><li>`Fail` – generate a failure message if the climate station is not found</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the climate station is not found</li><li>`Warn` – generate a warning message if the climate station is not found</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -51,5 +63,3 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

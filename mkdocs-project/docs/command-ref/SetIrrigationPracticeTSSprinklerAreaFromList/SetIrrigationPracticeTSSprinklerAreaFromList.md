@@ -11,45 +11,12 @@
 
 ## Overview ##
 
-The `SetIrrigationPracticeTSSprinklerAreaFromList` does something...
+**This command is obsolete - instead, use the
+[`SetIrrigationPracticeTSSprinklerAcreageFromList`](../SetIrrigationPracticeTSSprinklerAcreageFromList/SetIrrigationPracticeTSSprinklerAcreageFromList.md) commmand.**
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
-
-## Command Editor ##
-
-The following dialog is used to edit the command and illustrates the command syntax.
-
-**<p style="text-align: center;">
-![SetIrrigationPracticeTSSprinklerAreaFromList](SetIrrigationPracticeTSSprinklerAreaFromList.png)
-</p>**
-
-**<p style="text-align: center;">
-`SetIrrigationPracticeTSSprinklerAreaFromList` Command Editor (<a href="../SetIrrigationPracticeTSSprinklerAreaFromList.png">see also the full-size image</a>)
-</p>**
-
-## Command Syntax ##
-
-The command syntax is as follows:
-
-```text
-SetIrrigationPracticeTSSprinklerAreaFromList(Parameter="Value",...)
-```
-**<p style="text-align: center;">
-Command Parameters
-</p>**
-
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
-
-## Examples ##
-
-See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetIrrigationPracticeTSSprinklerAreaFromList).
-
-## Troubleshooting ##
-
-## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+The legacy `SetIrrigationPracticeTSSprinklerAreaFromList` command
+was used for RGDSS Phase 4 Río Grande work.
+However, an entirely new procedure has now been implemented, which can be applied to all basins.
+The new procedure relies on processing water rights into a StateMod water rights file and then
+uses this file as input when processing parcels for the irrigation practice time series.
+Other commands have also been implemented to allow more control over acreage processing.

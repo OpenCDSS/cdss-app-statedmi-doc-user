@@ -11,11 +11,12 @@
 
 ## Overview ##
 
-The `StartRegressionTestResultsReport` does something...
-
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The `StartRegressionTestResultsReport` command
+starts a report file to be written to as regression tests are run.
+The [`CreateRegressionTestCommandFile`](../CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md)
+automatically inserts this command.  The
+[`CompareFiles`](../CompareFiles/CompareFiles.md)
+command will write to this file if it is available.
 
 ## Command Editor ##
 
@@ -42,14 +43,30 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `OutputFile`<br>**required** | The name of the report file, enclosed in double quotes if the file contains spaces or other special characters.  A path relative to the command file can be specified. | None – must be specified. |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/StartRegressionTestResultsReport).
 
+See the [`RunCommands`](../RunCommands/RunCommands.md) documentation for how to set up a regression test.
+The following command file illustrates how to start the results report:
+
+```
+StartRegressionTestResultsReport(OutputFile="RunRegressionTest_commands_general.StateDMI.out.txt")
+...
+RunCommands(InputFile="..\..\..\commands\ReadClimateStationsFromList\Test_ReadClimateStationsFromList.StateDMI")
+...
+```
+
+Each of the above command files should produce expected time series results, without warnings.
+If any command file unexpectedly produces a warning, a warning will also be visible in StateDMI.
+The issue can then be evaluated to determine whether a software or configuration change is necessary.
+
 ## Troubleshooting ##
 
 ## See Also ##
 
+* [`CreateRegressionTestCommandFile`](../CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md) command
+* [`CompareFiles`](../CompareFiles/CompareFiles.md) command
 * [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
