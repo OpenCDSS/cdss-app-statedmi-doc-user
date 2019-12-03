@@ -7,7 +7,6 @@
 
 ## Changes in Version 5.00.00 ##
 
-* ![change](change.png) [5.00.00] Convert all documentation to online format.
 * ![change](change.png) [5.00.00] StateDMI on Windows is now distributed with
 64-bit Java Runtime Environment (JRE).
 The limit on memory used by StateDMI will only be constrained by the memory
@@ -16,10 +15,8 @@ To change the default settings, edit the `C:\Users\user\CDSS\StateDMI-Version\bi
 * ![change](change.png) [5.00.00] StateDMI is now distributed with Java 8.
 Improvements in performance and minor user interface changes should be evident.
 Significant internal code cleanup has occurred to make the code more maintainable.
-* ![change](change.png) [5.00.00] Word/PDF documentation is being transitioned to Markdown/MkDocs
+* ![change](change.png) [5.00.00] Word/PDF documentation have been transitioned to Markdown/MkDocs
 format to provide online navigable and searchable documentation.
-Initial online documentation focuses on command reference for commands that have been recently
-added or modified.  Full migration of documentation is expected to occur in the next few releases.
 	+ See the ***Help*** menu for links to online documentation.
 	+ Documentation specific to the software version is displayed if available and otherwise
 	the latest documentation is shown.

@@ -7,19 +7,6 @@ StateDMI can also be used to implement general workflows that process State of C
 This documentation is generally referred to as the **"User Documentation"** in contrast to
 **"Developer Documentation"**, which is relevant to software developers.
 
-**The StateDMI documentation has in the past been maintained in Microsoft Word and PDF
-and is being migrated to
-[Markdown](https://en.wikipedia.org/wiki/Markdown)/[MkDocs](http://www.mkdocs.org/)
-in order to provide a better user experience.
-The general organization of the documentation is similar to the original Word version; however,
-some reorganization has occurred because linked documentation presents opportunities
-to remove duplicate information and leverage online features.
-Minimal conversion of documentation has occurred as of August 2018.
-Refer to the PDF version that is distributed with the software.
-Upcoming releases of the StateDMI software will refer to the online documentation.
-This documentation is currently being hosted on the Open Water Foundation website until an appropriate
-location can be configured on the CDSS website.**
-
 * [How to Use this Documentation](#how-to-use-this-documentation)
 * [Acknowledgements](#acknowledgements)
 * [Colorado's Decision Support Systems](#colorados-decision-support-systems)
