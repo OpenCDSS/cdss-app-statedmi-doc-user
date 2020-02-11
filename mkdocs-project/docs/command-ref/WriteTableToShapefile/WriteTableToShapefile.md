@@ -28,36 +28,33 @@ from an existing shapefile or other standard spatial data format.
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the syntax of the command.
-<a href="../WriteTableToShapefile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToShapefile](WriteTableToShapefile.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToShapefile` Command Editor
+`WriteTableToShapefile` Command Editor (<a href="../WriteTableToShapefile.png">See also the full-size image</a>)
 </p>**
 
 The following figure illustrates the command syntax for layers specified with a geometry data column.
-<a href="../WriteTableToShapefile_WKT.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToShapefile_WKT](WriteTableToShapefile_WKT.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToShapefile` Command Editor for Geometry Data Parameters
+`WriteTableToShapefile` Command Editor for Geometry Data Parameters (<a href="../WriteTableToShapefile_WKT.png">See also the full-size image</a>)
 </p>**
 
 The following figure illustrates the command syntax for specifying columns to include as attributes.
-<a href="../WriteTableToShapefile_Attributes.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToShapefile_Attributes](WriteTableToShapefile_Attributes.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToShapefile` Command Editor for Attribute Parameters
+`WriteTableToShapefile` Command Editor for Attribute Parameters (<a href="../WriteTableToShapefile_Attributes.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

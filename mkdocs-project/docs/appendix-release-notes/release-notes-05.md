@@ -20,7 +20,9 @@ format to provide online navigable and searchable documentation.
 	+ See the ***Help*** menu for links to online documentation.
 	+ Documentation specific to the software version is displayed if available and otherwise
 	the latest documentation is shown.
-	+ Command editors are being updated to add a ***Help*** button that displays the command's documentation.
+	+ Command editors have been updated to add a ***Help*** button that displays the command's documentation.
+* ![change](change.png) [5.00.00] Editors for all commands that use files or folders now default to relative path
+and the buttons for selecting files and changing between relative/absolute path have been simplified.
 * ![change](change.png) [5.00.00] Commands to process wells have been updated to
 allow well collections to be specified as a list of well WDIDs and/or well permit "receipt" number.
 This reflects changes in data and methodology whereby well identifiers can be specified by

@@ -21,14 +21,13 @@ Default styles are written at the top of the HTML.  In the future the command ma
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the command syntax.
-<a href="../WriteTableToHTML.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToHTML](WriteTableToHTML.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToHTML` Command Editor
+`WriteTableToHTML` Command Editor (<a href="../WriteTableToHTML.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

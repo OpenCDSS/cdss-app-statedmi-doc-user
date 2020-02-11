@@ -69,14 +69,13 @@ Future enhancements will add additional features to intelligently map database r
 
 The following dialog is used to edit the command and illustrates the syntax for the command,
 in this case reading a small table from the State of Colorado’s HydroBase.
-<a href="../ReadTableFromDataStore_Table.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromDataStore](ReadTableFromDataStore_Table.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromDataStore` Command Editor when Querying a Single Table (or View)
+`ReadTableFromDataStore` Command Editor when Querying a Single Table (or View) (<a href="../ReadTableFromDataStore_Table.png">See also the full-size image</a>)
 </p>**
 
 The corresponding output table is as shown below:
@@ -92,36 +91,33 @@ Example `ReadTableFromDataStore` Command Output Table
 
 The following example illustrates using an SQL query string,
 in this case to read diversion records for a specific structure in the State of Colorado’s HydroBase database:
-<a href="../ReadTableFromDataStore_SQL.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromDataStore SQL](ReadTableFromDataStore_SQL.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromDataStore` Command Editor when Specifying an SQL Query String
+`ReadTableFromDataStore` Command Editor when Specifying an SQL Query String (<a href="../ReadTableFromDataStore_SQL.png">See also the full-size image</a>)
 </p>**
 
 The following example illustrates using an SQL file:
-<a href="../ReadTableFromDataStore_SQLFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromDataStore SQL File](ReadTableFromDataStore_SQLFile.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromDataStore` Command Editor when Specifying an SQL File
+`ReadTableFromDataStore` Command Editor when Specifying an SQL File (<a href="../ReadTableFromDataStore_SQLFile.png">See also the full-size image</a>)
 </p>**
 
 The following example illustrates using a database procedure:
-<a href="../ReadTableFromDataStore_Procedure.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromDataStore Procedure](ReadTableFromDataStore_Procedure.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromDataStore` Command Editor when Specyfing a Procedure
+`ReadTableFromDataStore` Command Editor when Specifying a Procedure (<a href="../ReadTableFromDataStore_Procedure.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

@@ -47,7 +47,7 @@ Command Parameters
 | --------------|-----------------|----------------- |
 |`TableID`<br>**required**|The identifier for the original table, to which records will be appended.  Can be specified using processor `${Property}`.|None – must be specified.|
 |`AppendTableID`<br>**required**|The identifier for the table from which to append.  Can be specified using processor `${Property}`.|None – must be specified.|
-|`Include`Columns`|The names of columns to append from `AppendTableID`, separated by commas.  See also` ColumnMap` to indicate how to map column names in the append table to the first table (necessary if the column names don’t match).|Append all of the columns from `AppendTableID` that match columns in `TableID`.|
+|`IncludeColumns`|The names of columns to append from `AppendTableID`, separated by commas.  See also` ColumnMap` to indicate how to map column names in the append table to the first table (necessary if the column names don’t match).|Append all of the columns from `AppendTableID` that match columns in `TableID`.|
 |`ColumnMap`|The map of the append table columns to the first table’s columns, necessary when column names are not the same:<br>`AppendColumn1:OriginalColumn1, AppendColumn2:OriginalColumn2`|If no map, append table column names in `IncludeColumns` must have the same name in the first table.|
 |`ColumnFilters`|Filters that limit the number of rows being appended from the append table, using the syntax:<br>`AppendColumn1:FilterPattern1, AppendColumn2:FilterPattern2`<br>Patterns can use `*` to indicate wildcards for matches.  Only string values can be checked (other data types are converted to strings for comparison).  Comparisons are case-independent.  All patterns must be matched in order to append the row.  In the future a command may be added to perform queries on tables, similar to SQL for databases.|No filtering.|
 
@@ -58,24 +58,29 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 The following figures show the input tables and results (modified first table) corresponding to the parameters shown in the editor dialog figure above.
 Note that the column names for “Table2” have a “2”.
 
+**<p style="text-align: center;">
 ![AppendTable1](AppendTable_Table1.png)
+</p>**
 
 **<p style="text-align: center;">
 Table Corresponding to TableID in Command Editor
 </p>**
 
+**<p style="text-align: center;">
 ![AppendTable2](AppendTable_Table2.png)
+</p>**
 
 **<p style="text-align: center;">
 Table Corresponding to AppendTableID in Command Editor
 </p>**
 
+**<p style="text-align: center;">
 ![AppendTable results](AppendTable_Table1Appended.png)
+</p>**
 
 **<p style="text-align: center;">
 Table Corresponding to Results from Parameters in Command Editor
 </p>**
-
 
 ## Troubleshooting ##
 
