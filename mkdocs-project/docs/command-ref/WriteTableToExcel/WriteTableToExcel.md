@@ -30,47 +30,43 @@ The following are limitations of this command:
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the syntax for the command.
-<a href="../WriteTableToExcel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToExcel](WriteTableToExcel.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToExcel` Command Editor
+`WriteTableToExcel` Command Editor (<a href="../WriteTableToExcel.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates Excel output parameters.
-<a href="../WriteTableToExcel_Excel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToExcel Excel](WriteTableToExcel_Excel.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToExcel` Command Editor for Excel Output Parameters
+`WriteTableToExcel` Command Editor for Excel Output Parameters (<a href="../WriteTableToExcel_Excel.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates Excel formatting parameters.
-<a href="../WriteTableToExcel_ExcelFormat.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToExcel Excel Format](WriteTableToExcel_ExcelFormat.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToExcel` Command Editor for Excel Formatting Parameters
+`WriteTableToExcel` Command Editor for Excel Formatting Parameters (<a href="../WriteTableToExcel_ExcelFormat.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates style formatting parameters.
-<a href="../WriteTableToExcel_Style.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableToExcel Style](WriteTableToExcel_Style.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableToExcel` Command Editor for Style Formatting Parameters
+`WriteTableToExcel` Command Editor for Style Formatting Parameters (<a href="../WriteTableToExcel_Style.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

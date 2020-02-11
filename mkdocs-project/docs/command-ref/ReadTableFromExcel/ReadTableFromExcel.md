@@ -82,58 +82,53 @@ and any data rows that have a first cell value starting with the comment charact
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the syntax for the command when reading the above Excel worksheet.
-<a href="../ReadTableFromExcel_Table.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromExcel](ReadTableFromExcel_Table.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromExcel` Command Editor for Table Parameters
+`ReadTableFromExcel` Command Editor for Table Parameters (<a href="../ReadTableFromExcel_Table.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates main Excel parameters.
-<a href="../ReadTableFromExcel_Excel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromExcel Excel](ReadTableFromExcel_Excel.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromExcel` Command Editor for Main Excel Parameters
+`ReadTableFromExcel` Command Editor for Main Excel Parameters (<a href="../ReadTableFromExcel_Excel.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates filter parameters.
-<a href="../ReadTableFromExcel_Filters.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromExcel SQL](ReadTableFromExcel_Filters.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromExcel` Command Editor for Filter Parameters
+`ReadTableFromExcel` Command Editor for Filter Parameters (<a href="../ReadTableFromExcel_Filters.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates column type parameters.
-<a href="../ReadTableFromExcel_Types.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromExcel SQL File](ReadTableFromExcel_Types.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromExcel` Command Editor for Column Type Parameters
+`ReadTableFromExcel` Command Editor for Column Type Parameters (<a href="../ReadTableFromExcel_Types.png">See also the full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates properties parameters.
-<a href="../ReadTableFromExcel_Properties.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![ReadTableFromExcel Properties](ReadTableFromExcel_Properties.png)
 </p>**
 
 **<p style="text-align: center;">
-`ReadTableFromExcel` Command Editor for Properties Parameters
+`ReadTableFromExcel` Command Editor for Properties Parameters (<a href="../ReadTableFromExcel_Properties.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

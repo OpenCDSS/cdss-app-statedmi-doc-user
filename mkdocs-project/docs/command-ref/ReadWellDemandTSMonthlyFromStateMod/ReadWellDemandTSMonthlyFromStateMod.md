@@ -11,11 +11,18 @@
 
 ## Overview ##
 
-The `ReadWellDemandTSMonthlyFromStateMod` does something...
+The `ReadWellDemandTSMonthlyFromStateMod` command (for StateMod) reads a list of well demand time series
+(monthly) from a StateMod monthly time series file.
+The file does not need to be a demand file (e.g., it could be a historical pumping file);
+however, once read with this command, the data will need to be processed with demand commands.
 
-This documentation is a placeholder that will be updated as Word documentation is translated into Markdown.
-Until that time, see the PDF documentation that is distributed with the software and can be accessed
-from the ***Help*** menu.
+The StateMod well stations file contains stations for which only groundwater supply
+is available and stations for which groundwater supply supplements surface water supply of a
+diversion station (in this case the well station data includes the diversion station identifier).
+Parameters are available in this command to read all demand time
+series or only demands for some well stations,
+to allow flexibility in demand data processing.
+By default, all time series are read and are processed, whether they correspond to well stations or not.
 
 ## Command Editor ##
 
@@ -42,7 +49,9 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|`SomeParameter`<br>**required**|Parameter description.|None – must be specified.|
+| `InputFile` | The name of the StateMod monthly time series file to read. | None – must be specified. |
+| `IgnoreWells` | Indicate whether the well nodes should be ignored.  These are locations where only well supply is used.  This requires that well stations have been read and the “associated diversion” values are set. | `False` |
+| `IgnoreDWs` | Indicate whether the D&W nodes should be ignored.  These are locations where well supply supplements surface water (diversion) supply.  This requires that well stations have been read and the “associated diversion” values are set. | `False ` |
 
 ## Examples ##
 
@@ -52,4 +61,4 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## See Also ##
 
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
+* [`WriteWellDemandTSMonthlyToStateMod`](../WriteWellDemandTSMonthlyToStateMod/WriteWellDemandTSMonthlyToStateMod.md) command

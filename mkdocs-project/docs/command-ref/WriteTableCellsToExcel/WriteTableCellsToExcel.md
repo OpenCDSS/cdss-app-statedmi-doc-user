@@ -23,14 +23,13 @@ Excel file and consequently functionality is constrained by the features of that
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the syntax of the command.
-<a href="../WriteTableCellsToExcel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
 ![WriteTableCellsToExcel](WriteTableCellsToExcel.png)
 </p>**
 
 **<p style="text-align: center;">
-`WriteTableCellsToExcel` Command Editor
+`WriteTableCellsToExcel` Command Editor (<a href="../WriteTableCellsToExcel.png">See also the full-size image</a>)
 </p>**
 
 ## Command Syntax ##

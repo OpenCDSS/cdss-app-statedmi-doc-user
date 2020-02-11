@@ -14,6 +14,8 @@
 The `WriteOperationalRightsToStateMod` command (for StateMod)
 writes operational rights that have been defined to a StateMod operational rights file.
 
+**This command is used to facilitate automated testing but is not currently used in modeling.**
+
 ## Command Editor ##
 
 The following dialog is used to edit the command and illustrates the command syntax.
@@ -39,7 +41,7 @@ Command Parameters
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-| `OutputFile`<br>**required** | The name of the output file to write, surrounded by double quotes. | None – must be specified. |
+| `OutputFile`<br>**required** | The name of the output file to write. | None – must be specified. |
 | `WriteHow` | `OverwriteFile` if the file should be overwritten or `UpdateFile` if the file should be updated, resulting in the previous header being carried forward. | `OverwriteFile` |
 
 ## Examples ##
