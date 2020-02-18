@@ -37,6 +37,10 @@ Refer to documentation confirm understanding of the approach for each data file.
 	* [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md)
 	* [`SetWellSystem`](../command-ref/SetWellSystem/SetWellSystem.md)
 	* [`SetWellSystemFromList`](../command-ref/SetWellSystemFromList/SetWellSystemFromList.md)
+* ![new](new.png) [5.00.00] New commands to streamline data processing and help with data checks are being
+evaluated:
+	+ [`ReadCULocationParcelsFromHydroBase`](../command-ref/ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md) - reads crop parcels and related supply into data model
+	+ [`WriteCULocationParcelsToFile`](../command-ref/WriteCULocationParcelsToFile/WriteCULocationParcelsToFile.md) - creates report summarizing parcel/supply data model
 * ![new](new.png) [5.00.00] Lowercase file extension `statedmi` is supported and is now the default
 when saving a new command file.
 * ![new](new.png) [5.00.00] The ***View / Command File Diff*** menu has been added to compare the
