@@ -5,6 +5,9 @@
 *.swp
 *.swo
 
+# Ignore file named junk, often used as temporary file
+junk
+
 # Ignore the dynamic MkDocs site folder
 
 mkdocs-project/site/

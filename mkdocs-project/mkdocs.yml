@@ -149,6 +149,7 @@ nav:
   - ReadCropCharacteristicsFromStateCU: command-ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md
   - ReadCropPatternTSFromHydroBase: command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md
   - ReadCropPatternTSFromStateCU: command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md
+  - ReadCULocationParcelsFromHydroBase: command-ref/ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md
   - ReadCULocationsFromList: command-ref/ReadCULocationsFromList/ReadCULocationsFromList.md
   - ReadCULocationsFromStateCU: command-ref/ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md
   - ReadCULocationsFromStateMod: command-ref/ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md
@@ -340,6 +341,7 @@ nav:
   - WriteCropCharacteristicsToStateCU: command-ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md
   - WriteCropPatternTSToDateValue: command-ref/WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md
   - WriteCropPatternTSToStateCU: command-ref/WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md
+  - WriteCULocationParcelsToFile: command-ref/WriteCULocationParcelsToFile/WriteCULocationParcelsToFile.md
   - WriteCULocationsToList: command-ref/WriteCULocationsToList/WriteCULocationsToList.md
   - WriteCULocationsToStateCU: command-ref/WriteCULocationsToStateCU/WriteCULocationsToStateCU.md
   - WriteDelayTablesDailyToList: command-ref/WriteDelayTablesDailyToList/WriteDelayTablesDailyToList.md
