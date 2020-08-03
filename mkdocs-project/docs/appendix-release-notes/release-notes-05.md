@@ -37,6 +37,9 @@ Refer to documentation confirm understanding of the approach for each data file.
 	* [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md)
 	* [`SetWellSystem`](../command-ref/SetWellSystem/SetWellSystem.md)
 	* [`SetWellSystemFromList`](../command-ref/SetWellSystemFromList/SetWellSystemFromList.md)
+* ![new](new.png) [5.00.00] Add 
+[`SplitStateModReport`](../command-ref/SplitStateModReport/SplitStateModReport.md) command to split StateMod
+report file into separate files
 * ![new](new.png) [5.00.00] New commands to streamline data processing and help with data checks are being
 evaluated:
 	+ [`ReadCULocationParcelsFromHydroBase`](../command-ref/ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md) - reads crop parcels and related supply into data model
