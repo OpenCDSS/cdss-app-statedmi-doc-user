@@ -16,6 +16,7 @@ Commands that don't have a description after the name do not have documentation 
 * StateMod Commands - **need to convert documentation**
 * [Topic Area Commands](#topic-area-commands)
 	+ [Datastore Processing](#datastore-processing) - read/write database data
+	+ [Output File Processing](#output-file-processing) - process output model output files
 	+ [Spatial Processing](#spatial-processing) - read/write spatial data
 	+ [Spreadsheet Processing](#spreadsheet-processing) - read/write spreadsheet files
 * [General Commands](#general-commands)
@@ -85,6 +86,12 @@ These commands handle reading and writing time series and other data from datast
 Utility commands for executing SQL and creating a data dictionary are also provided.
 
 * [`ReadTableFromDataStore`](ReadTableFromDataStore/ReadTableFromDataStore.md) - read a table from a datastore
+
+### Output File Processing ###
+
+These commands process output files (beyond the functionality of commands in other sections):
+
+* [`SplitStateModReport`](SplitStateModReport/SplitStateModReport.md) - split a StateMod output file into separate files
 
 ### Spatial Processing ###
 
@@ -544,6 +551,7 @@ have been migrated to the new online version (this documentation).
 |[`SortWellHistoricalPumpingTSMonthly`](SortWellHistoricalPumpingTSMonthly/SortWellHistoricalPumpingTSMonthly.md)| SortWellHistoricalPumpingTSMonthly ||
 |[`SortWellRights`](SortWellRights/SortWellRights.md)                                                            | SortWellRights ||
 |[`SortWellStations`](SortWellStations/SortWellStations.md)                                                      | SortWellStations ||
+|[`SplitStateModReport`](SplitStateModReport/SplitStateModReport.md)                                             | Split a StateMod report file into separate files.|Migrated||
 |[`SplitTableColumn`](SplitTableColumn/SplitTableColumn.md)                                                      | Split a table column into multiple columns.|Migrated?||
 |[`SplitTableRow`](SplitTableRow/SplitTableRow.md)                                                               | Split a table row into multiple rows. |Migrated?||
 |[`StartLog`](StartLog/StartLog.md)                                                                              | (Re)start the log file.          |Migrated?||

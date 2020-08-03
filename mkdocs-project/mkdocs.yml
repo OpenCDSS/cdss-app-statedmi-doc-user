@@ -319,6 +319,7 @@ nav:
   - SortWellHistoricalPumpingTSMonthly: command-ref/SortWellHistoricalPumpingTSMonthly/SortWellHistoricalPumpingTSMonthly.md
   - SortWellRights: command-ref/SortWellRights/SortWellRights.md
   - SortWellStations: command-ref/SortWellStations/SortWellStations.md
+  - SplitStateModReport: command-ref/SplitStateModReport/SplitStateModReport.md
   - SplitTableColumn: command-ref/SplitTableColumn/SplitTableColumn.md
   - SplitTableRow: command-ref/SplitTableRow/SplitTableRow.md
   - StartLog: command-ref/StartLog/StartLog.md

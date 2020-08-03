@@ -49,5 +49,3 @@ See the [automated tests](https://github.com/OpenCDSScdss-app-statedmi-test/tree
 ## Troubleshooting ##
 
 ## See Also ##
-
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command

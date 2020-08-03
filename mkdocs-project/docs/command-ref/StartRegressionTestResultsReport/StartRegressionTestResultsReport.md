@@ -69,4 +69,3 @@ The issue can then be evaluated to determine whether a software or configuration
 
 * [`CreateRegressionTestCommandFile`](../CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md) command
 * [`CompareFiles`](../CompareFiles/CompareFiles.md) command
-* [`SomeOtherCommand`](../SomeOtherCommand/SomeOtherCommand) command
