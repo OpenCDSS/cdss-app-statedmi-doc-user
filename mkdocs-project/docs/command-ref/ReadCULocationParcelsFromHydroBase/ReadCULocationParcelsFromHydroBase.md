@@ -12,11 +12,14 @@
 
 ## Overview ##
 
-**This command is under development.**
-
 The `ReadCULocationParcelsFromHydroBase` command (for StateCU) reads parcels and related supply data from HydroBase
 and creates a data model that provides information for other commands.
-This data model provides consistency and minimizes the need for redundant logic in other commands.
+This data model provides consistency, allows for data quality control,
+and minimizes the need for redundant logic in other commands, specifically:
+
+* [`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) - 
+* [`ReadIrrigationPracticeTSFromParcels`](../ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md)
+* [`ReadWellRightsFromHydroBase`](../ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md)
 
 ## Processing Logic ##
 
