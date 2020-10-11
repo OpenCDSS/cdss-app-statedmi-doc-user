@@ -18,23 +18,36 @@ The `SetWellSystemFromList` command (for StateCU and StateMod) sets well system 
 
 Well systems are specified using a list of part identifiers as follows:
 
-* **Part type is Ditch** – the collection includes wells that are associated with a list of ditches,
-identified using ditch water district identifiers (WDIDs).  The list of ditches is used for the full period.
-* **Part type is Parcel** – the collection includes wells that are associated with a list of parcels.
-The division and year must be specified in the command because well to parcel relationships are determined for specific years.
-**This approach was used in the past for all basins but is being phased out and is currently only used for Rio Grande.**
-* **Part type is Well** – the collection includes wells identified by well WDID or well permit receipt.
-The PartIdTypeColumn parameter must be specified to indicate the part ID type.
-**This approach is being phased in and is preferred (except for Rio Grande).**
+* **Part type is Ditch**
+	+ The collection includes wells that are associated with a list of ditches,
+	identified using ditch water district identifiers (WDIDs).  The list of ditches is used for the full period.
+* **Part type is Parcel**
+	+ The collection includes wells that are associated with a list of parcels.
+	The division and year must be specified in the command because well to parcel relationships are determined for specific years.
+	+ **This approach was used in the past for all basins but is being phased out and is currently only used for Rio Grande.
+	It may also be phased out for the Rio Grande**
+* **Part type is Well**
+	+ The collection includes wells identified by well WDID or well permit receipt.
+	+ The PartIdTypeColumn parameter must be specified to indicate the part ID type.
+	+ **This approach is being phased in and is preferred.**
 
 To facilitate processing, the list of parts is specified in a delimited list file.
 Systems by convention have their water rights fully represented in output.
 To aggregate water rights at a location, use an aggregate
-(see the similar [`SetWellAggregateFromList`](../SetWellAggregateFromList/SetWellAggregateFromList.md) command).
-See also the StateDMI Introduction chapter,
+(see the similar [`SetWellAggregateFromList`](../SetWellAggregateFromList/SetWellAggregateFromList.md) and
+[`SetWellAggregate`](../SetWellAggregate/SetWellAggregate.md)
+commands).
+See also the [StateDMI Introduction](../../introduction/introduction.md) chapter,
 which provides additional information about systems and other modeling conventions.
 System information should be specified after well locations are defined
 and before their use in other processing, such as reading data from HydroBase.
+
+Well parcel data are queried in bulk when first requested and are cached to
+speed later processing.  One level of caching is water district,
+which is available for all wells.
+The water district can be determined from a WDID but
+well receipts require querying to match the receipt and then use the matching WD.
+This step is performed when a system is defined so that later data access can use the WD.
 
 ## Command Editor ##
 
