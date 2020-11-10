@@ -12,8 +12,9 @@
 
 ## Overview ##
 
-**This documentation is being updated.  The command may be updated to use output from the
-[`ReadCULocationParcelsFromHydroBase`](../ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md) command.**
+**This command is being phased out as of StateDMI 5.x.  Instead, use the 
+[`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) and
+[`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) commands.**
 
 The `ReadCropPatternTSFromHydroBase` command (for StateCU) reads crop pattern
 time series from HydroBase and defines crop pattern time series in memory.
@@ -248,5 +249,6 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 
 * [`FillCropPatternTSInterpolate`](../FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md) command
 * [`FillCropPatternTSRepeat`](../FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) command
+* [`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command
 * [`SetCropPatternTS`](../SetCropPatternTS/SetCropPatternTS.md) command
 * [`SetCropPatternTSFromList`](../SetCropPatternTSFromList/SetCropPatternTSFromList.md) command

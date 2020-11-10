@@ -40,6 +40,7 @@ nav:
   - CheckInstreamFlowRights: command-ref/CheckInstreamFlowRights/CheckInstreamFlowRights.md
   - CheckInstreamFlowStations: command-ref/CheckInstreamFlowStations/CheckInstreamFlowStations.md
   - CheckIrrigationPracticeTS: command-ref/CheckIrrigationPracticeTS/CheckIrrigationPracticeTS.md
+  - CheckParcels: command-ref/CheckParcels/CheckParcels.md
   - CheckPenmanMonteith: command-ref/CheckPenmanMonteith/CheckPenmanMonteith.md
   - CheckReservoirRights: command-ref/CheckReservoirRights/CheckReservoirRights.md
   - CheckReservoirStations: command-ref/CheckReservoirStations/CheckReservoirStations.md
@@ -148,8 +149,8 @@ nav:
   - ReadCropCharacteristicsFromHydroBase: command-ref/ReadCropCharacteristicsFromHydroBase/ReadCropCharacteristicsFromHydroBase.md
   - ReadCropCharacteristicsFromStateCU: command-ref/ReadCropCharacteristicsFromStateCU/ReadCropCharacteristicsFromStateCU.md
   - ReadCropPatternTSFromHydroBase: command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md
+  - ReadCropPatternTSFromParcels: command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md
   - ReadCropPatternTSFromStateCU: command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md
-  - ReadCULocationParcelsFromHydroBase: command-ref/ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md
   - ReadCULocationsFromList: command-ref/ReadCULocationsFromList/ReadCULocationsFromList.md
   - ReadCULocationsFromStateCU: command-ref/ReadCULocationsFromStateCU/ReadCULocationsFromStateCU.md
   - ReadCULocationsFromStateMod: command-ref/ReadCULocationsFromStateMod/ReadCULocationsFromStateMod.md
@@ -172,10 +173,12 @@ nav:
   - ReadInstreamFlowStationsFromStateMod: command-ref/ReadInstreamFlowStationsFromStateMod/ReadInstreamFlowStationsFromStateMod.md
   - ReadIrrigationPracticeTSFromHydroBase: command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md
   - ReadIrrigationPracticeTSFromList: command-ref/ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md
+  - ReadIrrigationPracticeTSFromParcels: command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md
   - ReadIrrigationPracticeTSFromStateCU: command-ref/ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md
   - ReadIrrigationWaterRequirementTSMonthlyFromStateCU: command-ref/ReadIrrigationWaterRequirementTSMonthlyFromStateCU/ReadIrrigationWaterRequirementTSMonthlyFromStateCU.md
   - ReadNetworkFromStateMod: command-ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md
   - ReadOperationalRightsFromStateMod: command-ref/ReadOperationalRightsFromStateMod/ReadOperationalRightsFromStateMod.md
+  - ReadParcelsFromHydroBase: command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md
   - ReadPatternFile: command-ref/ReadPatternFile/ReadPatternFile.md
   - ReadPenmanMonteithFromHydroBase: command-ref/ReadPenmanMonteithFromHydroBase/ReadPenmanMonteithFromHydroBase.md
   - ReadPenmanMonteithFromStateCU: command-ref/ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU.md
@@ -342,7 +345,6 @@ nav:
   - WriteCropCharacteristicsToStateCU: command-ref/WriteCropCharacteristicsToStateCU/WriteCropCharacteristicsToStateCU.md
   - WriteCropPatternTSToDateValue: command-ref/WriteCropPatternTSToDateValue/WriteCropPatternTSToDateValue.md
   - WriteCropPatternTSToStateCU: command-ref/WriteCropPatternTSToStateCU/WriteCropPatternTSToStateCU.md
-  - WriteCULocationParcelsToFile: command-ref/WriteCULocationParcelsToFile/WriteCULocationParcelsToFile.md
   - WriteCULocationsToList: command-ref/WriteCULocationsToList/WriteCULocationsToList.md
   - WriteCULocationsToStateCU: command-ref/WriteCULocationsToStateCU/WriteCULocationsToStateCU.md
   - WriteDelayTablesDailyToList: command-ref/WriteDelayTablesDailyToList/WriteDelayTablesDailyToList.md
@@ -366,6 +368,7 @@ nav:
   - WriteIrrigationPracticeTSToStateCU: command-ref/WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md
   - WriteNetworkToStateMod: command-ref/WriteNetworkToStateMod/WriteNetworkToStateMod.md
   - WriteOperationalRightsToStateMod: command-ref/WriteOperationalRightsToStateMod/WriteOperationalRightsToStateMod.md
+  - WriteParcelsToFile: command-ref/WriteParcelsToFile/WriteParcelsToFile.md
   - WritePenmanMonteithToList: command-ref/WritePenmanMonteithToList/WritePenmanMonteithToList.md
   - WritePenmanMonteithToStateCU: command-ref/WritePenmanMonteithToStateCU/WritePenmanMonteithToStateCU.md
   - WritePlanReturnToStateMod: command-ref/WritePlanReturnToStateMod/WritePlanReturnToStateMod.md
