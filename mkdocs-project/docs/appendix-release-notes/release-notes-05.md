@@ -1,11 +1,11 @@
 # StateDMI / Release Notes / Version 5 #
 
-* [Changes in Version 5.00.00](#changes-in-version-50000)
+* [Changes in Version 5.00.00 - 5.00.02](#changes-in-version-50000-50002)
 * [Release notes for all versions](release-notes.md)
 
 ----------
 
-## Changes in Version 5.00.00 ##
+## Changes in Version 5.00.00 - 5.00.02 ##
 
 * ![change](change.png) [5.00.00] StateDMI on Windows is now distributed with
 64-bit Java Runtime Environment (JRE).
@@ -40,10 +40,11 @@ Refer to documentation confirm understanding of the approach for each data file.
 * ![new](new.png) [5.00.00] Add 
 [`SplitStateModReport`](../command-ref/SplitStateModReport/SplitStateModReport.md) command to split StateMod
 report file into separate files
-* ![new](new.png) [5.00.00] New commands to streamline data processing and help with data checks are being
-evaluated:
-	+ [`ReadCULocationParcelsFromHydroBase`](../command-ref/ReadCULocationParcelsFromHydroBase/ReadCULocationParcelsFromHydroBase.md) - reads crop parcels and related supply into data model
-	+ [`WriteCULocationParcelsToFile`](../command-ref/WriteCULocationParcelsToFile/WriteCULocationParcelsToFile.md) - creates report summarizing parcel/supply data model
+* ![new](new.png) [5.00.02] New commands have been added to streamline parcel-related data processing:
+	+ [`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) - reads crop parcels and related supply into parcels
+	+ [`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) - creates report summarizing parcel/supply data
+	+ [`CheckParcels`](../command-ref/CheckParcels/CheckParcels.md) - checks parcel data
+	+ [`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) - reads crop pattern time series from parcels
 * ![new](new.png) [5.00.00] Lowercase file extension `statedmi` is supported and is now the default
 when saving a new command file.
 * ![new](new.png) [5.00.00] The ***View / Command File Diff*** menu has been added to compare the
