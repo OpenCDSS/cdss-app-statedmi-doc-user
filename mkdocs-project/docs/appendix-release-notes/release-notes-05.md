@@ -1,11 +1,11 @@
 # StateDMI / Release Notes / Version 5 #
 
-* [Changes in Version 5.00.00 - 5.00.02](#changes-in-version-50000-50002)
+* [Changes in Version 5.00.00 - 5.00.03](#changes-in-version-50000-50003)
 * [Release notes for all versions](release-notes.md)
 
 ----------
 
-## Changes in Version 5.00.00 - 5.00.02 ##
+## Changes in Version 5.00.00 - 5.00.03 ##
 
 * ![change](change.png) [5.00.00] StateDMI on Windows is now distributed with
 64-bit Java Runtime Environment (JRE).
@@ -30,8 +30,10 @@ modelers rather than parcel identifiers, thereby simplifying modeling input.
 Other commands such as [`ReadTableFromDBF`](../command-ref/ReadTableFromDBF/ReadTableFromDBF.md) can be used
 to read spatial data files and implement tests.
 Refer to documentation confirm understanding of the approach for each data file.
-	* [`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md)
-	* [`ReadIrrigationPracticeTSFromHydroBase`](../command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md)
+	* [`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) - **being phased out**
+	* [`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md)
+	* [`ReadIrrigationPracticeTSFromHydroBase`](../command-ref/ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md) - **being phased out**
+	* [`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md)
 	* [`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md)
 	* [`SetWellAggregate`](../command-ref/SetWellAggregate/SetWellAggregate.md)
 	* [`SetWellAggregateFromList`](../command-ref/SetWellAggregateFromList/SetWellAggregateFromList.md)
@@ -45,6 +47,7 @@ report file into separate files
 	+ [`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) - creates report summarizing parcel/supply data
 	+ [`CheckParcels`](../command-ref/CheckParcels/CheckParcels.md) - checks parcel data
 	+ [`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) - reads crop pattern time series from parcels
+	+ [`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) - reads irrigation practice time series from parcels
 * ![new](new.png) [5.00.00] Lowercase file extension `statedmi` is supported and is now the default
 when saving a new command file.
 * ![new](new.png) [5.00.00] The ***View / Command File Diff*** menu has been added to compare the

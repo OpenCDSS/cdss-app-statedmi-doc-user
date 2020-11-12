@@ -407,6 +407,7 @@ have been migrated to the new online version (this documentation).
 |[`ReadInstreamFlowStationsFromStateMod`](ReadInstreamFlowStationsFromStateMod/ReadInstreamFlowStationsFromStateMod.md)     | ReadInstreamFlowStationsFromStateMod ||
 |[`ReadIrrigationPracticeTSFromHydroBase`](ReadIrrigationPracticeTSFromHydroBase/ReadIrrigationPracticeTSFromHydroBase.md)  | ReadIrrigationPracticeTSFromHydroBase ||
 |[`ReadIrrigationPracticeTSFromList`](ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md)      | ReadIrrigationPracticeTSFromList ||
+|[`ReadIrrigationPracticeTSFromParcels`](ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md)        | ReadIrrigationPracticeTSFromParcels ||
 |[`ReadIrrigationPracticeTSFromStateCU`](ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md)        | ReadIrrigationPracticeTSFromStateCU ||
 |[`ReadIrrigationWaterRequirementTSMonthlyFromStateCU`](ReadIrrigationWaterRequirementTSMonthlyFromStateCU/ReadIrrigationWaterRequirementTSMonthlyFromStateCU.md)  | ReadIrrigationWaterRequirementTSMonthlyFromStateCU ||
 |[`ReadNetworkFromStateMod`](ReadNetworkFromStateMod/ReadNetworkFromStateMod.md)                                 | ReadNetworkFromStateMod ||

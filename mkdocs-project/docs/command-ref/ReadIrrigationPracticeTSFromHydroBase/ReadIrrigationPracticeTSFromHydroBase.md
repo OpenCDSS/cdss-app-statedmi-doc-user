@@ -11,6 +11,9 @@
 
 ## Overview ##
 
+**This command is being phased out as of StateDMI 5.x.  Instead, use the
+[`ReadIrrigationPracticeTSFromParcels`](../ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) command.**
+
 The `ReadIrrigationPracticeTSFromHydroBase` command (for StateCU) reads parcel acreage data from HydroBase
 and sets the irrigation practice acreage time series (yearly) information for CU locations.
 Only years with data in HydroBase are processed.
@@ -38,8 +41,9 @@ or can be the sole supplier of water (lower right).
 Wells do not need to be physically located on a parcel to provide supply to the parcel.
 For StateCU, well-only lands are identified by CU locations that are defined by:
 
-* a collection (aggregate/system) of parcels - **this approach is being phased in throughout CDSS**
-* a collection (aggregate/system) of wells specified by WDIDs or well permit receipts - **this older approach
+* a collection (aggregate/system) of wells specified by WDIDs or well permit receipts -
+**this approach is being phased in throughout CDSS**
+* a collection (aggregate/system) of parcels - **this older approach
 is currrently only used in the Rio Grande**
 
 For StateMod, well-only lands are well stations that do not have a related diversion station.
@@ -307,5 +311,6 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateMod\Historic\Sp2008L.ipy"
 * [`FillIrrigationPracticeTSInterpolate`](../FillIrrigationPracticeTSInterpolate/FillIrrigationPracticeTSInterpolate.md) command
 * [`FillIrrigationPracticeTSRepeat`](../FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md) command
 * [`ReadIrrigationPracticeTSFromList`](../ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md) command
+* [`ReadIrrigationPracticeTSFromParcels`](../ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) command
 * [`ReadIrrigationPracticeTSFromStateCU`](../ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md) command
 * [`WriteIrrigationPracticeTSToStateCU`](../WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md) command
