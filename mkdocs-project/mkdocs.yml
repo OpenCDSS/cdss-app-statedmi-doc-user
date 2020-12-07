@@ -39,6 +39,7 @@ nav:
   - CheckInstreamFlowDemandTSAverageMonthly: command-ref/CheckInstreamFlowDemandTSAverageMonthly/CheckInstreamFlowDemandTSAverageMonthly.md
   - CheckInstreamFlowRights: command-ref/CheckInstreamFlowRights/CheckInstreamFlowRights.md
   - CheckInstreamFlowStations: command-ref/CheckInstreamFlowStations/CheckInstreamFlowStations.md
+  - CheckIrrigatedLands: command-ref/CheckIrrigatedLands/CheckIrrigatedLands.md
   - CheckIrrigationPracticeTS: command-ref/CheckIrrigationPracticeTS/CheckIrrigationPracticeTS.md
   - CheckParcels: command-ref/CheckParcels/CheckParcels.md
   - CheckPenmanMonteith: command-ref/CheckPenmanMonteith/CheckPenmanMonteith.md
@@ -179,6 +180,7 @@ nav:
   - ReadNetworkFromStateMod: command-ref/ReadNetworkFromStateMod/ReadNetworkFromStateMod.md
   - ReadOperationalRightsFromStateMod: command-ref/ReadOperationalRightsFromStateMod/ReadOperationalRightsFromStateMod.md
   - ReadParcelsFromHydroBase: command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md
+  - ReadParcelsFromIrrigatedLands: command-ref/ReadParcelsFromIrrigatedLands/ReadParcelsFromIrrigatedLands.md
   - ReadPatternFile: command-ref/ReadPatternFile/ReadPatternFile.md
   - ReadPenmanMonteithFromHydroBase: command-ref/ReadPenmanMonteithFromHydroBase/ReadPenmanMonteithFromHydroBase.md
   - ReadPenmanMonteithFromStateCU: command-ref/ReadPenmanMonteithFromStateCU/ReadPenmanMonteithFromStateCU.md
@@ -267,6 +269,9 @@ nav:
   - SetOperationalRight: command-ref/SetOperationalRight/SetOperationalRight.md
   - SetOutputPeriod: command-ref/SetOutputPeriod/SetOutputPeriod.md
   - SetOutputYearType: command-ref/SetOutputYearType/SetOutputYearType.md
+  - SetParcel: command-ref/SetParcel/SetParcel.md
+  - SetParcelGroundWaterSupply: command-ref/SetParcelGroundWaterSupply/SetParcelGroundWaterSupply.md
+  - SetParcelSurfaceWaterSupply: command-ref/SetParcelSurfaceWaterSupply/SetParcelSurfaceWaterSupply.md
   - SetPenmanMonteith: command-ref/SetPenmanMonteith/SetPenmanMonteith.md
   - SetPlanStation: command-ref/SetPlanStation/SetPlanStation.md
   - SetProperty: command-ref/SetProperty/SetProperty.md

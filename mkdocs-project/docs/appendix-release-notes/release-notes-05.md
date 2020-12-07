@@ -1,9 +1,26 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.00.04](#changes-in-version-50004)
 * [Changes in Version 5.00.00 - 5.00.03](#changes-in-version-50000-50003)
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.00.04 ##
+
+* ![change](change.png) [5.00.04] New commands that require HydroBase 20200720 design
+will warn if an older version of HydroBase is used.
+* ![new](new.png) [5.00.04] Add 
+[`CheckIrrigatedLands`](../command-ref/CheckIrrigatedLands/CheckIrrigatedLands.md) command to
+check parcels from irrigated lands table that was read from spatial data
+* ![new](new.png) [5.00.04] Add 
+[`ReadParcelsFromIrrigatedLands`](../command-ref/ReadParcelsFromIrrigatedLands/ReadParcelsFromIrrigatedLands.md) command to
+read parcels from irrigated lands table that was read from spatial data
+* ![new](new.png) [5.00.04] Add 
+[`SetParcel`](../command-ref/SetParcel/SetParcel.md),
+[`SetParcelGroundWaterSupply`](../command-ref/SetParcelGroundWaterSupply/SetParcelGroundWaterSupply.md),
+[`SetParcelSurfaceWaterSupply`](../command-ref/SetParcelSurfaceWaterSupply/SetParcelSurfaceWaterSupply.md), and
+commands to edit parcel data, necessary when HydroBase data are not accurate.
 
 ## Changes in Version 5.00.00 - 5.00.03 ##
 

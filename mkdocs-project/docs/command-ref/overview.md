@@ -277,6 +277,7 @@ have been migrated to the new online version (this documentation).
 |[`CheckInstreamFlowDemandTSAverageMonthly`](CheckInstreamFlowDemandTSAverageMonthly/CheckInstreamFlowDemandTSAverageMonthly.md)    | CheckInstreamFlowDemandTSAverageMonthly ||
 |[`CheckInstreamFlowRights`](CheckInstreamFlowRights/CheckInstreamFlowRights.md)                                 | CheckInstreamFlowRights ||
 |[`CheckInstreamFlowStations`](CheckInstreamFlowStations/CheckInstreamFlowStations.md)                           | CheckInstreamFlowStations ||
+|[`CheckIrrigatedLands`](CheckIrrigatedLands/CheckIrrigatedLands.md)                                             | CheckIrrigatedLands ||
 |[`CheckIrrigationPracticeTS`](CheckIrrigationPracticeTS/CheckIrrigationPracticeTS.md)                           | CheckIrrigationPracticeTS ||
 |[`CheckParcels`](CheckParcels/CheckParcels.md)                                                                  | CheckParcels ||
 |[`CheckPenmanMonteith`](CheckPenmanMonteith/CheckPenmanMonteith.md)                                             | CheckPenmanMonteith ||
@@ -500,6 +501,9 @@ have been migrated to the new online version (this documentation).
 |[`SetOperationalRight`](SetOperationalRight/SetOperationalRight.md)                                             | SetOperationalRight ||
 |[`SetOutputPeriod`](SetOutputPeriod/SetOutputPeriod.md)                                                         | Set the global processor output period.|Migrated?||
 |[`SetOutputYearType`](SetOutputYearType/SetOutputYearType.md)                                                   | Set the global processor output year type. |Migrated?||
+|[`SetParcel`](SetParcel/SetParcel.md)                                                                           | SetParcel ||
+|[`SetParcelGroundWaterSupply`](SetParcelGroundWaterSupply/SetParcelGroundWaterSupply.md)                        | SetParcelGroundWaterSupply ||
+|[`SetParcelSurfaceWaterSupply`](SetParcelSurfaceWaterSupply/SetParcelSurfaceWaterSupply.md)                     | SetParcelSurfaceWaterSupply ||
 |[`SetPenmanMonteith`](SetPenmanMonteith/SetPenmanMonteith.md)                                                   | SetPenmanMonteith ||
 |[`SetPlanStation`](SetPlanStation/SetPlanStation.md)                                                            | SetPlanStation ||
 |[`SetProperty`](SetProperty/SetProperty.md)                                                                     | Set processor property value.    |Migrated?||
