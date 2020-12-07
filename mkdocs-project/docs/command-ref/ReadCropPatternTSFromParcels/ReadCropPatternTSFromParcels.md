@@ -116,6 +116,13 @@ is added for the CU Location:
 	1. If the supply WDID matches a well WDID or receipt for the CU Location
 	(part in a collection), add the fractional parcel area for the supply.
 	2. Set the supply to `CDS:YES` and the CU Location for the parcel, for use in report files.
+3. For each year for which data are available (based on the locations being processed),
+set missing crop data for the year to zero.
+If the `ID` specified for processing does not result in all irrigated lands years being detected,
+it may be necessary to set crop area data to zero using [`SetCropPatternTS`](../SetCropPatternTS/SetCropPatternTS.md)
+or similar command.
+This is necessary because the overall output includes irrigated lands data years for the full output period;
+however, this command may be run on a subset of locations that do not have data in all years of larger dataset.
 
 ## Command Editor ##
 
