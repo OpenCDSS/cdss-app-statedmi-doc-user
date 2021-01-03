@@ -1,10 +1,21 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.00.05](#changes-in-version-50005)
 * [Changes in Version 5.00.04](#changes-in-version-50004)
 * [Changes in Version 5.00.00 - 5.00.03](#changes-in-version-50000-50003)
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.00.05 ##
+
+* ![bug](bug.png) [5.00.05] The
+[`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command
+has been fixed to fill missing data with zeros for years with irrigated lands data,
+determined from the parcels for all locations.
+* ![new](new.png) [5.00.05] Add 
+[`CompareCropPatternTSFiles`](../command-ref/CompareCropPatternTSFiles/CompareCropPatternTSFiles.md) command to
+streamline comparisons of different versions of files
 
 ## Changes in Version 5.00.04 ##
 
