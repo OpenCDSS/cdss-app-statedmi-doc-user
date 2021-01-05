@@ -1,11 +1,33 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.00.06](#changes-in-version-50006)
 * [Changes in Version 5.00.05](#changes-in-version-50005)
 * [Changes in Version 5.00.04](#changes-in-version-50004)
 * [Changes in Version 5.00.00 - 5.00.03](#changes-in-version-50000-50003)
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.00.06 ##
+
+* ![change](change.png) [5.00.06] Update the 
+[***Quality Control***](../quality-control/quality-control.md) chapter to reflect recent enhancements
+related to testing.
+* ![change](change.png) [5.00.06] Update the
+[***Select HydroBase***](../getting-started/getting-started.md#select-hydrobase-dialog) dialog
+to automatically handle default datastore definitions, to minimize need for datastore configuration files.
+* ![change](change.png) [5.00.06] Update the 
+[`#` comment](../command-ref/Comment/Comment.md) command with
+special `#@require` comment to check application and database versions,
+useful for testing and workflow quality control.
+* ![change](change.png) [5.00.06] Update the 
+[`CreateRegressionTestCommandFile`](../command-ref/CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md) command
+and testing framework to handle requirements evaluation
+* ![change](change.png) [5.00.06] Update the 
+[`RunCommands`](../command-ref/RunCommands/RunCommands.md) command to
+check `#@require` comments so that automated tests for incompatible
+configurations can be skipped to avoid false test failures.
+* ![new](new.png) [5.00.06] Add [datastore documentation](../datastore-ref/overview.md) similar to TSTool.
 
 ## Changes in Version 5.00.05 ##
 

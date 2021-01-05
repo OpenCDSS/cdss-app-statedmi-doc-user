@@ -17,26 +17,30 @@ a command file that includes a
 [`StartRegressionTestResultsReport`](../StartRegressionTestResultsReport/StartRegressionTestResultsReport.md) and multiple
 [`RunCommands`](../RunCommands/RunCommands.md) commands.
 A starting search folder is provided and all files that match the given pattern
-(by convention `Test_*.StateDMI`) are assumed to be command files that can be run to test the software.
+(by convention `Test_*.StateDMI` and `test-*.statedmi, ignoring case) are assumed to be command files that can be run to test the software.
 The resulting command file is a test suite comprised of all the
 individual tests and can be used to verify software before release.
 The goal is to have all tests pass before software release.
 
-The following table lists tags that can be placed in # comments in command files to provide information for testing, for example:
+The following table lists comment annotations that can be placed in
+[`#` comments](../Comment/Comment.md) in command files to provide information for testing, for example:
 
 ```
 #@expectedStatus Failure
 ```
 
 **<p style="text-align: center;">
-Command # Comment Tags
+Command # Comment Annotations
 </p>**
 
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
-| `@expectedStatus Failure`<br>`@expectedStatus Warning` | The [`RunCommands`](../RunCommands/RunCommands.md) command `ExpectedStatus` parameter is by default `Success`.  However, a different status can be specified if it is expected that a command file will result in `Warning` or `Failure` and still be a successful test.  For example, if a command is obsolete and should generate a failure, the expected status can be specified as `Failure` and the test will pass.  Another example is to test that the software properly treats a missing file as a failure. |
-| `@os Windows`<br>`@os UNIX` | The test is designed to work only on the specified platform and will be included in the test suite only if the IncludeOS parameter includes the corresponding operating system (OS) type.  This is primarily used to test specific features of the OS and similar but separate test cases should be implemented for both OS types.  If the OS type is not specified as a tag in a command file, the test is always included (see also the handling of included test suites). |
-| `@testSuite ABC` | Indicate that the command file should be considered part of the specified test suite, as specified with the IncludeTestSuite parameter.  The test is included in all test collections if the tag is not specified; therefore, for general tests, do not specify a test suite.  This tag is useful if a group of tests require special setup, for example connecting to a database.  The suite names should be decided upon by the test developer. |
+| `@enabled False` | Used to disable a command file.  For example, use this annotation in a test command file when the test is not ready for use in the software release process and don't want to see a failed test in results. |
+| `@expectedStatus Failure`<br>`@expectedStatus Warning` | The [`RunCommands`](../RunCommands/RunCommands.md) command by default assumes that the most severe status for a command file should be `Success`.  However, a different status can be specified if it is expected that a command file will result in `Warning` or `Failure` and still be a successful test.  For example, if a command is obsolete and should generate a failure, the expected status can be specified as `Failure` and the test will pass.  Another example is to test that the software properly treats a missing file as a failure, which is the expected behavior. |
+| `@os Windows`<br>`@os UNIX` | The test is designed to work only on the specified platform and will be included in the test suite only if the IncludeOS parameter includes the corresponding operating system (OS) type.  This is primarily used to test specific features of the OS and similar but separate test cases should be implemented for both OS types.  If the OS type is not specified as a comment annotation in a command file, the test is always included (see also the handling of included test suites). |
+|`@require application StateDMI >= Version`<br><br>Available since StateDMI 5.00.06 | Check that the software application version meets requirements for the command file. This can be used to prevent running the command file with incompatible software. The version should match the format shown in ***Help / About StateDMI*** (e.g., `5.00.05`). <ul><li>For interactive session, fail if a requirement is not met.</li><li>When running tests that use [`RunCommands`](../RunCommands/RunCommands.md), command files that don't meet requirements are not run but are listed in output.</li></ul>The comparison operator can be:<ul><li>`<` (less than)</li><li>`<=` (less than or equal)</li><li>`=` or `==` (equal)</li><li>`!=` (not equal)</li><li>`>` (greater than)</li><li>`>=` (greater than or equal)</li></ul>  The [`RunCommands(IfRequirementsNotMet=Ignore)`](../RunCommands/RunCommands.md) command parameter should typically be set in order to ignore running the test. |
+|`@require datastore HydroBase >= Version`<br><br>Available since StateDMI 5.00.06 | Check that the datastore version meets requirements for the command file. This can be used to prevent running the command file with incompatible database. The version should match the format used in the HydroBase database name shown in ***View / Datastores*** (e.g., `20200720`). <ul><li>For interactive session, fail if a requirement is not met.</li><li>When running tests that use [`RunCommands`](../RunCommands/RunCommands.md), command files that don't meet requirements are not run but are listed in output.</li></ul> See above for available comparison operators. The [`RunCommands(IfRequirementsNotMet=Ignore)`](../RunCommands/RunCommands.md) command parameter should typically be set in order to ignore running the test. |
+| `@testSuite ABC` | Indicate that the command file should be considered part of the specified test suite, as specified with the IncludeTestSuite parameter.  The test is included in all test collections if the comment annotation is not specified; therefore, for general tests, do not specify a test suite.  This comment annotation is useful if a group of tests require special setup, for example connecting to a database.  The suite names should be decided upon by the test developer. |
 
 ## Command Editor ##
 
@@ -68,8 +72,8 @@ Command Parameters
 | `SetupCommandFile` | The name of a StateDMI command file that supplies setup commands, and which will be prepended to output.  Use such a file to open database connections and set other global settings that apply to the entire test run. | Do not include setup commands. |
 | `FilenamePattern` | Pattern for StateDMI command files, using wildcards. | `Test_*.StateDMI` |
 | `Append` | Indicate whether to append to the output file (`True`) or overwrite (`False`).  This allows multiple directory trees to be searched for tests, where the first command typically specifies False and additional commands specify `True`. | `True` |
-| `IncludeTestSuite` | If *, all tests that match `FilenamePattern` and `IncludeOS` are included.  If a test suite is specified, only include tests that have `@testSuite` tag values that match a value in `IncludeTestSuite`.  One or more tags can be specified, separated by commas. | `*` – include all test cases. |
-| `IncludeOS` | If *, all tests that match `FilenamePattern` and `IncludeTestSuite` are included.  If an OS is specified, only include tests that have @os tag values that match a value in `IncludeTestSuite`.  This tag is typically specified once or not at all. | `*` – include all test cases. |
+| `IncludeTestSuite` | If *, all tests that match `FilenamePattern` and `IncludeOS` are included.  If a test suite is specified, only include tests that have `@testSuite` comment annotation values that match a value in `IncludeTestSuite`.  One or more comment annotations can be specified, separated by commas. | `*` – include all test cases. |
+| `IncludeOS` | If *, all tests that match `FilenamePattern` and `IncludeTestSuite` are included.  If an OS is specified, only include tests that have @os comment annotation values that match a value in `IncludeTestSuite`.  This comment annotation is typically specified once or not at all. | `*` – include all test cases. |
 
 ## Examples ##
 
