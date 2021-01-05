@@ -409,8 +409,9 @@ nav:
   - WriteWellStationsToStateMod: command-ref/WriteWellStationsToStateMod/WriteWellStationsToStateMod.md
 - Reference - Datastores:
   - Overview: datastore-ref/overview.md
-#  - Colorado HydroBase: datastore-ref/CO-HydroBase/CO-HydroBase.md
-#  - Colorado HydroBase REST Web Service: datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md
+  - Colorado HydroBase: datastore-ref/CO-HydroBase/CO-HydroBase.md
+  - Colorado HydroBase REST Web Service: datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest.md
+  - Generic Database: datastore-ref/GenericDatabase/GenericDatabase.md
 - 'Appendix - Install StateDMI': appendix-install/install.md
 - 'Appendix - Release Notes':
   - Release Notes: appendix-release-notes/release-notes.md

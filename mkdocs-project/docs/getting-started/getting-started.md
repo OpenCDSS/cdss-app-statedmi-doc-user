@@ -52,36 +52,62 @@ StateDMI will provide appropriate features for both models for the specific data
 
 ## Select HydroBase Dialog ##
 
-A HydroBase database selector will be displayed at startup
+A HydroBase database selector will by default be displayed at startup
 because one of the main input sources for StateDMI is the State of Colorado’s HydroBase database.
 A HydroBase database can also be selected from the ***File / Open / HydroBase...*** menu.
+A local or network server HydroBase database is typically used because
+StateDMI focuses on creating files for State of Colorado models and using
+a local database results in faster processing.
+
+See also the [HydroBase Web Service](../datastore-ref/overview.md)
+datastore to access HydroBase on the internet.
+This functionality has been implemented for some commands and
+may be expanded to other commands in the future.
+
+See the [Installation and Configuration](../appendix-install/install.md) appendix
+for information about the CDSS configuration file,
+which can be used to set HydroBase selection defaults,
+including disabling HydroBase and associated selection dialog.
 
 **<p style="text-align: center;">
 ![SelectHydroBase](SelectHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
-Select HydroBase Database Dialog
+Select HydroBase Database Dialog (for StateDMI 5.00.06 and newer)
 </p>**
 
-HydroBase is available on DVD from the Division of Water Resources.
-Future software updates may allow StateDMI to access the database over the internet.
+**<p style="text-align: center;">
+![SelectHydroBase-old](SelectHydroBase-old.png)
+</p>**
+
+**<p style="text-align: center;">
+Select HydroBase Database Dialog (for StateDMI 5.00.05 and older)
+</p>**
+
+The HydroBase installer is available from the Division of Water Resources.
 In 2005 the Microsoft Access version of HydroBase was phased out in favor
 of MSDE (did not allow a single database to contain all State data),
-which has subsequently been replaced with SQL Server Express
-(allows the full Colorado database to be distributed).
+which has subsequently been replaced with SQL Server Express,
+which allows the full Colorado database to be distributed.
 
 If there is access to a SQL Server HydroBase server,
-select ***Use SQL Server Database***,
+select ***Connection:  Use SQL Server Database***,
 in which case the database hostname is automatically determined from a
 predefined list – type in a new name if appropriate.
 The login can be canceled,
-in which case HydroBase features will be disabled but you will be able to work with other data sources.
+in which case HydroBase features will be disabled but other data sources will be available.
 
 If a previous HydroBase connection has been made, then ***Cancel*** reverts to that connection.
 
-See also the [Installation and Configuration Appendix](../appendix-install/install.md)
-for information about the CDSS configuration file, which can be used to set HydroBase selection defaults.
+StateDMI versions prior to 5.00.06 required defining a HydroBase datastore configuration
+file to use datastore features.  However, the lower part of the ***Select HydroBase*** dialog
+now defines datastores automatically so that a configuration file does not need to be created.
+Note that a datastore configuration file will be needed if running in batch mode because the
+dialog will not be shown.
+
+Use the ***View / Datastores*** menu to list datastores that are configured
+and can be used with commands that are enabled to use datastores.
 
 ## Main Interface ##
 
@@ -405,7 +431,7 @@ The ***File / Open…Model Network*** allows a model network to be viewed and sa
 [Updating an old Makenet Network to New Format](#updating-an-old-makenet-network-to-new-format) section and later).
 
 The ***File / Open / HydroBase*** menu opens a connection the HydroBase database
-(see [Select HydroBase Dialog](#select-hydrobase-dialog)).
+(see [Select HydroBase](#select-hydrobase-dialog) dialog).
 
 ### File / New ###
 
