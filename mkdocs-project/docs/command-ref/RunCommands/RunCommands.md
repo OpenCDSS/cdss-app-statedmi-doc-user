@@ -121,6 +121,7 @@ CompareFiles(InputFile1="ExpectedResults/Test_CheckDiversionRights_out_check.csv
 
 ## See Also ##
 
+* [`#` comment](../Comment/Comment.md) command
 * [`CreateRegressionTestCommandFile`](../CreateRegressionTestCommandFile/CreateRegressionTestCommandFile.md) command
 * [`RunProgram`](../RunProgram/RunProgram.md) command
 * [`RunPython`](../RunPython/RunPython.md) command
