@@ -10,6 +10,7 @@
 
 ## Changes in Version 5.00.06 ##
 
+* ![change](change.png) [5.00.06] Multiple minor changes to ensure that automated tests run without warnings.
 * ![change](change.png) [5.00.06] Update the 
 [***Quality Control***](../quality-control/quality-control.md) chapter to reflect recent enhancements
 related to testing.
@@ -27,7 +28,15 @@ and testing framework to handle requirements evaluation
 [`RunCommands`](../command-ref/RunCommands/RunCommands.md) command to
 check `#@require` comments so that automated tests for incompatible
 configurations can be skipped to avoid false test failures.
+* ![change](change.png) [5.00.06] Update the 
+[`SetCropPatternTS`](../command-ref/SetCropPatternTS/SetCropPatternTS.md) command editor
+to more clearly indicate which parameters are used with different StateDMI versions.
+Also change so that `IrrigationMethod` and `SupplyType` are optional so that the
+command can be used with old or new StateDMI command files.
 * ![new](new.png) [5.00.06] Add [datastore documentation](../datastore-ref/overview.md) similar to TSTool.
+* ![new](new.png) [5.00.05] Add 
+[`CompareIrrigationPracticeTSFiles`](../command-ref/CompareIrrigationPracticeTSFiles/CompareIrrigationPracticeTSFiles.md) command to
+streamline comparisons of different versions of files.
 
 ## Changes in Version 5.00.05 ##
 
@@ -37,7 +46,7 @@ has been fixed to fill missing data with zeros for years with irrigated lands da
 determined from the parcels for all locations.
 * ![new](new.png) [5.00.05] Add 
 [`CompareCropPatternTSFiles`](../command-ref/CompareCropPatternTSFiles/CompareCropPatternTSFiles.md) command to
-streamline comparisons of different versions of files
+streamline comparisons of different versions of files.
 
 ## Changes in Version 5.00.04 ##
 

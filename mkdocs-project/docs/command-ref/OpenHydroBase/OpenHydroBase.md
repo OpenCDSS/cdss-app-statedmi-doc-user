@@ -11,7 +11,7 @@
 
 ## Overview ##
 
-The `OpenHydroBase` does something command
+The `OpenHydroBase`
 opens a connection to a HydroBase database, allowing data to be read from the database.
 This command is not typically used for interactive sessions but may be inserted to run
 in batch only mode to allow a specific database and commands files to be distributed.

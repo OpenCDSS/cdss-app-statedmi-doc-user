@@ -11,8 +11,7 @@
 
 ## Overview ##
 
-The `FillWellStation` does something command (for StateMod)
-fills missing data in existing well stations.
+The `FillWellStation` command (for StateMod) fills missing data in existing well stations.
 
 ## Command Editor ##
 
