@@ -58,6 +58,7 @@ nav:
   - CommentBlockStart: command-ref/CommentBlockStart/CommentBlockStart.md
   - CommentBlockEnd: command-ref/CommentBlockEnd/CommentBlockEnd.md
   - CompareCropPatternTSFiles: command-ref/CompareCropPatternTSFiles/CompareCropPatternTSFiles.md
+  - CompareIrrigationPracticeTSFiles: command-ref/CompareIrrigationPracticeTSFiles/CompareIrrigationPracticeTSFiles.md
   - CompareFiles: command-ref/CompareFiles/CompareFiles.md
   - CompareTables: command-ref/CompareTables/CompareTables.md
   - CopyTable: command-ref/CopyTable/CopyTable.md

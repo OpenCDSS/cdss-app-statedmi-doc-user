@@ -11,10 +11,16 @@
 
 ## Overview ##
 
-The `SetOutputPeriod` does something...
+The `SetOutputPeriod` command (for StateCU and StateMod)
 sets the output period for time series.
 Specifying the output period is necessary when creating model files or filling
 an extended period (time series will not automatically be extended by fill commands).
+
+The TSTool software uses `SetInputPeriod` command to constrain the data that are read,
+and can be used with different dates for `SetOutpuPeriod`.
+However, StateDMI generally uses the period from `SetOutputPeriod` for the period to to read data and output results.
+Some commands allow the period to read to be specified.
+
 The following dialog is used to edit this command and illustrates the syntax of the command.
 Note that the output period should always use calendar month and year,
 even if other than calendar year are used for output (see

@@ -15,6 +15,8 @@
 **This command is being phased out as of StateDMI 5.x.  Instead, use the 
 [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) and
 [`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) commands.**
+This command can still be used, in particular for datasets without wells.
+However, the new parcel-processing commands are faster, more flexible, and more transparent.
 
 The `ReadCropPatternTSFromHydroBase` command (for StateCU) reads crop pattern
 time series from HydroBase and defines crop pattern time series in memory.
