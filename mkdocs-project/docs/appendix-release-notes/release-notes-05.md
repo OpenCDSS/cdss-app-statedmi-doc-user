@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.00.07](#changes-in-version-50007)
 * [Changes in Version 5.00.06](#changes-in-version-50006)
 * [Changes in Version 5.00.05](#changes-in-version-50005)
 * [Changes in Version 5.00.04](#changes-in-version-50004)
@@ -7,6 +8,21 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.00.07 ##
+
+* ![bug](bug.png) [5.00.07] Implement changes to resolve additional issues with `*.cds` and `*.ipy`
+processing for ArkDSS dataset.  Very few differences exist when compared with previous StateDMI.
+Troubleshooting features have also been enhanced.
+* ![change](change.png) [5.00.07] Update the 
+[`ReadCropPatternTSFromHydroBase`](../command-ref/ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) command
+to not warn if parcels are missing as long as
+[`SetCropPatternTS`](../command-ref/SetCropPatternTS/SetCropPatternTS.md) or
+[`SetCropPatternTSFromList`](../command-ref/SetCropPatternTSFromList/SetCropPatternTSFromList.md) commands
+provide data
+* ![change](change.png) [5.00.07] Update the 
+[`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command to fully represent
+model node, parcel, and water supply data for troubleshooting
 
 ## Changes in Version 5.00.06 ##
 
@@ -34,7 +50,7 @@ to more clearly indicate which parameters are used with different StateDMI versi
 Also change so that `IrrigationMethod` and `SupplyType` are optional so that the
 command can be used with old or new StateDMI command files.
 * ![new](new.png) [5.00.06] Add [datastore documentation](../datastore-ref/overview.md) similar to TSTool.
-* ![new](new.png) [5.00.05] Add 
+* ![new](new.png) [5.00.06] Add 
 [`CompareIrrigationPracticeTSFiles`](../command-ref/CompareIrrigationPracticeTSFiles/CompareIrrigationPracticeTSFiles.md) command to
 streamline comparisons of different versions of files.
 
