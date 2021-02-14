@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.0.08](#changes-in-version-508)
 * [Changes in Version 5.00.07](#changes-in-version-50007)
 * [Changes in Version 5.00.06](#changes-in-version-50006)
 * [Changes in Version 5.00.05](#changes-in-version-50005)
@@ -8,6 +9,17 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.0.8 ##
+
+* ![bug](bug.png) [5.0.8] Update the
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command
+to read surface water supplies for groundwater-only model nodes,
+necessary because some ditches are excluded from the dataset and are therefore not included in
+D&W model nodes.
+* ![change](change.png) [5.0.8] Change the program version number to not use zero-padded parts.
+The leading zero was causing an issue with the `launch4j` Java runner when version reached a value of `08`
+because version parts are interpreted as hexadecimal.
 
 ## Changes in Version 5.00.07 ##
 
