@@ -53,17 +53,29 @@ the parcel acreage is assigned to the CU Location:
 	+ if a single surface supply is used, the full parcel area is assigned 
 	+ if more than one surface supply is used, the parcel area divided by number of surface supplies is assigned
 	+ if the surface supply is also used with another parcel, that parcel will also be assigned the fractional area
+	+ the surface water supply WDID must match the single DIV ID, or match an ID in a DIV collection,
+	in order for the acreage to be assigned to the model node
+	(ditch WDIDs that don't match any model nodes are considered to not be in the dataset,
+	although they are considered in the supply count and consequently impact the area fraction calculation)
 * if the model node is a WEL (groundwater only), the parcel does not have surface water supplies,
 and has one or more groundwater supplies,
 	the parcel acreage is assigned to the CU Location:
 	+ if a single groundwater supply is used, the full parcel area is assigned 
 	+ if more than one groundwater supply is used,
 	the parcel area divided by number of well supplies is assigned
+	+ the groundwater supply well WDID or receipt must match an ID in a well collection list
+	in order for the acreage to be assigned to the model node
+	(well WDID/receipts that don't match any model nodes are considered to not be in the dataset,
+	although they are considered in the supply count and consequently impact the area fraction calculation)
 
-The following examples illustrate how acreage are assigned,
-in this case a parcel with commingled supply with one ditch.
-The full parcel area is assigned to the CU Location.
+The following examples illustrate how acreage is assigned,
+using excerpts from the parcel report file output by the
+[`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command.
+
+The following example illustrates a parcel with commingled supply with one ditch.
+The full parcel area is assigned to the CU Location `1000568`.
 The acreage associated with groundwater supplies are not assigned to the CU Location.
+Note that `CDS:NO` indicates that the parcel acreage is not assigned to the CU Location.
 
 ```
 #>-------- Model Id ---------|------------------------------- Parcel Data -----------------------------||----------- Data Source/Use ------------- ||            Collections use WDID Parts              |          WEL Collection Part ID is the same as GW Supply ID       |
@@ -77,22 +89,38 @@ The acreage associated with groundwater supplies are not assigned to the CU Loca
                                                                                                         CDS:NO   HB-WTP                                                                                   WellInDitch          1005176  9078571       2 0.500 1.000    22.083
 ```
 
-The following example illustrates a parcel with two surface supplies, in this case from two CU Locations.
-Half the parcel acreage is assigned to each CU Location, as noted by the `CDS LocId` column.
+The following example illustrates a parcel with two surface supplies,
+in this case from two CU Locations.
+Half the parcel acreage is assigned to each CU Location (`1000568` and `1000649`).
+The `Data Source/Use` columns indicate which CU Locations receive the acreage.
 
 ```
-#>-------- Model Id ---------|------------------------------- Parcel Data -----------------------------||----------- Data Source/Use ------------- ||            Collections use WDID Parts              |          WEL Collection Part ID is the same as GW Supply ID       |
-#>                           |                                                                         || Include                    CDS     LocId || SW     |-------------- SW Supply Data -------------|----------- GW Collection Data ---------|----- GW Supply Data -----|
-#>           Loc  Collection |       Parcel                                    Parcel          Irrig   || in               CDS       LocId   has   || Collect|#     Ditch  Irrig Irrig   Irrig           |   GWPart    GWPart    Well     Well    |#    Irrig D&W     Irrig  |
-#>  LocId    Type Type       |Year   ID        Div Dist        Crop            Area     Units  Method  || CDS?    DataSrc  LocId     Type    Set   || WDID   |Dit   WDID   Frac  FracHB  Area     HBError|    Type     IdType    WDID     Receipt |Well Frac  Frac    Area   |
-#>b--------exb--exb---------exb--exb--------exb--exb--exb------------------exb--------exb--exb--------exb------exb------exb----------exb--exb------exb------exb-exb------exb---exb---exb--------exb-----exb----------exb-----exb------exb--------exb--exb---exb---exb-------ex
-1000568      D&W  Single      1998 21012942      2   10 GRASS_PASTURE            62.840 acre FLOOD
-                                                                                                        CDS:YES  HB-PUTS  1000568      D&W                      2 1000568  0.500 0.500     31.420
-                                                                                                        CDS:YES  HB-PUTS  1000649      DIV                      2 1000649  0.500 0.500     31.420
+#>-------- Model Id ---------|-------------------------- Parcel Data ------------------------||-------- Data Source/Use --------- ||---- SW Collection Data ----|------------ SW Suppply Data -----------|------------- GW Collection Data ----------| GW Supply Data |
+#>           Loc  Collection |       Parcel                          Parcel          Irrig   ||                    CDS        Loc ||  SWPart   SWPartId         |#     Irrig   Irrig    Irrig            |   GWPart      GWPart                      |#     GW        |
+#>  LocId    Type Type       |Year   ID                Crop          Area     Units  Method  || CDS?     DataSrc   LocId      Type||  Type     Type       WDID  |Ditch Frac    FracHB   Area      HBError|    Type       IdType     WDID     Receipt |Well  IrrigArea |
+#>b--------exb--exb---------exb--exb--------exb------------------exb--------exb--exb--------exb------exb--------exb----------exb--exb--------exb------exb------exb--exb------exb------exb--------eb-----exb----------exb--------exb------exb--------exb--exb---------ex
+1000568      D&W  Single      1998 21012942   GRASS_PASTURE            62.840 acre FLOOD     
+                                                                                              CDS:YES  HB-PUTS    1000568      D&W  Ditch      WDID     1000568     2    0.500    0.500     31.420        
+                                                                                              CDS:YES  HB-PUTS    1000649      DIV  Ditch      WDID     1000649     2    0.500    0.500     31.420        
 ```
 
 The following example illustrates two parcels, each with one groundwater supply.
-The parcel area is split between the CU Locations indicated in the `CDS LocId` column.
+Each parcel's acreage is assigned completely to the appropriate CU Location.
+
+```
+#>-------- Model Id ---------|-------------------------- Parcel Data ------------------------||-------- Data Source/Use --------- ||---- SW Collection Data ----|------------ SW Suppply Data -----------|------------- GW Collection Data ----------| GW Supply Data |
+#>           Loc  Collection |       Parcel                          Parcel          Irrig   ||                    CDS        Loc ||  SWPart   SWPartId         |#     Irrig   Irrig    Irrig            |   GWPart      GWPart                      |#     GW        |
+#>  LocId    Type Type       |Year   ID                Crop          Area     Units  Method  || CDS?     DataSrc   LocId      Type||  Type     Type       WDID  |Ditch Frac    FracHB   Area      HBError|    Type       IdType     WDID     Receipt |Well  IrrigArea |
+#>b--------exb--exb---------exb--exb--------exb------------------exb--------exb--exb--------exb------exb--------exb----------exb--exb--------exb------exb------exb--exb------exb------exb--------eb-----exb----------exb--------exb------exb--------exb--exb---------ex
+66_GW662     WEL  Aggregate   1998 26617683   ALFALFA                 274.550 acre FLOOD     
+                                                                                              CDS:YES  HB-WTP     66_GW662     WEL                                                                        Well         Receipt             9072522       1     274.550
+66_GW662     WEL  Aggregate   1998 26617684   CORN_GRAIN              118.214 acre SPRINKLER 
+                                                                                              CDS:YES  HB-WTP     66_GW662     WEL                                                                        Well         Receipt             9072750       1     118.214
+```
+
+The following example illustrates a parcel with multiple groundwater-only supplies.
+Each parcel/supply fractional acreage is assigned to the CU Location,
+which sums to the parcel's full area.
 
 ```
 #>-------- Model Id ---------|------------------------------- Parcel Data -----------------------------||----------- Data Source/Use ------------- ||            Collections use WDID Parts              |          WEL Collection Part ID is the same as GW Supply ID       |
@@ -100,9 +128,29 @@ The parcel area is split between the CU Locations indicated in the `CDS LocId` c
 #>           Loc  Collection |       Parcel                                    Parcel          Irrig   || in               CDS       LocId   has   || Collect|#     Ditch  Irrig Irrig   Irrig           |   GWPart    GWPart    Well     Well    |#    Irrig D&W     Irrig  |
 #>  LocId    Type Type       |Year   ID        Div Dist        Crop            Area     Units  Method  || CDS?    DataSrc  LocId     Type    Set   || WDID   |Dit   WDID   Frac  FracHB  Area     HBError|    Type     IdType    WDID     Receipt |Well Frac  Frac    Area   |
 #>b--------exb--exb---------exb--exb--------exb--exb--exb------------------exb--------exb--exb--------exb------exb------exb----------exb--exb------exb------exb-exb------exb---exb---exb--------exb-----exb----------exb-----exb------exb--------exb--exb---exb---exb-------ex
-66_GW662     WEL  Aggregate   1998 26617683      2   66 ALFALFA                 274.550 acre FLOOD
-                                                                                                        CDS:YES  HB-WTP   66_GW662     WEL                                                                Well         Receipt          9072522       2 0.500         137.275
-                                                                                                        CDS:YES  HB-WTP   66_GW662     WEL                                                                Well         Receipt          9072525       2 0.500         137.275
+67_GW679     WEL  Aggregate   2015 26724103      2   67 SORGHUM_GRAIN            95.447 acre SPRINKLER                                              
+                                                                                                        CDS:YES  HB-WTP   67_GW679     WEL                                                                Well         Receipt          0456751G      2 0.500          47.724
+                                                                                                        CDS:YES  HB-WTP   67_GW679     WEL                                                                Well         Receipt          9072324       2 0.500          47.724
+```
+
+The following example illustrates a parcel with multiple groundwater-only supplies (no surface water supplies).
+Each parcel/supply fractional acreage is assigned to the CU Location based on four supply wells.
+However, only 3 of the 4 fractional areas are assigned to the model node.
+The reason is that well WDID `1706312` is associated with the parcel as a supply but is not included
+in any groundwater-only model node aggregate/sysetm.
+The supply is therefore not considered part of the dataset.
+
+```
+#>-------- Model Id ---------|------------------------------- Parcel Data -----------------------------||----------- Data Source/Use ------------- ||            Collections use WDID Parts              |          WEL Collection Part ID is the same as GW Supply ID       |
+#>                           |                                                                         || Include                    CDS     LocId || SW     |-------------- SW Supply Data -------------|----------- GW Collection Data ---------|----- GW Supply Data -----|
+#>           Loc  Collection |       Parcel                                    Parcel          Irrig   || in               CDS       LocId   has   || Collect|#     Ditch  Irrig Irrig   Irrig           |   GWPart    GWPart    Well     Well    |#    Irrig D&W     Irrig  |
+#>  LocId    Type Type       |Year   ID        Div Dist        Crop            Area     Units  Method  || CDS?    DataSrc  LocId     Type    Set   || WDID   |Dit   WDID   Frac  FracHB  Area     HBError|    Type     IdType    WDID     Receipt |Well Frac  Frac    Area   |
+#>b--------exb--exb---------exb--exb--------exb--exb--exb------------------exb--------exb--exb--------exb------exb------exb----------exb--exb------exb------exb-exb------exb---exb---exb--------exb-----exb----------exb-----exb------exb--------exb--exb---exb---exb-------ex
+17_GW172     WEL  Aggregate   1954 21716195      2   17 GRASS_PASTURE            11.850 acre FLOOD                                                  
+                                                                                                        CDS:YES  HB-WTP   17_GW172     WEL                                                                Well         WDID    1706315                4 0.250           2.963
+                                                                                                        CDS:YES  HB-WTP   17_GW172     WEL                                                                Well         WDID    1706316                4 0.250           2.963
+                                                                                                        CDS:YES  HB-WTP   17_GW172     WEL                                                                Well         WDID    1706317                4 0.250           2.963
+                                                                                                        CDS:NA   HB-WTP                                                                                   Well                 1706312                4 0.250           2.963
 ```
 
 ## Processing Logic ##
@@ -127,6 +175,9 @@ If irrigated lands from multiple water divisions are processed and the snapshot 
 divisions is different, unintended years may be set to zero.
 The [`CheckParcels`](../CheckParcels/CheckParcels.md) command will check that only one
 division is found in parcel data.
+If HydroBase includes erroneous parcel data such as incomplete irrigated year data loads,
+use the `ReadParcelsFromHydroBase(ExcludeYears)` parameter
+to exclude those years to avoid erroneous zero values.
 
 ## Command Editor ##
 

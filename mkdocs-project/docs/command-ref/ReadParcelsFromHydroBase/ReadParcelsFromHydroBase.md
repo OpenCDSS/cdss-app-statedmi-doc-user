@@ -32,7 +32,7 @@ The following image illustrates the basic data objects, which rely on the unique
 Ditches are identified using a water district identifier (WDID).
 Wells are identified using a WDID if the well has a water right or other administrative data,
 or a well permit receipt identifier if WDID is not available.
-Modelers should typically use WDID for wells if it is available, although receipt can be.
+Modelers should typically use WDID for wells if it is available, although receipt can be used if desired.
 
 **<p style="text-align: center;">
 ![parcel-supply-objects](parcel-supply-objects.png)
@@ -42,13 +42,15 @@ Modelers should typically use WDID for wells if it is available, although receip
 Parcel and Supply Data Objects (<a href="../parcel-supply-objects.png">see also the full-size image</a>)
 </p>**
 
-The above data objects from GIS and HydroBase do not including modeling constructs such as model identifier,
+The above data objects from GIS and HydroBase do not include modeling constructs such as model identifier,
 collections of structures (aggregates, systems), etc.
 The parcel and supply data are loaded into HydroBase and relationships are defined
 to connect to other information such as structures (ditches and wells), and well physical data.
 StateDMI software keeps a list of all individual parcels that are part of the dataset,
 with associated supply information, similar to the original GIS data.
 Only one copy of each unique year/parcel exists in this list.
+Use the [`WriteParcelsToFile(FileFormat=ParcelSupply)`](../WriteParcelsToFile/WriteParcelsToFile.md) command
+to create a report for the data.
 
 The addition of model constructs is represented in the following figure and indicates how
 parcels are associated with model locations.
@@ -71,6 +73,8 @@ For example, a parcel may be supplied by a D&W model node that includes a ditch,
 and a WEL model node with groundwater-only.
 Therefore it is necessary to store the relationship between supply and model location, as shown in the following figure,
 in order to properly make decisions during data processing.
+Use the [`WriteParcelsToFile(FileFormat=ModelParcelSupply)`](../WriteParcelsToFile/WriteParcelsToFile.md) command
+to create a report for the data.
 
 **<p style="text-align: center;">
 ![model-parcel-supply-objects2](model-parcel-supply-objects2.png)
@@ -112,7 +116,7 @@ each of which has a list of the parcels associated with the location.
 Therefore, relationships are circular and provide a cross-reference between data objects.
 The above data are used when processing specific model data files and logic is implemented
 to ensure that irrigated land is counted only once, regardless of overlapping parcel/supply relationships.
-Model data files are organized by model location and therefore processing logic typically loops through
+Model data files are organized by model location and therefore processing logic typically iterates through
 the list of model locations and accesses other data objects as needed.
 
 ### Processing Logic ###
@@ -126,6 +130,8 @@ The following summarizes the processing logic for each model location (StateCU L
 Within each top-level step, processing is limited to years in the entire dataset that have parcel data
 in the requested period (this ensures that locations that don't have irrigated lands in each
 year with irrigated lands data will have values set to zero).
+The following logic is executed twice, with the second iteration only checking for unmodeled well supplies
+in step 3.e.
 
 1. If the CU Location is not a collection (is a single diversion structure),
 for example corresponding to a StateMod `DIV` or `D&W` node:
@@ -154,11 +160,18 @@ specified as an aggregate or system:
 	The well identifier can be either a structure WDID or well permit receipt.
 	2. For parcels that are returned, add a parcel record to the data model for each unique year and parcel ID,
 	if not already added.
-	3. For each parcel read "parcel use" data (HydroBase `vw_CDSS_ParcelUseTSStructureToParcel` view)
+	3. For each record from step 1,
+	add a well supply for the parcel, if not already added.
+	This ONLY adds specific wells included in the groundwater-only aggregate/system list.
+	See step 5.
+	4. For each parcel read "parcel use" data (HydroBase `vw_CDSS_ParcelUseTSStructureToParcel` view)
 	and add a surface supply for the parcel, if not already added.
 	This is necessary in order to account for surface water supplies for ditches that
 	are not included in the dataset.
-	4. Add a groundwater water supply record to the parcel for the well.
+	5. For the second overall iteration, query all wells associated with the parcel.
+	Any wells that were not previously added are considered as not being in the model dataset.
+	Unmodeled wells will impact the number of supplies and resulting area fractions but the associated
+	fractional area will not be added to crop pattern or irrigation practice time series.
 4. If the CU Location is a collection and the collection part type is `Parcel`:
 	1. This case was implemented for
 	[`ReadCropPatternTSFromHydroBase`](../ReadCropPatternTSFromHydroBase/ReadCropPatternTSFromHydroBase.md) and
@@ -180,11 +193,12 @@ all wells are considered (including those not in the dataset).
 The logic may be changed in the future.
 2. For processing step 3.c above, the internal data management uses an optimized data structure to look up parcel/ditch data.
 The logic currently requires that the water district is specified when retrieving parcel data.
-The water district is currently determined from the well being processed
-(assuming the well and its parcel are in the same water district).
-The command also compares the well water district with digits 2-3 of the parcel ID,
-which is set to water district in recent irrigated lands.
-The logic may be changed in the future.
+The water district is currently determined from digits 2-3 of the parcel ID,
+because the first digit is the water division.
+If the water district for the well being processed
+is different from the parcel water district, records using both are queries.
+There may be issues if the results are in different divisions because parcel identifiers may only
+be unique within the same year and division.
 
 ## Command Editor ##
 
@@ -214,6 +228,7 @@ Command Parameters
 | `ID` <br>**required** | A single CU Location identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
 | `InputStart` | Starting year to read data. | All available parcel data will be read. |
 | `InputEnd` | Ending year to read data. | All available parcel data will be read. |
+| `ExcludeYears` | Years to exclude, separated by commas, necessary if HydroBase has years with erroneous data that should be ignored. | All years will be used to auto-fill area with zero if no crop data in those years. |
 | `Div` | Water divisions to process, separated by commas.  Specifying this will increase performance slightly but the default behavior simplifies input. | Determine divisions based on location identifiers that match the format of water district identifiers (WDIDs) . |
 
 ## Examples ##
@@ -234,4 +249,5 @@ The following are troubleshooting suggestions based on experience.
 * [`CheckParcels`](../CheckParcels/CheckParcels.md) command
 * [`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command
 * [`ReadIrrigationPracticeTSFromParcels`](../ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) command
+* [`ReadWellRightsFromHydroBase`](../ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md) command
 * [`WriteParcelsToFile`](../WriteParcelsToFile/WriteParcelsToFile.md) command
