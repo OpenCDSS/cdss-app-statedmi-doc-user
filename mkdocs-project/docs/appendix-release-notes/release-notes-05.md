@@ -1,6 +1,7 @@
 # StateDMI / Release Notes / Version 5 #
 
-* [Changes in Version 5.0.08](#changes-in-version-508)
+* [Changes in Version 5.0.9](#changes-in-version-509)
+* [Changes in Version 5.0.8](#changes-in-version-508)
 * [Changes in Version 5.00.07](#changes-in-version-50007)
 * [Changes in Version 5.00.06](#changes-in-version-50006)
 * [Changes in Version 5.00.05](#changes-in-version-50005)
@@ -9,6 +10,38 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.0.9 ##
+
+* ![change](change.png) [5.0.9] Update the
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command:
+	+ Add `ExcludeYears` parameter, to omit years with bad data in HydroBase, which avoids the 
+	[`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command
+	setting zero in the excluded years.
+	+ When processing groundwater-only model node,
+	when reading associated surface supply data, the water district to read cached data is
+	determined from both digits 2-3 of the parcel and the well WD.
+	This help ensure that valid surface supplies are not ignored.
+	Surface supplies detected for a parcel result in the parcel being omitted from groundwater-only WEL node
+	for crop pattern time series file.
+	+ Handle groundwater supplies that are not included in WEL aggregate/system and D&W and are therefore
+	not included in the model dataset.  The wells will impact the fractional area computations
+	but the related fractional area will not be added to crop pattern or irrigation practice time series.
+* ![change](change.png) [5.0.9] Update the
+[`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command
+to ignore parcel/supply data that are not included in the dataset,
+as determined by the
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command.
+* ![change](change.png) [5.0.9] Update the
+[`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) command
+to ignore parcel/supply data that are not included in the dataset,
+as determined by the
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command.
+* ![change](change.png) [5.0.9] Update the
+[`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md) command
+to have `Approach=UseParcels` parameter and read using parcels data that
+were read using the
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command.
 
 ## Changes in Version 5.0.8 ##
 

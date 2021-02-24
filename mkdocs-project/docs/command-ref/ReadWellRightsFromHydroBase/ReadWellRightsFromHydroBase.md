@@ -1,8 +1,9 @@
 # StateDMI / Command / ReadWellRightsFromHydroBase #
 
 * [Overview](#overview)
-	+ [Default (Simple) Approach](#default-simple-approach)
-	+ [Parcel (Legacy) Approach](#parcel-legacy-approach)
+	+ [Default (UseParcels) Approach](#default-use-parcels-approach)
+	+ [Simple Approach](#simple-approach)
+	+ [Legacy Approach](#legacy-approach)
 * [Command Editor](#command-editor)
 * [Command Syntax](#command-syntax)
 * [Examples](#examples)
@@ -17,7 +18,22 @@ The `ReadWellRightsFromHydroBase` command (for StateCU and StateMod) reads well 
 from HydroBase for each well station that is defined.
 The well rights can then be manipulated and output with other commands.  
 
-As of StateDMI version 4.x, a new Simple approach has been implemented as the default.
+As of StateDMI version 5.0.9, a new `UseParcels` approach has been implemented as the default.
+This is similar to the `Simple` approach that was implemented in version 4,
+except that parcel data are first read using the
+[`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command,
+which handles determining model node / parcel / supply relationships.
+Instead of using detailed parcel data to split well water right decree and permit yield amount,
+parcels served by a well right/permit are assigned the full well decree (or permit yield).
+Duplicates resulting from this assignment, within the same explicit or aggregate well, are removed.
+However, the well’s full decree/yield may be assigned to multiple model well stations.
+This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
+Additionally, groundwater-only supply is typically limited by other data in model datasets.
+StateDMI 5.x also allows use of 11 digit parcel IDs in the StateMod well right file,
+consistent with recent irrigated lands assessment data layers, whereas the Legacy version cannot,
+particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command is used.
+
+StateDMI 4.x implemented the Simple approach as the default.
 Instead of using detailed parcel data to split well water right decree and permit yield amount,
 parcels served by a well right/permit are assigned the full well decree (or permit yield).
 For groundwater-only well stations,
@@ -52,7 +68,7 @@ of wells (specified with a list of well WDIDs and/or permit receipts as of State
 and in earlier versions of StateDMI a list of parcel identifiers).
 
 For StateMod, well-only lands are well stations that do not have a related diversion station
-(and consequently also are defined by a list of well wells [again in StateDMI 4.x a list of well
+(and consequently also are defined by a list of well wells [again as of StateDMI 4.x a list of well
 WDIDs and/or permit identifiers and in earlier versions of StateDMI by a list of parcel identifiers]).
 
 Lands irrigated by surface water are identified with ditch identifiers and parcels
@@ -97,9 +113,59 @@ StateDMI only reads water rights with use type that includes IRR and the right m
 If `UseApex=True` the water right will be included if it is an APEX right (alternate point or exchange),
 regardless of whether absolute or conditional.
 
-### Default (Simple) Approach ###
+### Default (Use Parcels) Approach ###
 
-This approach is used if `Approach=Simple`.  As of StateDMI 4.x, this is the new default approach.
+This approach is used if `Approach=UseParcels`.  This is the default approach as of StateDMI 5.0.9.
+**The [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md)
+command must have been called beforehand because this approach uses the parcel data to determine
+groundwater (well) supplies.**
+
+Loop through each location that matches the ID pattern and perform the following:
+
+1. The unique list of groundwater (well) supplies are retrieved from the parcel data model that
+was read by the 
+[`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command,
+which does the heavy lifting to determine model node / parcel / supply relationships.
+2. For each groundwater supply:
+	1. Read data from the `vw_CDSS_Wells` view,
+	which contains data for WDID and well permit.
+	If a WDID, match the WD and ID.  If a receipt, match the receipt.
+	A single record is expected and a warning will result if more than one record is returned.
+	For each well:
+		* If well right WDID is availalbe for the supply,
+		read net amount water rights from the `vw_CDSS_NetAmts` view.
+			+ Assign data to the StateMod well right object:
+			+ Station ID is the well station ID.
+			+ Decree is well water right in CFS units.
+			+ If `UseApex=True`, add the net rate APEX decree to the decree.
+			If only the APEX value is specified and decree is zero, the APEX decree value will be used.
+			+ Initial well right ID is the WDID (will be modified before output
+			with right format command parameters).
+			The options for outputting the Well Right ID use the structure ID, not the WDID from the well.
+			+ Administration number is the appropriation date converted to administration number.
+			+ Water right name is the right name from HydroBase.
+			+ Many extended data values are set in the StateMod water right object for data checks and troubleshooting.
+		* Else, if a receipt is available for the supply,
+		use the data from HydroBase `vw_CDSS_Wells` table for well yield, etc.
+		This is because HydroBase is typically not distributed with full well permit tables and the
+		`vw_CDSS_Wells` table is the only source of well permit data.
+		Assign data to the StateMod well right object:
+			+ Station ID is the well station ID.
+			+ Decree is the well permit yield in CFS units.
+			+ If `UseApex=True`, add the yield APEX to the decree.
+			+ Initial well right ID is the receipt number
+			(will be modified before output with right format command parameters).
+			+ Administration number is the well permit date converted to administration number.
+			If the permit date is null, use the default appropriation date and corresponding
+			administration number provided by DefaultAppropriationDate command parameter.
+			+ Water right name is the permit name.
+			+ Many extended data values are set in the StateMod water right object for data checks and troubleshooting.
+3. The resulting StateMod well rights are assigned identifiers according to command parameters.
+
+### Simple Approach ###
+
+This approach is used if `Approach=Simple`.  As of StateDMI 4.x, this was the default approach.
+The default changed to `UseParcels` in StateDMI 5.0.9).
 
 Loop through each location that matches the ID pattern and perform the following:
 
@@ -191,7 +257,7 @@ and [`SetWellSystemFromList`](../SetWellSystemFromList/SetWellSystemFromList.md)
 	1. This mode is currently not enabled and failure message will result.
 	The work-around is to use a 1-well aggregate/system or use set commands to set the well right(s).
 
-### Parcel (Legacy) Approach ###
+### Legacy Approach ###
 
 This approach is used if `Approach=Legacy` (default behavior for versions older prior to StateDMI 4.x).
 
@@ -388,13 +454,14 @@ Command Parameters
 
 | **Parameter Group** | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-----|--------------|-----------------|----------------- |
-| ***General*** | `Approach` | Indicate the processing approach:<ul><li>`Simple` – include well rights using WDIDs and permit receipt numbers (logic is simple)</li><li>`Legacy` – split well rights and permits using acreage assignment factors (logic is more complicated)</li></ul> | `Simple` |
+| ***General*** | `Approach` | Indicate the processing approach:<ul><li>`Legacy` – split well rights and permits using acreage assignment factors (logic is more complicated)</li><li>`Simple` – include well rights using WDIDs and permit receipt numbers (logic is simple)</li><li>`UseParcels` – include well rights using WDIDs and permit receipt numbers based on parcel data model from [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command (logic is simple)</li>
+</ul> | `Simple` |
 | ***General*** | `Optimization` | Indicate how queries are performed, one of:<ul><li>`UseLessMemory` – run time will be slower, but this may be required on computers that do not have enough memory for optimization</li><li>`UseMoreMemory` – run time will be faster, but more computer memory is required</li></ul> This parameter should generally only be used by developers, as the default behavior has been determined to be best for general use. | `UseMoreMemory` |
 | ***Well Stations*** | `ID` | Indicate which well stations to include in processing:  a single well station identifier to match or a pattern using wildcards (e.g., `20*`).  This parameter is useful when processing data for a subset of the full dataset. |Process all well stations (`*`). |
 | ***Well Stations*** | `PermitID`<br>`Pattern` | Specify a pattern to match for explicitly modeled wells.  The default is to treat the well as a WDID first and if no well rights are returned, try to find matching well receipt.  This parameter indicates that the well should be treated as a receipt.  This parameter is only used with Simple approach. | Well is not indicated as a permit. |
 | ***Explicit WDID*** | `ReadWellRights` | This parameter is only used with `Approach=Legacy` when `DefineRightHow=RightIfAvailable`, and indicates whether individual water rights should be read from HydroBase.  The following values are recognized:<ul><li>`True` – the net amounts data are read, which may result in multiple well water rights for a well WDID.  See also the `UseApex` parameter.</li><li>`False` – a single processed water right will be returned, which is the sum of net amount rights, using the oldest appropriation date found for the rights (APEX is not considered).  This information is taken from the well/parcel matching results.</li></ul> | `True` |
-| ***Well/Parcel*** | `Div` | Specify the water division to use for parcel data, needed to determine relationships between diversion stations/parcels/wells and for well aggregate/systems.  This parameter is only used with Legacy approach. | None – must be specified.|
-| ***Well/Parcel*** | `Year` | A calendar year to use for parcel data, needed to determine relationships between diversion stations/parcels/wells and for well aggregate/systems.  Separate multiple years with commas.  If years are specified and data for a year in HydroBase is omitted, the results will be generated by ignoring the HydroBase data year – this is only advised if a year of data in HydroBase is purposefully being ignored for some reason.  This parameter is only used with Legacy approach. | Read all parcel years in HydroBase. |
+| ***Well/Parcel*** | `Div` | Specify the water division to use for parcel data, needed to determine relationships between diversion stations/parcels/wells and for well aggregate/systems.  This parameter is only used with `Approach=Legacy`. | None – must be specified.|
+| ***Well/Parcel*** | `Year` | A calendar year to use for parcel data, needed to determine relationships between diversion stations/parcels/wells and for well aggregate/systems.  Separate multiple years with commas.  If years are specified and data for a year in HydroBase is omitted, the results will be generated by ignoring the HydroBase data year – this is only advised if a year of data in HydroBase is purposefully being ignored for some reason.  This parameter is only used with `Approach=Legacy`. | Read all parcel years in HydroBase. |
 | ***Well Right/Parcel*** | `DefineRightHow` | Wells (holes in the ground) are matched with water rights, well permits, and occasionally “estimated” wells necessary because a water right or permit could not be found.  In some cases a right and permit will both exist for a well, each with their own dates.  This parameter indicates how to define the right in these cases and has a value of:<ul><li>`EarliestDate` – will use the earliest date determined from the right’s appropriation date and the permit’s permit date from well matching data.  `ReadWellRights=True` is not enabled or used.</li><li>`LatestDate` – will use the latest date determined from the right’s appropriation date and the permit’s permit date from well matching data.  `ReadWellRights=True` is not enabled or used.</li><li>`RightIfAvailable` – will always use the water right appropriation date, if available.  If `ReadWellRights=True` (see below), the net amount rights are read.  If `ReadWellRights=False`, the processed well data determined when irrigated lands are loaded into HydroBase are used.</li></ul> | `EarliestDate` |
 | ***Well Right/Parcel*** | `Default`<br>`Appropriation`<br>`Date` | Some right/permit data does not have a date in data records.  For example, very old well permits may not have a date.  In these cases a default date can be assigned to be used as the appropriation date in the well water right.  The appropriation date will be converted to a State of Colorado administration number in StateMod water rights. | The administration number is set to `99999.99999`. |
 | ***Decree Value*** | `DecreeMin` | Minimum decree to include, CFS.  Well permits are converted from GPM to CFS prior to checking the value.  Note that StateMod well right files typically have a precision of two digits after the decimal and therefore including small rights may result in a decree of zero (unless the rights sum/aggregate to a larger number). | `.0005` |
@@ -518,6 +585,7 @@ WriteCheckFile(OutputFile="Sp2008L.wer.check.html",Title="Well Rights Check File
 
 * [`AggregateWellRights`](../AggregateWellRights/AggregateWellRights.md) command
 * [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command
+* [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command
 * [`SetWellAggregate`](../SetWellAggregate/SetWellAggregate.md) command
 * [`SetWellAggregateFromList`](../SetWellAggregateFromList/SetWellAggregateFromList.md) command
 * [`SetWellSystem`](../SetWellSystem/SetWellSystem.md) command
