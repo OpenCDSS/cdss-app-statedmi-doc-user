@@ -94,7 +94,7 @@ To account for this, the supplies that are associated with a parcel are handled 
 * The parcel's fractional area irrigated by each groundwater supply well is 1/(number of wells).
 * For wells associated with a ditch in a D&W model node (where wells are automatically determined for
 involved parcels), the parcel's fractional area irrigated by each groundwater supply well is
-1/(number of ditches)/(number of wells).  This is the product of the previous case's two fractions.
+1/(number of ditches matching node, for single ditch or ditch in collection)/(number of wells).
 This area calculation impacts irrigation practice time series
 but not crop pattern time series (because only parcels with surface water supply are included for D&W nodes).
 
@@ -163,7 +163,7 @@ specified as an aggregate or system:
 	3. For each record from step 1,
 	add a well supply for the parcel, if not already added.
 	This ONLY adds specific wells included in the groundwater-only aggregate/system list.
-	See step 5.
+	See step 3.e.
 	4. For each parcel read "parcel use" data (HydroBase `vw_CDSS_ParcelUseTSStructureToParcel` view)
 	and add a surface supply for the parcel, if not already added.
 	This is necessary in order to account for surface water supplies for ditches that
@@ -184,14 +184,7 @@ specified as an aggregate or system:
 
 The following are additional technical considerations related to parcel data processing:
 
-1. When processing a groundwater-only model node, parcels are determined for wells in the collection
-(for aggregate or system).  However, the command currently does not re-query all wells associated with a parcel.
-This can leave out well supplies that irrigate the parcel and are
-omitted from the dataset (are not in WEL or D&W model node).
-Consequently, the fractions computed for distributing parcel will be larger than if
-all wells are considered (including those not in the dataset).
-The logic may be changed in the future.
-2. For processing step 3.c above, the internal data management uses an optimized data structure to look up parcel/ditch data.
+1. For processing step 3.c above, the internal data management uses an optimized data structure to look up parcel/ditch data.
 The logic currently requires that the water district is specified when retrieving parcel data.
 The water district is currently determined from digits 2-3 of the parcel ID,
 because the first digit is the water division.

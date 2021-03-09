@@ -18,33 +18,34 @@ The `ReadWellRightsFromHydroBase` command (for StateCU and StateMod) reads well 
 from HydroBase for each well station that is defined.
 The well rights can then be manipulated and output with other commands.  
 
-As of StateDMI version 5.0.9, a new `UseParcels` approach has been implemented as the default.
-This is similar to the `Simple` approach that was implemented in version 4,
-except that parcel data are first read using the
+**As of StateDMI version 5.0.9, a new `UseParcels` approach has been implemented as the default.**
+
+* Parcel data are first read using the
 [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command,
 which handles determining model node / parcel / supply relationships.
-Instead of using detailed parcel data to split well water right decree and permit yield amount,
-parcels served by a well right/permit are assigned the full well decree (or permit yield).
-Duplicates resulting from this assignment, within the same explicit or aggregate well, are removed.
-However, the well’s full decree/yield may be assigned to multiple model well stations.
-This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
+* This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
 Additionally, groundwater-only supply is typically limited by other data in model datasets.
-StateDMI 5.x also allows use of 11 digit parcel IDs in the StateMod well right file,
+* Parcels served by a well right/permit are assigned the full well decree (or permit yield).
+* Duplicates resulting from this assignment within the same explicit or aggregate well are removed.
+* The well’s full decree/yield may be assigned to multiple model well stations.
+* StateDMI 5.x also allows use of 11 digit parcel IDs in the StateMod well right file,
+consistent with recent irrigated lands assessment data layers, whereas the legacy version cannot,
+particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command is used.
+
+**StateDMI 4.x implemented the `Simple` approach as the default, which is no longer used (except in Rio Grande).**
+
+* Instead of using detailed parcel data to split well water right decree and permit yield amount,
+parcels served by a well right/permit are assigned the full well decree (or permit yield).
+* This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
+* For groundwater-only well stations,
+the new approach is to provide the well identifiers using WDID and permit identifiers, rather than parcels.
+Duplicates resulting from this assignment, within the same explicit or aggregate well, are removed.
+* The well’s full decree/yield may be assigned to multiple model well stations.
+* Additionally, groundwater-only supply is typically limited by other data in model datasets.
+* StateDMI 4.x also allows use of 11 digit parcel IDs in the StateMod well right file,
 consistent with recent irrigated lands assessment data layers, whereas the Legacy version cannot,
 particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command is used.
 
-StateDMI 4.x implemented the Simple approach as the default.
-Instead of using detailed parcel data to split well water right decree and permit yield amount,
-parcels served by a well right/permit are assigned the full well decree (or permit yield).
-For groundwater-only well stations,
-the new approach is to provide the well identifiers using WDID and permit identifiers, rather than parcels.
-Duplicates resulting from this assignment, within the same explicit or aggregate well, are removed.
-However, the well’s full decree/yield may be assigned to multiple model well stations.
-This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
-Additionally, groundwater-only supply is typically limited by other data in model datasets.
-StateDMI 4.x also allows use of 11 digit parcel IDs in the StateMod well right file,
-consistent with recent irrigated lands assessment data layers, whereas the Legacy version cannot,
-particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command is used.
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">
@@ -64,12 +65,14 @@ or can be the sole supplier of water (lower right) and wells do not need to be p
 located on a parcel to provide supply to the parcel.
 
 For StateCU, well-only lands are identified by CU locations that are defined by a collection (aggregate/system)
-of wells (specified with a list of well WDIDs and/or permit receipts as of StateDMI 4.x,
-and in earlier versions of StateDMI a list of parcel identifiers).
+of wells, specified with a list of well WDIDs and/or permit receipts.
+Prior to StateDMI 4.x, a list of parcel identifiers was specified to describe well collection.
 
 For StateMod, well-only lands are well stations that do not have a related diversion station
-(and consequently also are defined by a list of well wells [again as of StateDMI 4.x a list of well
-WDIDs and/or permit identifiers and in earlier versions of StateDMI by a list of parcel identifiers]).
+(and consequently also are defined by a list of wells).
+Again, as of StateDMI 4.x a list of well
+WDIDs and/or permit identifiers defines a collection.
+Prior to StateDMI 4.x, a list of parcel identifiers was specified to describe well collection.
 
 Lands irrigated by surface water are identified with ditch identifiers and parcels
 are determined for the ditches using HydroBase data relationships,
@@ -116,9 +119,9 @@ regardless of whether absolute or conditional.
 ### Default (Use Parcels) Approach ###
 
 This approach is used if `Approach=UseParcels`.  This is the default approach as of StateDMI 5.0.9.
-**The [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md)
+The [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md)
 command must have been called beforehand because this approach uses the parcel data to determine
-groundwater (well) supplies.**
+groundwater (well) supplies.
 
 Loop through each location that matches the ID pattern and perform the following:
 
@@ -475,7 +478,22 @@ Command Parameters
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadDiversionRightsFromHydroBase).
 
-The following example command file for `Approach=Simple` (the default) illustrates how well rights can be defined, sorted, checked, and written to a StateMod file:
+### `Approach=UseParcels` ###
+
+The following example command file for `Approach=UseParcels` (default approach) illustrates how well rights can be processed,
+using StateCU locations as input:
+
+```
+ReadCULocationsFromStateCU(InputFile="../StateCU/Ark2020_CROP.str")
+# Insert commands to set aggregates and systems
+ReadParcelsFromHydroBase(ID="*",ExcludeYears="2013,2014")
+ReadWellRightsFromHydroBase(ID="*",IDFormat="StationID.NNN")
+WriteWellRightsToStateMod(OutputFile="../StateMod/Ark2020.wer",WriteDataComments=True,WriteExtendedDataComments=True,WriteHow=OverwriteFile)
+```
+
+### `Approach=Simple` ###
+
+The following example command file for `Approach=Simple` illustrates how well rights can be defined, sorted, checked, and written to a StateMod file:
 
 ```
 # Well Rights File (*.wer)
@@ -517,6 +535,8 @@ WriteWellRightsToStateMod(OutputFile="..\StateCU\SPDSS_NotMerged.wer",
 CheckWellRights(ID="*")
 WriteCheckFile(OutputFile="WER_Check.csv")
 ```
+
+### `Approach=Legacy` ###
 
 The following example command file for `Approach=Legacy` illustrates how well rights can be defined, sorted, checked, and written to a StateMod file:
 

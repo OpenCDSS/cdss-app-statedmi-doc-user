@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.0.10](#changes-in-version-5010)
 * [Changes in Version 5.0.9](#changes-in-version-509)
 * [Changes in Version 5.0.8](#changes-in-version-508)
 * [Changes in Version 5.00.07](#changes-in-version-50007)
@@ -10,6 +11,31 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.0.10 ##
+
+* ![bug](bug.png) [5.0.10] Fix bug in
+[`ReadParcelsFromHydroBase`](../command-ref/ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command
+that was not identifying all unmodeled wells (those not in groundwater-only collection list but are a supply
+to involved parcels).
+* ![bug](bug.png) [5.0.10] The
+[`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) and
+[`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) commands have been updated
+to correctly determine the fraction of parcel area for D&W surface water supply,
+which is multiplied by the groundwater fraction (1/# wells for parcel).
+The previous version always used (1/# ditches for parcel).
+The current version uses (1/# ditches for parcel where ditch is in the model node as a single ditch or in collection list).
+* ![change](change.png) [5.0.10] Improved user interface and warnings based on feedback and experience.
+* ![change](change.png) [5.0.10] Update the
+[`CheckCropPatternTS`](../command-ref/CheckCropPatternTS/CheckCropPatternTS.md) command to check that each
+year of data is either read from HydroBase or is provided by set or fill command.
+* ![change](change.png) [5.0.10] Update the
+[`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md) command, as follows:
+	+ Defaults to water right use types of `IRR` and `ALL` (`ALL` has been added), 
+	in order to determine candidate water rights that are used for irrigation
+	+ The water right uses can now be specified with the `IncludeUses` parameter.
+	+ Fix issues with filter that was resulting in some rights being left out.
+	+ **This version processes StateCU location list.  Processing StateMod diversion and well list is under development.**
 
 ## Changes in Version 5.0.9 ##
 

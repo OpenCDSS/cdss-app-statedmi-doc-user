@@ -1,6 +1,7 @@
 # StateDMI / Command / ReadIrrigationPracticeTSFromParcels #
 
 * [Overview](#overview)
+	+ [Processing Logic](#processing-logic)
 * [Command Editor](#command-editor)
 * [Command Syntax](#command-syntax)
 * [Examples](#examples)
@@ -51,10 +52,17 @@ ditch identifiers and parcels are associated with the ditches in HydroBase.
 Typically, well-only lands are grouped and multiple wells provide supply to the collection of parcels.
 Processing logic is different for ditch and well-only lands only in how the list of parcels is obtained.
 
+### Processing Logic ###
+
 The steps used to process irrigation practice time series are described below.
 “CU location” refers to the StateCU model identifier
 (which can be a collection of wells) and “well” refers to a hole in the
 ground that has physical characteristics, water rights, and/or well permits.
+
+The following logic is repeated twice.
+The first iteration determines the model node/parcel/supply relationships,
+which is necessary to properly calculate the parcel fractions due to number of supplies.
+The second iteration assigns area to the time series.
 
 Each CU location that matches the `ID` pattern is processed for each year being processed
 (specified by the `Year` parameter or by default all available data in parcel data):
@@ -62,28 +70,32 @@ Each CU location that matches the `ID` pattern is processed for each year being 
 1. Initialize all irrigation practice acreage time series to missing values.
 Consequently, if no data are found in a year,
 an “observation” of missing acreage will occur.  Any previous data are reset.
+Missing values can be filled with subsequent commands.
 2. Get the list of parcels associated with the location.
 Parcels should have been read in a previous step using the
 [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command.
 3. Process each supply associated with the parcel:
 	1. Total acreage is set using similar logic as
 	the [`ReadCropPatternTSFromParcels`](../ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) command:
-		1. If the parcel is associated with a ditch that supplies the location,
+		1. Any parcel/supply associated with well supply that is not included in the data set is ignored.
+		2. If the parcel is associated with a ditch that supplies the location,
 		the parcel area is multiplied by (1/number of ditches) and the total is incremented.
-		2. Else if the parcel has groundwater supply that is associated with the location,
+		3. Else if the parcel has groundwater supply that is associated with the location,
 		it must be groundwater-only
 		and the parcel area is multipled by (1/number of wells) and the total is incremented.
 	2. Specific irrigation practice acreage time series are incremented.
-		1. `SPRINKLER` and `DRIP` irrigation methods are treated as `SPRINKLER` (high efficiency)
+		1. Any parcel/supply associated with well supply that is not included in the data set is ignored.
+		2. `SPRINKLER` and `DRIP` irrigation methods are treated as `SPRINKLER` (high efficiency)
 		and all other irrigation methods as `FLOOD` (low efficiency).
-		2. A parcel is considered to have groundwater supply if there is at least one well
+		3. A parcel is considered to have groundwater supply if there is at least one well
 		associated with the parcel for the specific year.
-		The incremental area associated with the groundwtaer supply is the parcel
+		The incremental area associated with the groundwater supply is the parcel
 		area multipled by (1/number of wells).
 		Additionally, if the well is commingled with surface supply (D&W location),
-		the area is multipled by (1/number of ditches).  The calculated area is incremented to
-		`SPRINKLER` or `FLOOD` for groundwater supply.
-		3. If no groundwater supply is associated with the parcel,
+		the area is multipled by (1/number of ditches that match the model node,
+		either a single ditch or ditch in a collection list).
+		The calculated area is incremented to `SPRINKLER` or `FLOOD` for groundwater supply.
+		4. If no groundwater supply is associated with the parcel,
 		the area is calculated as the parcel area multipled by (1/number of ditches) and is incremented
 		to `SPRINKLER` or `FLOOD` for surface water supply.
 	3. The total groundwater acres are set to the sum of the acres for `SPRINKLER` and `FLOOD`.
@@ -115,7 +127,7 @@ Command Parameters
 | **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
 | `ID` <br>**required** | A single CU location identifier to match or a pattern using wildcards (e.g., `20*`). | None – must be specified. |
-| `Year` | Calendar year's of irrigated lands data to use for parcel data.  Separate multiple years by commas. | All years in parcel data will be processed. |
+| `Year` | Calendar year's of irrigated lands data to use for parcel data.  Separate multiple years by commas. | All years in parcel data read by [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) and related commands will be processed. |
 
 ## Examples ##
 
