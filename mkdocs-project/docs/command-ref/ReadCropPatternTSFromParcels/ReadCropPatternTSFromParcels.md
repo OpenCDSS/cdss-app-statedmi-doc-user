@@ -70,7 +70,7 @@ and has one or more groundwater supplies,
 
 The following examples illustrate how acreage is assigned,
 using excerpts from the parcel report file output by the
-[`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command.
+[`WriteParcelsToFile`](../WriteParcelsToFile/WriteParcelsToFile.md) command.
 
 The following example illustrates a parcel with commingled supply with one ditch.
 The full parcel area is assigned to the CU Location `1000568`.

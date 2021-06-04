@@ -71,7 +71,7 @@ StateDMI Version History Summary (most current at top)
 
 |**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
 |--|--|--|
-|[5.00.01 - 5.0.10](release-notes-05.md)|Major update including enabling web services, datastores, tables, Excel integration, and new parcel processing commands. | 2021-03-01 |
+|[5.00.01 - 5.0.11](release-notes-05.md)|Major update including enabling web services, datastores, tables, Excel integration, and new parcel processing commands. | 2021-06-03 |
 
 ## Known Limitations ##
 

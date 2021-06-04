@@ -50,16 +50,6 @@ with the values being set as the command is processed (omitting the year would r
 `SetIrrigationPracticeTSFromList` Command Editor - Repeat Values (<a href="../SetIrrigationPracticeTSFromList.png">see also the full-size image</a>)
 </p>**
 
-The following dialog is used to edit the command and illustrates the syntax of the command for providing acreage data that are not in HydroBase, for a single year of data.
-
-**<p style="text-align: center;">
-![SetIrrigationPracticeTSFromList2](SetIrrigationPracticeTSFromList2.png)
-</p>**
-
-**<p style="text-align: center;">
-`SetIrrigationPracticeTSFromList` Command Editor - Provide Parcel Data not in HydroBase (<a href="../SetIrrigationPracticeTSFromList2.png">see also the full-size image</a>)
-</p>**
-
 ## Command Syntax ##
 
 The command syntax is as follows:
@@ -87,6 +77,7 @@ Command Parameters
 | `AcresGWFloodCol` | The column number (1+) containing the groundwater flood acres. | If not specified, the previous data values will remain. |
 | `AcresGWSprinklerCol` | The column number (1+) containing the groundwater sprinkler acres. | If not specified, the previous data values will remain. |
 | `AcresTotalCol` | The column number (1+) containing the total acres. | If not specified, the previous data values will remain. |
+| `RecalculateTotal` | Indicate whether the total area values should be recalculated from the parts (`False` or `True`).  This can be used if area parts are set but total is not set. | `False` |
 | `PumpingMaxCol` | The column number (1+) containing the monthly maximum pumping rate. | If not specified, the previous data values will remain. |
 | `GWModeCol` | The column number (1+) containing the groundwater mode value. | If not specified, the previous data values will remain. |
 
