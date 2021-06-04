@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.0.11](#changes-in-version-5011)
 * [Changes in Version 5.0.10](#changes-in-version-5010)
 * [Changes in Version 5.0.9](#changes-in-version-509)
 * [Changes in Version 5.0.8](#changes-in-version-508)
@@ -11,6 +12,46 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.0.11 ##
+
+* ![bug](bug.png) [5.0.11] Update the
+[`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md)
+command:
+	+ Use the same logic as
+	[`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md)
+	command for setting total area, including updating the parcel data to indicate model node, etc.
+	+ Logic for processing ground and surface water area has been optimized,
+	with additional checks to confirm data integrity.
+	+ Use the [`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command
+	to print parcel data for troubleshooting.
+* ![change](change.png) [5.0.11] Update the
+[`ReadCropPatternTSFromStateCU`](../command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) command
+to have `Tolerance` parameter to compare total area with irrigation practice time series.
+* ![change](change.png) [5.0.11] Do not allow
+[`ReadIrrigationPracticeTSFromParcels`](../command-ref/ReadIrrigationPracticeTSFromParcels/ReadIrrigationPracticeTSFromParcels.md) and
+[`ReadCropPatternTSFromParcels`](../command-ref/ReadCropPatternTSFromParcels/ReadCropPatternTSFromParcels.md) to be used in the
+same command file because they manage data that would interfere with each other
+* ![change](change.png) [5.0.11] Update the following commands to indicate when parcel data were set/filled,
+for use with the [`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command:
+	+ [`FillIrrigationPracticeTSAcreageUsingWellRights`](../command-ref/FillIrrigationPracticeTSAcreageUsingWellRights/FillIrrigationPracticeTSAcreageUsingWellRights.md)
+	+ [`FillIrrigationPracticeTSInterpolate`](../command-ref/FillIrrigationPracticeTSInterpolate/FillIrrigationPracticeTSInterpolate.md)
+	+ [`FillIrrigationPracticeTSRepeat`](../command-ref/FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md)
+	+ [`SetIrrigationPracticeTSFromList`](../command-ref/SetIrrigationPracticeTSFromList/SetIrrigationPracticeTSFromList.md)
+	(also add `RecalculateTotal` parameter to force recalculation of total area)
+	+ [`SetIrrigationPracticeTS`](../command-ref/SetIrrigationPracticeTS/SetIrrigationPracticeTS.md)
+	+ [`SetIrrigationPracticeTSSprinklerAcreageFromList`](../command-ref/SetIrrigationPracticeTSSprinklerAcreageFromList/SetIrrigationPracticeTSSprinklerAcreageFromList.md)
+* ![change](change.png) [5.0.11] Update the
+[`SetIrrigationPracticeTS`](../command-ref/ReadCropPatternTSFromStateCU/ReadCropPatternTSFromStateCU.md) command
+* ![change](change.png) [5.0.11] Update the
+[`SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage`](../command-ref/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md) command
+to have `CheckOnly` parameter to allow using the command to check crop pattern time series and irrigation practice time series total area.
+* ![change](change.png) [5.0.11] Update the
+[`WriteIrrigationPracticeTSToStateCU`](../command-ref/WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md) command
+to have `RecalculateTotal` parameter, to recalculate the total acres from parts
+* ![change](change.png) [5.0.11] Update the
+[`WriteParcelsToFile`](../command-ref/WriteParcelsToFile/WriteParcelsToFile.md) command
+to indicate when set and fill commands have been run for crop pattern time series and irrigation practice time series
 
 ## Changes in Version 5.0.10 ##
 

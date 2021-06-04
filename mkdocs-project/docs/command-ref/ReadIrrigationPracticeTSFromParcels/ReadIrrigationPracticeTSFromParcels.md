@@ -22,6 +22,10 @@ Values for other years must be estimated using other commands
 [`FillIrrigationPracticeTSRepeat`](../FillIrrigationPracticeTSRepeat/FillIrrigationPracticeTSRepeat.md) commands).
 This command should be executed before other commands that estimate or set irrigation practice acreage time series.
 
+The [`SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage`](../SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md)
+command can be used to set irrigation practice time series total area for the full period
+to ensure that fill commands have a total area for calculations for the full period.
+
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">
@@ -133,10 +137,14 @@ Command Parameters
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadIrrigationPracticeTSFromParcels).
 
-The following command file illustrates how to process the irrigation practice time series file where groundwater supply is used:
+The following command file illustrates how to process the irrigation practice time series file where groundwater supply is used,
+in this case for Arkansas basin:
 
 ```
-StartLog(LogFile="Ark2020_IPY.STATEDMI.log")
+StartLog(LogFile="Ark2020_IPY_Rev.STATEDMI.log")
+# StateDMI command file to develop an IPY File for ArkDSS
+# Ark2020.ipy
+#@require datastore HydroBase = 20200720
 #
 # Step 1 - Set output period and read CU locations from structure file
 SetOutputPeriod(OutputStart="1950",OutputEnd="2018")
@@ -145,9 +153,11 @@ ReadCULocationsFromStateCU(InputFile="..\StateCU\Ark2020_CROP.str")
 # Step 2 - Read Diversion System, Multi-Systems, and GW aggregates
 SetDiversionSystemFromList(ListFile="2020_08_18_Ark2020_DivSys_Acres.txt",IDCol="1",NameCol="2",PartIDsCol="3",PartsListedHow=InRow,PartIDsColMax="12",IfNotFound=Warn)
 SetDiversionSystemFromList(ListFile="2020_08_18_Ark2020_MultiStr_DDM.txt",IDCol="1",NameCol="2",PartIDsCol="3",PartsListedHow=InRow,PartIDsColMax="7",IfNotFound=Warn)
+SetWellAggregateFromList(ListFile="2020_04_06_Ark2020_GWAgg_StateCU.txt",PartType=Well,IDCol="1",PartIDsCol="2",PartIDTypeColumn="3",PartsListedHow=InColumn,WellReceiptWaterDistrictMap="0457406:1,3648199:65,0429583:2")
 #
 # Step 2.1 - Read parcel data, which is used by the following commands
-ReadParcelsFromHydroBase(ID="*")
+ReadParcelsFromHydroBase(ID="*",ExcludeYears="2013,2014")
+#
 # Check the parcel data for issues
 CheckParcels(ID="*",AreaPrecision=1)
 #
@@ -162,43 +172,40 @@ SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_AllSTR_Irrig_Eff.lst",ID="
 SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_HIModel_Irrig_Eff.lst",ID="*",YearCol=1,IDCol="2",SprinklerAppEffMaxCol="3")
 SetIrrigationPracticeTSFromList(ListFile="Ark2020_AllSTR_CanalEff.lst",ID="*",IDCol="1",SurfaceDelEffMaxCol="2")
 #
-# Step 6 - Set Irrigation Practice for three HI Model Structures
-# SetIrrigationPracticeTS(ID="1400540I",AcresSWFlood=0,AcresSWSprinkler=0,AcresGWFlood=0,AcresGWSprinkler=0)
-# SetIrrigationPracticeTS(ID="1400541",AcresSWFlood=0,AcresSWSprinkler=0,AcresGWFlood=0,AcresGWSprinkler=0)
-# SetIrrigationPracticeTS(ID="1400542",AcresSWFlood=0,AcresSWSprinkler=0,AcresGWFlood=0,AcresGWSprinkler=0)
-#
-# Step 7 - Set Irrigation Practice for Drip Irrigated Parcels
+# Step 6 - Set Irrigation Practice for Drip Irrigated Parcels
 SetIrrigationPracticeTSFromList(ListFile="Ark2020_DripIrrig_Eff.lst",ID="*",YearCol=1,IDCol="2",SprinklerAppEffMaxCol="3")
 #
 # Step 8 - Read category acreage from HydroBase
-# # Read for every water district besides the HI Model Districts
 ReadIrrigationPracticeTSFromParcels(ID="10*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="11*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="12*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="13*",Year="1954,1975,1988,1998,2010,2015")
+ReadIrrigationPracticeTSFromParcels(ID="14*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="15*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="16*",Year="1954,1975,1988,1998,2010,2015")
+ReadIrrigationPracticeTSFromParcels(ID="17*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="18*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="19*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="66*",Year="1954,1975,1988,1998,2010,2015")
+ReadIrrigationPracticeTSFromParcels(ID="67*",Year="1954,1975,1988,1998,2010,2015")
 ReadIrrigationPracticeTSFromParcels(ID="79*",Year="1954,1975,1988,1998,2010,2015")
 #
-# Read the Irrigation Practice for Non-HI structures in the 14, 17, 67
-# smalers 2020-11-10 New commands use parcels
-ReadIrrigationPracticeTSFromParcels(ID="1400532",Year="1954,1975,1988,1998,2010,2015")
-ReadIrrigationPracticeTSFromParcels(ID="1400535",Year="1954,1975,1988,1998,2010,2015")
-# Similar other commands...
-#
-# Step 9 - Set the Irrigation Practice from List for GW Aggregates
-SetIrrigationPracticeTSFromList(ListFile="Ark2020_HI_GW_Agg_IPY_1954_2015_Acreage_04202020.lst",ID="*",SetStart=1954,SetEnd=2010,YearCol=1,IDCol="2",FloodAppEffMaxCol="5",SprinklerAppEffMaxCol="6",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="7",AcresGWSprinklerCol="8",AcresTotalCol="9")
+# Step 9 - Read acreage for GW Aggregates with problem wells/receipts
+SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_GWAgg_Acreage_Set.txt",ID="*",SetStart=1950,SetEnd=2018,YearCol=1,IDCol="2",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="7",AcresGWSprinklerCol="8",AcresTotalCol="9",RecalculateTotal=True)
 #
 # Step 11 - Set Irrigation Practice and Acreage for HI Model Area for 1950-2018 and set PRWCD acreage for 1999-2009, 2011-2012
-SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_HIModel_08312020.lst",ID="*",SetStart=1950,SetEnd=2018,YearCol=1,IDCol="2",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="5",AcresGWSprinklerCol="6",AcresTotalCol="7")
-SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_PRWCD_Acreage_08312020.lst",ID="*",SetStart=2006,SetEnd=2012,YearCol=1,IDCol="2",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="5",AcresGWSprinklerCol="6",AcresTotalCol="7")
+SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_HIModel_08312020.lst",ID="*",SetStart=1950,SetEnd=2018,YearCol=1,IDCol="2",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="5",AcresGWSprinklerCol="6",AcresTotalCol="7",RecalculateTotal=True)
+SetIrrigationPracticeTSFromList(ListFile="Ark2020_IPY_PRWCD_Acreage_08312020.lst",ID="*",SetStart=2006,SetEnd=2012,YearCol=1,IDCol="2",AcresSWFloodCol="3",AcresSWSprinklerCol="4",AcresGWFloodCol="5",AcresGWSprinklerCol="6",AcresTotalCol="7",RecalculateTotal=True)
 #
 # Step 12 - Read total acreage from *.cds file and set total for *.ipy file
-# Read total acreage from *.cds file and set total for *.ipy file
-ReadCropPatternTSFromStateCU(InputFile="..\StateCU\Ark2020.cds")
+# - previously created *.cds file has total area for all years
+# - this allows filling to adjust parts, if necessary, during the following fill steps
+# - checks occur to compare CDS and IPY totals to ensure consistency
+# - the parcel report file for CDS and IPY processing should agree except for SET/FILL notes
+ReadCropPatternTSFromStateCU(InputFile="..\StateCU\Ark2020_SAM_Rev.cds",Tolerance=1.0)
+# The following has been used in the past.
+# An alternate approach would be to fill IPY total acreage read from above commands.
+# Then CDS acreage could be read after all processing as a cross check.
 SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage(ID="*")
 #
 # Step 13 - Fill Interpolate Acreage
@@ -235,10 +242,18 @@ FillIrrigationPracticeTSInterpolate(ID="*",DataType="CropArea-SurfaceWaterOnlyFl
 FillIrrigationPracticeTSRepeat(ID="*",DataType="CropArea-SurfaceWaterOnlyFlood",FillStart="2015",FillEnd="2018",FillDirection="Forward")
 #
 # Step 15 - Write final ipy file
-WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateCU\Ark2020.ipy")
+WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateCU\Ark2020_SAM_Rev.ipy")
+#
+# Write parcels after processing IPY, for verification.
+# - will indicate whether set commands are used
+WriteParcelsToFile(OutputFile="Ark2020_IPY_Rev.StateDMI.model-parcel-supply-after-ipy.txt",Verbose=True)
 ```
 
 ## Troubleshooting ##
+
+* Warnings are generated to ensure that irrigated area data are consistent.
+The warnings should not be ignored.
+If warnings exist, confirm that input data are correct.
 
 ## See Also ##
 
@@ -249,4 +264,5 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateCU\Ark2020.ipy")
 * [`ReadIrrigationPracticeTSFromList`](../ReadIrrigationPracticeTSFromList/ReadIrrigationPracticeTSFromList.md) command
 * [`ReadIrrigationPracticeTSFromStateCU`](../ReadIrrigationPracticeTSFromStateCU/ReadIrrigationPracticeTSFromStateCU.md) command
 * [`ReadParcelsFromHydroBase`](../ReadParcelsFromHydroBase/ReadParcelsFromHydroBase.md) command
+* [`SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage`](../SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage/SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.md) command
 * [`WriteIrrigationPracticeTSToStateCU`](../WriteIrrigationPracticeTSToStateCU/WriteIrrigationPracticeTSToStateCU.md) command
