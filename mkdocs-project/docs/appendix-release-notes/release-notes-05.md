@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.1.11](#changes-in-version-5011)
 * [Changes in Version 5.0.11](#changes-in-version-5011)
 * [Changes in Version 5.0.10](#changes-in-version-5010)
 * [Changes in Version 5.0.9](#changes-in-version-509)
@@ -12,6 +13,18 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.1.1 ##
+
+* ![bug](bug.png) [5.1.1] Update the
+[`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md) command so that
+a water right is only output once for a model location.
+The log file indicates duplicates that are ignored.
+* ![change](change.png) [5.1.1] Update the location of online documentation to OpenCDSS `https` address.
+
+## Changes in Version 5.1.0 ##
+
+* ![change](change.png) [5.1.0] Cumulative production release for new features described below.
 
 ## Changes in Version 5.0.11 ##
 

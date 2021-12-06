@@ -3,18 +3,41 @@
 This appendix provides information about changes that have occurred in StateDMI.
 A summary table is provided below, and links to details for major versions.
 
+* [StateDMI Version History](#statedmi-version-history)
+* StateDMI Release Note Details - the following are separate documentation pages
+	+ [Version 5 Release Notes](release-notes-05.md)
+	+ [Version 4 Release Notes](release-notes-04.md)
+	+ [Version 3 Release Notes](release-notes-03.md)
+	+ [Version 2 Release Notes](release-notes-02.md)
+	+ [Version 1 Release Notes](release-notes-01.md)
+* [Known Limitations](#known-limitations)
 * [StateDMI Version Numbering Convention](#statedmi-version-numbering-convention)
 * [StateDMI Issue Icons](#statedmi-issue-icons)
-* [StateDMI Version History](#statedmi-version-history)
-* [Known Limitations](#known-limitations)
-* [StateDMI Version Details](#statedmi-version-details) - the following are separate documentation pages
-	+ [Version 5 Details](release-notes-05.md)
-	+ [Version 4 Details](release-notes-04.md)
-	+ [Version 3 Details](release-notes-03.md)
-	+ [Version 2 Details](release-notes-02.md)
-	+ [Version 1 Details](release-notes-01.md)
 
 ---------------
+
+## StateDMI Version History ##
+
+The following table summarizes the StateDMI release history.
+See the StateDMI Version Details links above for more detailed information about each version.
+Only recent versions are documented in detail.
+Comments for minor versions may be listed under a version that is publicly released.
+Release note items are categorized as follows,
+and release note items for a version are typically listed in the same order as shown to emphasize impacts on software users.
+
+**<p style="text-align: center;">
+StateDMI Version History Summary (most current at top)
+</p>**
+
+|**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
+|--|--|--|
+|[5.1.0 - 5.1.1](release-notes-05.md)|Maintenance update to fix issues processing StateCU crop pattern, irrigation practice, and well right files. | 2021-12-05 |
+|[5.00.01 - 5.0.11](release-notes-05.md)|Major update including enabling web services, datastores, tables, Excel integration, and new parcel processing commands. | 2021-06-03 |
+
+## Known Limitations ##
+
+* Releases with `dev` in the version indicate active development.
+A final release is made when new features are tested.
 
 ## StateDMI Version Numbering Convention ##
 
@@ -56,24 +79,3 @@ Backward compatibility is usually retained.  Modifications to an existing comman
 * ![new](new.png) **New Feature** – A new feature has been added, such as a new command.
 New features may or may not be obvious to users but will generally be visible in menus.
 
-## StateDMI Version History ##
-
-The following table summarizes the StateDMI release history.
-See the StateDMI Version Details links above for more detailed information about each version.
-Only recent versions are documented in detail.
-Comments for minor versions may be listed under a version that is publicly released.
-Release note items are categorized as follows,
-and release note items for a version are typically listed in the same order as shown to emphasize impacts on software users.
-
-**<p style="text-align: center;">
-StateDMI Version History Summary (most current at top)
-</p>**
-
-|**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
-|--|--|--|
-|[5.00.01 - 5.0.11](release-notes-05.md)|Major update including enabling web services, datastores, tables, Excel integration, and new parcel processing commands. | 2021-06-03 |
-
-## Known Limitations ##
-
-* Releases with `dev` in the version indicate active development.
-A final release is made when new features are tested.

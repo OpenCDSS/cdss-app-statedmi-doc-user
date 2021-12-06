@@ -26,7 +26,7 @@ which handles determining model node / parcel / supply relationships.
 * This approach recognizes that the complexity of splitting right/permit data makes it difficult to verify data.
 Additionally, groundwater-only supply is typically limited by other data in model datasets.
 * Parcels served by a well right/permit are assigned the full well decree (or permit yield).
-* Duplicates resulting from this assignment within the same explicit or aggregate well are removed.
+* Duplicates resulting from the assignment within the same explicit or aggregate model node are removed.
 * The well’s full decree/yield may be assigned to multiple model well stations.
 * StateDMI 5.x also allows use of 11 digit parcel IDs in the StateMod well right file,
 consistent with recent irrigated lands assessment data layers, whereas the legacy version cannot,
