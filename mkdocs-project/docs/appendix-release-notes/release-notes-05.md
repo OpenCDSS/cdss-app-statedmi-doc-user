@@ -1,6 +1,7 @@
 # StateDMI / Release Notes / Version 5 #
 
-* [Changes in Version 5.1.11](#changes-in-version-5011)
+* [Changes in Version 5.1.2](#changes-in-version-512)
+* [Changes in Version 5.1.1](#changes-in-version-511)
 * [Changes in Version 5.0.11](#changes-in-version-5011)
 * [Changes in Version 5.0.10](#changes-in-version-5010)
 * [Changes in Version 5.0.9](#changes-in-version-509)
@@ -13,6 +14,13 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.1.2 ##
+
+**Maintenance release to address the "Log4Shell" vulnerability.**
+
+* ![bug](bug.png) [5.1.2] Update the `log4j` library to version 2.17.0 in response to the "Log4Shell" security vulnerability.
+See the [Apache Log4J Vulnerability Guidance](https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance) documentation.
 
 ## Changes in Version 5.1.1 ##
 
