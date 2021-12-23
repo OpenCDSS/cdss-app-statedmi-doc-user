@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.1.3](#changes-in-version-513)
 * [Changes in Version 5.1.2](#changes-in-version-512)
 * [Changes in Version 5.1.1](#changes-in-version-511)
 * [Changes in Version 5.0.11](#changes-in-version-5011)
@@ -14,6 +15,20 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.1.3 ##
+
+**Maintenance release to fix problems in well rights processing.** 
+
+* ![bug](bug.png) [5.1.3] Update the
+[`ReadWellRightsFromHydroBase`](../command-ref/ReadWellRightsFromHydroBase/ReadWellRightsFromHydroBase.md) command:
+	+ fix bug where a location identifier that is not matched should have skipped the
+	location but instead the previous location was processed again,
+	resulting in duplicate water rights
+	+ fix bug where groundwater-only locations might include rights for water supplies that are not in
+	the groundwater only system/aggregate ID list,
+	in particular cases where a well supply was present in a year that also had surface supply
+	but in later years is not included in groundwater supply
 
 ## Changes in Version 5.1.2 ##
 
