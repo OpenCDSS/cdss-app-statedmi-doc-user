@@ -13,7 +13,7 @@ This documentation is generally referred to as the **"User Documentation"** in c
 * [About the Open Water Foundation](#about-the-open-water-foundation)
 * [License](#license)
 * [Source Repository on GitHub](#source-repository-on-github)
-* [Release Notes](#release-notes) - **this documentation is for StateDMI version 5.1.2**
+* [Release Notes](#release-notes) - **this documentation is for StateDMI version 5.1.3**
 
 ----------------
 
