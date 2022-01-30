@@ -1,5 +1,6 @@
 # StateDMI / Release Notes / Version 5 #
 
+* [Changes in Version 5.1.4](#changes-in-version-514)
 * [Changes in Version 5.1.3](#changes-in-version-513)
 * [Changes in Version 5.1.2](#changes-in-version-512)
 * [Changes in Version 5.1.1](#changes-in-version-511)
@@ -15,6 +16,15 @@
 * [Release notes for all versions](release-notes.md)
 
 ----------
+
+## Changes in Version 5.1.4 ##
+
+**Maintenance release to fix problems in well rights processing.** 
+
+* ![bug](bug.png) [5.1.4] Update the
+[`SetIrrigationPracticeTSPumpingMaxUsingWellRights`](../command-ref/SetIrrigationPracticeTSPumpingMaxUsingWellRights/SetIrrigationPracticeTSPumpingMaxUsingWellRights.md) command
+editor to fix a warning about `DataType` parameter that was previously removed.
+* ![bug](bug.png) [5.1.4] Update the `log4j` library to version 2.17.1 to implement security patches.
 
 ## Changes in Version 5.1.3 ##
 

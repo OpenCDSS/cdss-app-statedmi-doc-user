@@ -31,6 +31,7 @@ StateDMI Version History Summary (most current at top)
 
 |**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
 |--|--|--|
+|[5.1.4](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2022-01-30 |
 |[5.1.3](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2021-12-23 |
 |[5.1.2](release-notes-05.md)|Maintenance release to update `log4j` library to version 2.17.0. | 2021-12-21 |
 |[5.1.0 - 5.1.1](release-notes-05.md)|Maintenance release to fix issues processing StateCU crop pattern, irrigation practice, and well right files. | 2021-12-05 |
