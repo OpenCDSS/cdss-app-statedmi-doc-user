@@ -22,7 +22,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../Message.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![Message](Message.png)
+![Message command editor](Message.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/Message).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

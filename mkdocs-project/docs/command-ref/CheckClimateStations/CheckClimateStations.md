@@ -20,7 +20,7 @@ checks the climate stations for problems.  The command should usually be used wi
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckClimateStations](CheckClimateStations.png)
+![CheckClimateStations Command Editor](CheckClimateStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,6 +66,8 @@ WriteCheckFile(OutputFile="COclim2006.cli.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

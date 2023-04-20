@@ -152,6 +152,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the update major history for documentation.
 See the GitHub issues and repository history for detailed information.
 
+* 2023-04-20 - Updated documentation to fix broken links and remediate issues related to accessibility including alt text for images and heading structures.
 * 2019-04-26 - Update for opencdss.state.co.us.
 * 2019-01-11 - Update for OpenCDSS release.
 * 2018-09-05 - Initial content, patterned after TSTool, to allow new development to use Markdown.

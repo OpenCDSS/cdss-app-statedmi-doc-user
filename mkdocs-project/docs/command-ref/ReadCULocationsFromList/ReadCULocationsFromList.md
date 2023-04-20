@@ -20,7 +20,7 @@ The CU Locations can then be manipulated and output with other commands.  The id
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadCULocationsFromList](ReadCULocationsFromList.png)
+![ReadCULocationsFromList command editor](ReadCULocationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,6 +74,8 @@ A sample list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

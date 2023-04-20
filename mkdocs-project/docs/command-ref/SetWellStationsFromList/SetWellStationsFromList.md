@@ -20,7 +20,7 @@ sets data in existing well stations (it currently will not add a station – use
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationsFromList](SetWellStationsFromList.png)
+![SetWellStationsFromList command editor](SetWellStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -75,6 +75,8 @@ WriteWellStationsToStateMod(OutputFile="rgdssall.dds")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ writes Penman-Monteith crop coefficients that have been defined to a StateCU Pen
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WritePenmanMonteithToStateCU](WritePenmanMonteithToStateCU.png)
+![WritePenmanMonteithToStateCU command editor](WritePenmanMonteithToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -71,6 +71,8 @@ WriteCheckFile(OutputFile="Crops_KPM.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

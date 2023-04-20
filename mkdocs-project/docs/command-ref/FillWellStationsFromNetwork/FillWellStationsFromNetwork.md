@@ -24,7 +24,7 @@ It is assumed that the network has been read in a previous command
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillWellStationsFromNetwork](FillWellStationsFromNetwork.png)
+![FillWellStationsFromNetwork command editor](FillWellStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -59,6 +59,8 @@ FillWellStationsFromNetwork(ID="*")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

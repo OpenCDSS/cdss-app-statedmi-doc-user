@@ -19,7 +19,7 @@ writes stream estimate stations data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteStreamEstimateStationsToList](WriteStreamEstimateStationsToList.png)
+![WriteStreamEstimateStationsToList command editor](WriteStreamEstimateStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ WriteStreamEstimateStationsToList(OutputFile="rgTW.ses.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

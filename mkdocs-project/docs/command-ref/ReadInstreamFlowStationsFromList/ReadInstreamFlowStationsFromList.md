@@ -20,7 +20,7 @@ The instream flow stations can then be manipulated and output with other command
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadInstreamFlowStationsFromList](ReadInstreamFlowStationsFromList.png)
+![ReadInstreamFlowStationsFromList command editor](ReadInstreamFlowStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -63,6 +63,8 @@ IFS2,”INSTREAM FLOW REACH 2”
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

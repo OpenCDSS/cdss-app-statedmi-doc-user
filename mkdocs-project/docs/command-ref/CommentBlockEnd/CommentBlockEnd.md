@@ -22,7 +22,7 @@ See the [`#`](../Comment/Comment.md) comment documentation for information about
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CommentBlockEnd](CommentBlockEnd.png)
+![Command Editor dialog box](CommentBlockEnd.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ The commands between `/*` and `*/` lines will be recognized as commands but will
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/general/CommentBlock).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

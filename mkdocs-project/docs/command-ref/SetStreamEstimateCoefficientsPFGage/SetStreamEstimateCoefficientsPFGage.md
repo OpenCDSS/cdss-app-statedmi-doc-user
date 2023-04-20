@@ -24,7 +24,7 @@ These commands should be specified before the
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetStreamEstimateCoefficientsPFGage](SetStreamEstimateCoefficientsPFGage.png)
+![SetStreamEstimateCoefficientsPFGage command editor](SetStreamEstimateCoefficientsPFGage.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -103,6 +103,8 @@ WriteCheckFile(OutputFile="rib.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

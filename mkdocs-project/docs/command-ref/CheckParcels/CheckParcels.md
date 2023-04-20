@@ -22,7 +22,7 @@ The command should usually be used with a
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckParcels](CheckParcels.png)
+![CheckParcels Command Editor](CheckParcels.png)
 </p>**
 
 **<p style="text-align: center;">

@@ -49,7 +49,7 @@ Merged rights, since they represent more than one year of well/parcel matching,
 will typically result in slightly higher values.  Aggregated rights will result in “blocky” decree time series.
 
 **<p style="text-align: center;">
-![SetIrrigationPracticeTSPumpingMaxUsingWellRights0](SetIrrigationPracticeTSPumpingMaxUsingWellRights0.png)
+![Graph of cumulative well water rights](SetIrrigationPracticeTSPumpingMaxUsingWellRights0.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -86,7 +86,7 @@ with the result having a monthly time step (since the pumping maximum is AF/M):
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetIrrigationPracticeTSPumpingMaxUsingWellRights](SetIrrigationPracticeTSPumpingMaxUsingWellRights.png)
+![SetIrrigationPracticeTSPumpingMaxUsingWellRights command editor](SetIrrigationPracticeTSPumpingMaxUsingWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -209,6 +209,8 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="Sp2008L.ipy",WriteHow=OverwriteFi
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

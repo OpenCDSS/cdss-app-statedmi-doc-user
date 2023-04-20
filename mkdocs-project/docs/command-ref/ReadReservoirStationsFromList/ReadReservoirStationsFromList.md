@@ -20,7 +20,7 @@ The reservoir stations can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadReservoirStationsFromList](ReadReservoirStationsFromList.png)
+![ReadReservoirStationsFromList command editor](ReadReservoirStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -65,6 +65,8 @@ A sample list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

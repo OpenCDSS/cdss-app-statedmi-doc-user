@@ -21,7 +21,7 @@ This command is useful if time series have been added during processing and ther
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortWellDemandTSMonthly](SortWellDemandTSMonthly.png)
+![SortWellDemandTSMonthly command editor](SortWellDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,5 +49,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

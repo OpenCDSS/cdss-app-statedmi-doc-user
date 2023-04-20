@@ -24,7 +24,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../NewExcelWorkbook.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![NewExcelWorkbook](NewExcelWorkbook.png)
+![NewExcelWorkbook command editor](NewExcelWorkbook.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,4 +54,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

@@ -30,7 +30,7 @@ from an existing shapefile or other standard spatial data format.
 The following dialog is used to edit the command and illustrates the syntax of the command.
 
 **<p style="text-align: center;">
-![WriteTableToShapefile](WriteTableToShapefile.png)
+![WriteTableToShapefile command editor](WriteTableToShapefile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -40,7 +40,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following figure illustrates the command syntax for layers specified with a geometry data column.
 
 **<p style="text-align: center;">
-![WriteTableToShapefile_WKT](WriteTableToShapefile_WKT.png)
+![WriteTableToShapefile_WKT command editor](WriteTableToShapefile_WKT.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,7 +50,7 @@ The following figure illustrates the command syntax for layers specified with a 
 The following figure illustrates the command syntax for specifying columns to include as attributes.
 
 **<p style="text-align: center;">
-![WriteTableToShapefile_Attributes](WriteTableToShapefile_Attributes.png)
+![WriteTableToShapefile_Attributes command editor](WriteTableToShapefile_Attributes.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -101,6 +101,8 @@ The following example illustrates a CSV table that specifies WKT for polygons:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

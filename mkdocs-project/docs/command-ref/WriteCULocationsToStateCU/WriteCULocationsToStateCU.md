@@ -19,7 +19,7 @@ writes CU Locations that have been defined to a StateCU structure file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteCULocationsToStateCU](WriteCULocationsToStateCU.png)
+![WriteCULocationsToStateCU command editor](WriteCULocationsToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,6 +48,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteCULocationsToStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

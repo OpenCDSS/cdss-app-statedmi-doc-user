@@ -19,7 +19,7 @@ command sorts the stream estimate stations by station identifier.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortStreamEstimateStations](SortStreamEstimateStations.png)
+![SortStreamEstimateStations command editor](SortStreamEstimateStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,5 +47,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are not additional related commands.

@@ -20,7 +20,7 @@ The well stations can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellStationsFromNetwork](ReadWellStationsFromNetwork.png)
+![ReadWellStationsFromNetwork command editor](ReadWellStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -96,6 +96,8 @@ WriteCheckFile(OutputFile="Sp2008L.wer.check.html",Title="Well Rights Check File
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

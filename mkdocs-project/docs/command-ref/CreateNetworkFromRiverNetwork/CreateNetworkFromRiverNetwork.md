@@ -22,7 +22,7 @@ The generalized network file can be edited using the interactive model schematic
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CreateNetworkFromRiverNetwork](CreateNetworkFromRiverNetwork.png)
+![CreateNetworkFromRiverNetwork Command Editor](CreateNetworkFromRiverNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -76,6 +76,8 @@ WriteCheckFile(OutputFile="cm2005.net.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

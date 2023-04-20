@@ -19,7 +19,7 @@ writes plan return flow data to a StateMod plan return flow file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WritePlanReturnToStateMod](WritePlanReturnToStateMod.png)
+![WritePlanReturnToStateMod command editor](WritePlanReturnToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,6 +47,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WritePlanReturnToStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

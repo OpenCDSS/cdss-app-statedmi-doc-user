@@ -21,7 +21,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../SortTable.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SortTable](SortTable.png)
+![SortTable command editor](SortTable.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SortTable).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

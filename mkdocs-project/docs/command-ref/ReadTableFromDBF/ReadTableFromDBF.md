@@ -25,7 +25,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../ReadTableFromDBF.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableFromDBF](ReadTableFromDBF.png)
+![ReadTableFromDBF command editor](ReadTableFromDBF.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,6 +54,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromDBF).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -24,7 +24,7 @@ use the `SetWellDemandTSMonthlyConstant` command after other commands that may m
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellDemandTSMonthlyConstant](SetWellDemandTSMonthlyConstant.png)
+![SetWellDemandTSMonthlyConstant command editor](SetWellDemandTSMonthlyConstant.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellDemandTSMonthlyConstant).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

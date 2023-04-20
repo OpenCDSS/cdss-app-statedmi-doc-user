@@ -20,7 +20,7 @@ which is a format that has been used in CDSS StateMod modeling, and is created b
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionStationDelayTablesFromRTN](SetDiversionStationDelayTablesFromRTN.png)
+![SetDiversionStationDelayTablesFromRTN Command Editor command editor](SetDiversionStationDelayTablesFromRTN.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -42,7 +42,7 @@ Command Parameters
 | --------------|-----------------|----------------- |
 | `InputFile`<br>**required** | The name of the RTN file to process.  Specify an absolute path or a path relative to the working directory. | None – must be specified. |
 | `SetEfficiency`<br>**required** | Indicates whether the default efficiency value in the file should be used. | None – must be specified. |
-| `IfNotFound` | Used for error handling, one of the following:<ul><li>	Fail – generate a failure message if the ID is not matched</li><li>Ignore – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>Warn – generate a warning message if the ID is not matched</li><ul> | `Warn` |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>	Fail – generate a failure message if the ID is not matched</li><li>Ignore – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>Warn – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
@@ -68,6 +68,8 @@ For the number of return flow locations, the following lines indicate the identi
 the percentage of the return to receive, and the delay table for the return.
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

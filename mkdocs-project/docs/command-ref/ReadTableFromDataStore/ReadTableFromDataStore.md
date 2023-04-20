@@ -71,7 +71,7 @@ The following dialog is used to edit the command and illustrates the syntax for 
 in this case reading a small table from the State of Colorado’s HydroBase.
 
 **<p style="text-align: center;">
-![ReadTableFromDataStore](ReadTableFromDataStore_Table.png)
+![ReadTableFromDataStore command editor](ReadTableFromDataStore_Table.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,7 +82,7 @@ The corresponding output table is as shown below:
 <a href="../ReadTableFromDataStore_Results.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableFromDataStore Results](ReadTableFromDataStore_Results.png)
+![ReadTableFromDataStore Results command output table](ReadTableFromDataStore_Results.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -93,7 +93,7 @@ The following example illustrates using an SQL query string,
 in this case to read diversion records for a specific structure in the State of Colorado’s HydroBase database:
 
 **<p style="text-align: center;">
-![ReadTableFromDataStore SQL](ReadTableFromDataStore_SQL.png)
+![ReadTableFromDataStore SQL command editor](ReadTableFromDataStore_SQL.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -103,7 +103,7 @@ in this case to read diversion records for a specific structure in the State of 
 The following example illustrates using an SQL file:
 
 **<p style="text-align: center;">
-![ReadTableFromDataStore SQL File](ReadTableFromDataStore_SQLFile.png)
+![ReadTableFromDataStore SQL File command editor](ReadTableFromDataStore_SQLFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -113,7 +113,7 @@ The following example illustrates using an SQL file:
 The following example illustrates using a database procedure:
 
 **<p style="text-align: center;">
-![ReadTableFromDataStore Procedure](ReadTableFromDataStore_Procedure.png)
+![ReadTableFromDataStore Procedure command editor](ReadTableFromDataStore_Procedure.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -150,4 +150,8 @@ Command Parameters
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

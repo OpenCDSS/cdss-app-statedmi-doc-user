@@ -24,7 +24,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 (in this case illustrating how values in a column named `LocationID` are copied to a new table).  
 <a href="../SetTableValues.png">See also the full-size image.</a>
 
-![SetTableValues](SetTableValues.png)
+![SetTableValues command editor](SetTableValues.png)
 
 **<p style="text-align: center;">
 `SetTableValues` Command Editor
@@ -52,6 +52,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SetTableValues).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

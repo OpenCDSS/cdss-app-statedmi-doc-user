@@ -110,7 +110,7 @@ window to make sure it works.  Then run via TSTool and review the TSTool log fil
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![RunR](RunR.png)
+![RunR command editor](RunR.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -143,6 +143,8 @@ Command Parameters
 	+ [R script](https://github.com/OpenCDSS/cdss-app-tstool-test/blob/master/test/regression/commands/general/RunR/Test_RunR_HelloWorld.R)
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

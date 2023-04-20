@@ -20,7 +20,7 @@ checks stream estimate stations data for problems.  The command should usually b
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckStreamEstimateStations](CheckStreamEstimateStations.png)
+![CheckStreamEstimateStations Command Editor](CheckStreamEstimateStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="ses.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -32,7 +32,7 @@ The following are limitations of this command:
 The following dialog is used to edit the command and illustrates the syntax for the command.
 
 **<p style="text-align: center;">
-![WriteTableToExcel](WriteTableToExcel.png)
+![WriteTableToExcel Command Editor command editor](WriteTableToExcel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -42,7 +42,7 @@ The following dialog is used to edit the command and illustrates the syntax for 
 The following dialog is used to edit the command and illustrates Excel output parameters.
 
 **<p style="text-align: center;">
-![WriteTableToExcel Excel](WriteTableToExcel_Excel.png)
+![WriteTableToExcel Excel Command Editor for Excel Output Parameters](WriteTableToExcel_Excel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -52,7 +52,7 @@ The following dialog is used to edit the command and illustrates Excel output pa
 The following dialog is used to edit the command and illustrates Excel formatting parameters.
 
 **<p style="text-align: center;">
-![WriteTableToExcel Excel Format](WriteTableToExcel_ExcelFormat.png)
+![WriteTableToExcel Command Editor for Excel Formatting](WriteTableToExcel_ExcelFormat.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,7 +62,7 @@ The following dialog is used to edit the command and illustrates Excel formattin
 The following dialog is used to edit the command and illustrates style formatting parameters.
 
 **<p style="text-align: center;">
-![WriteTableToExcel Style](WriteTableToExcel_Style.png)
+![WriteTableToExcel Style Formatting](WriteTableToExcel_Style.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -95,7 +95,7 @@ Command Parameters
 |`ExcelColumnNames`|Indicate how to determine the column names for the Excel table (in order to not overwrite with data rows), one of:<br><ul><li>`FirstRowInRange` – column names are written to the first row in the Excel address range</li><li>`None` – column names are not written</li><li>`RowBeforeRange` – column names are written to the row before the Excel address range</li></ul>|`None`|
 |`ColumnNamedRanges`|The map of column names to named ranges, useful when the column of values is used as choices in Excel data validation.|No named ranges will be defined.|
 |`KeepOpen`|Indicate whether to keep the Excel file open (`True`) or close after creating (`False`).  Keeping the file open will increase performance because later commands will not need to reread the workbook.  Make sure to close the file in the last Excel command.|`False`|
-|`ColumnCellTypes`|Column names and corresponding cell types using notation: `ColumnName1:CellType1,ColumnName2:CellType2`<br>Column name can be Default to set the default for all output columns.  Supported cell types are:<ul><li>`Auto` – determine cell type from table column</li><li>`Text` – Excel text cell</li><ul>|`Auto`|
+|`ColumnCellTypes`|Column names and corresponding cell types using notation: `ColumnName1:CellType1,ColumnName2:CellType2`<br>Column name can be Default to set the default for all output columns.  Supported cell types are:<ul><li>`Auto` – determine cell type from table column</li><li>`Text` – Excel text cell</li></ul>|`Auto`|
 |`ColumnWidths`|Column names and corresponding widths using notation:<br>`ColumnName1:Width1,ColumnName2:Width2`<br>Column name can be `Default` to set the default for all output columns and `EmptyColumns` to set the width for columns with no data values.  Supported width values are:<br><ul><li>`Auto` – determine width from table contents</li><li>`N` – number of 1/256 of character widths (maximum is 256*256)|Default column with determined by Excel.|
 |`ColumnDecimalPlaces`|Column names and corresponding number of decimal places, for floating point numbers, using notation:<br>`ColumnName1:Num1,ColumnName2:Num2`|Determine from table column precision, or 6 if unable to determine from table.|
 |`ConditionTableID`|Identifier for condition table (see below).  Can be specified using processor `${Property}`.|Style formatting is not used.|
@@ -227,6 +227,8 @@ Condition Table used with `WriteTableToExcel` Command for a Color Scale
 * See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToExcel).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -21,7 +21,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../CopyTable.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![CopyTable](CopyTable.png)
+![CopyTable Command Editor](CopyTable.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CopyTable).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

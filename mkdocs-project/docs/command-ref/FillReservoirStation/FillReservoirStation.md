@@ -22,7 +22,7 @@ Currently, accounts cannot be filled, and if specified with this command, are se
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillReservoirStation](FillReservoirStation.png)
+![FillReservoirStation command editor](FillReservoirStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -67,6 +67,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillReservoirStation).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ fills missing data in existing stream estimate stations.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillStreamEstimateStation](FillStreamEstimateStation.png)
+![FillStreamEstimateStation command editor](FillStreamEstimateStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillStreamEstimateStation).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

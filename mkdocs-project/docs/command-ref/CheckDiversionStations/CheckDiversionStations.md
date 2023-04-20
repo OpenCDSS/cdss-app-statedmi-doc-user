@@ -20,7 +20,7 @@ checks diversion stations data for problems.  The command should usually be used
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckDiversionStations](CheckDiversionStations.png)
+![CheckDiversionStations Command Editor](CheckDiversionStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="dds.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

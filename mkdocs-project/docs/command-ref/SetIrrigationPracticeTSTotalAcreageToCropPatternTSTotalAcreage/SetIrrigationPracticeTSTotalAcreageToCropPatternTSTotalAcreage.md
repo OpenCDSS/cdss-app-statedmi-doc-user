@@ -33,7 +33,7 @@ For this reason, this command should be used before any other irrigation practic
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage](SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.png)
+![SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage command editor](SetIrrigationPracticeTSTotalAcreageToCropPatternTSTotalAcreage.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -105,6 +105,8 @@ WriteCheckFile(OutputFile="cm2006.ipy.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

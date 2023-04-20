@@ -19,7 +19,7 @@ writes Blaney-Criddle crop coefficients data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteBlaneyCriddleToList](WriteBlaneyCriddleToList.png)
+![WriteBlaneyCriddleToList command editor](WriteBlaneyCriddleToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ WriteBlaneyCriddleToList(OutputFile="test.lst")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

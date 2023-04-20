@@ -27,7 +27,7 @@ Crop pattern time series for locations having surface water supply are often the
 The following figure shows groundwater acreage filled using well water rights.
 
 **<p style="text-align: center;">
-![FillCropPatternTSUsingWellRights_Example](FillCropPatternTSUsingWellRights_Example.png)
+![FillCropPatternTSUsingWellRights Example](FillCropPatternTSUsingWellRights_Example.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,7 +74,7 @@ The resulting time series indicates for a parcel the decreed water rights
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillCropPatternTSUsingWellRights](FillCropPatternTSUsingWellRights.png)
+![FillCropPatternTSUsingWellRights command editor](FillCropPatternTSUsingWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -108,6 +108,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillCropPatternTSUsingWellRights).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -184,7 +184,7 @@ to exclude those years to avoid erroneous zero values.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadCropPatternTSFromParcels](ReadCropPatternTSFromParcels.png)
+![ReadCropPatternTSFromParcels command editor](ReadCropPatternTSFromParcels.png)
 </p>**
 
 **<p style="text-align: center;">

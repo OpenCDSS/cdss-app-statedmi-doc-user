@@ -20,7 +20,7 @@ This is used, for example, when a generalized network has been created from a St
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillNetworkFromHydroBase](FillNetworkFromHydroBase.png)
+![FillNetworkFromHydroBase command editor](FillNetworkFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -75,5 +75,8 @@ WriteCheckFile(OutputFile="cm2005.net.check.html")
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

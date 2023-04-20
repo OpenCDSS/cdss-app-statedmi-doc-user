@@ -19,7 +19,7 @@ sets data in existing stream estimate stations or adds a new stream estimate sta
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetStreamEstimateStation](SetStreamEstimateStation.png)
+![SetStreamEstimateStation command editor](SetStreamEstimateStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetStreamEstimateStation).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

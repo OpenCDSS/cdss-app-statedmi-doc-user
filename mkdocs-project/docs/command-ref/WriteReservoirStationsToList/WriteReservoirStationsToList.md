@@ -21,7 +21,7 @@ files with suffixes `_Collections`, `_Accounts`, `_ContentAreaSeepage`, `_EvapSt
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteReservoirStationsToList](WriteReservoirStationsToList.png)
+![WriteReservoirStationsToList command editor](WriteReservoirStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -57,6 +57,8 @@ WriteReservoirStationsToList(OutputFile="rg2007.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

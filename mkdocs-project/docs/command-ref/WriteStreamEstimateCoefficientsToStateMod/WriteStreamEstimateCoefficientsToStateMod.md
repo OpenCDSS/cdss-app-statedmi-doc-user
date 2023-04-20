@@ -19,7 +19,7 @@ writes stream estimate coefficients that have been defined to a StateMod stream 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteStreamEstimateCoefficientsToStateMod](WriteStreamEstimateCoefficientsToStateMod.png)
+![WriteStreamEstimateCoefficientsToStateMod command editor](WriteStreamEstimateCoefficientsToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -99,6 +99,8 @@ WriteCheckFile(OutputFile="rib.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -23,7 +23,7 @@ The stream estimate stations that are read can be manipulated and output with ot
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadStreamEstimateStationsFromNetwork](ReadStreamEstimateStationsFromNetwork.png)
+![ReadStreamEstimateStationsFromNetwork command editor](ReadStreamEstimateStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadStreamEstimateStationsFromNetwork).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

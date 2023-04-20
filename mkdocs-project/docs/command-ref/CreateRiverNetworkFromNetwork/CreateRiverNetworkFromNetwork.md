@@ -21,7 +21,7 @@ This is used, for example, when a change has been made to the generalized networ
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CreateRiverNetworkFromNetwork](CreateRiverNetworkFromNetwork.png)
+![CreateRiverNetworkFromNetwork command editor](CreateRiverNetworkFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -79,6 +79,8 @@ WriteCheckFile(OutputFile="rin.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 
+There are no additional related commands.

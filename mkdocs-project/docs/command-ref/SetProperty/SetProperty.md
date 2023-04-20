@@ -29,7 +29,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../SetProperty.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetProperty](SetProperty.png)
+![SetProperty command editor](SetProperty.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -40,7 +40,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../SetProperty_Special.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetProperty](SetProperty_Special.png)
+![SetProperty Command Editor for Special Value Parameters](SetProperty_Special.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,7 +51,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../SetProperty_Remove.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetProperty](SetProperty_Remove.png)
+![SetProperty command Editor for Removing a Property](SetProperty_Remove.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,7 +66,7 @@ A common operation would be to increment a property’s value in a [`For`](../Fo
 <a href="../SetProperty_Math1.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetProperty](SetProperty_Math1.png)
+![SetProperty Command Editor for Performing Math showing Main Property Parameters](SetProperty_Math1.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -77,7 +77,7 @@ The following illustrates the math input parameters.
 <a href="../SetProperty_Math2.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetProperty](SetProperty_Math2.png)
+![SetProperty Command Editor for Performing Math showing Math Input](SetProperty_Math2.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -114,6 +114,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetProperty).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

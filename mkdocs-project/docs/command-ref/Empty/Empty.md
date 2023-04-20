@@ -17,7 +17,7 @@ The `Empty` command is a placeholder for empty (blank) lines, which contain only
 
 The following dialog is used to edit the command and illustrates the command syntax.
 
-![Empty](Empty.png)
+![Empty command editor](Empty.png)
 
 **<p style="text-align: center;">
 `Empty` Command Editor (<a href="../Empty.png">see also the full-size image</a>)
@@ -32,6 +32,8 @@ Empty (blank) lines in command files are converted to `Empty` commands.
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-tstool-test/tree/master/test/regression/commands/general/Empty).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

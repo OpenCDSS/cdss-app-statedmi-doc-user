@@ -21,7 +21,7 @@ Reading from a list is more general than reading from a StateMod file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellStationsFromList](ReadWellStationsFromList.png)
+![ReadWellStationsFromList command editor](ReadWellStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -84,6 +84,8 @@ A sample list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

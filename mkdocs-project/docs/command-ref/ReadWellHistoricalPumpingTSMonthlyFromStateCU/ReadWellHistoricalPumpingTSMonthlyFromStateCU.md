@@ -24,7 +24,7 @@ the commands as appropriate depending on which data set file is being read (the 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellHistoricalPumpingTSMonthlyFromStateCU](ReadWellHistoricalPumpingTSMonthlyFromStateCU.png)
+![ReadWellHistoricalPumpingTSMonthlyFromStateCU command editor](ReadWellHistoricalPumpingTSMonthlyFromStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadWellHistoricalPumpingTSMonthlyFromStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

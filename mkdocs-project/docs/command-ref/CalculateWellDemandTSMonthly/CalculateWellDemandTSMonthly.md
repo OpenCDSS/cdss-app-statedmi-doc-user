@@ -32,7 +32,7 @@ and historical diversion time series and is written to the diversion demand time
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CalculateWellDemandTSMonthly](CalculateWellDemandTSMonthly.png)
+![CalculateWellDemandTSMonthly Command Editor](CalculateWellDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -60,6 +60,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CalculateWellDemandTSMonthly).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

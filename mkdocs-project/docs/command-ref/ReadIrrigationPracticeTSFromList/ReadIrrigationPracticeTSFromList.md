@@ -25,7 +25,7 @@ In this case, the command can be used to provide additional data to supplement H
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadIrrigationPracticeTSFromList](ReadIrrigationPracticeTSFromList.png)
+![ReadIrrigationPracticeTSFromList command editor](ReadIrrigationPracticeTSFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -84,6 +84,8 @@ Therefore, break supplemental acreage into multiple “parcels” if necessary.
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

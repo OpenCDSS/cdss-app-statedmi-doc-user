@@ -21,7 +21,7 @@ If there are no well rights in the file, the capacity is set to zero.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationCapacityToWellRights](SetWellStationCapacityToWellRights.png)
+![SetWellStationCapacityToWellRights command editor](SetWellStationCapacityToWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellStationCapacityToWellRights).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ writes well stations that have been defined to a StateMod well stations file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteWellStationsToStateMod](WriteWellStationsToStateMod.png)
+![WriteWellStationsToStateMod command editor](WriteWellStationsToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,6 +47,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteWellStationsToStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

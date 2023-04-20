@@ -22,7 +22,7 @@ A maximum bound of content `9999999` is also added, using the area and seepage o
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillReservoirStationsFromHydroBase](FillReservoirStationsFromHydroBase.png)
+![FillReservoirStationsFromHydroBase command editor](FillReservoirStationsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillReservoirStationsFromHydroBase).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

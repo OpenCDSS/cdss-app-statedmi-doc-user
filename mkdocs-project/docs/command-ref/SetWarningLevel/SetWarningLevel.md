@@ -26,7 +26,7 @@ This command is useful for troubleshooting and can be specified multiple times t
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWarningLevel](SetWarningLevel.png)
+![SetWarningLevel command editor](SetWarningLevel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,6 +54,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWarningLevel).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

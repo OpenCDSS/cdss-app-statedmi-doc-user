@@ -21,7 +21,7 @@ the CU locations and that lists of crop pattern time series are initialized for 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CreateCropPatternTSForCULocations](CreateCropPatternTSForCULocations.png)
+![CreateCropPatternTSForCULocations Command Editor](CreateCropPatternTSForCULocations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -93,6 +93,8 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

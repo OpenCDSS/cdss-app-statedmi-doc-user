@@ -36,7 +36,7 @@ Consequently, comparing old and new files may result in differences.**
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadCropPatternTSFromStateCU](ReadCropPatternTSFromStateCU.png)
+![ReadCropPatternTSFromStateCU command editor](ReadCropPatternTSFromStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,6 +66,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadCropPatternTSFromStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ writes instream flow stations data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteInstreamFlowStationsToList](WriteInstreamFlowStationsToList.png)
+![WriteInstreamFlowStationsToList command editor](WriteInstreamFlowStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ WriteInstreamFlowStationsToList(OutputFile="cm2005.ifs.csv”)
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -24,7 +24,7 @@ This command should be specified before commands that need aggregate information
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetReservoirAggregateFromList](SetReservoirAggregateFromList.png)
+![SetReservoirAggregateFromList command editor](SetReservoirAggregateFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -72,6 +72,8 @@ An example list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

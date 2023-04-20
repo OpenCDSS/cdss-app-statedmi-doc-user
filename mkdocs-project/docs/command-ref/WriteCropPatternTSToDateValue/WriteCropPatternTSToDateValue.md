@@ -21,7 +21,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteCropPatternTSToDateValue](WriteCropPatternTSToDateValue.png)
+![WriteCropPatternTSToDateValue command editor](WriteCropPatternTSToDateValue.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteCropPatternTSToDateValue).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

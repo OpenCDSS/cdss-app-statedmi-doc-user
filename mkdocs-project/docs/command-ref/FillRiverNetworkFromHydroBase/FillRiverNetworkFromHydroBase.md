@@ -21,7 +21,7 @@ from the generalized network and “official” node names are to be determined 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillRiverNetworkFromHydroBase](FillRiverNetworkFromHydroBase.png)
+![FillRiverNetworkFromHydroBase command editor](FillRiverNetworkFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -81,6 +81,8 @@ WriteCheckFile(OutputFile="rin.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

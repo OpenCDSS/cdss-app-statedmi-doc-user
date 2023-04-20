@@ -20,7 +20,7 @@ files with suffixes `_Collections`, `_Depletions`, and `_ReturnFlows` are writte
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteWellStationsToList](WriteWellStationsToList.png)
+![WriteWellStationsToList command editor](WriteWellStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ WriteWellStationsToList(OutputFile="rgtw.wes.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

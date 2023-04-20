@@ -25,7 +25,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../ListFiles.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ListFiles](ListFiles.png)
+![ListFiles command editor](ListFiles.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -57,4 +57,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

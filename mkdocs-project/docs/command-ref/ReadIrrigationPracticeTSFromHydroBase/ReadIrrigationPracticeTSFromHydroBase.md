@@ -28,7 +28,7 @@ This command should be executed before other commands that estimate or set irrig
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">
-![ParcelSupplyDiagram](ParcelSupplyDiagram.png)
+![Parcel Supply Diagram](ParcelSupplyDiagram.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -114,7 +114,7 @@ an “observation” of missing acreage will occur.  Any previous data are reset
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadIrrigationPracticeTSFromHydroBase](ReadIrrigationPracticeTSFromHydroBase.png)
+![ReadIrrigationPracticeTSFromHydroBase command editor](ReadIrrigationPracticeTSFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -308,6 +308,8 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateMod\Historic\Sp2008L.ipy"
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

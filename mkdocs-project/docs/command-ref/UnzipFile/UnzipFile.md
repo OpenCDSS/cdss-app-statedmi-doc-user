@@ -20,7 +20,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../UnzipFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![UnzipFile](UnzipFile.png)
+![UnzipFile command editor](UnzipFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/UnzipFile).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

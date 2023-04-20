@@ -25,7 +25,7 @@ being read (the file format is the StateMod time series file format).
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellHistoricalPumpingTSMonthlyFromStateMod](ReadWellHistoricalPumpingTSMonthlyFromStateMod.png)
+![ReadWellHistoricalPumpingTSMonthlyFromStateMod command editor](ReadWellHistoricalPumpingTSMonthlyFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -52,6 +52,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadWellHistoricalPumpingTSMonthlyFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

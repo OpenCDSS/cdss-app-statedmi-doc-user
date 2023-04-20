@@ -20,7 +20,7 @@ If a new right is added, it is added in alphabetical order according to the righ
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellRight](SetWellRight.png)
+![SetWellRight command editor](SetWellRight.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,6 +54,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellRight).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

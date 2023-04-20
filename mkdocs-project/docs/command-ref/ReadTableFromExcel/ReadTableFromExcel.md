@@ -49,11 +49,11 @@ Excel Data Table Conversion to Table
 
 |**Excel Cell Format ("Number Category")**|**Conversion from Excel to StateDMI Table**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|
-|Number:<br><ul><li>General</li><li>Number</li><li>Currency</li><li>Accounting</li><li>Percentage</li><li>Fraction</li><li>Scientific</li><li>Special</li><li>Custom</li><ul>|<ul><li>If Excel cell is internally a “numeric”, convert to a double-precision number, where the format “Decimal places” is used in the StateDMI table for formatting.  The number of decimal places in Excel is fixed for some of the number categories shown on the left (e.g., Special=Zip Code). Excel internally stores integers as numbers with zero decimals.  **Need to figure out how to get the Excel cell formatting number of decimals to similarly set in the output table – but DO NOT assume zero decimals should convert to an integer.**</li><li>See the `ExcelIntegerColumns` parameter, which specifies the output table to use integers.</li><li>If Excel cell is internally a “Boolean”, convert to an integer having values 0 or 1.  **Need to evaluate having a parameter `ExcelBooleanColumns` to transfer to a Boolean column in the output table.  Excel seems to handle Booleans as text with values True or False.**</li></ul>|
+|Number:<br><ul><li>General</li><li>Number</li><li>Currency</li><li>Accounting</li><li>Percentage</li><li>Fraction</li><li>Scientific</li><li>Special</li><li>Custom</li></ul>|<ul><li>If Excel cell is internally a “numeric”, convert to a double-precision number, where the format “Decimal places” is used in the StateDMI table for formatting.  The number of decimal places in Excel is fixed for some of the number categories shown on the left (e.g., Special=Zip Code). Excel internally stores integers as numbers with zero decimals.  **Need to figure out how to get the Excel cell formatting number of decimals to similarly set in the output table – but DO NOT assume zero decimals should convert to an integer.**</li><li>See the `ExcelIntegerColumns` parameter, which specifies the output table to use integers.</li><li>If Excel cell is internally a “Boolean”, convert to an integer having values 0 or 1.  **Need to evaluate having a parameter `ExcelBooleanColumns` to transfer to a Boolean column in the output table.  Excel seems to handle Booleans as text with values True or False.**</li></ul>|
 |Date:|<ul><li>Date</li><li>Time</li></ul>|StateDMI will convert Number-formatted columns to date/time values when the `ExcelDateTimeColumns` parameter indicates which columns are date/times.|
 |Text|Converts to a string.|
-|Blank|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-blank cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li><ul>|
-|Error|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-error cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li><ul>|
+|Blank|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-blank cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li></ul>|
+|Error|<ul><li>Treated as Text (may in the future scan down the column to determine data type from first non-error cell).</li><li>Blank cells found once the column type is determined are set to empty strings in text columns, and null in number and date columns.</li></ul>|
 |Formula|Expanded internally and the resulting cell value is set in the output table.  POI does not support all formulas and errors may be generated, which result in empty output table cells.|
 
 Consider the following Excel worksheet example, which is equivalent to a comma-separated-value (CSV) file that has comments at the top and four columns:
@@ -84,7 +84,7 @@ and any data rows that have a first cell value starting with the comment charact
 The following dialog is used to edit the command and illustrates the syntax for the command when reading the above Excel worksheet.
 
 **<p style="text-align: center;">
-![ReadTableFromExcel](ReadTableFromExcel_Table.png)
+![ReadTableFromExcel Command Editor for Table Parameters](ReadTableFromExcel_Table.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -94,7 +94,7 @@ The following dialog is used to edit the command and illustrates the syntax for 
 The following dialog is used to edit the command and illustrates main Excel parameters.
 
 **<p style="text-align: center;">
-![ReadTableFromExcel Excel](ReadTableFromExcel_Excel.png)
+![ReadTableFromExcel Command Editor for Main Excel Parameters](ReadTableFromExcel_Excel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -104,7 +104,7 @@ The following dialog is used to edit the command and illustrates main Excel para
 The following dialog is used to edit the command and illustrates filter parameters.
 
 **<p style="text-align: center;">
-![ReadTableFromExcel SQL](ReadTableFromExcel_Filters.png)
+![ReadTableFromExcel Command Editor for Filter Parameters](ReadTableFromExcel_Filters.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -114,7 +114,7 @@ The following dialog is used to edit the command and illustrates filter paramete
 The following dialog is used to edit the command and illustrates column type parameters.
 
 **<p style="text-align: center;">
-![ReadTableFromExcel SQL File](ReadTableFromExcel_Types.png)
+![ReadTableFromExcel Command Editor for Column Type Parameters](ReadTableFromExcel_Types.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -124,7 +124,7 @@ The following dialog is used to edit the command and illustrates column type par
 The following dialog is used to edit the command and illustrates properties parameters.
 
 **<p style="text-align: center;">
-![ReadTableFromExcel Properties](ReadTableFromExcel_Properties.png)
+![ReadTableFromExcel Command Editor for Properties Parameters ](ReadTableFromExcel_Properties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -167,6 +167,8 @@ Command Parameters
 * See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromExcel).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

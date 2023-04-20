@@ -94,7 +94,7 @@ time series read from a StateMod file – time series that are NOT read from Hyd
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![LimitDiversionHistoricalTSMonthlyToRights](LimitDiversionHistoricalTSMonthlyToRights.png)
+![LimitDiversionHistoricalTSMonthlyToRights command editor](LimitDiversionHistoricalTSMonthlyToRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -159,6 +159,8 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

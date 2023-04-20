@@ -25,7 +25,7 @@ CFS = X ACFT/(1.9835*DaysInMonth)
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionStationCapacitiesFromTS](SetDiversionStationCapacitiesFromTS.png)
+![SetDiversionStationCapacitiesFromTS command editor](SetDiversionStationCapacitiesFromTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -91,6 +91,8 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

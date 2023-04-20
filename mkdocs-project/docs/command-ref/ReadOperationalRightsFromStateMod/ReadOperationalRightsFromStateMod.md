@@ -24,7 +24,7 @@ right and will be output when the rights are written with a
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadOperationalRightsFromStateMod](ReadOperationalRightsFromStateMod.png)
+![ReadOperationalRightsFromStateMod command editor](ReadOperationalRightsFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadOperationalRightsFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

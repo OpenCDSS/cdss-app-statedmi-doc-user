@@ -19,7 +19,7 @@ sets climate station weights data in existing CU Locations, using HydroBase for 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetCULocationClimateStationWeightsFromHydroBase](SetCULocationClimateStationWeightsFromHydroBase.png)
+![SetCULocationClimateStationWeightsFromHydroBase command editor](SetCULocationClimateStationWeightsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -46,6 +46,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetCULocationClimateStationWeightsFromHydroBase).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

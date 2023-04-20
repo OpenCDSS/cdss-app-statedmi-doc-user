@@ -86,6 +86,8 @@ WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
 * [`ReadClimateStationsFromStateCU`](../ReadClimateStationsFromStateCU/ReadClimateStationsFromStateCU.md) command

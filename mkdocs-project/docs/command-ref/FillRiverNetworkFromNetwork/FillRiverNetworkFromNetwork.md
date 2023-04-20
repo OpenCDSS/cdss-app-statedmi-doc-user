@@ -19,7 +19,7 @@ fills missing data in the StateMod river network, using the generalized network 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillRiverNetworkFromNetwork](FillRiverNetworkFromNetwork.png)
+![FillRiverNetworkFromNetwork command editor](FillRiverNetworkFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -80,6 +80,8 @@ WriteCheckFile(OutputFile="rin.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

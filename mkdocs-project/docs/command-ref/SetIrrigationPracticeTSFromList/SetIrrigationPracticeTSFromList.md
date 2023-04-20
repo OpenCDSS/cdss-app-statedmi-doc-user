@@ -43,7 +43,7 @@ values over the specified period,
 with the values being set as the command is processed (omitting the year would repeat the values in all years):
 
 **<p style="text-align: center;">
-![SetIrrigationPracticeTSFromList](SetIrrigationPracticeTSFromList.png)
+![SetIrrigationPracticeTSFromList command editor](SetIrrigationPracticeTSFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -126,6 +126,8 @@ Currently, supplemental acreage data can have only a single irrigation method an
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

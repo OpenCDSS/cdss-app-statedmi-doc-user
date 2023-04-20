@@ -20,7 +20,7 @@ checks reservoir stations data for problems.  The command should usually be used
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckReservoirStations](CheckReservoirStations.png)
+![CheckReservoirStations Command Editor](CheckReservoirStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="res.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

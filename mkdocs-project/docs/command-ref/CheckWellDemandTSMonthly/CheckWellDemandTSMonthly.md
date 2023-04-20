@@ -20,7 +20,7 @@ checks well demand monthly time series for problems.  The command should usually
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckWellDemandTSMonthly](CheckWellDemandTSMonthly.png)
+![CheckWellDemandTSMonthly Command Editor](CheckWellDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="wem.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -29,7 +29,7 @@ to ensure that fill commands have a total area for calculations for the full per
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">
-![ParcelSupplyDiagram](ParcelSupplyDiagram.png)
+![Parcel Supply Diagram](ParcelSupplyDiagram.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -110,7 +110,7 @@ Parcels should have been read in a previous step using the
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadIrrigationPracticeTSFromParcels](ReadIrrigationPracticeTSFromParcels.png)
+![ReadIrrigationPracticeTSFromParcels command editor](ReadIrrigationPracticeTSFromParcels.png)
 </p>**
 
 **<p style="text-align: center;">

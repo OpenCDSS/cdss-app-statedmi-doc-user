@@ -48,7 +48,7 @@ augmentation plans (therefore the examples shown below are contrived).
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellAggregateFromList](SetWellAggregateFromList.png)
+![SetWellAggregateFromList command editor](SetWellAggregateFromList.png)
 </p>**
 
 **<p style="text-align: center;">

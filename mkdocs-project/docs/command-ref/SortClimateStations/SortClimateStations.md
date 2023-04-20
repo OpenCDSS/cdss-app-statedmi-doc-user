@@ -19,7 +19,7 @@ sorts the climate stations using the station identifiers.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortClimateStations](SortClimateStations.png)
+![SortClimateStations command editor](SortClimateStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -60,5 +60,8 @@ WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

@@ -47,7 +47,7 @@ Command # Comment Annotations
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CreateRegressionTestCommandFile](CreateRegressionTestCommandFile.png)
+![CreateRegressionTestCommandFile Command Editor](CreateRegressionTestCommandFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -175,6 +175,8 @@ An example of the output file from running the tests is as follows (for older St
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

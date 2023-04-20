@@ -19,7 +19,7 @@ writes irrigation practice time series to a StateCU crop pattern file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteIrrigationPracticeTSToStateCU](WriteIrrigationPracticeTSToStateCU.png)
+![WriteIrrigationPracticeTSToStateCU command editor](WriteIrrigationPracticeTSToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -53,6 +53,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteIrrigationPracticeTSToStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

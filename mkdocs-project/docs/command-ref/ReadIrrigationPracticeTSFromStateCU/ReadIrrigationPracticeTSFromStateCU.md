@@ -23,7 +23,7 @@ See also the TSTool software, which can be used to read, manipulate, and view ir
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadIrrigationPracticeTSFromStateCU](ReadIrrigationPracticeTSFromStateCU.png)
+![ReadIrrigationPracticeTSFromStateCU command editor](ReadIrrigationPracticeTSFromStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadIrrigationPracticeTSFromStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

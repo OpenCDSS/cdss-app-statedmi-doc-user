@@ -19,7 +19,7 @@ sorts the crop pattern time series using the location identifier, and is typical
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortCropPatternTS](SortCropPatternTS.png)
+![SortCropPatternTS command editor](SortCropPatternTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,4 +48,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

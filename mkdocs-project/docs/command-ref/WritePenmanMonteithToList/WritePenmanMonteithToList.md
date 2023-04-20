@@ -19,7 +19,7 @@ writes Penman-Monteith crop coefficients data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WritePenmanMonteithToList](WritePenmanMonteithToList.png)
+![WritePenmanMonteithToList command editor](WritePenmanMonteithToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ WritePenmanMonteithToList(OutputFile="test.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

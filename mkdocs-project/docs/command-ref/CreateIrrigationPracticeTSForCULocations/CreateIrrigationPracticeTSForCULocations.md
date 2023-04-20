@@ -21,7 +21,7 @@ locations initializes the time series with missing data values that can be fille
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CreateIrrigationPracticeTSForCULocations](CreateIrrigationPracticeTSForCULocations.png)
+![CreateIrrigationPracticeTSForCULocations Command Editor](CreateIrrigationPracticeTSForCULocations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CreateIrrigationPracticeTSForCULocations).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

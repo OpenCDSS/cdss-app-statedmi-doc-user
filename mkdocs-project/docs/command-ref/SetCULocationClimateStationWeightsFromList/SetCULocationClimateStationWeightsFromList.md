@@ -19,7 +19,7 @@ reads climate station weights from a list file and sets the information for CU L
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetCULocationClimateStationWeightsFromList](SetCULocationClimateStationWeightsFromList.png)
+![SetCULocationClimateStationWeightsFromList command editor](SetCULocationClimateStationWeightsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,6 +82,8 @@ An example list file for setting data by CU location ID is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

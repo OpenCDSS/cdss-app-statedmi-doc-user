@@ -20,7 +20,7 @@ checks well historical pumping monthly time series for problems.  The command sh
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckWellHistoricalPumpingTSMonthly](CheckWellHistoricalPumpingTSMonthly.png)
+![CheckWellHistoricalPumpingTSMonthly Command Editor](CheckWellHistoricalPumpingTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="weh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

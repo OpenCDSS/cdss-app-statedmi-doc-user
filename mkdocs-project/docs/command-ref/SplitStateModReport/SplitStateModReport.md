@@ -21,7 +21,7 @@ so that reports are of manageable size and load quickly in a web browser.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SplitStateModReport](SplitStateModReport.png)
+![SplitStateModReport command editor](SplitStateModReport.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -53,5 +53,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

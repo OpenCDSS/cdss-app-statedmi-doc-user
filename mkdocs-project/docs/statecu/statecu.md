@@ -595,7 +595,7 @@ StateCU CULocations Data (<a href="../Menu_Commands_StateCU_CULocations_Data.png
 The following figure illustrates possible ditch and well water supply for parcels.
 
 **<p style="text-align: center;">
-![ParcelSupplyDiagram](ParcelSupplyDiagram.png)
+![Parcel Supply Diagram](ParcelSupplyDiagram.png)
 </p>**
 
 **<p style="text-align: center;">

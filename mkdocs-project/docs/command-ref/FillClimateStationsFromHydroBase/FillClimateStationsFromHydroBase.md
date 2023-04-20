@@ -19,7 +19,7 @@ fills missing data in existing climate stations, using HydroBase for data.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillClimateStationsFromHydroBase](FillClimateStationsFromHydroBase.png)
+![FillClimateStationsFromHydroBase command editor](FillClimateStationsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -59,6 +59,8 @@ WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

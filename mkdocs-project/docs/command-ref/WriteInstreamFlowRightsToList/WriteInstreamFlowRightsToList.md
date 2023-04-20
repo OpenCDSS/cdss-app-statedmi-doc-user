@@ -19,7 +19,7 @@ writes instream flow rights data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteInstreamFlowRightsToList](WriteInstreamFlowRightsToList.png)
+![WriteInstreamFlowRightsToList command editor](WriteInstreamFlowRightsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ WriteInstreamFlowRightsToList(OutputFile="cm2005.ifr.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

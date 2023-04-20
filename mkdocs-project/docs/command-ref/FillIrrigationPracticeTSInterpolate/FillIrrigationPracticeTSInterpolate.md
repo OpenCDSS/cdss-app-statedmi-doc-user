@@ -42,7 +42,7 @@ The total acres are needed for checks.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillIrrigationPracticeTSInterpolate](FillIrrigationPracticeTSInterpolate.png)
+![FillIrrigationPracticeTSInterpolate command editor](FillIrrigationPracticeTSInterpolate.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -190,6 +190,8 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateMod\Historic\Sp2008L.ipy"
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

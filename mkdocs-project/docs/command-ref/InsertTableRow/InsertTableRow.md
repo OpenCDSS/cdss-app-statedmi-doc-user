@@ -22,7 +22,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../InsertTableRow.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![InsertTableRow](InsertTableRow.png)
+![InsertTableRow command editor](InsertTableRow.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -52,6 +52,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/InsertTableRow).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

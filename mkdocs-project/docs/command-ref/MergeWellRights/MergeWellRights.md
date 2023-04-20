@@ -133,7 +133,7 @@ For the initial example above, the merged results are as follows:
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![MergeWellRights](MergeWellRights.png)
+![MergeWellRights command editor](MergeWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -236,6 +236,8 @@ ReadStateMod(InputFile="Sp2008L.wer",Alias="%L",Interval="Month")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

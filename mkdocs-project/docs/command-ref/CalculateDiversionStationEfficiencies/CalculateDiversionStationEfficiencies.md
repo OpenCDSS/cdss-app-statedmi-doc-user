@@ -40,7 +40,7 @@ command must be executed to actually write the updated efficiency data.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CalculateDiversionStationEfficiencies](CalculateDiversionStationEfficiencies.png)
+![CalculateDiversionStationEfficiencies Command Editor](CalculateDiversionStationEfficiencies.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,6 +74,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/CalculateDiversionStationEfficiencies).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

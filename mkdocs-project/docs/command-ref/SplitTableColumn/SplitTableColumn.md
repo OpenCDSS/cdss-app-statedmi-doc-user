@@ -22,7 +22,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SplitTableColumn.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SplitTableColumn](SplitTableColumn.png)
+![SplitTableColumn command editor](SplitTableColumn.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -60,6 +60,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ calculates well demand time series (monthly) as the maximum of the existing dema
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CalculateWellDemandTSMonthlyAsMax](CalculateWellDemandTSMonthlyAsMax.png)
+![CalculateWellDemandTSMonthlyAsMax Command Editor](CalculateWellDemandTSMonthlyAsMax.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,5 +48,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

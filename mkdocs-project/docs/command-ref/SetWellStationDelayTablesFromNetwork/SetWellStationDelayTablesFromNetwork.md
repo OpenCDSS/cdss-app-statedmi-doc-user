@@ -20,7 +20,7 @@ A default delay table is used to assign 100% of the returns to the downstream no
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationDelayTablesFromNetwork](SetWellStationDelayTablesFromNetwork.png)
+![SetWellStationDelayTablesFromNetwork command editor](SetWellStationDelayTablesFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellStationDelayTablesFromNetwork).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

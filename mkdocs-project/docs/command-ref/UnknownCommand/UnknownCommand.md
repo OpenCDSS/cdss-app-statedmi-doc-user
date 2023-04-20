@@ -17,7 +17,7 @@ The `UnknownCommand` is used to store commands that are not recognized as valid 
 
 The following dialog is used to edit the command and illustrates the command syntax.
 
-![UnknownCommand](UnknownCommand.png)
+![UnknownCommand command editor](UnknownCommand.png)
 
 **<p style="text-align: center;">
 `UnknownCommand` Command Editor (<a href="../UnknownCommand.png">see also the full-size image</a>)
@@ -32,6 +32,8 @@ Unrecognized commands in command files are converted to `UnknownCommand` command
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-tstool-test/tree/master/test/regression/commands/general/UnknownCommand).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

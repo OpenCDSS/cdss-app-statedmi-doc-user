@@ -23,7 +23,7 @@ Both nodes must be included in the network but the instream flow station file ha
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadInstreamFlowStationsFromNetwork](ReadInstreamFlowStationsFromNetwork.png)
+![ReadInstreamFlowStationsFromNetwork command editor](ReadInstreamFlowStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,6 +50,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadInstreamFlowStationsFromNetwork).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

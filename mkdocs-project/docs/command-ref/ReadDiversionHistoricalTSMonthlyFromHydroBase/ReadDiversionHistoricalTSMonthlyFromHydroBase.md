@@ -172,7 +172,7 @@ command to sort time series to match the diversion stations.
 The following dialog is used to edit the command and illustrates the command syntax when processing explicit structures (no aggregates or collections):
 
 **<p style="text-align: center;">
-![ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit](ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit.png)
+![ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit command editor](ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -182,7 +182,7 @@ The following dialog is used to edit the command and illustrates the command syn
 The following dialog is used to edit the command and illustrates the syntax of the command, when processing collections (aggregates or collections):
 
 **<p style="text-align: center;">
-![ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection](ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection.png)
+![ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection command](ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -320,6 +320,8 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

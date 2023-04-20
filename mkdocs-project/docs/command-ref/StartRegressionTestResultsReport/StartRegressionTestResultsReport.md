@@ -23,7 +23,7 @@ command will write to this file if it is available.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![StartRegressionTestResultsReport](StartRegressionTestResultsReport.png)
+![StartRegressionTestResultsReport command editor](StartRegressionTestResultsReport.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -64,6 +64,8 @@ If any command file unexpectedly produces a warning, a warning will also be visi
 The issue can then be evaluated to determine whether a software or configuration change is necessary.
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

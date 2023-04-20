@@ -26,7 +26,7 @@ command will provide bounding values).
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetReservoirStation](SetReservoirStation.png)
+![SetReservoirStation command editor](SetReservoirStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -84,6 +84,8 @@ SetReservoirStation(ID="363543",AccountID=6,AccountName="SurplusFish",AccountMax
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -61,7 +61,7 @@ This step is performed when an aggregate is defined so that later data access ca
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellAggregate](SetWellAggregate.png)
+![SetWellAggregate command editor](SetWellAggregate.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -93,6 +93,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellAggregate).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

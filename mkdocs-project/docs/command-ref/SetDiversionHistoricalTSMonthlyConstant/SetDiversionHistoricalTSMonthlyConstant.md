@@ -24,7 +24,7 @@ To ensure that set values remain, use the `SetDiversionHistoricalTSMonthlyConsta
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionHistoricalTSMonthlyConstant](SetDiversionHistoricalTSMonthlyConstant.png)
+![Set Diversion Historical TSMonthly Constant Command Editor](SetDiversionHistoricalTSMonthlyConstant.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,13 +49,15 @@ Command Parameters
 | `SetStart` | The start of the period for the set, in a standard date/time format for monthly data (e.g., `YYYY-MM` or `MM/YYYY`). | The output period start. |
 | `SetEnd` | The end of the period for the set, in a standard date/time format for monthly data (e.g., `YYYY-MM` or `MM/YYYY`). | The output period end. |
 | `RecalcLimits` | If `True`, then the constant values will be treated as observations and the historical averages will be recalculated with the values.  `False` will result in the time series being set but the previous averages remaining.  The averages are used with fill commands. | `True` |
-| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the time series if the ID is not matched and is not a wildcard</li><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li><ul> | `Warn` |
+| `IfNotFound` | Used for error handling, one of the following:<ul><li>`Add` – add the time series if the ID is not matched and is not a wildcard</li><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetDiversionHistoricalTSMonthlyConstant).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

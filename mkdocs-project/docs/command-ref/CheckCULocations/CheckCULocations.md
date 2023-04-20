@@ -20,7 +20,7 @@ checks the CU Location data for problems.  The command should usually be used wi
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckCULocations](CheckCULocations.png)
+![CheckCULocations Command Editor](CheckCULocations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -107,6 +107,8 @@ WriteCheckFile(OutputFile="SP2008L.str.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -25,7 +25,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../SetPropertyFromTable.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetPropertyFromTable](SetPropertyFromTable.png)
+![SetPropertyFromTable command editor](SetPropertyFromTable.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -68,6 +68,8 @@ The command shown in the editor dialog, used with the following table, will set 
 </p>**
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

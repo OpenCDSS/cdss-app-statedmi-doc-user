@@ -61,7 +61,7 @@ and the crop type and area should be specified (irrigation method and supply
 type are shown for consistency with irrigation practice time series processing).
 
 **<p style="text-align: center;">
-![SetCropPatternTSFromList](SetCropPatternTSFromList.png)
+![SetCropPatternTSFromList command editor](SetCropPatternTSFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -117,6 +117,8 @@ Data file lines starting with the # character are treated as comments.  If the f
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

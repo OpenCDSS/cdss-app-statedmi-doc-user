@@ -54,7 +54,7 @@ This step is performed when a system is defined so that later data access can us
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellSystemFromList](SetWellSystemFromList.png)
+![SetWellSystemFromList command editor](SetWellSystemFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -153,6 +153,8 @@ with the part ID type specified in column 2, and part ID type in column 3:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -20,7 +20,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../InsertTableColumn.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![InsertTableColumn](InsertTableColumn.png)
+![InsertTableColumn command editor](InsertTableColumn.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,6 +54,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/InsertTableColumn).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

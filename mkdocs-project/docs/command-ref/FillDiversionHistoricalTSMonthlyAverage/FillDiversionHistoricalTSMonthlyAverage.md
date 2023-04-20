@@ -22,7 +22,7 @@ The average values that are used during data filling are printed to the log file
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillDiversionHistoricalTSMonthlyAverage](FillDiversionHistoricalTSMonthlyAverage.png)
+![FillDiversionHistoricalTSMonthlyAverage command editor](FillDiversionHistoricalTSMonthlyAverage.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -152,6 +152,8 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

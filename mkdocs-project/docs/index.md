@@ -51,12 +51,12 @@ The following components are used in StateDMI and require or request attribution
 
 ## Colorado's Decision Support Systems ##
 
-Colorado's Decision Support Systems (CDSS, [cdss.state.co.us](http://cdss.state.co.us))
+Colorado's Decision Support Systems (CDSS, [cdss.colorado.gov](https://cdss.colorado.gov))
 has been developed to answer important questions about Colorado's water resources.
-CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](http://cwcb.state.co.us)
-and [Colorado Division of Water Resources (DWR)](http://water.state.co.us).
+CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](https://cwcb.colorado.gov)
+and [Colorado Division of Water Resources (DWR)](https://dwr.colorado.gov/).
 
-![CDSS Website](index-images/CDSS-website.png)
+![CDSS Website Main page](index-images/CDSS-website.png)
 
 CDSS has been under development since 1994, with progress occurring via a series of basin
 decision support systems (DSS), starting with the Colorado River DSS (CRDSS).

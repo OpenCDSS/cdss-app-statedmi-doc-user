@@ -20,7 +20,7 @@ The crop characteristics can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadCropCharacteristicsFromHydroBase](ReadCropCharacteristicsFromHydroBase.png)
+![ReadCropCharacteristicsFromHydroBase command editor](ReadCropCharacteristicsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -91,6 +91,8 @@ WriteCheckFile(OutputFile="rg2007.cch.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

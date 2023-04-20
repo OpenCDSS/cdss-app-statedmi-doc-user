@@ -45,7 +45,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../ReadPropertiesFromFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadPropertiesFromFile](ReadPropertiesFromFile.png)
+![ReadPropertiesFromFile command editor](ReadPropertiesFromFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,6 +74,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPropertiesFromFile).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

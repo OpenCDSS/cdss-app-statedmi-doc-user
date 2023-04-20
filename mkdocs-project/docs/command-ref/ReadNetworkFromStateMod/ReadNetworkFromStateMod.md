@@ -27,7 +27,7 @@ which read a subset of the network, to facilitate creation of specific model dat
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadNetworkFromStateMod](ReadNetworkFromStateMod.png)
+![ReadNetworkFromStateMod command editor](ReadNetworkFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,6 +54,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadNetworkFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

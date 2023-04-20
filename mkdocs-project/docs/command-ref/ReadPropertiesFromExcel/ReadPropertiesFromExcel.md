@@ -30,7 +30,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../ReadPropertiesFromExcel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadPropertiesFromExcel](ReadPropertiesFromExcel.png)
+![ReadPropertiesFromExcel command editor](ReadPropertiesFromExcel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -52,7 +52,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../ReadPropertiesFromExcel_Properties.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadPropertiesFromExcel Properties](ReadPropertiesFromExcel_Properties.png)
+![ReadPropertiesFromExcel Properties command editor](ReadPropertiesFromExcel_Properties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -85,6 +85,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPropertiesFromExcel).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

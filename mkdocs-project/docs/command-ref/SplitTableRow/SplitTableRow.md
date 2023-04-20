@@ -54,7 +54,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SplitTableRow_Tuple.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SplitTableRow Tuple](SplitTableRow_Tuple.png)
+![SplitTableRow Tuple command editor](SplitTableRow_Tuple.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -65,7 +65,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SplitTableRow.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SplitTableRowTuple](SplitTableRow.png)
+![SplitTableRowTuple command editor](SplitTableRow.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -103,6 +103,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SplitTableRow).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

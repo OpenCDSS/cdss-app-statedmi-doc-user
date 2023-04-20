@@ -20,7 +20,7 @@ The stream gage stations can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadStreamGageStationsFromList](ReadStreamGageStationsFromList.png)
+![ReadStreamGageStationsFromList command editor](ReadStreamGageStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,6 +66,8 @@ A sample list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

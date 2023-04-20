@@ -19,7 +19,7 @@ writes stream gage stations data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteStreamGageStationsToList](WriteStreamGageStationsToList.png)
+![WriteStreamGageStationsToList command editor](WriteStreamGageStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ WriteStreamGageStationsToList(OutputFile="cm2005.ris.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

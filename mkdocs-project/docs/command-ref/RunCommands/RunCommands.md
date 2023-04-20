@@ -51,7 +51,7 @@ software and datastore version requirements in order run the command file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![RunCommands](RunCommands.png)
+![RunCommands command editor](RunCommands.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -118,6 +118,8 @@ CompareFiles(InputFile1="ExpectedResults/Test_CheckDiversionRights_out_check.csv
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

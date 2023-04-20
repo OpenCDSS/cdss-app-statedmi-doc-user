@@ -19,7 +19,7 @@ writes climate stations that have been defined to a StateCU climate stations fil
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteClimateStationsToStateCU](WriteClimateStationsToStateCU.png)
+![WriteClimateStationsToStateCU command editor](WriteClimateStationsToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -59,6 +59,8 @@ WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

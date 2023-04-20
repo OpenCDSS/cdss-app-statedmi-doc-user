@@ -19,7 +19,7 @@ sets data in existing stream gage stations or adds a new stream gage station.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetStreamGageStation](SetStreamGageStation.png)
+![SetStreamGageStation command editor](SetStreamGageStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -83,6 +83,8 @@ WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

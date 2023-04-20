@@ -21,7 +21,7 @@ The diversion stations can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadDiversionStationsFromNetwork](ReadDiversionStationsFromNetwork.png)
+![ReadDiversionStationsFromNetwork command editor](ReadDiversionStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,6 +48,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadDiversionStationsFromNetwork).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -20,7 +20,7 @@ For example, this command may be used to convert a delay table file between frac
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadDelayTablesMonthlyFromStateMod](ReadDelayTablesMonthlyFromStateMod.png)
+![ReadDelayTablesMonthlyFromStateMod command editor](ReadDelayTablesMonthlyFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadDelayTablesMonthlyFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

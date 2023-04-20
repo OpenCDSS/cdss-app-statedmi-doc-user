@@ -19,7 +19,7 @@ writes the generalized network to a StateMod XML network file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteNetworkToStateMod](WriteNetworkToStateMod.png)
+![WriteNetworkToStateMod command editor](WriteNetworkToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,6 +74,8 @@ WriteCheckFile(OutputFile="cm2005.net.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

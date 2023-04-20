@@ -30,7 +30,7 @@ This command may be updated in the future to better handle discontinuities betwe
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![AppendNetwork](AppendNetwork.png)
+![AppendNetwork Command Editor](AppendNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -74,6 +74,8 @@ WriteNetworkToStateMod(OutputFile="LinkedModel.net”)
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

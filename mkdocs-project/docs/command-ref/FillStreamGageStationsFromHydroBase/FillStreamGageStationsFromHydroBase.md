@@ -19,7 +19,7 @@ fills missing data in existing stream gage stations, using HydroBase for data.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillStreamGageStationsFromHydroBase](FillStreamGageStationsFromHydroBase.png)
+![FillStreamGageStationsFromHydroBase command editor](FillStreamGageStationsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,6 +82,8 @@ WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -49,6 +49,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
 * [`WriteCheckFile`](../WriteCheckFile/WriteCheckFile.md) command

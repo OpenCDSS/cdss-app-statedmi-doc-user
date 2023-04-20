@@ -22,7 +22,7 @@ This command can be used to adjust an existing crop coefficients file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadPenmanMonteithFromStateCU](ReadPenmanMonteithFromStateCU.png)
+![ReadPenmanMonteithFromStateCU command editor](ReadPenmanMonteithFromStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPenmanMonteithFromStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

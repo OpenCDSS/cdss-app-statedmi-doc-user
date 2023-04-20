@@ -31,7 +31,7 @@ that result from more than one year of parcel data processing (see the
 [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) command).
 
 **<p style="text-align: center;">
-![AggregateWellRights_Graph](AggregateWellRights_Graph.png)
+![Aggregate Well Rights Graph](AggregateWellRights_Graph.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -45,7 +45,7 @@ administration number that is expected (e.g., use `99999.99999`).  Example outpu
 
 ```
 #>   ID               Name             Struct          Admin #   Decree  On/Off 
-#>---------eb----------------------eb----------eb--------------eb------eb------e
+#>-------------------------------eb----------eb--------------eb------eb------e
 
 200511W.08                          200511           57343.00000    3.01    2006
 200812W.03                          200812           21307.00000    4.68    1908
@@ -83,7 +83,7 @@ and that the associated diversion ID is specified in well station or list file u
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![AggregateWellRights](AggregateWellRights.png)
+![AggregateWellRights` Command Editor](AggregateWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -207,6 +207,8 @@ WriteCheckFile(OutputFile="Wells_wer.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

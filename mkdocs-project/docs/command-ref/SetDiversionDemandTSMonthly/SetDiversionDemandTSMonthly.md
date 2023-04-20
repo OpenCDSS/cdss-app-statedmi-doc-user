@@ -22,7 +22,7 @@ This command is useful if data cannot be calculated in an automated fashion (e.g
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionDemandTSMonthly](SetDiversionDemandTSMonthly.png)
+![SetDiversionDemandTSMonthly command editor](SetDiversionDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -52,6 +52,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetDiversionDemandTSMonthly).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

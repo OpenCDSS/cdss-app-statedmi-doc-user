@@ -22,7 +22,7 @@ The following dialog is used to edit the command and illustrates the command syn
 The ***Database type*** is used to control settings for parameters and is not itself a parameter.
 
 **<p style="text-align: center;">
-![OpenHydroBase](OpenHydroBase.png)
+![OpenHydroBase command editor](OpenHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,5 +62,8 @@ OpenHydroBase(DatabaseServer="sopris",DatabaseName="HydroBase_CO_20060816")
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

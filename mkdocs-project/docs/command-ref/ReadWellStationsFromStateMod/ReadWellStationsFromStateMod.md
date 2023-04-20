@@ -28,7 +28,7 @@ to allow flexibility in data processing.  Other commands may also process a subs
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellStationsFromStateMod](ReadWellStationsFromStateMod.png)
+![ReadWellStationsFromStateMod command editor](ReadWellStationsFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -57,6 +57,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadWellStationsFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

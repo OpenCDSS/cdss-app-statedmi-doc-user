@@ -29,7 +29,7 @@ simple averages; however, work must be done to characterize the wet, dry, and av
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillWellDemandTSMonthlyPattern](FillWellDemandTSMonthlyPattern.png)
+![FillWellDemandTSMonthlyPattern command editor](FillWellDemandTSMonthlyPattern.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,6 +62,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillWellDemandTSMonthlyPattern).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

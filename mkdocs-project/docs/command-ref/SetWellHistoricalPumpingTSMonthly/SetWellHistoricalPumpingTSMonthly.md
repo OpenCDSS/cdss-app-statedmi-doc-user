@@ -19,7 +19,7 @@ command sets the well historical pumping time series (monthly) for a specific we
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellHistoricalPumpingTSMonthly](SetWellHistoricalPumpingTSMonthly.png)
+![SetWellHistoricalPumpingTSMonthly command editor](SetWellHistoricalPumpingTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellHistoricalPumpingTSMonthly).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

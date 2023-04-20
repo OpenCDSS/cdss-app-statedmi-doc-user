@@ -24,7 +24,7 @@ It is assumed that the network has been read in a previous command
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillDiversionStationsFromNetwork](FillDiversionStationsFromNetwork.png)
+![FillDiversionStationsFromNetwork command editor](FillDiversionStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -60,6 +60,8 @@ FillDiversionStationsFromNetwork(ID="*")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

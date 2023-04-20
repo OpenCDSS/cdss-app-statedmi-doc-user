@@ -19,7 +19,7 @@ sets data in existing crop characteristics or adds a new crop type with crop cha
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetCropCharacteristics](SetCropCharacteristics.png)
+![SetCropCharacteristics command editor](SetCropCharacteristics.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,4 +62,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

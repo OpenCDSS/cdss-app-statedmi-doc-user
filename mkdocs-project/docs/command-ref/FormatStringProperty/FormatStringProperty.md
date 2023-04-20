@@ -31,7 +31,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../FormatStringProperty.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatStringProperty](FormatStringProperty.png)
+![FormatStringProperty Command Editor command editor](FormatStringProperty.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -54,13 +54,15 @@ Command Parameters
 |`InputProperties`|The names of one or more input processor properties.  Values corresponding to the properties will be formatted according to the Format parameter.  Input properties can be omitted if the format string is a literal value.|Required if format specifiers are given.|
 |`Format`<br>**required**|The format specifier string used to format the property values.  See the editor dialog for examples and refer to [`sprintf` documentation](https://en.wikipedia.org/wiki/Printf_format_string) for further explanation.  Specify as many format specifiers as there are input properties.  All other characters will be transferred literally to the output string.|None – must be specified.|
 |`OutputProperty`<br>**required**|The name of the processor property to be set.|None – must be specified.|
-|`PropertyType`|Indicate the output property type, which allows the command to create properties other than strings.  The formatted string must have an appropriate value to allow the conversion:<ul><li>`Boolean` – string must be true or false (case-insensitive)</li><li>`DateTime` – string must be a standard date/time format such as supported by [`SetProperty`](../SetProperty/SetProperty)</li><li>`Double` – floating point number</li><li>`Integer` – integer number</li><li>`String` – any text</li><ul>|`String`|
+|`PropertyType`|Indicate the output property type, which allows the command to create properties other than strings.  The formatted string must have an appropriate value to allow the conversion:<ul><li>`Boolean` – string must be true or false (case-insensitive)</li><li>`DateTime` – string must be a standard date/time format such as supported by [`SetProperty`](../SetProperty/SetProperty)</li><li>`Double` – floating point number</li><li>`Integer` – integer number</li><li>`String` – any text</li></ul>|`String`|
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FormatStringProperty).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

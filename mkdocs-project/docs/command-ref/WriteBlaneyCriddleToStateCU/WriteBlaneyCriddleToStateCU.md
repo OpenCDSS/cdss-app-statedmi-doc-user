@@ -19,7 +19,7 @@ writes Blaney-Criddle crop coefficients that have been defined to a StateCU Blan
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteBlaneyCriddleToStateCU](WriteBlaneyCriddleToStateCU.png)
+![WriteBlaneyCriddleToStateCU command editor](WriteBlaneyCriddleToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -79,6 +79,8 @@ WriteCheckFile(OutputFile="rg2007.kbc.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -20,7 +20,7 @@ checks instream flow stations data for problems.  The command should usually be 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckInstreamFlowStations](CheckInstreamFlowStations.png)
+![CheckInstreamFlowStations Command Editor](CheckInstreamFlowStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="ifs.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

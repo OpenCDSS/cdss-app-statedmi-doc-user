@@ -57,7 +57,7 @@ This step is performed when a system is defined so that later data access can us
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellSystem](SetWellSystem.png)
+![SetWellSystem command editor](SetWellSystem.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -89,6 +89,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetDiversionSystem).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

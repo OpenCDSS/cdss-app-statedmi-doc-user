@@ -19,7 +19,7 @@ sorts the Blaney-Criddle crop coefficients using the crop name.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortBlaneyCriddle](SortBlaneyCriddle.png)
+![SortBlaneyCriddle command editor](SortBlaneyCriddle.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,5 +47,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related tables.

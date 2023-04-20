@@ -73,7 +73,7 @@ The acreage is assigned to model CU Locations as follows for model node types:
 The following examples illustrate how acreage are assigned.
 
 **<p style="text-align: center;">
-![acreage-assignment-one-well](acreage-assignment-one-well.png)
+![acreage-assignment-one-well map example](acreage-assignment-one-well.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -81,7 +81,7 @@ Example Acreage Assignment for a Parcel with One Well (<a href="../acreage-assig
 </p>**
 
 **<p style="text-align: center;">
-![acreage-assignment-two-wells](acreage-assignment-two-wells.png)
+![acreage-assignment-two-wells map example](acreage-assignment-two-wells.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -168,7 +168,7 @@ for example corresponding to a StateMod `WEL` node that uses older (Rio Grande) 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadCropPatternTSFromHydroBase](ReadCropPatternTSFromHydroBase.png)
+![ReadCropPatternTSFromHydroBase command editor](ReadCropPatternTSFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -246,6 +246,8 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

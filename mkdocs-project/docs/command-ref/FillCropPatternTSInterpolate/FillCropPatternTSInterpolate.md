@@ -30,7 +30,7 @@ for all other time series and parts of the period.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillCropPatternTSInterpolate](FillCropPatternTSInterpolate.png)
+![FillCropPatternTSInterpolate command editor](FillCropPatternTSInterpolate.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -64,6 +64,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillCropPatternTSInterpolate).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

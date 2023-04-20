@@ -33,7 +33,7 @@ before their use in other processing, such as reading data from HydroBase.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionAggregateFromList](SetDiversionAggregateFromList.png)
+![SetDiversionAggregateFromList command editor](SetDiversionAggregateFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -118,6 +118,8 @@ WriteDiversionRightsToStateMod(OutputFile="cm2005.ddr")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

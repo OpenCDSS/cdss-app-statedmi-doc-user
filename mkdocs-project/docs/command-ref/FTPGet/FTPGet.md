@@ -20,7 +20,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../FTPGet.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FTPGet](FTPGet.png)
+![FTPGet command editor](FTPGet.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,8 +56,10 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
-* [`ListFiles`](../ListFiles/ListFiles) command
-* [`UnzipFile`](../UnzipFile/UnzipFile) command
-* [`WebGet`](../WebGet/WebGet) command
+* [`ListFiles`](../ListFiles/ListFiles.md) command
+* [`UnzipFile`](../UnzipFile/UnzipFile.md) command
+* [`WebGet`](../WebGet/WebGet.md) command

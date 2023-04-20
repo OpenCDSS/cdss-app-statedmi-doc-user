@@ -24,7 +24,7 @@ which does read the irrigation practice file, but not the crop pattern file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetIrrigationPracticeTSFromStateCU](SetIrrigationPracticeTSFromStateCU.png)
+![SetIrrigationPracticeTSFromStateCU command editor](SetIrrigationPracticeTSFromStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetIrrigationPracticeTSFromStateCU).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

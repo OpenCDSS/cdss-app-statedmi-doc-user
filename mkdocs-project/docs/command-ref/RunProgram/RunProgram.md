@@ -50,7 +50,7 @@ which avoids the need to run in a shell.
 The following dialog is used to edit the command and illustrates the command syntax when specifying a full command line.
 
 **<p style="text-align: center;">
-![RunProgram](RunProgram.png)
+![RunProgram command editor](RunProgram.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -218,6 +218,8 @@ Example Command Status Messages (<a href="../RunProgram_OutputCheckTable_Status.
 </p>**
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

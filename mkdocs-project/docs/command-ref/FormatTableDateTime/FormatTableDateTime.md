@@ -44,7 +44,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../FormatTableDateTime.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatTableDateTime](FormatTableDateTime.png)
+![FormatTableDateTime command editor](FormatTableDateTime.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,7 +66,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../FormatTableDateTime_Format.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatTableDateTime](FormatTableDateTime_Format.png)
+![FormatTableDateTime command editor with format parameters](FormatTableDateTime_Format.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -77,7 +77,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../FormatTableDateTime_Output.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatTableDateTime](FormatTableDateTime_Output.png)
+![FormatTableDateTime output parameters](FormatTableDateTime_Output.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -153,7 +153,7 @@ OuputType=DateTime
 Output is as shown below.  <a href="../FormatTableDateTime_Data.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatTableDateTime](FormatTableDateTime_Data.png)
+![FormatTableDateTime output](FormatTableDateTime_Data.png)
 </p>**
 
 The following example illustrates how to convert increment data into a full date/time column string, with the following input (surrounding quotes will be added automatically by command editor):
@@ -169,10 +169,12 @@ OutputColumn=DateTime
 Output is as shown below.  <a href="../FormatTableDateTime_IncrementData.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatTableDateTime](FormatTableDateTime_IncrementData.png)
+![FormatTableDateTime Increment data output](FormatTableDateTime_IncrementData.png)
 </p>**
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

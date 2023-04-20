@@ -23,11 +23,11 @@ as shown in the following figure (in this case there is only a slight decrease
 from approximately 70,000 acres to 47,000 acres, with more change being in the irrigation method):
 
 **<p style="text-align: center;">
-![FillIrrigationPracticeTSAcreageUsingWellRights_Example](FillIrrigationPracticeTSAcreageUsingWellRights_Example.png)
+![FillIrrigationPracticeTSAcreageUsingWellRights Example Graph](FillIrrigationPracticeTSAcreageUsingWellRights_Example.png)
 </p>**
 
 **<p style="text-align: center;">
-Groundwater Acreage Example (<a href="../FillIrrigationPracticeTSAcreageUsingWellRights_Example.png">see also the full-size image</a>)
+Groundwater Acreage Example Graph (<a href="../FillIrrigationPracticeTSAcreageUsingWellRights_Example.png">see also the full-size image</a>)
 </p>**
 
 Prerequisites:
@@ -94,7 +94,7 @@ associated with the parcel over time (x-axis).
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillIrrigationPracticeTSAcreageUsingWellRights](FillIrrigationPracticeTSAcreageUsingWellRights.png)
+![FillIrrigationPracticeTSAcreageUsingWellRights command editor](FillIrrigationPracticeTSAcreageUsingWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -221,6 +221,8 @@ WriteIrrigationPracticeTSToStateCU(OutputFile="..\StateMod\Historic\Sp2008L.ipy"
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

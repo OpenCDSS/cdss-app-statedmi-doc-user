@@ -32,7 +32,7 @@ If the new crop name is the same as an existing crop name, the time series will 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![TranslateCropPatternTS](TranslateCropPatternTS.png)
+![TranslateCropPatternTS command editors](TranslateCropPatternTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -99,6 +99,8 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 [`RemoveCropPatternTS`](../RemoveCropPatternTS/RemoveCropPatternTS.md) command

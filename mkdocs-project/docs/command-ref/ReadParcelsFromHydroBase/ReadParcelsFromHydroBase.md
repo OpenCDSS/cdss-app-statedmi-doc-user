@@ -35,7 +35,7 @@ or a well permit receipt identifier if WDID is not available.
 Modelers should typically use WDID for wells if it is available, although receipt can be used if desired.
 
 **<p style="text-align: center;">
-![parcel-supply-objects](parcel-supply-objects.png)
+![parcel and supply data objects](parcel-supply-objects.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,7 +56,7 @@ The addition of model constructs is represented in the following figure and indi
 parcels are associated with model locations.
 
 **<p style="text-align: center;">
-![model-parcel-supply-objects](model-parcel-supply-objects.png)
+![model, parcel and supply data objects](model-parcel-supply-objects.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -77,7 +77,7 @@ Use the [`WriteParcelsToFile(FileFormat=ModelParcelSupply)`](../WriteParcelsToFi
 to create a report for the data.
 
 **<p style="text-align: center;">
-![model-parcel-supply-objects2](model-parcel-supply-objects2.png)
+![model-parcel-supply-objects with full relationships](model-parcel-supply-objects2.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -198,7 +198,7 @@ be unique within the same year and division.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadParcelsFromHydroBase](ReadParcelsFromHydroBase.png)
+![ReadParcelsFromHydroBase command editor](ReadParcelsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">

@@ -22,7 +22,7 @@ Consequently, see commands like
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteRiverNetworkToList](WriteRiverNetworkToList.png)
+![WriteRiverNetworkToList command editor](WriteRiverNetworkToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -59,6 +59,8 @@ WriteRiverNetworkToList(OutputFile="cm2005.rin.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

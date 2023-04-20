@@ -24,7 +24,7 @@ It is assumed that the network has been read in a previous command
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillStreamGageStationsFromNetwork](FillStreamGageStationsFromNetwork.png)
+![FillStreamGageStationsFromNetwork command editor](FillStreamGageStationsFromNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -53,6 +53,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillStreamGageStationsFromNetwork).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

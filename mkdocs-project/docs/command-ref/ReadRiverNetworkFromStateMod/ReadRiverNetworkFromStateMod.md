@@ -22,7 +22,7 @@ but it may be read if it is being converted to a generalized network file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadRiverNetworkFromStateMod](ReadRiverNetworkFromStateMod.png)
+![ReadRiverNetworkFromStateMod command editor](ReadRiverNetworkFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -76,6 +76,8 @@ WriteCheckFile(OutputFile="cm2005.net.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

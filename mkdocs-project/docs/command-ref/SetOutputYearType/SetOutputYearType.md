@@ -19,7 +19,7 @@ sets the output year type for time series and other time-dependent data (e.g., t
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetOutputYearType](SetOutputYearType.png)
+![SetOutputYearType command editor](SetOutputYearType.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,4 +48,8 @@ See the [automated tests](https://github.com/OpenCDSScdss-app-statedmi-test/tree
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

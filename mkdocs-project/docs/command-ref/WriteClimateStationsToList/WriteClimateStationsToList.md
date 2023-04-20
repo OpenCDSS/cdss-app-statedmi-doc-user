@@ -19,7 +19,7 @@ writes climate stations data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteClimateStationsToList](WriteClimateStationsToList.png)
+![WriteClimateStationsToList command editor](WriteClimateStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ WriteClimateStationsToList(OutputFile="COclim2006.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

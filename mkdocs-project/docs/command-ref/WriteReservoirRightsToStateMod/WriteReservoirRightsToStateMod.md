@@ -19,7 +19,7 @@ writes reservoir rights that have been defined to a StateMod reservoir rights fi
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteReservoirRightsToStateMod](WriteReservoirRightsToStateMod.png)
+![WriteReservoirRightsToStateMod command editor](WriteReservoirRightsToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,6 +47,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteReservoirRightsToStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

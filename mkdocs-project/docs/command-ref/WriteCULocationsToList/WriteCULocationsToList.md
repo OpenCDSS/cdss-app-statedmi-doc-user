@@ -25,7 +25,7 @@ The command uses the specified filename to determine the names of several files 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteCULocationsToList](WriteCULocationsToList.png)
+![WriteCULocationsToList command editor](WriteCULocationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,6 +62,8 @@ WriteCULocationsToList(OutputFile="test2.lst")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

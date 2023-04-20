@@ -19,7 +19,7 @@ fills missing data in existing CU Locations by reading information from a delimi
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillCULocationsFromList](FillCULocationsFromList.png)
+![FillCULocationsFromList Command editor](FillCULocationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -75,6 +75,8 @@ An example list file is shown below, which provides elevations for key locations
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

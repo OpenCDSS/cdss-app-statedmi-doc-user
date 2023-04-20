@@ -41,7 +41,7 @@ are corrected using the
 as if the data were read from input sources.
 
 **<p style="text-align: center;">
-![SetCropPatternTS](SetCropPatternTS.png)
+![SetCropPatternTS command editor](SetCropPatternTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -68,7 +68,7 @@ In this case, the
 The data will be processed as if they were read from HydroBase.
 
 **<p style="text-align: center;">
-![SetCropPatternTS_WithParcels](SetCropPatternTS_WithParcels.png)
+![SetCropPatternTS_WithParcels command editor](SetCropPatternTS_WithParcels.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -103,6 +103,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetCropPatternTS).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

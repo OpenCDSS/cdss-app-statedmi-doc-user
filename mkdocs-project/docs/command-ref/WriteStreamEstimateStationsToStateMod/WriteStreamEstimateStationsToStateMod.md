@@ -19,7 +19,7 @@ writes stream estimate stations that have been defined to a StateMod stream esti
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteStreamEstimateStationsToStateMod](WriteStreamEstimateStationsToStateMod.png)
+![WriteStreamEstimateStationsToStateMod command editor](WriteStreamEstimateStationsToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,6 +47,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteStreamEstimateStationsToStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

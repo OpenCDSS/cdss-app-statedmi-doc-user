@@ -25,7 +25,7 @@ In the future the command may be enhanced to have parameters that more explicitl
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![Exit](Exit.png)
+![Exit command editor](Exit.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -53,5 +53,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

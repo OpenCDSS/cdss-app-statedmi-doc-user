@@ -20,7 +20,7 @@ The stream estimate stations can then be manipulated and output with other comma
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadStreamEstimateStationsFromList](ReadStreamEstimateStationsFromList.png)
+![ReadStreamEstimateStationsFromList command editor](ReadStreamEstimateStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,6 +66,8 @@ NF2,”Natural flow 2”
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

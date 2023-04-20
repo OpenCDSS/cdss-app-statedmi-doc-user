@@ -20,7 +20,7 @@ The crop coefficients can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadBlaneyCriddleFromHydroBase](ReadBlaneyCriddleFromHydroBase.png)
+![ReadBlaneyCriddleFromHydroBase command editor](ReadBlaneyCriddleFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,6 +82,8 @@ WriteCheckFile(OutputFile="rg2007.kbc.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

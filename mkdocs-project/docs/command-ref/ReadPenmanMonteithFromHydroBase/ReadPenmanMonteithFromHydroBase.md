@@ -20,7 +20,7 @@ The crop coefficients can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadPenmanMonteithFromHydroBase](ReadPenmanMonteithFromHydroBase.png)
+![ReadPenmanMonteithFromHydroBase command editor](ReadPenmanMonteithFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -77,6 +77,8 @@ WriteCheckFile(OutputFile="Crops_KPM.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

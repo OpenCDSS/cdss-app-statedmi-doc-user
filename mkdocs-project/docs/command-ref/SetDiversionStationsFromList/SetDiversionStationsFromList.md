@@ -27,7 +27,7 @@ System information should be specified after diversion locations are defined and
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionStationsFromList](SetDiversionStationsFromList.png)
+![SetDiversionStationsFromList command editor](SetDiversionStationsFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -117,6 +117,8 @@ WriteDiversionRightsToStateMod(OutputFile="cm2005.ddr")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

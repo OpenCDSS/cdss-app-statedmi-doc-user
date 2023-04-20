@@ -28,7 +28,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../WriteTableToDelimitedFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![WriteTableToDelimitedFile](WriteTableToDelimitedFile.png)
+![WriteTableToDelimitedFile command editor](WriteTableToDelimitedFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,6 +62,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteTableToDelimitedFile).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

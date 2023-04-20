@@ -19,7 +19,7 @@ sorts the CU Locations.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortCULocations](SortCULocations.png)
+![SortCULocations command editor](SortCULocations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,4 +47,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+No additional related commands.

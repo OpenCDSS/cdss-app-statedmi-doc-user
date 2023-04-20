@@ -262,7 +262,7 @@ Note the warnings and errors, which should be addressed before releasing the sof
 (in some cases commands are difficult to test and more development on the test framework is needed).
 
 **<p style="text-align: center;">
-![Main_RegressionTest](Main_RegressionTest.png)
+![StateDMI Main Interface Showing Regression Test Results](Main_RegressionTest.png)
 </p>**
 
 **<p style="text-align: center;">

@@ -20,7 +20,7 @@ diversion demand monthly time series for problems.  The command should usually b
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckDiversionDemandTSMonthly](CheckDiversionDemandTSMonthly.png)
+![CheckDiversionDemandTSMonthly Command Editor](CheckDiversionDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="Cddm.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

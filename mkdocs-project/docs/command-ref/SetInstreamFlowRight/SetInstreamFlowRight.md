@@ -21,7 +21,7 @@ Instream flow rights may be defined for a variety of reasons for modeling purpos
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetInstreamFlowRight](SetInstreamFlowRight.png)
+![SetInstreamFlowRight comand editor](SetInstreamFlowRight.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -55,6 +55,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetInstreamFlowRight).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../DeleteTableRows.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![DeleteTableRows](DeleteTableRows.png)
+![DeleteTableRows command editor](DeleteTableRows.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -65,6 +65,8 @@ DeleteTableRows(TableID="Table1",DeleteRowNumbers="last")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

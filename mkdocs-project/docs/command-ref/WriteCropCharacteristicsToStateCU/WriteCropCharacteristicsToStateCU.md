@@ -19,7 +19,7 @@ writes crop characteristics data to a StateCU climate crop characteristics file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteCropCharacteristicsToStateCU](WriteCropCharacteristicsToStateCU.png)
+![WriteCropCharacteristicsToStateCU command editor](WriteCropCharacteristicsToStateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,6 +82,8 @@ WriteCheckFile(OutputFile="rg2007.cch.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

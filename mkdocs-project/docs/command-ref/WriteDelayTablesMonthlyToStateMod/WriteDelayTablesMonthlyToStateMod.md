@@ -19,7 +19,7 @@ writes monthly delay tables that have been defined to a StateMod delay tables fi
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteDelayTablesMonthlyToStateMod](WriteDelayTablesMonthlyToStateMod.png)
+![WriteDelayTablesMonthlyToStateMod command editor](WriteDelayTablesMonthlyToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,6 +48,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/WriteDelayTablesMonthlyToStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

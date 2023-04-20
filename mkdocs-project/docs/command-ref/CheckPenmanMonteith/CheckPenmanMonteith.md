@@ -20,7 +20,7 @@ checks the Penman-Monteith crop coefficient data for problems.  The command shou
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckPenmanMonteith](CheckPenmanMonteith.png)
+![CheckPenmanMonteith Command Editor](CheckPenmanMonteith.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -71,6 +71,8 @@ WriteCheckFile(OutputFile="Crops_KPM.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

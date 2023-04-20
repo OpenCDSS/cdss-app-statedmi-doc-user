@@ -20,7 +20,7 @@ which is a format that has been used in CDSS StateMod modeling.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationDepletionTablesFromRTN](SetWellStationDepletionTablesFromRTN.png)
+![SetWellStationDepletionTablesFromRTN command editor](SetWellStationDepletionTablesFromRTN.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,5 +49,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

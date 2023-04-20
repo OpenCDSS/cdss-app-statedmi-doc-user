@@ -54,7 +54,7 @@ The ***Commands / General - Comments*** menu provides menu items to insert speci
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![Comment](Comment.png)
+![Comment Command Editor](Comment.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -92,7 +92,7 @@ In this case, the requirement is met, as shown in the following image.
 ```
 
 **<p style="text-align: center;">
-![require-success](require-success.png)
+![require success message](require-success.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -108,7 +108,7 @@ and the comment is also marked as a failure when the command file is run.
 ```
 
 **<p style="text-align: center;">
-![require-failure](require-failure.png)
+![require failure message](require-failure.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -132,6 +132,8 @@ This type of check ensures that a command file is not used with an incompatible 
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

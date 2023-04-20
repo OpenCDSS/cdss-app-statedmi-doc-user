@@ -19,7 +19,7 @@ writes reservoir rights data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteReservoirRightsToList](WriteReservoirRightsToList.png)
+![WriteReservoirRightsToList command editor](WriteReservoirRightsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ WriteReservoirRightsToList(OutputFile="cm2005.rer.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

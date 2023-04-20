@@ -19,7 +19,7 @@ sets data in existing CU Locations or adds a new CU Location.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetCULocation](SetCULocation.png)
+![SetCULocation command editor](SetCULocation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -53,6 +53,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetCULocation).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -65,7 +65,7 @@ An excerpt from a well rights file with this information is shown below:
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellRightsFromStateMod](ReadWellRightsFromStateMod.png)
+![ReadWellRightsFromStateMod command editor](ReadWellRightsFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -95,6 +95,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadWellRightsFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

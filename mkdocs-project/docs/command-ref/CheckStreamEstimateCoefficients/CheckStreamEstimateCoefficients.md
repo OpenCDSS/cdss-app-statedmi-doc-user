@@ -20,7 +20,7 @@ checks stream estimate coefficients data for problems.  The command should usual
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckStreamEstimateCoefficients](CheckStreamEstimateCoefficients.png)
+![CheckStreamEstimateCoefficients Command Editor](CheckStreamEstimateCoefficients.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -99,6 +99,8 @@ WriteCheckFile(OutputFile="rib.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

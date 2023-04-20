@@ -30,7 +30,7 @@ Use the [`WriteParcelsToFile`](../WriteParcelsToFile/WriteParcelsToFile.md) comm
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckIrrigatedLands](CheckIrrigatedLands.png)
+![CheckIrrigatedLands Command Editor](CheckIrrigatedLands.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -122,6 +122,8 @@ WriteParcelsToFile(OutputFile="Ark2020_CheckIrrigationLands.statedmi.parcel-supp
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

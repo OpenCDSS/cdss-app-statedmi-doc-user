@@ -19,7 +19,7 @@ sets data in existing plan stations or adds a new plan station.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetPlanStation](SetPlanStation.png)
+![SetPlanStation command editor](SetPlanStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -59,4 +59,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

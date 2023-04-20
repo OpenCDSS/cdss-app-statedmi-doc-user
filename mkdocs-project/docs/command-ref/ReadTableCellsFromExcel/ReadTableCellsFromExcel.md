@@ -27,7 +27,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../ReadTableCellsFromExcel_Excel.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableCellsFromExcel](ReadTableCellsFromExcel_Excel.png)
+![ReadTableCellsFromExcel command editor](ReadTableCellsFromExcel_Excel.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,7 +49,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../ReadTableCellsFromExcel_Table.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableCellsFromExcel Table](ReadTableCellsFromExcel_Table.png)
+![ReadTableCellsFromExcel Table command editor](ReadTableCellsFromExcel_Table.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -82,6 +82,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableCellsFromExcel).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

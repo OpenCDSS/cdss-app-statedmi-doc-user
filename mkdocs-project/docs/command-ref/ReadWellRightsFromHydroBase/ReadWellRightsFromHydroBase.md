@@ -49,7 +49,7 @@ particularly if the [`MergeWellRights`](../MergeWellRights/MergeWellRights.md) c
 The following figure illustrates possible water supply for parcels.
 
 **<p style="text-align: center;">
-![ParcelSupplyDiagram](ParcelSupplyDiagram.png)
+![Parcel Supply Diagram](ParcelSupplyDiagram.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -384,7 +384,7 @@ See CDSS technical memoranda for a description of well classes
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellRightsFromHydroBase](ReadWellRightsFromHydroBase.png)
+![ReadWellRightsFromHydroBase command editor](ReadWellRightsFromHydroBase.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -604,6 +604,8 @@ WriteCheckFile(OutputFile="Sp2008L.wer.check.html",Title="Well Rights Check File
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

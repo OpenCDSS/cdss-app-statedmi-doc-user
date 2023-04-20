@@ -20,7 +20,7 @@ stream gage stations data for problems.  The command should usually be used with
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckStreamGageStations](CheckStreamGageStations.png)
+![CheckStreamGageStations Command Editor](CheckStreamGageStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

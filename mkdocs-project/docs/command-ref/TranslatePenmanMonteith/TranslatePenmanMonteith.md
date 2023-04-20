@@ -27,7 +27,7 @@ The following example illustrates a command of this type.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![TranslatePenmanMonteith](TranslatePenmanMonteith.png)
+![TranslatePenmanMonteith command editor](TranslatePenmanMonteith.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -63,4 +63,8 @@ TranslatePenmanMonteith(OldCropType="ALFALFA",NewCropType=”ALFALFA.ASCE")
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

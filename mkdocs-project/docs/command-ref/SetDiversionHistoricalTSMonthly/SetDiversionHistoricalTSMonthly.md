@@ -39,7 +39,7 @@ Warnings are generated because it can be difficult to differentiate a stream gat
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionHistoricalTSMonthly](SetDiversionHistoricalTSMonthly.png)
+![SetDiversionHistoricalTSMonthly command editor](SetDiversionHistoricalTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -69,6 +69,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetDiversionHistoricalTSMonthly).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

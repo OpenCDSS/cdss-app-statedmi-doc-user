@@ -22,7 +22,7 @@ and one filling backward, in order to completely fill the ends of time series.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillCropPatternTSRepeat](FillCropPatternTSRepeat.png)
+![FillCropPatternTSRepeat command editor](FillCropPatternTSRepeat.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -58,6 +58,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/FillCropPatternTSRepeat).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

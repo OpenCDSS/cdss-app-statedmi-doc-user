@@ -28,7 +28,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../ReadTableFromFixedFormatFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableFromFixedFormatFile](ReadTableFromFixedFormatFile.png)
+![ReadTableFromFixedFormatFile command editor](ReadTableFromFixedFormatFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -105,6 +105,8 @@ The following table in StateDMI illustrates the resulting output:
 </p>**
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

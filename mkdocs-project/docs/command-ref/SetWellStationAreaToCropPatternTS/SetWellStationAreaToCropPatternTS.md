@@ -21,7 +21,7 @@ If there is no crop pattern time series, the area will not be set.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationAreaToCropPatternTS](SetWellStationAreaToCropPatternTS.png)
+![SetWellStationAreaToCropPatternTS command editor](SetWellStationAreaToCropPatternTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,6 +49,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetWellStationAreaToCropPatternTS).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

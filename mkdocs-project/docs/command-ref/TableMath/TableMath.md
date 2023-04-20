@@ -30,7 +30,7 @@ command (in this case illustrating how values in a column named `ts1` are added 
 <a href="../TableMath.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![TableMath](TableMath.png)
+![TableMath command editor](TableMath.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,6 +62,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/TableMath).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

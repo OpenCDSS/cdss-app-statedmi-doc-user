@@ -19,7 +19,7 @@ sets data in existing river network nodes or adds a new river network node.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetRiverNetworkNode](SetRiverNetworkNode.png)
+![SetRiverNetworkNode command editor](SetRiverNetworkNode.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -51,6 +51,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetRiverNetworkNode).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

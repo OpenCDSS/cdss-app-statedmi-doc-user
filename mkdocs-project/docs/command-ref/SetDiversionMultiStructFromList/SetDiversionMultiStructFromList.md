@@ -32,7 +32,7 @@ defined and before their use in other processing, such as reading data from Hydr
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionMultiStructFromList](SetDiversionMultiStructFromList.png)
+![SetDiversionMultiStructFromList command editor](SetDiversionMultiStructFromList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -77,6 +77,8 @@ An example list file is shown below:
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

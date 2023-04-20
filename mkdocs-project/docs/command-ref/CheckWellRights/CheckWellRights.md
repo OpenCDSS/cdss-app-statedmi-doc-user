@@ -20,7 +20,7 @@ The command should usually be used with a
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckWellRights](CheckWellRights.png)
+![CheckWellRights Command Editor](CheckWellRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -96,6 +96,8 @@ WriteCheckFile(OutputFile="Sp2008L.wer.check.html",Title="Well Rights Check File
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

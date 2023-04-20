@@ -20,7 +20,7 @@ which is a format that has been used in CDSS StateMod modeling.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWellStationDelayTablesFromRTN](SetWellStationDelayTablesFromRTN.png)
+![SetWellStationDelayTablesFromRTN command editor](SetWellStationDelayTablesFromRTN.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -68,6 +68,8 @@ For the number of return flow locations, the following lines indicate the identi
 the percentage of the return to receive, and the delay table for the return.
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

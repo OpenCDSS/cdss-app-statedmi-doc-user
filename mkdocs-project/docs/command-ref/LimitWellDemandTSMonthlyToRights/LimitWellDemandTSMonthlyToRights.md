@@ -82,7 +82,7 @@ Because of the conversion from CFS to ACFT, monthly values in the step function 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![LimitWellDemandTSMonthlyToRights](LimitWellDemandTSMonthlyToRights.png)
+![LimitWellDemandTSMonthlyToRights command editor](LimitWellDemandTSMonthlyToRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -115,6 +115,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/LimitWellDemandTSMonthlyToRights).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -20,7 +20,7 @@ Only locations that have no climate stations assigned will be modified.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![FillCULocationClimateStationWeights](FillCULocationClimateStationWeights.png)
+![FillCULocationClimateStationWeights Command Editor](FillCULocationClimateStationWeights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -81,6 +81,8 @@ WriteCheckFile(OutputFile="cm2006.str.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

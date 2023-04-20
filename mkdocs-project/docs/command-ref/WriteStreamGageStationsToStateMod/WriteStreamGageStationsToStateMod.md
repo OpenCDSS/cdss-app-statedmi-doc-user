@@ -19,7 +19,7 @@ writes stream gage stations that have been defined to a StateMod stream gage sta
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteStreamGageStationsToStateMod](WriteStreamGageStationsToStateMod.png)
+![WriteStreamGageStationsToStateMod command editor](WriteStreamGageStationsToStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -80,6 +80,8 @@ WriteCheckFile(OutputFile="ris.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

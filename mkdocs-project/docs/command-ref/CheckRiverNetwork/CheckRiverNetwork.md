@@ -20,7 +20,7 @@ checks river network data for problems.  The command should usually be used with
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckRiverNetwork](CheckRiverNetwork.png)
+![CheckRiverNetwork Command Editor](CheckRiverNetwork.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -79,6 +79,8 @@ WriteCheckFile(OutputFile="rin.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

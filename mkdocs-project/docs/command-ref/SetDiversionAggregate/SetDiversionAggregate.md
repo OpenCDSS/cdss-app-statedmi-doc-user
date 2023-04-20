@@ -34,7 +34,7 @@ defined and before their use in other processing, such as reading data from Hydr
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetDiversionAggregate](SetDiversionAggregate.png)
+![SetDiversionAggregate command editor](SetDiversionAggregate.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -63,6 +63,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetDiversionAggregate).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

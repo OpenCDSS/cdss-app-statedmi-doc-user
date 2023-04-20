@@ -20,7 +20,7 @@ checks the crop pattern time series data for problems.  The command should usual
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckCropPatternTS](CheckCropPatternTS.png)
+![CheckCropPatternTS Command Editor](CheckCropPatternTS.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -91,6 +91,8 @@ WriteCheckFile(OutputFile="cm2006.cds.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

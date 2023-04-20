@@ -26,7 +26,7 @@ The command also allows the comparison table to be output to an HTML file, in wh
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CompareTables](CompareTables.png)
+![CompareTables Command Editor](CompareTables.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -63,6 +63,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/general/CompareTables).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

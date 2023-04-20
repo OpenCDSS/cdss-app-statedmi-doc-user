@@ -27,7 +27,7 @@ The following example illustrates a command of this type.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![TranslateBlaneyCriddle](TranslateBlaneyCriddle.png)
+![TranslateBlaneyCriddle command editor](TranslateBlaneyCriddle.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -62,4 +62,8 @@ TranslateBlaneyCriddle(OldCropType="GRASS_PASTURE.TR21",NewCropType="GRASS_PASTU
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

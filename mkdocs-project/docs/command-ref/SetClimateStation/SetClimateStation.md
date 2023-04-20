@@ -19,7 +19,7 @@ sets data in existing climate stations or adds a new climate station.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetClimateStation](SetClimateStation.png)
+![SetClimateStation command editor](SetClimateStation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -66,6 +66,8 @@ WriteClimateStationsToStateCU(OutputFile="COclim2006.cli")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

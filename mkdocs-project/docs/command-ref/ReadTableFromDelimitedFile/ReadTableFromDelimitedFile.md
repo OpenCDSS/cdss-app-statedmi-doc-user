@@ -41,7 +41,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../ReadTableFromDelimitedFile.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ReadTableFromDelimitedFile](ReadTableFromDelimitedFile.png)
+![ReadTableFromDelimitedFile command editor](ReadTableFromDelimitedFile.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -95,6 +95,8 @@ some junk to be skipped
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -42,7 +42,7 @@ In this case the demand can later be adjusted to a larger value using the
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CalculateDiversionDemandTSMonthly](CalculateDiversionDemandTSMonthly.png)
+![Calculate Diversion Demand TSMonthly Command Editor](CalculateDiversionDemandTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -138,6 +138,8 @@ WriteCheckFile(OutputFile="Cddm.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

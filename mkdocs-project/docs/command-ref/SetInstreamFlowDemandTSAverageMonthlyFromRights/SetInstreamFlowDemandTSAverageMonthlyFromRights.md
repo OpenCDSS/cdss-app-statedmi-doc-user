@@ -30,7 +30,7 @@ If necessary, the constant values determined from water rights can be reset usin
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetInstreamFlowDemandTSAverageMonthlyFromRights](SetInstreamFlowDemandTSAverageMonthlyFromRights.png)
+![SetInstreamFlowDemandTSAverageMonthlyFromRights command editor](SetInstreamFlowDemandTSAverageMonthlyFromRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -58,6 +58,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetInstreamFlowDemandTSAverageMonthlyFromRights).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

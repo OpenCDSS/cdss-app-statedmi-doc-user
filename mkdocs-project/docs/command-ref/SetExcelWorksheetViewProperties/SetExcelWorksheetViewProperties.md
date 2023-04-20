@@ -27,7 +27,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SetExcelWorksheetViewProperties.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetExcelWorksheetViewProperties](SetExcelWorksheetViewProperties.png)
+![SetExcelWorksheetViewProperties command editor](SetExcelWorksheetViewProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -58,6 +58,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetExcelWorksheetViewProperties).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

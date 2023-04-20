@@ -20,7 +20,7 @@ The data can then be manipulated and output with other commands.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadPlanWellAugmentationFromStateMod](ReadPlanWellAugmentationFromStateMod.png)
+![ReadPlanWellAugmentationFromStateMod command editor](ReadPlanWellAugmentationFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -47,6 +47,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadPlanWellAugmentationFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

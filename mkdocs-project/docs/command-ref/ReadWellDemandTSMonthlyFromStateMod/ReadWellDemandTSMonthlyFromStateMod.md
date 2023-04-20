@@ -29,7 +29,7 @@ By default, all time series are read and are processed, whether they correspond 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![ReadWellDemandTSMonthlyFromStateMod](ReadWellDemandTSMonthlyFromStateMod.png)
+![ReadWellDemandTSMonthlyFromStateMod command editor](ReadWellDemandTSMonthlyFromStateMod.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -58,6 +58,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadWellDemandTSMonthlyFromStateMod).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -19,7 +19,7 @@ writes well rights data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteWellRightsToList](WriteWellRightsToList.png)
+![WriteWellRightsToList command editor](WriteWellRightsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -56,6 +56,8 @@ WriteWellRightsToList(OutputFile="rights.lst")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

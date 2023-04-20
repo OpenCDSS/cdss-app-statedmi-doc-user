@@ -26,7 +26,7 @@ A warning can be generated if a difference is detected or if no differences are 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CompareFiles](CompareFiles.png)
+![CompareFiles Command Editor](CompareFiles.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -64,5 +64,8 @@ CompareFiles(InputFile1="Data/A1.txt",InputFile2="Data/B1.txt",WarnIfDifferent=T
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

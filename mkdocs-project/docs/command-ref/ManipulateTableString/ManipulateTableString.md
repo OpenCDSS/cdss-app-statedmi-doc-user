@@ -29,7 +29,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../ManipulateTableString.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![ManipulateTableString](ManipulateTableString.png)
+![ManipulateTableString Command Editor command editor](ManipulateTableString.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -67,13 +67,15 @@ Operators and Parameter Requirements
 
 |**Operator**|**Parameters Required and Description**|
 | --------------|-----------------|
-|`Split`|<ul><li>`InputValue2` is the delimiter character</li><li>`InputValue3` is the part to output (1+)</li><ul>|
+|`Split`|<ul><li>`InputValue2` is the delimiter character</li><li>`InputValue3` is the part to output (1+)</li></ul>|
 
 ## Examples ##
 
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ManipulateTableString).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

@@ -125,7 +125,7 @@ The StateDMI main interface is divided into the following areas:
 After starting the software, the main interface will be blank, as shown in the following figure:
 
 **<p style="text-align: center;">
-![Main0](Main0.png)
+![StateDMI Interface after Startup](Main0.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -140,7 +140,7 @@ the interface will appear similar to the following (the title bar displays the n
 of the command file and the ***Commands*** area title displays the status of the current commands list).
 
 **<p style="text-align: center;">
-![Main1](Main1.png)
+![StateDMI Interface after Loading a Commands File](Main1.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -160,7 +160,7 @@ The title bar at the top of the StateDMI interface indicates whether StateCU or 
 indicates the name of the command file, and whether changes to commands have been made.
 
 **<p style="text-align: center;">
-![Main_Title](Main_Title.png)
+![StateDMI Title Bar](Main_Title.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -190,7 +190,7 @@ Each menu is described in detail starting with
 The tool bar provides graphical shortcuts to facilitate common actions:
 
 **<p style="text-align: center;">
-![Main_Toolbar](Main_Toolbar.png)
+![ StateDMI Toolbar](Main_Toolbar.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -258,7 +258,7 @@ The command list also includes left and right gutters to display graphics that h
 The following figure illustrates a command workflow with errors.
 
 **<p style="text-align: center;">
-![Main_Commands_Error](Main_Commands_Error.png)
+![Command List Illustrating Error](Main_Commands_Error.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -326,7 +326,7 @@ Currently, only files created during processing are listed (additional input fil
 The ***Problems*** tab in the results area displays a summary of problems from all commands.
 
 **<p style="text-align: center;">
-![Main_Results_Problems](Main_Results_Problems.png)
+![StateDMI Results Problems](Main_Results_Problems.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -348,7 +348,7 @@ After making a selection, a simple tabular display will be shown, as in the foll
 The columns are typically shown in the order listed in the model documentation, in order to agree with model file output.
 
 **<p style="text-align: center;">
-![Main_Results_CULocations](Main_Results_CULocations.png)
+![Example Tabular Results Display](Main_Results_CULocations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -368,7 +368,7 @@ This occurs when a file has a complex structure that cannot easily be flattened 
 The title bar and status message areas provide useful information about the current state of the interface and command list.
 
 **<p style="text-align: center;">
-![Main_Status](Main_Status.png)
+![Status Message Area](Main_Status.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -405,7 +405,7 @@ The use of the map interface is being evaluated.
 The File menu provides standard input and output features as described below.
 
 **<p style="text-align: center;">
-![Menu_File](Menu_File.png)
+![File Menu](Menu_File.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -417,7 +417,7 @@ File Menu (<a href="../Menu_File.png">see also the full-size image</a>)
 The ***File / Open*** menu allows opening input sources.
 
 **<p style="text-align: center;">
-![Menu_File_Open](Menu_File_Open.png)
+![File Open Menu](Menu_File_Open.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -474,7 +474,7 @@ The water districts are determined from the structure table in HydroBase.
 The information that is shown is consistent with that shown by other State of Colorado tools and is useful for troubleshooting.
 
 **<p style="text-align: center;">
-![Menu_File_HydroBaseProperties](Menu_File_HydroBaseProperties.png)
+![HydroBase Properties Menu](Menu_File_HydroBaseProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1178,7 +1178,7 @@ In other words, edit the network interactively and save the result, and then spe
 The following figure shows the network editor after a network file has been read and displayed:
 
 **<p style="text-align: center;">
-![NetworkEditor](NetworkEditor.png)
+![Network Editor](NetworkEditor.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1226,7 +1226,7 @@ See sections below for information about adding/moving/deleting nodes and other 
 Right-clicking on the canvas (not near a node), displays the following menu:
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup](NetworkEditor_Popup.png)
+![Network Editor Popup Menu](NetworkEditor_Popup.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1257,7 +1257,7 @@ Network Editor Popup Menu Items
 The overview window indicates the current extent of the network in the main canvas.
 
 **<p style="text-align: center;">
-![NetworkEditor_Overview](NetworkEditor_Overview.png)
+![Network Editor Overview](NetworkEditor_Overview.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1272,7 +1272,7 @@ Or, drag the overview window extent box to a new location to reposition the netw
 The page properties can be set for multiple layouts using the ***Page Properties*** settings.
 
 **<p style="text-align: center;">
-![NetworkEditor_PageProperties](NetworkEditor_PageProperties.png)
+![Network Editor Page Properties](NetworkEditor_PageProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1299,7 +1299,7 @@ Differences in the relative dimensions of page sizes can cause some scaling in o
 The node properties area in the network editor shows the node properties for the most recently selected node.
 
 **<p style="text-align: center;">
-![NetworkEditor_NodeProperties](NetworkEditor_NodeProperties.png)
+![Network Editor Node Properties](NetworkEditor_NodeProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1314,7 +1314,7 @@ To add a node, select a node, right click, and press ***Add Upstream Node***.
 The following dialog is then used to enter information about the new node (see below for information about changing node properties).
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup_AddNode](NetworkEditor_Popup_AddNode.png)
+![Network Editor Popup Add Node](NetworkEditor_Popup_AddNode.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1330,7 +1330,7 @@ Node properties for an existing node are edited by selecting a node in the netwo
 right clicking, and pressing the ***Properties*** menu item, which will display a dialog similar to the following:
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup_NodeProperties](NetworkEditor_Popup_NodeProperties.png)
+![Network Editor Popup Node Properties](NetworkEditor_Popup_NodeProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1354,7 +1354,7 @@ To add an annotation, right-click at a point of interest (not near a node)
 and select the ***Add Annotation*** menu item, which will display the following dialog:
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup_AddAnnotation](NetworkEditor_Popup_AddAnnotation.png)
+![Network Editor Popup Add Annotation](NetworkEditor_Popup_AddAnnotation.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1366,7 +1366,7 @@ Once an annotation is added, it can be moved and its properties can be set
 by right clicking on the annotation anchor point and pressing ***Properties***:
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup_AnnotationProperties](NetworkEditor_Popup_AnnotationProperties.png)
+![Network Editor Popup Annotation Properties](NetworkEditor_Popup_AnnotationProperties.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1386,7 +1386,7 @@ Annotations can be placed next to links to describe the link.
 To add a link, right-click on the network (not near a node) and use the ***Add Link*** menu item.  The following dialog will be shown:
 
 **<p style="text-align: center;">
-![NetworkEditor_Popup_AddLink](NetworkEditor_Popup_AddLink.png)
+![Network Editor Popup Add Link](NetworkEditor_Popup_AddLink.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1410,7 +1410,7 @@ When the print tools are used, several dialogs are shown, as required by the Jav
 Although options are available in various dialogs, the following approach is recommended (improvements are being evaluated):
 
 1. After selecting one of the tools mentioned above, a Java Page Setup dialog will be shown (this should be the same regardless of Windows version):<br>
-![NetworkEditor_Print1](NetworkEditor_Print1.png)<br>
+![Network Editor Print1](NetworkEditor_Print1.png)<br>
 Select the printer of interest by using the ***Printer...*** button, as discussed in the next item.
 2. A Windows ***Page Setup*** dialog will be shown:<br>
 ![NetworkEditor_Print2](NetworkEditor_Print2.png)<br>
@@ -1434,7 +1434,7 @@ The contents of the ***Commands*** menu will be appropriate for each model.
 For example, the top level menu for StateCU is as follows:
 
 **<p style="text-align: center;">
-![Menu_Commands_StateCU](Menu_Commands_StateCU.png)
+![Menu Commands StateCU](Menu_Commands_StateCU.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1467,7 +1467,7 @@ Each sub-menu lists commands that can be inserted into the ***Commands*** list,
 which can then be processed to produce output.  For example, the menu for ***Climate Stations*** is:
 
 **<p style="text-align: center;">
-![Menu_Commands_ClimateStations](Menu_Commands_ClimateStations.png)
+![Menu Commands Climate Stations](Menu_Commands_ClimateStations.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1507,7 +1507,7 @@ The [Commands Reference](../command-ref/overview.md) describes each command and 
 General commands are listed under the ***Commands / General – ...*** menus and can be used with any model.
 
 **<p style="text-align: center;">
-![Menu_Commands_General](Menu_Commands_General.png)
+![Menu Commands General](Menu_Commands_General.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1521,7 +1521,7 @@ Multi-line comments are useful for commenting out blocks of commands.
 The following dialog is used to edit one or more `#` comment lines:
 
 **<p style="text-align: center;">
-![c_comment](c_comment.png)
+![Comment Dialog](c_comment.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -1685,7 +1685,7 @@ Selecting the ***View Log File*** button in the ***Tools / Diagnostics***  tool 
 selecting the ***Tools / Diagnostics – View Log File*** menu will display the message log file viewer window:
 
 **<p style="text-align: center;">
-![Diagnostics](DiagnosticsViewer.png)
+![Diagnostics Viewer](DiagnosticsViewer.png)
 </p>**
 
 **<p style="text-align: center;">

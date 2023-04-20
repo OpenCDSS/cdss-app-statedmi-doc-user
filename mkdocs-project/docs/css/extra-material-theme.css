@@ -28,3 +28,7 @@ article ol ol ol ol {
 .alignCenter {
 	test-align: center;
 }
+
+a:link {
+	text-decoration: underline;
+  }

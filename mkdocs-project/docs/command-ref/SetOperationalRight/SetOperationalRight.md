@@ -21,7 +21,7 @@ sets data in existing operational right or adds a new operational right.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetOperationalRight](SetOperationalRight.png)
+![SetOperationalRight command editor](SetOperationalRight.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -48,5 +48,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.

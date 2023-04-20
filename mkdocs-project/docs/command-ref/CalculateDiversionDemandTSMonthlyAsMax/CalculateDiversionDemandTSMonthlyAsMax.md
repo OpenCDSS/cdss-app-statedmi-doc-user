@@ -31,7 +31,7 @@ If necessary, use set commands after this command to force demand time series va
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CalculateDiversionDemandTSMonthlyAsMax](CalculateDiversionDemandTSMonthlyAsMax.png)
+![CalculateDiversionDemandTSMonthlyAsMax Command Editor](CalculateDiversionDemandTSMonthlyAsMax.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -105,6 +105,8 @@ WriteCheckFile(OutputFile="Cddm.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

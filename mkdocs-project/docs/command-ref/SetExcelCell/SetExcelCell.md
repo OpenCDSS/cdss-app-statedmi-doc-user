@@ -27,7 +27,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SetExcelCell_File.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetExcelCell File](SetExcelCell_File.png)
+![SetExcelCell File command editor](SetExcelCell_File.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -49,7 +49,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SetExcelCell_ColumnRow.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetExcelCell ColumnRow](SetExcelCell_ColumnRow.png)
+![SetExcelCell ColumnRow command editor](SetExcelCell_ColumnRow.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -60,7 +60,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 <a href="../SetExcelCell_Value.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![SetExcelCell Value](SetExcelCell_Value.png)
+![SetExcelCell Value command editor](SetExcelCell_Value.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -123,6 +123,8 @@ Command Parameters
 See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetExcelCell).
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

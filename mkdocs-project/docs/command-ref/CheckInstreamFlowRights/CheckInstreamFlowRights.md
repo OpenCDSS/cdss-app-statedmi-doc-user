@@ -20,7 +20,7 @@ checks instream flow rights data for problems.  The command should usually be us
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckInstreamFlowRights](CheckInstreamFlowRights.png)
+![CheckInstreamFlowRights Command Editor](CheckInstreamFlowRights.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,7 @@ WriteCheckFile(OutputFile="ifr.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

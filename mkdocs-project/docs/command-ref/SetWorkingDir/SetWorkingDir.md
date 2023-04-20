@@ -33,7 +33,7 @@ Setting the working directory to an absolute path causes all relative paths for 
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SetWorkingDir](SetWorkingDir.png)
+![SetWorkingDir command editor](SetWorkingDir.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,4 +61,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
+
+There are no additional related commands.

@@ -24,7 +24,7 @@ The following dialog is used to edit the command and illustrates the command syn
 <a href="../FormatDateTimeProperty.png">See also the full-size image.</a>
 
 **<p style="text-align: center;">
-![FormatDateTimeProperty](FormatDateTimeProperty.png)
+![FormatDateTimeProperty command editor](FormatDateTimeProperty.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -86,6 +86,8 @@ FormatDateTimeProperty(PropertyName="DateTimePropString",DateTimePropertyName="D
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

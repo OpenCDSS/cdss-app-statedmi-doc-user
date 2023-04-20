@@ -20,7 +20,7 @@ checks diversion historical monthly time series for problems.  The command shoul
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![CheckDiversionHistoricalTSMonthly](CheckDiversionHistoricalTSMonthly.png)
+![CheckDiversionHistoricalTSMonthly Command Editor](CheckDiversionHistoricalTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -61,6 +61,8 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

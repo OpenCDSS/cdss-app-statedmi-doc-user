@@ -21,7 +21,7 @@ files with suffixes `_Collections` and `_ReturnFlows` are written, containing se
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteDiversionStationsToList](WriteDiversionStationsToList.png)
+![WriteDiversionStationsToList command editor](WriteDiversionStationsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -57,6 +57,8 @@ WriteDiversionStationsToList(OutputFile="cm2005.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

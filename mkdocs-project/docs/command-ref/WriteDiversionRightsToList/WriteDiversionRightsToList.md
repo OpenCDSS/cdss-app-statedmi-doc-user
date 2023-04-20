@@ -19,7 +19,7 @@ writes diversion rights data to a delimited file.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![WriteDiversionRightsToList](WriteDiversionRightsToList.png)
+![WriteDiversionRightsToList command editor](WriteDiversionRightsToList.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -57,6 +57,8 @@ WriteDiversionRightsToList(OutputFile="rights.csv")
 ```
 
 ## Troubleshooting ##
+
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
 
 ## See Also ##
 

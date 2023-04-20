@@ -22,7 +22,7 @@ therefore the time series order no longer agrees with the well station order.
 The following dialog is used to edit the command and illustrates the command syntax.
 
 **<p style="text-align: center;">
-![SortWellHistoricalPumpingTSMonthly](SortWellHistoricalPumpingTSMonthly.png)
+![SortWellHistoricalPumpingTSMonthly command editor](SortWellHistoricalPumpingTSMonthly.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -50,5 +50,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+
 ## See Also ##
 
+There are no additional related commands.
