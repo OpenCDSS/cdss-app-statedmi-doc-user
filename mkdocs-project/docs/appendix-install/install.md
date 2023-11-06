@@ -1,17 +1,17 @@
-# StateDMI / Installation and Configuration
+# StateDMI / Installation and Configuration #
 
 This appendix describes how to install StateDMI in the CDSS (Colorado's Decision Support Systems) environment.
 CDSS consists of the HydroBase database, modeling, and data viewing/editing software.
 StateDMI can be used within this system to process data from the HydroBase database, CDSS model files, and other files.
 
-* [Overview](#overview)
-* [File Locations](#file-locations)
-	+ [Installation Files](#installation-files)
-	+ [User Files](#user-files)
-* [Installing StateDMI](#installing-statedmi)
-* [Uninstalling StateDMI](#uninstalling-statedmi)
-* [Running StateDMI](#running-statedmi)
-* [StateDMI Configuration](#statedmi-configuration)
+*   [Overview](#overview)
+*   [File Locations](#file-locations)
+    +   [Installation Files](#installation-files)
+    +   [User Files](#user-files)
+*   [Installing StateDMI](#installing-statedmi)
+*   [Uninstalling StateDMI](#uninstalling-statedmi)
+*   [Running StateDMI](#running-statedmi)
+*   [StateDMI Configuration](#statedmi-configuration)
 
 ---------------
 
@@ -85,8 +85,8 @@ This allows sharing of configuration file in major version while allowing StateD
 User configuration files will override the installation configuration
 file settings when configuration setting values are found in both places, in particular:
 
-* user `.statedmi/N/system/StateDMI.cfg` properties will override install `system/StateDMI.cfg`
-* user `.statedmi/N/datastores/*.cfg` datastore configuration files will override install `datastores/*.cfg`
+*   user `.statedmi/N/system/StateDMI.cfg` properties will override install `system/StateDMI.cfg`
+*   user `.statedmi/N/datastores/*.cfg` datastore configuration files will override install `datastores/*.cfg`
 
 The following design was implemented in StateDMI 5.00.00.
 
@@ -118,8 +118,8 @@ The StateDMI software installation is similar to TSTool,
 but has more specific uses.
 
 Use the following instructions to install StateDMI using the `StateDMI_CDSS_Version_Setup.exe` installer program,
-for example if StateDMI software was downloaded from the [CDSS website](http://www.colorado.gov/pacific/cdss/statedmi)
-or [OpenCDSS website](http://opencdss.state.co.us/statedmi/):
+for example if StateDMI software was downloaded from the [CDSS website](https://cdss.colorado.gov/software/statedmi)
+or [OpenCDSS website](https://opencdss.state.co.us/statedmi/):
 
 **1. Run the StateDMI_CDSS_Version_Setup.exe file by selecting from Windows Explorer, the Start / Run /  menu, or from a command shell.**
 
@@ -131,7 +131,7 @@ Administrator privileges are required to set registry settings to facilitate nor
 If you have administrative privileges, the following welcome will be displayed, and the installation can continue:
 
 **<p style="text-align: center;">
-![Install_Welcome](Install_Welcome.png)
+![Install Welcome](Install_Welcome.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -154,7 +154,7 @@ Press ***I Agree*** to continue with the installation.
 ** 2. Several components can be selected for the install as shown in the following dialog.  Position the mouse over a component to see its description.**
 
 **<p style="text-align: center;">
-![Install_SelectComponents](Install_SelectComponents.png)
+![Select components to install](Install_SelectComponents.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -168,7 +168,7 @@ Select the components to install and press ***Next***.
 Multiple versions of StateDMI can be installed and there are no dependencies between the versions.  It is recommenced that the default install location shown is used.
 
 **<p style="text-align: center;">
-![Install_SelectFolder](Install_SelectFolder.png)
+![Select installation folder](Install_SelectFolder.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -348,12 +348,12 @@ which allows overriding the installation files configuration files.
 
 The `system\StateDMI.cfg` file can be specified in the following two locations on Windows:
 
-* Installation files:
-	+ Windows:  `C:\CDSS\StateDMI-Version\system\StateDMI.cfg`
-	+ Linux:  `/opt/StateDMI-Version/system/StateDMI.cfg`
-* User files (`N` below is the StateDMI major version number, e.g., `5`):
-	+ Windows:  `C:\Users\user\.statedmi\N\system\StateDMI.cfg`
-	+ Linux:  `/home/user/.statedmi/N/system/StateDMI.cfg`
+*   Installation files:
+    +   Windows:  `C:\CDSS\StateDMI-Version\system\StateDMI.cfg`
+    +   Linux:  `/opt/StateDMI-Version/system/StateDMI.cfg`
+*   User files (`N` below is the StateDMI major version number, e.g., `5`):
+    +   Windows:  `C:\Users\user\.statedmi\N\system\StateDMI.cfg`
+    +   Linux:  `/home/user/.statedmi/N/system/StateDMI.cfg`
 
 The `StateDMI.cfg` file installation folder contains top-level configuration information for StateDMI.
 User file configuration properties take precedence over the installation configuration properties.
@@ -403,4 +403,3 @@ CDSS HydroBase Database Configuration Properties
 | `SystemLogin` | Reserved for internal use. | |
 | `SystemPassword` | Reserved for internal use. | |
 | `UserLogin` | Reserved for internal use. | |
-

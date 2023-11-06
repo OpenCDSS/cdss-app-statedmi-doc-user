@@ -1,11 +1,11 @@
 # StateDMI / Command / RunPython #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -14,7 +14,7 @@
 **This command needs to be updated for Python 3.**
 
 The `RunPython` command runs a Python script, waiting until execution is finished before processing additional commands.
-Python is a powerful scripting language that is widely used ([see http://www.python.org](http://www.python.org)).
+Python is a powerful scripting language that is widely used ([see https://python.org](https://python.org)).
 This command allows Python scripts to be run using a variety of Python interpreters, as shown in the following table.
 It is assumed that Python is installed in the standard directory for the distribution.
 New versions of Python will reside in similar locations to those shown below.
@@ -25,10 +25,10 @@ New versions of Python will reside in similar locations to those shown below.
 
 | **Intepreter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Language, Program Name (Example Install Home)** | **Comments**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-|IronPython ([http://ironpython.net](http://ironpython.net))|.NET, ipy (`C:\Program Files\IronPython 2.6`)|Useful for integrating with .NET applications, in particular to manipulate Microsoft Office software data files.  Can use .NET assembly code (but this code in a Python script is only recognized by IronPython).  Integration can occur within a running .NET application (essentially extending the functionality of the .NET application).  Version 2.6 requires .NET 2.0.  Version 2.6.1 requires .NET 4.0.|
-|Jython ([http://www.jython.org](http://www.jython.org))|Java, jython (`C:\jython2.5.1`)|Useful for integrating with Java applications, such as StateDMI.  Can use Java code (but this code in a Python script is only recognized by Jython).|
-|Jython embedded ([http://www.jython.org](http://www.jython.org))|Java (`C:\jython2.5.1`, but must use the installer option to create a JAR file in order to embed – this is the file that is distributed with StateDMI).|Useful for integrating with Java applications, such as StateDMI.  Can use Java code (but this code in a Python script is only recognized by Jython).  Integration can occur within a running Java application (essentially extending the functionality of the Java application).|
-|Python ([http://www.python.org](http://www.python.org))|C, python (`C:\Python25, C:\Python27`)|The original Python interpreter, which defines the Python language specification.|
+|IronPython ([https://ironpython.net](https://ironpython.net))|.NET, ipy (`C:\Program Files\IronPython 2.6`)|Useful for integrating with .NET applications, in particular to manipulate Microsoft Office software data files.  Can use .NET assembly code (but this code in a Python script is only recognized by IronPython).  Integration can occur within a running .NET application (essentially extending the functionality of the .NET application).  Version 2.6 requires .NET 2.0.  Version 2.6.1 requires .NET 4.0.|
+|Jython ([https://jython.org](https://jython.org))|Java, jython (`C:\jython2.5.1`)|Useful for integrating with Java applications, such as StateDMI.  Can use Java code (but this code in a Python script is only recognized by Jython).|
+|Jython embedded ([https://jython.org](https://jython.org))|Java (`C:\jython2.5.1`, but must use the installer option to create a JAR file in order to embed – this is the file that is distributed with StateDMI).|Useful for integrating with Java applications, such as StateDMI.  Can use Java code (but this code in a Python script is only recognized by Jython).  Integration can occur within a running Java application (essentially extending the functionality of the Java application).|
+|Python ([https://python.org](https://python.org))|C, python (`C:\Python25, C:\Python27`)|The original Python interpreter, which defines the Python language specification.|
 
 Python implementations have similar file organization, with the main executable
 (or batch file) residing in the main install folder.
@@ -96,7 +96,7 @@ Command Parameters
 
 ## Examples ##
 
-* See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/general/RunPython).
+*   See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/general/RunPython).
 
 The following command example illustrates how to run a Python script.
 
@@ -158,15 +158,15 @@ The following example illustrates the use of double quotes to surround Python sc
 
 ```
 # Retrieve the MEI (ENSO) index
-WebGet(URI="http://www.esrl.noaa.gov/psd/data/correlation/mei.data",LocalFile="mei.data")
+WebGet(URI="https://www.esrl.noaa.gov/psd/data/correlation/mei.data",LocalFile="mei.data")
 # Convert the MEI data file to a CSV file that can be read by StateDMI
 RunPython(Interpreter="Python",InputFile="mei2csv.py",Arguments="\"InputFile=${WorkingDir}/mei.data\"
 ```
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`RunCommands`](../RunCommands/RunCommands.md) command
-* [`RunProgram`](../RunProgram/RunProgram.md) command
+*   [`RunCommands`](../RunCommands/RunCommands.md) command
+*   [`RunProgram`](../RunProgram/RunProgram.md) command

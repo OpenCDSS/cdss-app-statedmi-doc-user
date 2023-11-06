@@ -1,11 +1,11 @@
 # StateDMI / Command / ReadTableFromExcel #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -15,16 +15,16 @@ The `ReadTableFromExcel` command reads a table from a Microsoft Excel file,
 more specifically from a worksheet in an Excel workbook file.
 A contiguous block of cells (rectangle) must be specified in one of the following ways:
 
-* Specify a range of cells using Excel address notation (e.g., `A1:D10`)
-* Specify the name of an Excel named range.
-* Specify a table name (essentially a named range).
+*   Specify a range of cells using Excel address notation (e.g., `A1:D10`)
+*   Specify the name of an Excel named range.
+*   Specify a table name (essentially a named range).
 
 Table column types (number, text, etc.) are determined from the cells
 in the first data row being read (NOT the column name row) – data types must be consistent
 for all cells in a column, although blanks are allowed.
 Table column names are determined according to the `ExcelColumnNames` command parameter.
 
-StateDMI uses the [Apache POI software](http://poi.apache.org) to read the Excel file
+StateDMI uses the [Apache POI software](https://poi.apache.org) to read the Excel file
 and consequently functionality is constrained by the features of that software package.
 The software reads and writes Excel files.
 POI does not fully implement Excel functionality and consequently some formula capabilities
@@ -164,13 +164,13 @@ Command Parameters
 
 ## Examples ##
 
-* See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromExcel).
+*   See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/ReadTableFromExcel).
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`ReadTableFromDelimitedFile`](../ReadTableFromDelimitedFile/ReadTableFromDelimitedFile) command
-* [`WriteTableToExcel`](../WriteTableToExcel/WriteTableToExcel) command
+*   [`ReadTableFromDelimitedFile`](../ReadTableFromDelimitedFile/ReadTableFromDelimitedFile) command
+*   [`WriteTableToExcel`](../WriteTableToExcel/WriteTableToExcel) command

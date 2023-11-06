@@ -1,11 +1,11 @@
 # StateDMI / Command / WriteTableToGeoJSON #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -14,11 +14,11 @@
 The `WriteTableToGeoJSON` command writes a table to a GeoJSON file,
 which is a spatial data format that can be viewed in geographic information system (GIS) software and other visualization tools.  See:
 
-* [GeoJSON Specification](http://geojson.org/geojson-spec.html)
+*   [GeoJSON Specification](https://geojson.org/geojson-spec.html)
 
 The table must include columns for longitude and latitude or a column containing Well Known Text (WKT) geometry strings.  See:
 
-* [Well-known Text on WikiPedia](http://en.wikipedia.org/wiki/Well-known_text)
+*   [Well-known Text on WikiPedia](https://en.wikipedia.org/wiki/Well-known_text)
 
 Currently only point and polygon data can be processed but in the future support
 for well-known text for other geometry types will be added.
@@ -117,14 +117,14 @@ Command Parameters
 |`LatitudeColumn`|The name of the table column that contains latitude.  Can be specified using `${Property}` notation.|None – must be specified.|
 |`ElevationColumn`|The name of the table column that contains elevation.  Can be specified using `${Property}` notation.|Elevation is omitted.|
 |`WKTGeometryColumn`|The name of the table column that contains Well Known Text (WKT) geometry strings.  Can be specified using `${Property}` notation.||
-|`CRSText`|Full text to define the coordinate reference system using the `crs` GeoJSON property.  The text will be inserted at the top level of the GeoJSON.  This should be used when other than geographic coordinates are used.  For more information, see:<br><ul><li>[GeoJSON CRS specification](http://geojson.org/geojson-spec.html#named-crs)</li><li>[Spatial Reference System](https://en.wikipedia.org/wiki/Spatial_reference_system)</li><li>[spatialreference.org](http://spatialreference.org/)|No `crs` property is included which means that GeoJSON defaults to `EPSG:4326` (geographic).|
+|`CRSText`|Full text to define the coordinate reference system using the `crs` GeoJSON property.  The text will be inserted at the top level of the GeoJSON.  This should be used when other than geographic coordinates are used.  For more information, see:<br><ul><li>[GeoJSON CRS specification](https://geojson.org/geojson-spec.html#named-crs)</li><li>[Spatial Reference System](https://en.wikipedia.org/wiki/Spatial_reference_system)</li><li>[spatialreference.org](https://spatialreference.org/)|No `crs` property is included which means that GeoJSON defaults to `EPSG:4326` (geographic).|
 |`IncludeBBox`|Indicate whether to include bbox GeoJSON property for the full layer.|`True`|
 |`IncludeFeatureBBox`|Indicate whether to include `bbox` GeoJSON property for each feature.|`True`|
 |`IncludeColumns`|List of comma-separated table column names to include as feature properties.  Can be specified using ${Property} notation.|Include all columns.|
 |`ExcludeColumns`|List of comma-separated table column names to exclude as feature properties.  Can be specified using ${Property} notation.|Exclude no columns.|
 |`JavaScriptVar`|Name of JavaScript variable to assign object to in output.  This parameter will be ignored if `PrependText` or `AppendText` are specified.  Can be specified using `${Property}` notation.|Output GeoJSON object surrounded by `{ }`.|
 |`PrependText`|Provide text to insert before the GeoJSON object, for example to provide custom JavaScript.  Can be specified using `${Property}` notation.|No insert.|
-|`AppendText`|Provide text to append after the GeoJSON object, for example to provide custom JavaScript.  Can be specified using `${Property}` notation.	|
+|`AppendText`|Provide text to append after the GeoJSON object, for example to provide custom JavaScript.  Can be specified using `${Property}` notation. |
 
 ## Examples ##
 
@@ -151,4 +151,4 @@ The following example illustrates a CSV table that specifies WKT for polygons:
 
 ## See Also ##
 
-* [`WriteTableToShapefile`](../WriteTableToShapefile/WriteTableToShapefile) command
+*   [`WriteTableToShapefile`](../WriteTableToShapefile/WriteTableToShapefile) command

@@ -1,11 +1,11 @@
 # StateDMI / Command / ReadTableFromDelimitedFile #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -16,24 +16,24 @@ Tables are used by other commands when performing lookups of
 information or generating summary information from processing.
 Table files have the following characteristics:
 
-* Comments indicated by lines starting with # are stripped during the read.
-* Extraneous lines in the file can be skipped during the read using the `SkipLines` parameter.
-* Column headings indicated by “quoted” values in the first non-comment
-line will be used to assign string names to the columns.
-If no quoted values are present, columns will not have headings.
-* Data in columns are assumed to be of consistent type
-(i.e., all numerical data or all text), based on rows after the header.
-The data type for the column will be determined automatically by examining all data.
-* Missing values can be indicated by blanks.
-However, a line ending with the delimiter may cause warnings because blank
-is not assumed at the end of the line (this is a software limitation that may be addressed
-in the future) – work around by adding an extra delimiter or ensure that the last column is not blank.
-* Strings containing the delimiter should be surrounded by double quotes.
-Strings that contain quotes are checked.
-If two sequential quotes are found in input,
-they are converted to one quote in the table values
-(see [comma-separated-value, CSV, standards](http://en.wikipedia.org/wiki/Comma-separated_values).
-Subsequent writes of the table will re-introduce the repeated quote to indicate an embedded quote.
+*   Comments indicated by lines starting with # are stripped during the read.
+*   Extraneous lines in the file can be skipped during the read using the `SkipLines` parameter.
+*   Column headings indicated by “quoted” values in the first non-comment
+    line will be used to assign string names to the columns.
+    If no quoted values are present, columns will not have headings.
+*   Data in columns are assumed to be of consistent type
+    (i.e., all numerical data or all text), based on rows after the header.
+    The data type for the column will be determined automatically by examining all data.
+*   Missing values can be indicated by blanks.
+    However, a line ending with the delimiter may cause warnings because blank
+    is not assumed at the end of the line (this is a software limitation that may be addressed
+    in the future) – work around by adding an extra delimiter or ensure that the last column is not blank.
+*   Strings containing the delimiter should be surrounded by double quotes.
+    Strings that contain quotes are checked.
+    If two sequential quotes are found in input,
+    they are converted to one quote in the table values
+    (see [comma-separated-value, CSV, standards](https://en.wikipedia.org/wiki/Comma-separated_values).
+    Subsequent writes of the table will re-introduce the repeated quote to indicate an embedded quote.
 
 ## Command Editor ##
 
@@ -96,8 +96,8 @@ some junk to be skipped
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`WriteTableToDelimitedFile`](../WriteTableToDelimitedFile/WriteTableToDelimitedFile) command
+*   [`WriteTableToDelimitedFile`](../WriteTableToDelimitedFile/WriteTableToDelimitedFile) command

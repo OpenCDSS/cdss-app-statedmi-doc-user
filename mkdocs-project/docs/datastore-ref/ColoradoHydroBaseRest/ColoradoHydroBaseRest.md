@@ -1,8 +1,8 @@
 # StateDMI / Datastore Reference / ColoradoHydroBaseRest #
 
-* [Overview](#overview)
-* [Datastore Configuration File](#datastore-configuration-file)
-* [Commands with Datastore Integration](#commands-with-datastore-integration)
+*   [Overview](#overview)
+*   [Datastore Configuration File](#datastore-configuration-file)
+*   [Commands with Datastore Integration](#commands-with-datastore-integration)
 
 --------------------
 
@@ -14,12 +14,12 @@ requires a direct connection to the database,
 and a local installation of the database may not be available.
 The ColoradoHydroBaseRest datastore provides internet REST web service access to historical and real-time data and is described on the following page:
 
-* [Colorado Division of Water Resources REST Web Services Help](https://dwr.state.co.us/rest/get/help)
+*   [Colorado Division of Water Resources REST Web Services Help](https://dwr.state.co.us/rest/get/help)
 
 The ColoradoHydroBaseRest datastore uses new DWR HydroBase web services.
 
 See also the
-[TSTool ColoradoHydroBaseRest Datastore](http://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest/)
+[TSTool ColoradoHydroBaseRest Datastore](https://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/ColoradoHydroBaseRest/ColoradoHydroBaseRest/)
 documentation, which provides more detailed information.
 
 ## Datastore Configuration File ##

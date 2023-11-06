@@ -1,11 +1,11 @@
 # StateDMI / Command / SetTableValues #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -15,8 +15,8 @@ The `SetTableValues` command sets values in a table.
 It does so by first optionally matching rows by filtering on column values (see `ColumnFilters` parameter),
 and then setting values in specified columns (see `ColumnValues` parameter).
 For example, this command can be used to set or override table values that were not included in the original data.
-See also the [`FormatTableString`](../FormatTableString/FormatTableString) and
-[`ManipulateTableString`](../ManipulateTableString/ManipulateTableString) commands.
+See also the [`FormatTableString`](../FormatTableString/FormatTableString.md) and
+[`ManipulateTableString`](../ManipulateTableString/ManipulateTableString.md) commands.
 
 ## Command Editor ##
 
@@ -49,7 +49,7 @@ Command Parameters
 
 ## Examples ##
 
-See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main/tree/master/test/regression/commands/SetTableValues).
+See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tree/master/test/regression/commands/SetTableValues).
 
 ## Troubleshooting ##
 
@@ -57,5 +57,5 @@ See the [automated tests](https://github.com/OpenWaterFoundation/cdss-app-stated
 
 ## See Also ##
 
-* [`FormatTableString`](../FormatTableString/FormatTableString) command
-* [`ManipulateTableString`](../ManipulateTableString/ManipulateTableString) command
+*   [`FormatTableString`](../FormatTableString/FormatTableString) command
+*   [`ManipulateTableString`](../ManipulateTableString/ManipulateTableString) command

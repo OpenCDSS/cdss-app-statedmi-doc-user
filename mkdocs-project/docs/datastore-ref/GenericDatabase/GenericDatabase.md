@@ -1,9 +1,9 @@
 # StateDMI / Datastore Reference / GenericDatabase #
 
-* [Overview](#overview)
-* [Datastore Configuration File](#datastore-configuration-file)
-	+ [Microsoft Access Database Example](#microsoft-access-database-example)
-	+ [SQL Server Database Example](#sql-server-database-example)
+*   [Overview](#overview)
+*   [Datastore Configuration File](#datastore-configuration-file)
+    +   [Microsoft Access Database Example](#microsoft-access-database-example)
+    +   [SQL Server Database Example](#sql-server-database-example)
 
 ------------
 
@@ -23,21 +23,21 @@ The datastore internally corresponds to an
 (ODBC) connection.
 The connection can be defined one of two ways:
 
-* Define an ODBC connection using Windows tools.
-The advantage of this approach is that database authentication occurs through the ODBC connection.
-The disadvantage is that the connection may use a generic database driver
-that does not perform as well as vendor drivers.
-This approach is used when the `DatabaseEngine` and `OdbcName` configuration properties are defined for the datastore.
-* Provide connection information via `DatabaseEngine`, `DatabaseServer`, `DatabaseName`,
-and potentially login configuration properties,
-and allow the software to use a vendor-specific JDBC
-([Java Database Connectivity](https://en.wikipedia.org/wiki/Java_Database_Connectivity)) driver,
-which is generally optimized for the database software.
-The disadvantage of this approach is that advanced authentication interfaces have not been
-implemented (this may or not be an issue depending on the security enabled for the database).
+*   Define an ODBC connection using Windows tools.
+    The advantage of this approach is that database authentication occurs through the ODBC connection.
+    The disadvantage is that the connection may use a generic database driver
+    that does not perform as well as vendor drivers.
+    This approach is used when the `DatabaseEngine` and `OdbcName` configuration properties are defined for the datastore.
+*   Provide connection information via `DatabaseEngine`, `DatabaseServer`, `DatabaseName`,
+    and potentially login configuration properties,
+    and allow the software to use a vendor-specific JDBC
+    ([Java Database Connectivity](https://en.wikipedia.org/wiki/Java_Database_Connectivity)) driver,
+    which is generally optimized for the database software.
+    The disadvantage of this approach is that advanced authentication interfaces have not been
+    implemented (this may or not be an issue depending on the security enabled for the database).
 
 See also the
-[TSTool Generic Database Datastore](http://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/GenericDatabase/GenericDatabase/)
+[TSTool Generic Database Datastore](https://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/GenericDatabase/GenericDatabase/)
 documentation, which provides more detailed information.
 
 ## Datastore Configuration File ##
@@ -102,7 +102,7 @@ Supported Databases (`DatabaseEngine` Property Value)
 | -- | -- | -- |
 | `Access` | Microsoft Access database | Uses system ODBC driver on Windows. |
 | `Excel` | Microsoft Excel workbook (first row of worksheet should be the column names, column types are determined by scanning rows (independent of the ***Rows to Scan*** value in the ODBC DNS setup).  Refer to sheet in SQL as `Select * from [Sheet1$]` ) | Uses system ODBC driver on Windows. |
-| `H2` | H2 database, **not actively used but included for historical reasons** | [JDBC Driver](http://www.h2database.com/html/cheatSheet.html) |
+| `H2` | H2 database, **not actively used but included for historical reasons** | [JDBC Driver](https://www.h2database.com/html/cheatSheet.html) |
 | `Informix` | INFORMIX database, **not actively used but included for historical reasons** | [JDBC Driver](https://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.jdbc_pg.doc/ids_jdbc_013.htm) |
 | `MySQL` | MySQL database | [JDBC Driver](https://www.mysql.com/products/connector/) |
 | `Oracle` | Oracle database | [JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html) |
@@ -141,7 +141,9 @@ DatabaseEngine = "Access"
 OdbcName = "ExampleDatabase"
 ```
 
+**<p style="text-align: center;">
 Generic Database Datastore Configuration File Using ODBC DSN Properties
+</p>**
 
 ### SQL Server Database Example ###
  

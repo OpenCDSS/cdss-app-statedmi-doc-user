@@ -3,16 +3,16 @@
 This appendix provides information about changes that have occurred in StateDMI.
 A summary table is provided below, and links to details for major versions.
 
-* [StateDMI Version History](#statedmi-version-history)
-* StateDMI Release Note Details - the following are separate documentation pages
-	+ [Version 5 Release Notes](release-notes-05.md)
-	+ [Version 4 Release Notes](release-notes-04.md)
-	+ [Version 3 Release Notes](release-notes-03.md)
-	+ [Version 2 Release Notes](release-notes-02.md)
-	+ [Version 1 Release Notes](release-notes-01.md)
-* [Known Limitations](#known-limitations)
-* [StateDMI Version Numbering Convention](#statedmi-version-numbering-convention)
-* [StateDMI Issue Icons](#statedmi-issue-icons)
+*   [StateDMI Version History](#statedmi-version-history)
+*   StateDMI Release Note Details - the following are separate documentation pages
+     +   [Version 5 Release Notes](release-notes-05.md)
+     +   [Version 4 Release Notes](release-notes-04.md)
+     +   [Version 3 Release Notes](release-notes-03.md)
+     +   [Version 2 Release Notes](release-notes-02.md)
+     +   [Version 1 Release Notes](release-notes-01.md)
+*   [Known Limitations](#known-limitations)
+*   [StateDMI Version Numbering Convention](#statedmi-version-numbering-convention)
+*   [StateDMI Issue Icons](#statedmi-issue-icons)
 
 ---------------
 
@@ -31,6 +31,7 @@ StateDMI Version History Summary (most current at top)
 
 |**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
 |--|--|--|
+|[5.2.0](release-notes-05.md)|Feature release to use OpenJDK Java 8, improve crop pattern processing troubleshooting. | 2023-11-06 |
 |[5.1.5](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2022-02-28 |
 |[5.1.4](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2022-01-30 |
 |[5.1.3](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2021-12-23 |
@@ -40,8 +41,8 @@ StateDMI Version History Summary (most current at top)
 
 ## Known Limitations ##
 
-* Releases with `dev` in the version indicate active development.
-A final release is made when new features are tested.
+*   Releases with `dev` in the version indicate active development.
+    A final release is made when new features are tested.
 
 ## StateDMI Version Numbering Convention ##
 
@@ -53,33 +54,32 @@ Major.Minor.Maintenance[Mod]
 ```
 where:
 
-* `Major` is a number indicating a major change to the software
-* `Minor` is a number indicating a minor change to the software
-* `Maintenance` is a number indicating a maintenance release,
-for example to fix a bug with no new features
-* `Mod` is an optional modifier, for example `dev` for development version.
-* Numbers have traditionally been two digits and zero-padded;
-however, the zero-padding convention may be abandoned in the future.
+*    `Major` is a number indicating a major change to the software
+*    `Minor` is a number indicating a minor change to the software
+*    `Maintenance` is a number indicating a maintenance release,
+     for example to fix a bug with no new features
+*    `Mod` is an optional modifier, for example `dev` for development version.
+*    Numbers have traditionally been two digits and zero-padded;
+     however, the zero-padding convention may be abandoned in the future.
 
 The above version string is used in the software as follows, where `Version` is the version as noted above:
 
-* installation folder on Windows is `C:\CDSS\StateDMI-Version`
-* Windows ***Start*** menu is ***Start / CDSS / StateDMI-Version***
-* Windows install file is `StateDMI_CDSS_Version_Setup.exe`
+*   installation folder on Windows is `C:\CDSS\StateDMI-Version`
+*   Windows ***Start*** menu is ***Start / CDSS / StateDMI-Version***
+*   Windows install file is `StateDMI_CDSS_Version_Setup.exe`
 
 ## StateDMI Issue Icons ##
 
 The following icons are used to indicate the type of issue in release notes.
 
-* ![limitation](limitation.png) **Known Limitation** – A known limitation has been documented and may impact the user.
-The limitation will be addressed in a future release.
-* ![bug](bug.png) **Bug Fix** – A bug has been fixed.  Users should evaluate whether their work is impacted.
-Sometimes bug fixes impact internal code and changes may not be very visible to users.
-* ![remove](remove.png) **Remove** – A feature has been removed, generally because functionality
-has been migrated to other code or the functionality is no longer needed (e.g., a change in methodology
-has resulted in a change in software features).
-* ![change](change.png) **Update/Change** – An existing feature has been changed or enhanced.
-Backward compatibility is usually retained.  Modifications to an existing command are considered a change.
-* ![new](new.png) **New Feature** – A new feature has been added, such as a new command.
-New features may or may not be obvious to users but will generally be visible in menus.
-
+*   ![limitation](limitation.png) **Known Limitation** – A known limitation has been documented and may impact the user.
+    The limitation will be addressed in a future release.
+*   ![bug](bug.png) **Bug Fix** – A bug has been fixed.  Users should evaluate whether their work is impacted.
+    Sometimes bug fixes impact internal code and changes may not be very visible to users.
+*   ![remove](remove.png) **Remove** – A feature has been removed, generally because functionality
+    has been migrated to other code or the functionality is no longer needed (e.g., a change in methodology
+    has resulted in a change in software features).
+*   ![change](change.png) **Update/Change** – An existing feature has been changed or enhanced.
+    Backward compatibility is usually retained.  Modifications to an existing command are considered a change.
+*   ![new](new.png) **New Feature** – A new feature has been added, such as a new command.
+    New features may or may not be obvious to users but will generally be visible in menus.
