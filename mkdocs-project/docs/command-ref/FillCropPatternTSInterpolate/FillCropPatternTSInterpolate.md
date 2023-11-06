@@ -1,11 +1,11 @@
 # StateDMI / Command / FillCropPatternTSInterpolate #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -56,6 +56,8 @@ Command Parameters
 | `IncludeGroundwaterOnlySupply` | Indicate whether locations with only groundwater supply (collections where `PartType=Parcel`) should be processed.  Typically this is specified as true unless the [`FillCropPatternTSUsingWellRights`](../FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md) command has been applied for the fill period. | `True` |
 | `FillStart` | The first year to fill.  This should be a year with observations to allow interpolation. | If not specified, fill the full period. |
 | `FillEnd` | The last year to fill.  This should be a year with observations to allow interpolation. | If not specified, fill the full period. |
+| `FillFlag` | A string to set as the time series data flag for filled values. | No flag is set. |
+| `FillFlagDescription` | The description for the data flag, used in legends. | No flag is set. |
 | `MaxIntervals` | The maximum number of intervals to fill in any gap. | If not specified, fill the entire gap. |
 | `IfNotFound` | Used for error handling, one of the following:<ul><li>`Fail` – generate a failure message if the ID is not matched</li><li>`Ignore` – ignore (don’t add and don’t generate a message) if the ID is not matched</li><li>`Warn` – generate a warning message if the ID is not matched</li></ul> | `Warn` |
 
@@ -65,12 +67,12 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`FillCropPatternTSConstant`](../FillCropPatternTSConstant/FillCropPatternTSConstant.md) command
-* [`FillCropPatternTSRepeat`](../FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) command
-* [`FillCropPatternTSUsingWellRights`](../FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md) command
-* [`SetCropPatternTS`](../SetCropPatternTS/SetCropPatternTS.md) command
-* [`SetCropPatternTSFromList`](../SetCropPatternTSFromList/SetCropPatternTSFromList.md) command
+*   [`FillCropPatternTSConstant`](../FillCropPatternTSConstant/FillCropPatternTSConstant.md) command
+*   [`FillCropPatternTSRepeat`](../FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) command
+*   [`FillCropPatternTSUsingWellRights`](../FillCropPatternTSUsingWellRights/FillCropPatternTSUsingWellRights.md) command
+*   [`SetCropPatternTS`](../SetCropPatternTS/SetCropPatternTS.md) command
+*   [`SetCropPatternTSFromList`](../SetCropPatternTSFromList/SetCropPatternTSFromList.md) command

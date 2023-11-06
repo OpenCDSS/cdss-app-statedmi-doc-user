@@ -13,7 +13,7 @@ nav:
 - '6 - Quality Control': quality-control/quality-control.md
 - 'Reference - Commands':
   - Overview: command-ref/overview.md
-#  - Command Syntax: command-ref/command-syntax.md
+  - Command Syntax: command-ref/command-syntax.md
   - '# Comment': command-ref/Comment/Comment.md
   - '/* Comment Start': command-ref/CommentBlockStart/CommentBlockStart.md
   - '*/ Comment End': command-ref/CommentBlockEnd/CommentBlockEnd.md

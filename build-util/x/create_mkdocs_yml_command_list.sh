@@ -6,5 +6,5 @@
 cd ../../cdss-app-statedmi-main/doc/UserManual/Word
 ls -1 60_Command_*doc | cut -d '_' -f 3 | cut -d '.' -f 1 | while read command
 do
-	echo "  - ${command}: command-ref/${command}/${command}.md"
+  echo "  - ${command}: command-ref/${command}/${command}.md"
 done

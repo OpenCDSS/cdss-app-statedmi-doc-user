@@ -1,11 +1,11 @@
 # StateDMI / Command / PrintNetwork #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -23,18 +23,18 @@ If advanced settings are needed beyond the properties available in the command,
 use `ShowDialog=True` (displaying the dialog will pause command execution).
 The overall sequence of printing a network is described below:
 
-1. Specify a network file and page layout, for full-scale printing
-	a. Sets the page size and orientation from the network layout
-	b. Sets the node and font size from the network layout
-2. Specify a page size for printing, using the command parameters and optionally the printer dialog
-	a. If the page size matches the layout and the full network is being printed,
-	then full-scale printing occurs
-	b. If the page size does not match the layout and the full network is being printed,
-	the output is scaled to fit the page by matching the printable area – this is not recommended
-	c. If the page size does not match the layout and a subset of the network is being printed,
-	the output is scaled to fit the page by matching the requested area to the
-	printable area – this allows subsets of the network to be printed (or saved as images)
-	
+1.  Specify a network file and page layout, for full-scale printing
+    a.  Sets the page size and orientation from the network layout
+    b.  Sets the node and font size from the network layout
+2.  Specify a page size for printing, using the command parameters and optionally the printer dialog
+    a.  If the page size matches the layout and the full network is being printed,
+        then full-scale printing occurs
+    b.  If the page size does not match the layout and the full network is being printed,
+        the output is scaled to fit the page by matching the printable area – this is not recommended
+    c.  If the page size does not match the layout and a subset of the network is being printed,
+        the output is scaled to fit the page by matching the requested area to the
+        printable area – this allows subsets of the network to be printed (or saved as images)
+
 The command has been tested printing the full network.
 Printing part of the network by specifying a paper size different than the network page layout paper size may yield unexpected results. 
 
@@ -66,7 +66,7 @@ Command Parameters
 | `InputFile` | The name of the network (`*.net`) file to print.  If no filename is provided, the in-memory network read with a previous command will be used. | In-memory network. |
 | `PageLayout` | The page layout from the network, which indicates layout properties that correspond with a page size. | None – must be specified. |
 | `PrinterName` | The name of the printer to use (e.g., `\\MyComputer\MyPrinter` or Adobe PDF) | The default printer will be used. |
-| `PaperSize` | The paper size to print.  Because there are a number of standards for paper, the size is specified as standard-sizename (e.g., na-letter for North American Letter).    For information on paper sizes, see: [http://en.wikipedia.org/wiki/Paper_size](http://en.wikipedia.org/wiki/Paper_size). | The size for the `PageLayout`. |
+| `PaperSize` | The paper size to print.  Because there are a number of standards for paper, the size is specified as standard-sizename (e.g., na-letter for North American Letter).    For information on paper sizes, see: [https://en.wikipedia.org/wiki/Paper_size](https://en.wikipedia.org/wiki/Paper_size). | The size for the `PageLayout`. |
 | `PaperSource` | The tray for the paper – currently not enabled.  Use `ShowDialog=True` to select. | The `PaperSize` is used. |
 | `Orientation` | The paper orientation. | The size for the `PageLayout`. |
 | `MarginLeft` | The left margin for the orientation, inches. | .75 in |
@@ -122,7 +122,7 @@ An alternate approach such as iText may be implemented for PDF.
 
 If a Microsoft XPS file is printed, the following software may need to be installed,
 in particular for Windows XP:
-[http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11816](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11816])
+[https://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11816](https://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11816])
 
 ## Examples ##
 
@@ -130,7 +130,7 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 

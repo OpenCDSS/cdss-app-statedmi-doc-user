@@ -1,8 +1,8 @@
 # StateDMI / Datastore Reference / Colorado HydroBase #
 
-* [Overview](#overview)
-* [Datastore Configuration File](#datastore-configuration-file)
-* [Troubleshooting](#troubleshooting)
+*   [Overview](#overview)
+*   [Datastore Configuration File](#datastore-configuration-file)
+*   [Troubleshooting](#troubleshooting)
 
 ------------
 
@@ -17,7 +17,7 @@ automatically defaults defining `HydroBase` and `HydroBaseYYYYMMDD` datastores f
 selected HydroBase, which minimizes the need to edit datastore configuration files.
 
 See also the
-[TSTool HydroBase Datastore](http://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/CO-HydroBase/CO-HydroBase/)
+[TSTool HydroBase Datastore](https://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/CO-HydroBase/CO-HydroBase/)
 documentation, which provides more detailed information.
 
 ## Datastore Configuration File ##
@@ -31,8 +31,8 @@ The following illustrates the HydroBase datastore configuration file format
 for the CDSS account.
 The configuration file is typically named as follows:
 
-* `C:\CDSS\StateDMI-Version\datastores\HydroBase.cfg` - installation HydroBase datastore configuration
-* `C:\Users\user\.statedmi\NN\datastores\HydroBase.cfg` - user's HydroBase datastore configuration
+*   `C:\CDSS\StateDMI-Version\datastores\HydroBase.cfg` - installation HydroBase datastore configuration
+*   `C:\Users\user\.statedmi\NN\datastores\HydroBase.cfg` - user's HydroBase datastore configuration
 
 The default `cdss` service account is used for authentication and allows read-only access to the database.
 

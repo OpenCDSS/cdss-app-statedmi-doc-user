@@ -1,19 +1,19 @@
 # CDSS / StateDMI #
 
 This documentation provides resources to learn how to use
-[Colorado's Decision Support Systems (CDSS)](http://cdss.state.co.us/Pages/CDSSHome.aspx) StateDMI software,
+[Colorado's Decision Support Systems (CDSS)](https://cdss.colorado.gov/software/statedmi) StateDMI software,
 which automates processing data for StateCU and StateMod datasets.
 StateDMI can also be used to implement general workflows that process State of Colorado HydroBase and other data.
 This documentation is generally referred to as the **"User Documentation"** in contrast to
 **"Developer Documentation"**, which is relevant to software developers.
 
-* [How to Use this Documentation](#how-to-use-this-documentation)
-* [Acknowledgements](#acknowledgements)
-* [Colorado's Decision Support Systems](#colorados-decision-support-systems)
-* [About the Open Water Foundation](#about-the-open-water-foundation)
-* [License](#license)
-* [Source Repository on GitHub](#source-repository-on-github)
-* [Release Notes](#release-notes) - **this documentation is for StateDMI version 5.1.5**
+*   [How to Use this Documentation](#how-to-use-this-documentation)
+*   [Acknowledgements](#acknowledgements)
+*   [Colorado's Decision Support Systems](#colorados-decision-support-systems)
+*   [About the Open Water Foundation](#about-the-open-water-foundation)
+*   [License](#license)
+*   [Source Repository on GitHub](#source-repository-on-github)
+*   [Release Notes](#release-notes) - **this documentation is for StateDMI version 5.2.0**
 
 ----------------
 
@@ -29,7 +29,7 @@ The navigation menus may not be displayed if the web browser window is narrow or
 in which case look for a menu icon to access the menus.
 Use the search feature to find documentation matching the search words.
 
-## Acknowledgements
+## Acknowledgements ##
 
 StateDMI has been developed by the Open Water Foundation (OWF) with significant
 funding provided by the Colorado Water Conservation Board (CWCB)
@@ -42,12 +42,12 @@ StateDMI software users are encouraged to provide feedback using the
 Feedback specific to CDSS functionality
 can also be provided using the [CDSS email address](mailto:DNR_OpenCDSS@state.co.us).
 
-### Software Components
+### Software Components ##
 
 The following components are used in StateDMI and require or request attribution:
 
-* [Material Theme icons](https://material.io/icons/) - these icons are used in documentation
-* More information will be added here as the open source license is finalized.
+*   [Material Theme icons](https://material.io/icons/) - these icons are used in documentation
+*   More information will be added here as the open source license is finalized.
 
 ## Colorado's Decision Support Systems ##
 
@@ -71,11 +71,11 @@ In late 2016, the Open Water Foundation began the effort to move StateDMI and ot
 and establish open source software projects, referred to as "OpenCDSS".
 The OpenCDSS project is resulting in a significant evolution in how CDSS software development occurs,
 such as implementing version control with Git/GitHub and modernizing the development environment and documentation.
-See the [OpenCDSS Website](http://opencdss.state.co.us/opencdss/) for more information.
+See the [OpenCDSS Website](https://opencdss.state.co.us/opencdss/) for more information.
 
 ## About the Open Water Foundation ##
 
-The [Open Water Foundation](http://openwaterfoundation.org) is a nonprofit social enterprise that focuses
+The [Open Water Foundation](https://openwaterfoundation.org) is a nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources,
 so that organizations can make better decisions about water.
 OWF also works to advance open data tools and implementation.

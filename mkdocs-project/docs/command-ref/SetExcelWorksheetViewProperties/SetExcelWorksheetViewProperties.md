@@ -1,11 +1,11 @@
 # StateDMI / Command / SetExcelWorksheetViewProperties #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -16,9 +16,9 @@ for example to facilitate automated creation of Excel workbooks.
 Additional properties will be added in the future.
 Currently the command can set the following properties:
 
-* Freeze pane for rows and columns
+*   Freeze pane for rows and columns
 
-StateDMI uses the [Apache POI software](http://poi.apache.org) to read/write the Excel file
+StateDMI uses the [Apache POI software](https://poi.apache.org) to read/write the Excel file
 and consequently functionality is constrained by the features of that software package.
 
 ## Command Editor ##
@@ -59,9 +59,9 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`NewExcelWorkbook`](../NewExcelWorkbook/NewExcelWorkbook) command
-* [`ReadExcelWorkbook`](../ReadExcelWorkbook/ReadExcelWorkbook) command
+*   [`NewExcelWorkbook`](../NewExcelWorkbook/NewExcelWorkbook) command
+*   [`ReadExcelWorkbook`](../ReadExcelWorkbook/ReadExcelWorkbook) command

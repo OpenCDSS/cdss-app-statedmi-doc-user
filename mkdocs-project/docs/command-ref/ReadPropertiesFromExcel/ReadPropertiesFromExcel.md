@@ -1,11 +1,11 @@
 # StateDMI / Command / ReadPropertiesFromExcel #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -20,7 +20,7 @@ Property object types are determined from Excel cell type/format unless the type
 is specified with command parameters.
 If issues arise, check the Excel cell type and format.
 
-StateDMI uses the [Apache POI software](http://poi.apache.org) to read/write the Excel file
+StateDMI uses the [Apache POI software](https://poi.apache.org) to read/write the Excel file
 and consequently functionality is constrained by the features of that software package.
 Check the StateDMI ***Help / About*** menu for information on the POI version.
 
@@ -86,8 +86,8 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
-* [`SetProperty`](../SetProperty/SetProperty) command
+*   [`SetProperty`](../SetProperty/SetProperty) command
