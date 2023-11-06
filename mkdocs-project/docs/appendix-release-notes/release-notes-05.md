@@ -26,6 +26,8 @@
 *   ![change](change.png) [5.2.0] Update to use OpenJDK Java 8, which is free and open source.
     Oracle Java requires a fee as of Java 9.
     Additional Java updates will be implemented in upcoming StateDMI releases.
+*   ![change](change.png) [5.2.0] Update to the StateDMI software installer
+    for Windows to not require administrative privileges.
 *   ![change](change.png) [5.2.0] Update the
     [`FillCropPatternTSInterpolate`](../command-ref/FillCropPatternTSInterpolate/FillCropPatternTSInterpolate.md) command:
     +   Add the `FillFlag` parameter to indicate filled values.

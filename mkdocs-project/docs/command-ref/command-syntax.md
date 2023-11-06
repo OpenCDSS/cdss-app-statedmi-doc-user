@@ -1,7 +1,6 @@
 # StateDMI / Command Syntax #
 
-This documentation provides information about command syntax and other
-syntax that may be used in command files.
+This documentation provides information about existing and planned command syntax.
 
 *   [Introduction](#introduction)
 *   [Commands](#commands)
@@ -90,16 +89,15 @@ The following are guidelines for commands:
     1.  Double quotes are required in some cases to protect spaces and other characters within quotes.
     2.  StateDMI formats command parameters based on parameter type and quotes may not be used.
 5.  Each command must exist on a single line.
-6.  StateDMI currently cannot be indented.  In the future the following may be implemented, consistent with TSTool:
-    1.  4 spaces per level is the default, similar to Python.
+6.  StateDMI currently cannot be indented.  In the future the following may be implemented, consistent with TSTool,
+    which uses 4 spaces per level, similar to Python.
 7.  Empty (blank) lines are allowed and will be handled as [`Empty`](Empty/Empty.md) commands.
 8.  Unknown commands are handled as [`UnknownCommand`](UnknownCommand/UnknownCommand.md) commands.
 
 ###  Referring to Command Parameters ###
 
 In some cases it is necessary to set one command parameter using the value of another command parameter.
-This capability has been implemented for a small number of commands,
-for example [`NewStatisticEnsemble`](../command-ref/NewStatisticEnsemble/NewStatisticEnsemble.md).
+This capability has been implemented for a small number of commands and may be implemented in StateDMI in the future.
 To reference a command parameter in another parameter, use the notation:
 
 ```
@@ -120,21 +118,24 @@ A group of lines that start with [`/*`](CommentBlockStart/CommentBlockStart.md) 
 
 ### Command Indentation ###
 
-As of StateDMI version 14.6.0, commands can be indented with spaces to indicate logic such as with the
-[`If`](If/If.md) and [`For`](For/For.md) command blocks.
+StateDMI does not yet allow indentation.
+This feature may be added in the future, similar to TSTool (as of TSTool version 14.6.0).
+TSTool allows commands to be indented with spaces to indicate logic such as with the
+[`If`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/If/If/) and
+[`For`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/For/For/) command blocks.
 
 *   Indentation by default uses 4 spaces similar to Python
     and multiples of 4 spaces are used for indenting multiple levels.
 *   Indentation occurs automatically for commands that follow
-    [`If`](If/If.md) and [`For`](For/For.md) commands,
+    [`If`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/If/If/) and
+    [`For`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/For/For/) command,
     until closing
-    [`EndIf`](EndIf/EndIf.md) and [`EndFor`](EndFor/EndFor.md) commands are encountered.
+    [`EndIf`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/EndIf/EndIf/) and
+    [`EndFor`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/EndFor/EndFor/) commands are encountered.
 *   The popup menu for commands provides the
     ***Indent Right*** menu to increase indentation and ***Indent Left*** menu to decrease indentation.
 *   Command editors typically do not show the indentation but the indentation will be retained in the command list
     after a command is edited.
-*   StateDMI versions prior to 14.6.0 will strip indentation from command files when read.
-    Saving the command file with the same name will overwrite the previous indentations.
 
 ### Processor Properties ###
 
@@ -144,7 +145,7 @@ that initially have internal defaults (e.g., the default is to read all
 available data rather than a specified input period).
 
 Built-in properties that control the processor are set with specific commands (e.g.,
-[`SetInputPeriod`](SetInputPeriod/SetInputPeriod.md)) and user-supplied
+[`SetOutputPeriod`](SetOutputPeriod/SetOutputPeriod.md)) and user-supplied
 properties can be set with the
 [`SetProperty`](SetProperty/SetProperty.md) command.
 For example, it is common to use properties to manage
@@ -175,12 +176,11 @@ The following sections describe syntax related to time series.
 ### Time Series Identifiers ###
 
 Time series identifiers (TDIDs) uniquely identify time series and
-are discussed in detail in the [Introduction](../introduction/introduction.md) chapter.
+are discussed in detail in the TSTool
+[Introduction](https://opencdss.state.co.us/tstool/latest/doc-user/introduction/introduction/) chapter.
 TSID commands, which match the syntax discussed below,
 are created when using the data browsing features of the StateDMI main interface,
 are specified by some commands.
-TSID commands are essentially automatic “read” commands that use default parameters
-(e.g., the global input period and do not assign an alias).
 
 There are two main forms of TSIDs:
 
@@ -201,7 +201,8 @@ allows StateDMI to determine which software component should read the time serie
 The second form of the TSID is a unique identifier for a time series within StateDMI and is used after reading the data.
 An original source or output location is not needed.
 In cases where more than one time series will have the same TSID after reading,
-an alias can be assigned (see the [Introduction chapter](../introduction/introduction.md) and the
+an alias can be assigned (see the TSTool
+[Introduction chapter](https://opencdss.state.co.us/tstool/latest/doc-user/introduction/introduction/) and the
 [Time Series Properties](#time-series-properties) section below).
 
 TSIDs may be more complex if, for example, the data type requires the use of multiple parts for uniqueness.
@@ -213,8 +214,7 @@ The datastore appendices describe how time series properties from the original s
 Time series properties are specific to individual time series.
 Some internal properties are handled as built-in data values (e.g.,
 data units are a string associated with a time series) whereas
-user-assigned properties are assigned to the time series as a list (see the
-[`SetTimeSeriesProperty`](SetTimeSeriesProperty/SetTimeSeriesProperty.md) command).
+user-assigned properties are assigned to the time series as a list.
 
 Time series properties are used by some commands to control the command functionality and output.
 For example, many commands that create time series allow the alias to be assigned using time series properties.
@@ -256,7 +256,8 @@ and for tracking how specific data values are manipulated
 StateDMI generally does not implement a standard for data flags because flags used in input data may vary.
 However, some commands allow setting flags based on simple rules.
 For example fill commands generally have a `FillFlag` parameter to set the data flag for filled values.
-The following table lists notation that is used to provide flexibility in setting data flags.
+The following table lists notation that is used to provide flexibility in setting data flags,
+which are being phased in over time.
 The first notation option is used by most commands and the other
 options are being phased in (refer to command documentation to confirm available data flag functionality).
 
@@ -337,8 +338,10 @@ width and precision (for data types that support width and precision).
 Very large tables can cause StateDMI to run out of memory.
 Consequently, care should be taken when processing tables, such as using the
 [`FreeTable`](FreeTable/FreeTable.md) command when needed.
-Tables, when used with [`For`](For/For.md) command,
-can result in compact command files, meaning that a few commands can perform significant processing work.
+Tables in TSTool can be used with the
+[`For`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/For/For/) command,
+which can result in compact command files, meaning that a few commands can perform significant processing work.
+This feature may be implemented in StateDMI in the future.
 
 ### Table Identification ###
 
@@ -363,12 +366,17 @@ Command Parameter Notation Used With Tables
 
 ## Templates ##
 
-Template files are used when processing is automated to iterate over one or more lists of input data.
+Templates are not yet implemented in StateDMI but may be implemented in the future, similar to TSTool.
+Template files in TSTool are used when processing is automated to iterate over one or more lists of input data.
 For example, the same 10 commands may be executed for each of 100 time series.
-StateDMI uses the [FreeMarker template library](https://freemarker.apache.org/) to process templates.
-See the [`ExpandTemplateFile`](ExpandTemplateFile/ExpandTemplateFile.md) command documentation for an explanation of syntax.
+TSTool uses the [FreeMarker template library](https://freemarker.apache.org/) to process templates.
+See the TSTool [`ExpandTemplateFile`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/ExpandTemplateFile/ExpandTemplateFile/)
+command documentation for an explanation of syntax.
 
-StateDMI provides the [`If`](If/If.md) and [`For`](For/For.md) commands to control command logic.
+StateDMI may in the future provide
+[`If`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/If/If/) and
+[`For`](https://opencdss.state.co.us/tstool/latest/doc-user/command-ref/For/For/) commands to provide command lgoic,
+similar to TSTool.
 Therefore, template files are more suitable for formatting StateDMI input (e.g., time series product files for graphs)
 and output (e.g., repetitive website content).
 
@@ -404,7 +412,9 @@ The specific property values are described in [StateDMI datastore appendices](..
 
 ### Time Series Product Files ###
 
-Time series product configuration file uses a simple notation to assign properties:
+A time series product configuration file is used to automate graphs.
+They are primarily used with TSTool but can be saved from StateDMI graphs.
+The files use a simple notation to assign properties:
 
 ```
 [Section]
@@ -414,4 +424,4 @@ Property = Value
 
 The `[Section]` notation is internally used as a prefix on the property name (e.g., `Section.Property = Value`).
 Comments are lines that start with `#`.  Property values can be surrounded by double quotes.
-See also the [TSView Time Series Viewing Tools appendix](../appendix-tsview/tsview.md).
+See also the [TSTool TSView Time Series Viewing Tools appendix](https://opencdss.state.co.us/tstool/latest/doc-user/appendix-tsview/tsview/).
