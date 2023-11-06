@@ -35,6 +35,10 @@
 *   ![change](change.png) [5.2.0] Update the
     [`FillCropPatternTSRepeat`](../command-ref/FillCropPatternTSRepeat/FillCropPatternTSRepeat.md) command:
     +   Add the `FillFlagDescription` parameter to describe the fill flag.
+*   ![change](change.png) [5.2.0] Update the
+    [`SetCropPatternTSFromList`](../command-ref/SetCropPatternTSFromList/SetCropPatternTSFromList.md) command:
+    +   Add the `SetFlag` parameter to indicate filled values.
+    +   Add the `SetFlagDescription` parameter to describe the fill flag.
 
 ## Changes in Version 5.1.5 ##
 
