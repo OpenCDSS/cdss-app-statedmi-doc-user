@@ -1,15 +1,17 @@
 # StateDMI / Command / WriteDelayTablesToStateCU #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
 ## Overview ##
+
+**This command was used in previous versions of StateCU and is not currently active.**
 
 The `WriteDelayTablesToStateCU` command (for StateCU)
 writes delay tables that have been defined to a StateCU delay tables file.
@@ -48,7 +50,7 @@ See the [automated tests](https://github.com/OpenCDSS/cdss-app-statedmi-test/tre
 
 ## Troubleshooting ##
 
-[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md)
+[See the main troubleshooting documentation](../../troubleshooting/troubleshooting.md).
 
 ## See Also ##
 
