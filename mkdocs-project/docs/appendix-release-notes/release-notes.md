@@ -5,6 +5,7 @@ A summary table is provided below, and links to details for major versions.
 
 *   [StateDMI Version History](#statedmi-version-history)
 *   StateDMI Release Note Details - the following are separate documentation pages
+     +   [Version 6 Release Notes](release-notes-06.md)
      +   [Version 5 Release Notes](release-notes-05.md)
      +   [Version 4 Release Notes](release-notes-04.md)
      +   [Version 3 Release Notes](release-notes-03.md)
@@ -31,6 +32,7 @@ StateDMI Version History Summary (most current at top)
 
 |**StateDMI Version(s)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Summary of Major Changes in Version**|**Release Date**|
 |--|--|--|
+|[6.0.0](release-notes-06.md)|Major release to use OpenJDK Java 11, improve reading diversion time series. | 2026-03-04 |
 |[5.2.0](release-notes-05.md)|Feature release to use OpenJDK Java 8, improve crop pattern processing troubleshooting. | 2023-11-06 |
 |[5.1.5](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2022-02-28 |
 |[5.1.4](release-notes-05.md)|Maintenance release to fix issues processing well rights. | 2022-01-30 |

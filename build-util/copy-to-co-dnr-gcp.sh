@@ -20,19 +20,13 @@ checkMkdocsVersion() {
   requiredMajorVersion="1"
   # On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
   # On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3
-  if [ "${operatingSystem}" = "cygwin" -o "${operatingSystem}" = "linux" ]; then
-    mkdocsVersionFull=$(mkdocs --version)
-  elif [ "${operatingSystem}" = "mingw" ]; then
-    mkdocsVersionFull=$(py -m mkdocs --version)
-  else
-    echo ""
-    echo "Don't know how to run on operating system ${operatingSystem}"
-    exit 1
-  fi
+  # On newer windows: MkDocs --version:  python -m mkdocs, version 1.3.1 from C:\Users\steve\AppData\Local\Programs\Python\Python310\lib\site-packages\mkdocs (Python 3.10)
+  # The following should work for any version after a comma.
+  mkdocsVersionFull=$(${mkdocsExe} --version | sed -e 's/.*, \(version .*\)/\1/g' | cut -d ' ' -f 2)
   echo "MkDocs --version:  ${mkdocsVersionFull}"
-  mkdocsVersion=$(echo ${mkdocsVersionFull} | cut -d ' ' -f 3)
+  mkdocsVersion=$(echo "${mkdocsVersionFull}" | cut -d ' ' -f 3)
   echo "MkDocs full version number:  ${mkdocsVersion}"
-  mkdocsMajorVersion=$(echo ${mkdocsVersion} | cut -d '.' -f 1)
+  mkdocsMajorVersion=$(echo "${mkdocsVersion}" | cut -d '.' -f 1)
   echo "MkDocs major version number:  ${mkdocsMajorVersion}"
   if [ "${mkdocsMajorVersion}" -lt ${requiredMajorVersion} ]; then
     echo ""
@@ -90,8 +84,8 @@ getVersionModifier() {
 
 # Parse the command parameters
 parseCommandLine() {
-  local d h l opt
-  while getopts :dhl opt; do
+  local d h opt
+  while getopts :dh opt; do
     #echo "Command line option is ${opt}"
     case $opt in
       d) # Indicate that this should be copied to the latest release and version
@@ -100,9 +94,6 @@ parseCommandLine() {
       h) # Usage
         printUsage
         exit 0
-        ;;
-      l) # Indicate that this should be copied to the latest release and version
-        copyToLatest="yes"
         ;;
       \?)
         echo "Invalid option:  -${OPTARG}" >&2
@@ -121,12 +112,12 @@ printUsage() {
   echo ""
   echo "Usage:  $0"
   echo ""
-  echo "Copy the site files to the latest website folder if -l specified:  ${gsFolderLatest}"
   echo "Copy the site files to the versioned website folder:  ${gsFolderVersion}"
+  echo "Copy the site files to the latest website folder:  ${gsFolderLatest}"
+  echo "Prompts are provided to confirm the upload."
   echo ""
   echo "-d dry run (print actions but don't execute upload)"
   echo "-h print usage"
-  echo "-l copy to latest folder in addition to auto-detected version folder"
   echo ""
 }
 
@@ -162,7 +153,7 @@ setMkDocsExe() {
 }
 
 # Sync the files to the cloud:
-# - if copyToLatest="yes", also sync to latest folder
+# - if copyToLatest="yes", also ask whether to sync to latest folder
 syncFiles() {
   local exitStat
   exitStat=0
@@ -186,7 +177,9 @@ syncFiles() {
     if [ ${exitStat} -ne 0 ]; then
       return ${exitStat}
     fi
-    if [ ${copyToLatest} = "yes" ]; then
+  fi
+  if [ "${copyToLatest}" = "yes" ]; then
+      # Copy to latest will be disabled if a development version.
       echo ""
       echo 'Copying the documentation to the "latest" folder:'
       echo "  from: ${siteFolder}"
@@ -198,11 +191,6 @@ syncFiles() {
         exitStat=$?
         return ${exitStatus}
       fi
-    else
-      echo ""
-      echo 'Remember to run with -l option to also upload to the "latest" folder.'
-      echo ""
-    fi
   fi
   return ${exitStatus}
 }
@@ -260,8 +248,9 @@ gsFolderLatest="gs://opencdss.state.co.us/statedmi/latest/doc-user"
 gsFolderVersion="gs://opencdss.state.co.us/statedmi/${statedmiVersion}/doc-user"
 
 # Whether to copy to latest in addition to the specific version
-# - default to no because the script can be run on any version, and can't assume latest
-copyToLatest="no"
+# - default to yes
+# - will disable if a development version
+copyToLatest="yes"
 
 # Parse the command line
 parseCommandLine $@

@@ -416,6 +416,7 @@ nav:
 - 'Appendix - Install StateDMI': appendix-install/install.md
 - 'Appendix - Release Notes':
   - Release Notes: appendix-release-notes/release-notes.md
+  - Version 6: appendix-release-notes/release-notes-06.md
   - Version 5: appendix-release-notes/release-notes-05.md
   - Version 4: appendix-release-notes/release-notes-04.md
   - Version 3: appendix-release-notes/release-notes-03.md

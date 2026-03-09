@@ -1,11 +1,15 @@
 # StateDMI / Command / ReadDiversionHistoricalTSMonthlyFromHydroBase #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+    +   [Diversion Comment “Not Used” Flag](#diversion-comment-not-used-flag)
+    +   [Structure “Currently in Use” Flag](#structure-currently-in-use-flag)
+    +   [Carry Forward Methodology](#carry-forward-methodology)
+    +   [Command Logic](#command-logic)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -79,84 +83,112 @@ Structure CIU Flag Values and Meaning
 
 If `UseCIU=True` is specified for this command, the following logic will be used to fill missing time series values:
 
-1. If the HydroBase `CIU` value is `H` or `I` for the structure associated with the time series:
-	1. Fill using the diversion comments (see above for interpretation of comments).
-	2. The limits of the time series are recomputed based on diversion data and comments,
-	and missing data at the end of the period are filled with zeros.
-	3. Missing data values at the end of the period will be filled with zeros,
-	reflecting the fact that the structure is off-line.
-	These values are not included in historical averages because
-	they do not occur in the active life of the structure.
-	4. Missing data within the data period remain missing,
-	and can be filled with other commands such as
-	[`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md).
-	5. Missing data prior to the first diversion values or comments remain missing,
-	and can be filled with other commands as appropriate, perhaps specific to each location.
-2. If in HydroBase `CIU=N`:
-	1. Fill using the diversion comments (see above for interpretation of comments).
-	2. The limits of the time series are recomputed based on diversion data and comments,
-	and missing data at the beginning of the period are filled with zeros.
-	3. The remaining missing data in the active data period or at the end
-	of the period remain missing and can be filled with using other parameters or commands.
+1.  If the HydroBase `CIU` value is `H` or `I` for the structure associated with the time series:
+    1.  Fill using the diversion comments (see above for interpretation of comments).
+    2.  The limits of the time series are recomputed based on diversion data and comments,
+        and missing data at the end of the period are filled with zeros.
+    3.  Missing data values at the end of the period will be filled with zeros,
+        reflecting the fact that the structure is off-line.
+        These values are not included in historical averages because
+        they do not occur in the active life of the structure.
+    4.  Missing data within the data period remain missing,
+        and can be filled with other commands such as
+        [`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md).
+    5.  Missing data prior to the first diversion values or comments remain missing,
+        and can be filled with other commands as appropriate, perhaps specific to each location.
+2.  If in HydroBase `CIU=N`:
+    1.  Fill using the diversion comments (see above for interpretation of comments).
+    2.  The limits of the time series are recomputed based on diversion data and comments,
+        and missing data at the beginning of the period are filled with zeros.
+    3.  The remaining missing data in the active data period or at the end
+        of the period remain missing and can be filled with using other parameters or commands.
+
+### Carry Forward Methodology ###
+
+HydroBase stores and provides access to diversion records in various ways depending on whether the data are daily, monthly, annual, or infrequent.
+Prior to HydroBase version 20251130, monthly diversion data did not indicate missing within an irrigation year and
+instead zeros were stored
+(completely missing irrigation years do not have records in the database).
+This circumvented filling features in TSTool and StateDMI because zeros were treated as actual values.
+
+As of HydroBase 20251130, monthly diversion values in the database are null if the value is unknown.
+This allows filling features to work properly and data read from HydroBase are consistent with web services.
+
+Diversion data are stored by irrigation year (November 1 through October 31).
+The default approach for handling missing diversion record values is to use the following "carry forward" methodology:
+
+1.  If the entire irrigation year is missing (typically no record in HydroBase):
+    *   all values for the year are treated as missing
+    *   filling techniques such as using diversion comments, historical averages, or fill with zero can be used if specified in commands
+2.  If an irrigation year has one or more non-missing values (typically at least one non-missing value is present):
+    *   missing values at the start of the irrigation year will be set to zero
+    *   missing values after the non-missing value will be set to the non-missing until
+        the next non-missing value is encountered in the irrigation year (or the end of the irrigation year is reached)
+    *   each time series data value that is automatically set will result in the data flag being set to `c`
+        to indicate that the carry forward methodology was used
+
+### Command Logic ###
 
 The specific logic for the command is as follows:
 
 Loop through the diversion stations that have been read with previous commands.
 
-1. If the diversion station identifier does not match the given ID pattern,
-do not complete the following steps.
-2. If explicit stations are being processed and the station is not an explicit station,
-do not complete the following steps.
-3. If collection stations (aggregates and systems) are being processed and the
-station is not a collection, do not complete the following steps.
-4. Process the time series for the station:
-If a collection (aggregate or system), perform the following by looping
-through each part (this guarantees that a time series will result, possibly only with missing data):
-	1. If a part identifier is not a WDID, generate an error
-	(only WDIDs should be specified as parts).
-	This type of error should not be ignored and should be corrected.
-	2. Read the monthly diversion records for the part.
-	If an error occurs (no data), create an empty time series for the part with all missing data.
-	Important – parts must be read from HydroBase.
-	There is no way to substitute another time series for a part.
-	3. If requested (UseDiversionComments=True),
-	read the diversion comments and fill missing values with additional
-	zeros for irrigation years where diversion comments are available.
-	4. If requested (FillUsingCIU=True) also fill with CIU as per the logic described above.
-	5. If the first part of an aggregate is being processed,
-	initialize the total time series to the first part.
-	Also initialize the backup copy that contains only observations.
-	6. If the second or greater part, add the observations to the backup copy total time series.
-	7. If filling has been requested using pattern and/or average,
-	fill the part’s time series.
-	8. Add the part’s time series to the total.
-	This represents the total of filled data, whereas the backup copy contains only the observed values.
-	9. If all parts have been processed,
-	calculate the monthly average limits of the backup copy (observations only),
-	which can be used in later fill commands.
-	**This may be a problem with CIU since some zeros should not be in the average.**
-<br><br>If an explicit station, perform the following:
-	1. If the station ID is not a WDID, generate a warning.
-	Otherwise, read the time series diversion records from HydroBase.
-	2. If the station ID is a WDID and diversion comments were requested (`UseDiversionComments=True`),
-	read the diversion comments from HydroBase and fill additional values with
-	zeros for irrigation years where diversion comments are available.
-	3. If requested (`FillUsingCIU=True`) also fill with `CIU` as per the logic described above.
-	4. If no time series was read, create an empty time series.
-	5. Calculate the monthly average limits of the time series,
-	which can be used in later fill commands.  **Need to evaluate `CIU` impact.**
-5. Add the time series to the list of time series being maintained for output.
-6. Add a copy of the time series to the backup, to be used to set observed values
-when processing the
-[`LimitDiversionHistoricalTSMonthlyToRights`](../LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md) command.
-Since explicit stations’ time series are not filled, copy the time series as is.
-For aggregate time series, use the backup copy of the time series.
+1.  If the diversion station identifier does not match the given ID pattern,
+    do not complete the following steps.
+2.  If explicit stations are being processed and the station is not an explicit station,
+    do not complete the following steps.
+3.  If collection stations (aggregates and systems) are being processed and the
+    station is not a collection, do not complete the following steps.
+4.  Process the time series for the station:
+    If a collection (aggregate or system), perform the following by looping
+    through each part (this guarantees that a time series will result, possibly only with missing data):
+    1.  If a part identifier is not a WDID, generate an error
+        (only WDIDs should be specified as parts).
+        This type of error should not be ignored and should be corrected.
+    2.  Read the monthly diversion records for the part.
+        The [Carry Forward Methodology](#carry-forward-methodology) is used.
+        If an error occurs (no data), create an empty time series for the part with all missing data.
+        Important – parts must be read from HydroBase.
+        There is no way to substitute another time series for a part.
+    3.  If requested (`UseDiversionComments=True`),
+        read the diversion comments and fill missing values with additional
+        zeros for irrigation years where diversion comments are available.
+    4.  If requested (`FillUsingCIU=True`) also fill with CIU as per the logic described above.
+    5.  If the first part of an aggregate is being processed,
+        initialize the total time series to the first part.
+        Also initialize the backup copy that contains only observations.
+    6.  If the second or greater part, add the observations to the backup copy total time series.
+    7.  If filling has been requested using pattern and/or average,
+        fill the part’s time series.
+    8.  Add the part’s time series to the total.
+        This represents the total of filled data, whereas the backup copy contains only the observed values.
+    9.  If all parts have been processed,
+        calculate the monthly average limits of the backup copy (observations only),
+        which can be used in later fill commands.
+        **This may be a problem with CIU since some zeros should not be in the average.**
+        <br><br>If an explicit station, perform the following:
+    1.  If the station ID is not a WDID, generate a warning.
+        Otherwise, read the time series diversion records from HydroBase.
+        The [Carry Forward Methodology](#carry-forward-methodology) is used.
+    2.  If the station ID is a WDID and diversion comments were requested (`UseDiversionComments=True`),
+        read the diversion comments from HydroBase and fill additional values with
+        zeros for irrigation years where diversion comments are available.
+    3.  If requested (`FillUsingCIU=True`) also fill with `CIU` as per the logic described above.
+    4.  If no time series was read, create an empty time series.
+    5.  Calculate the monthly average limits of the time series,
+        which can be used in later fill commands.  **Need to evaluate `CIU` impact.**
+5.  Add the time series to the list of time series being maintained for output.
+6.  Add a copy of the time series to the backup, to be used to set observed values
+    when processing the
+    [`LimitDiversionHistoricalTSMonthlyToRights`](../LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md) command.
+    Since explicit stations’ time series are not filled, copy the time series as is.
+    For aggregate time series, use the backup copy of the time series.
 
 The following command combinations will provide the same results:
 
-* Process all diversion stations with one command (`ID=”*”`) with no filling.
-* Process explicit diversion stations with one command (`ID=”*”,IncludeCollections=False`) and
-collections with one or more commands (`ID=”X*”,IncludeExplicit=False`), with no filling.
+*   Process all diversion stations with one command (`ID=”*”`) with no filling.
+*   Process explicit diversion stations with one command (`ID=”*”,IncludeCollections=False`) and
+    collections with one or more commands (`ID=”X*”,IncludeExplicit=False`), with no filling.
 
 If historical patterns are not used for filling, then a smaller number of commands can be used.
 
@@ -176,7 +208,7 @@ The following dialog is used to edit the command and illustrates the command syn
 </p>**
 
 **<p style="text-align: center;">
-`ReadDiversionHistoricalTSMonthlyFromHydroBase` Command Editor for Explicit Diversions (<a href="../ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit.png">see also the full-size image</a>)
+`ReadDiversionHistoricalTSMonthlyFromHydroBase` Command Editor for Explicit Diversions (<a href="../ReadDiversionHistoricalTSMonthlyFromHydroBase_Explicit.png">see full-size image</a>)
 </p>**
 
 The following dialog is used to edit the command and illustrates the syntax of the command, when processing collections (aggregates or collections):
@@ -186,7 +218,7 @@ The following dialog is used to edit the command and illustrates the syntax of t
 </p>**
 
 **<p style="text-align: center;">
-`ReadDiversionHistoricalTSMonthlyFromHydroBase` Command Editor for Aggregates/Systems (<a href="../ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection.png">see also the full-size image</a>)
+`ReadDiversionHistoricalTSMonthlyFromHydroBase` Command Editor for Aggregates/Systems (<a href="../ReadDiversionHistoricalTSMonthlyFromHydroBase_Collection.png">see full-size image</a>)
 </p>**
 
 ## Command Syntax ##
@@ -207,6 +239,7 @@ Command Parameters
 | `IncludeCollections` | Indicates whether diversion stations that are collections (aggregates and systems) should be included in processing. | True |
 | `LEZeroInAverage` | Indicate whether values ≤ 0 should be considered when computing historical averages. | True |
 | `UseDiversionComments` | Indicate whether diversion comments should be checked when reading time series data.  Diversion comments may indicate additional zero values. | True |
+| `FillCarryForward` | Indicates whether to fill diversion records using the [Carry Forward Methodology](#carry-forward-methodology), `False` or `True`. | `True` |
 | `FillUsingCIU` | Indicates whether the “currently in use” (CIU) information is used to fill missing data.  This will result in additional zeros at the beginning or end of the time series, depending on CIU value.   See the description of the logic above. | `False` (CIU information is not  used to fill missing data). |
 | `FillUsingCIUFlag` | For each missing data value that is filled using the CIU information, tag the filled value as follows:<ul><li>`FillUsingCIUFlag` is specified as a single character, tag filled values with the specified character.</li><li>`If FillUsingCIUFlag=Auto` is specified, the `CIU` value (`H`, `I`, or `N`) from HydroBase is used for the flag.</li></ul><br>The flag can then be used later to label graphs, etc.  The flag will be appended to existing flags if necessary. | No flag is assigned. |
 | `ReadStart` | A date, to monthly precision, indicating the start of the read. | Read all available data. |
@@ -325,10 +358,10 @@ WriteCheckFile(OutputFile="ddh.commands.StateDMI.check.html")
 
 ## See Also ##
 
-* [`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md) command
-* [`LimitDiversionHistoricalTSMonthlyToRights`](../LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md) command
-* [`ReadPatternFile`](../ReadPatternFile/ReadPatternFile.md) command
-* [`ReadDiversionHistoricalTSMonthlyFromStateMod`](../ReadDiversionHistoricalTSMonthlyFromStateMod/ReadDiversionHistoricalTSMonthlyFromStateMod.md) command
-* [`SetOutputPeriod`](../SetOutputPeriod/SetOutputPeriod.md) command
-* [`SortDiversionHistoricalTSMonthly`](../SortDiversionHistoricalTSMonthly/SortDiversionHistoricalTSMonthly.md) command
-* [`WriteDiversionHistoricalTSMonthlyToStateMod`](../WriteDiversionHistoricalTSMonthlyToStateMod/WriteDiversionHistoricalTSMonthlyToStateMod.md) command
+*   [`FillDiversionHistoricalTSMonthlyAverage`](../FillDiversionHistoricalTSMonthlyAverage/FillDiversionHistoricalTSMonthlyAverage.md) command
+*   [`LimitDiversionHistoricalTSMonthlyToRights`](../LimitDiversionHistoricalTSMonthlyToRights/LimitDiversionHistoricalTSMonthlyToRights.md) command
+*   [`ReadPatternFile`](../ReadPatternFile/ReadPatternFile.md) command
+*   [`ReadDiversionHistoricalTSMonthlyFromStateMod`](../ReadDiversionHistoricalTSMonthlyFromStateMod/ReadDiversionHistoricalTSMonthlyFromStateMod.md) command
+*   [`SetOutputPeriod`](../SetOutputPeriod/SetOutputPeriod.md) command
+*   [`SortDiversionHistoricalTSMonthly`](../SortDiversionHistoricalTSMonthly/SortDiversionHistoricalTSMonthly.md) command
+*   [`WriteDiversionHistoricalTSMonthlyToStateMod`](../WriteDiversionHistoricalTSMonthlyToStateMod/WriteDiversionHistoricalTSMonthlyToStateMod.md) command
