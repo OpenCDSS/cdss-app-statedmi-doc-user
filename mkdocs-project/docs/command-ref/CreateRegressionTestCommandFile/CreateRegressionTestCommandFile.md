@@ -1,11 +1,11 @@
 # StateDMI / Command / CreateRegressionTestCommandFile #
 
-* [Overview](#overview)
-* [Command Editor](#command-editor)
-* [Command Syntax](#command-syntax)
-* [Examples](#examples)
-* [Troubleshooting](#troubleshooting)
-* [See Also](#see-also)
+*   [Overview](#overview)
+*   [Command Editor](#command-editor)
+*   [Command Syntax](#command-syntax)
+*   [Examples](#examples)
+*   [Troubleshooting](#troubleshooting)
+*   [See Also](#see-also)
 
 -------------------------
 
@@ -51,7 +51,7 @@ The following dialog is used to edit the command and illustrates the command syn
 </p>**
 
 **<p style="text-align: center;">
-`CreateRegressionTestCommandFile` Command Editor (<a href="../CreateRegressionTestCommandFile.png">see also the full-size image</a>)
+`CreateRegressionTestCommandFile` Command Editor (<a href="../CreateRegressionTestCommandFile.png">see full-size image</a>)
 </p>**
 
 ## Command Syntax ##
@@ -65,15 +65,20 @@ CreateRegressionTestCommandFile(Parameter="Value",...)
 Command Parameters
 </p>**
 
-| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| **Parameter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** | **Default**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --------------|-----------------|----------------- |
-| `SearchFolder` | The folder to search for regression test command files.  All subfolders will also be searched. | None – must be specified. |
-| `OutputFile` | The name of the command file to create, enclosed in double quotes if the file contains spaces or other special characters.  A path relative to the command file containing this command can be specified. | None – must be specified. |
-| `SetupCommandFile` | The name of a StateDMI command file that supplies setup commands, and which will be prepended to output.  Use such a file to open database connections and set other global settings that apply to the entire test run. | Do not include setup commands. |
-| `FilenamePattern` | Pattern for StateDMI command files, using wildcards. | `Test_*.StateDMI` |
-| `Append` | Indicate whether to append to the output file (`True`) or overwrite (`False`).  This allows multiple directory trees to be searched for tests, where the first command typically specifies False and additional commands specify `True`. | `True` |
-| `IncludeTestSuite` | If *, all tests that match `FilenamePattern` and `IncludeOS` are included.  If a test suite is specified, only include tests that have `@testSuite` comment annotation values that match a value in `IncludeTestSuite`.  One or more comment annotations can be specified, separated by commas. | `*` – include all test cases. |
-| `IncludeOS` | If *, all tests that match `FilenamePattern` and `IncludeTestSuite` are included.  If an OS is specified, only include tests that have @os comment annotation values that match a value in `IncludeTestSuite`.  This comment annotation is typically specified once or not at all. | `*` – include all test cases. |
+| `SearchFolder`<br>**required** | One or more folders to search for regression test command files, separated by commas.  All subfolders will also be searched.  Can use `${Property}`. The order of files for processing is as follows:<ol><li>Search folders are in the order specified in the parameter.</li><li>Matched files within a top-level search folder are sorted alphabetically.</li><li>The `#@order` annotations are evaluated and order adjusted accordingly (under development).</li></ol>| None - must be specified. |
+| `OutputFile`<br>**required** | The name of the command file to create, enclosed in double quotes if the file contains spaces or other special characters.  A path relative to the command file containing this command can be specified.  Can specify using `${Property}`.| None - must be specified.|
+| `SetupCommandFile` |  The name of a StateDMI command file that supplies setup commands, and which will be prepended to output.  Use such a file to open database connections and set other global settings that apply to the entire test run.  Can specify using `${Property}`. | Do not include setup commands.|
+| `TestResultsFile` | The `OutputFile` for the [`StartRegressionTestResultsReport`](../StartRegressionTestResultsReport/StartRegressionTestResultsReport.md) file containing test results.  The path will be relative to the `OutputFile` folder from this `CreateRegressionTestCommandFile` command. | `OutputFile` + `.out.txt` |
+| `EndCommandFile` | The name of a StateDMI command file that supplies end commands, and which will be appended to the output.  Use such a file to output the test results table to a delimited file or Excel.  See `TestResultsTableID`.  Can specify using `${Property}`. | Do not include end commands.|
+| `FilenamePattern` | Pattern(s) to find StateDMI command files, using `*` wildcards, separated by commas. | `Test_*.StateDMI` and `test-*.tstool`, ignoring case. |
+| `Append` | Indicate whether to append to the output file (`True`) or overwrite (`False`).  This allows multiple directory trees to be searched for tests, where the first command typically specifies `False` and additional commands specify `True`. | `True` |
+| `IncludeTestSuite` |If `*`, all tests that match `FilenamePattern` and `IncludeOS` are included.  If a test suite is specified, only include tests that have `@testSuite` tag values that match a value in `IncludeTestSuite`.  One or more tags can be specified, separated by commas.| `*` - include all test suites.|
+| `ExcludeTestSuite` | List of test suites, separated by commas, to exclude, after considering `IncludeTestSuite`.  Tests that have matching `@testSuite` tag values will be excluded. | Include all test suites.|
+| `IncludeOS` |If `*`, all tests that match `FilenamePattern` and `IncludeTestSuite` are included.  If an OS is specified, only include tests that have `@os` tag values that match a value in `IncludeTestSuite`.  This tag is typically specified once or not at all. | `*` - include all test cases. |
+| `UseOrder` | Indicate whether `@order` annotations should be processed to control the order of command files: `False` or `True`.  It may be simpler to create a command file that naturally sorts, for example place a setup command file in a folder starting with `0` that sorts before other test folders. | `True` |
+| `TestResultsTableID` |The identifier of an output table to be created.  The table will be passed to the [`StartRegressionTestResultsReport`](../StartRegressionTestResultsReport/StartRegressionTestResultsReport.md) command. | No table will be output. |
 
 ## Examples ##
 

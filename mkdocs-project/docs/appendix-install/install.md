@@ -42,7 +42,7 @@ In the future separate documentation may be provided explaining software compone
 
 ```
 C:\CDSS\StateDMI-Version           Windows Top-level install directory.
-  bin\                             Software program files folder
+  bin/                             Software program files folder
     *.jar                          Generally, software libraries used by StateDMI.
     Blowfish*.jar                  Used for encryption/security.
     cdss.*.jar                     CDSS components.
